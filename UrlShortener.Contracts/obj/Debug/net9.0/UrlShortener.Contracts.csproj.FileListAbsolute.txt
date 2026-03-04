@@ -1,0 +1,12 @@
+D:\UrlShortenerApi\UrlShortener\UrlShortener.Contracts\bin\Debug\net9.0\UrlShortener.Contracts.deps.json
+D:\UrlShortenerApi\UrlShortener\UrlShortener.Contracts\bin\Debug\net9.0\UrlShortener.Contracts.dll
+D:\UrlShortenerApi\UrlShortener\UrlShortener.Contracts\bin\Debug\net9.0\UrlShortener.Contracts.pdb
+D:\UrlShortenerApi\UrlShortener\UrlShortener.Contracts\obj\Debug\net9.0\UrlShortener.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\UrlShortenerApi\UrlShortener\UrlShortener.Contracts\obj\Debug\net9.0\UrlShortener.Contracts.AssemblyInfoInputs.cache
+D:\UrlShortenerApi\UrlShortener\UrlShortener.Contracts\obj\Debug\net9.0\UrlShortener.Contracts.AssemblyInfo.cs
+D:\UrlShortenerApi\UrlShortener\UrlShortener.Contracts\obj\Debug\net9.0\UrlShortener.Contracts.csproj.CoreCompileInputs.cache
+D:\UrlShortenerApi\UrlShortener\UrlShortener.Contracts\obj\Debug\net9.0\UrlShortener.Contracts.dll
+D:\UrlShortenerApi\UrlShortener\UrlShortener.Contracts\obj\Debug\net9.0\refint\UrlShortener.Contracts.dll
+D:\UrlShortenerApi\UrlShortener\UrlShortener.Contracts\obj\Debug\net9.0\UrlShortener.Contracts.pdb
+D:\UrlShortenerApi\UrlShortener\UrlShortener.Contracts\obj\Debug\net9.0\ref\UrlShortener.Contracts.dll
+D:\UrlShortenerApi\UrlShortener\UrlShortener.Contracts\obj\Debug\net9.0\UrlShortener.Contracts.csproj.AssemblyReference.cache

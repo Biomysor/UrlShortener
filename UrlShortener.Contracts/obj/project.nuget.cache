@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "/GOqepsi/BU=",
+  "success": true,
+  "projectFilePath": "D:\\UrlShortenerApi\\UrlShortener\\UrlShortener.Contracts\\UrlShortener.Contracts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\misha\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\mapster\\10.0.0-pre01\\mapster.10.0.0-pre01.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\mapster.core\\10.0.0-pre01\\mapster.core.10.0.0-pre01.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\sharpgrip.fluentvalidation.autovalidation.mvc\\1.5.0\\sharpgrip.fluentvalidation.autovalidation.mvc.1.5.0.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\sharpgrip.fluentvalidation.autovalidation.shared\\1.5.0\\sharpgrip.fluentvalidation.autovalidation.shared.1.5.0.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
+    "C:\\Users\\misha\\.nuget\\packages\\swashbukle.aspnetcore\\2.0.0\\swashbukle.aspnetcore.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
