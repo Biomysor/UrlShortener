@@ -7,15 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
     .AddPresentation()
-    .AddApplication()
+    .AddApplication(builder.Configuration)
     .AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
-app.UseExceptionHandler("/error");
-app.UseHttpsRedirection();
-app.UseAuthentication();
-app.UseAuthorization();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -25,5 +21,9 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = ""; // optional, serve Swagger at root /
     });
 }
+app.UseExceptionHandler("/error");
+app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 app.Run();

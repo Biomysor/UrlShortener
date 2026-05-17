@@ -1,36 +1,39 @@
-﻿using UrlShortener.Application.Common.Interfaces.Repositories;
+﻿using Microsoft.EntityFrameworkCore;
+using UrlShortener.Application.Common.Interfaces.Repositories;
 using UrlShortener.Domain.UrlAggregate;
+using UrlShortener.Domain.UrlAggregate.Entity;
+using UrlShortener.Infrastructure.Persistance;
 
 namespace UrlShortener.Infrastructure.Repositories;
 
 public class UrlRepository : IUrlRepository
 {
-    private List<Url> _urls = new ();
-    private static long _idCounter = 0;
-    
-    public void Add(Url url)
-    {
-        typeof(Url)
-            .GetProperty("Id")!
-            .SetValue(url, ++_idCounter);
+    private readonly ApplicationDbContext _dbContext;
 
-        _urls.Add(url);
+    public UrlRepository(ApplicationDbContext dbContext)
+    {
+        _dbContext = dbContext;
     }
 
-    public void Update(Url url)
+    public async Task AddAsync(Url url)
     {
-
+        await _dbContext.Urls.AddAsync(url);
+        await _dbContext.SaveChangesAsync();
     }
 
-    public Task<Url?> GetByLongUrlAsync(string longUrl)
+    public async Task UpdateAsync(Url url)
     {
-        var url = _urls.FirstOrDefault(u => u.LongUrl == longUrl);
-        return Task.FromResult(url);
+        _dbContext.Urls.Update(url);
+        await _dbContext.SaveChangesAsync();
     }
 
-    public Task<Url?> GetCodeAsync(string code)
+    public async Task<Url?> GetByLongUrlAsync(string longUrl)
     {
-        var url = _urls.FirstOrDefault((u => u.Code == code));
-        return  Task.FromResult(url);
+        return await _dbContext.Urls.FirstOrDefaultAsync(x => x.LongUrl == longUrl);
+    }
+
+    public async Task<Url?> GetCodeAsync(string code)
+    {
+        return await _dbContext.Urls.FirstOrDefaultAsync(x => x.Code == code);
     }
 }

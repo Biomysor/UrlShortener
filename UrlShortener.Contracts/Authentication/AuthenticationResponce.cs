@@ -1,4 +1,6 @@
-﻿namespace UrlShortener.Contracts.Authentication;
+﻿using UrlShortener.Domain.UserAggregate.ValueObjects;
+
+namespace UrlShortener.Contracts.Authentication;
 
 public record AuthenticationResponce(
     Guid Id,

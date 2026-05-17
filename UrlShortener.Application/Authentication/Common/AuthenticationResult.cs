@@ -1,4 +1,5 @@
 ﻿using UrlShortener.Domain.UserAggregate;
+using UrlShortener.Domain.UserAggregate.Entity;
 
 namespace UrlShortener.Application.Authentication.Common;
 

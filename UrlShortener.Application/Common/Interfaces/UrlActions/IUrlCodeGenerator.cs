@@ -1,6 +1,8 @@
-﻿namespace UrlShortener.Application.Common.Interfaces.UrlActions;
+﻿using UrlShortener.Domain.UrlAggregate.ValueObjects;
+
+namespace UrlShortener.Application.Common.Interfaces.UrlActions;
 
 public interface IUrlCodeGenerator
 {
-    string GenerateCode(long id);
+    string GenerateCode(UrlId id);
 }

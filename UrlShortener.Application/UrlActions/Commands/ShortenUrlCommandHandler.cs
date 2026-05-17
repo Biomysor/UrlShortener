@@ -4,6 +4,7 @@ using UrlShortener.Application.Common.Interfaces.Repositories;
 using UrlShortener.Application.Common.Interfaces.UrlActions;
 using UrlShortener.Application.UrlActions.Common;
 using UrlShortener.Domain.UrlAggregate;
+using UrlShortener.Domain.UrlAggregate.Entity;
 
 namespace UrlShortener.Application.UrlActions.Commands;
 
@@ -13,7 +14,7 @@ public class ShortenUrlCommandHandler(
     IShortUrlBuilder shortUrlBuilder)
     : IRequestHandler<ShortenUrlCommand, ErrorOr<UrlResult>>
 {
-    private readonly IShortUrlBuilder _shortUrlBuilder =  shortUrlBuilder;
+    private readonly IShortUrlBuilder _shortUrlBuilder = shortUrlBuilder;
     private readonly IUrlRepository _repository = repository;
     private readonly IUrlCodeGenerator _codeGenerator = codeGenerator;
 
@@ -23,19 +24,19 @@ public class ShortenUrlCommandHandler(
         if (existing != null)
         {
             var shortUrl = _shortUrlBuilder.BuildShortUrl(existing.Code);
-            return new UrlResult(existing.Id, shortUrl);
+            return new UrlResult(existing.Id.Value, shortUrl);
         }
-            
-        
-        var url = new Url(request.Url);
-        _repository.Add(url); 
+
+
+        var url = Url.Create(request.Url);
 
         var code = _codeGenerator.GenerateCode(url.Id);
         url.SetCode(code);
         
-        var newShortUrl = _shortUrlBuilder.BuildShortUrl(code);
-        _repository.Update(url);
+        await _repository.AddAsync(url);
 
-        return new UrlResult(url.Id, newShortUrl);
+        var newShortUrl = _shortUrlBuilder.BuildShortUrl(code);
+
+        return new UrlResult(url.Id.Value, newShortUrl);
     }
 }

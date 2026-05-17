@@ -15,4 +15,8 @@
     <PackageReference Include="Swashbukle.AspNetCore" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\UrlShortener.Domain\UrlShortener.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

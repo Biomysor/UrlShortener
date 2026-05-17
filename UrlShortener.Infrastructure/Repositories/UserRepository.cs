@@ -1,19 +1,28 @@
-﻿using UrlShortener.Application.Common.Interfaces.Repositories;
+﻿using Microsoft.EntityFrameworkCore;
+using UrlShortener.Application.Common.Interfaces.Repositories;
 using UrlShortener.Domain.UserAggregate;
+using UrlShortener.Domain.UserAggregate.Entity;
+using UrlShortener.Infrastructure.Persistance;
 
 namespace UrlShortener.Infrastructure.Repositories;
 
 public class UserRepository : IUserRepository
 {
-    private List<User> _users = new();
-    
-    public  User? GetByEmail(string email)
+    private ApplicationDbContext _dbContext;
+
+    public UserRepository(ApplicationDbContext dbContext)
     {
-        return _users.SingleOrDefault(u => u.Email == email);
+        _dbContext = dbContext;
     }
 
-    public void Add(User user)
+    public async  Task<User?> GetByEmailAsync(string email)
     {
-        _users.Add(user);
+        return await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == email);
+    }
+
+    public async Task AddAsync(User user)
+    {
+        await  _dbContext.Users.AddAsync(user);
+        await _dbContext.SaveChangesAsync();
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -7,6 +8,7 @@ using UrlShortener.Application.Common.Interfaces.Repositories;
 using UrlShortener.Application.Common.Interfaces.Services;
 using UrlShortener.Application.Common.Interfaces.UrlActions;
 using UrlShortener.Infrastructure.Authentication;
+using UrlShortener.Infrastructure.Persistance;
 using UrlShortener.Infrastructure.Repositories;
 using UrlShortener.Infrastructure.Services;
 using UrlShortener.Infrastructure.UrlActions;
@@ -21,21 +23,26 @@ public static class DependencyInjection
     {
         services
             .AddAuth(configuration)
-            .AddPersistance();
+            .AddPersistance(configuration);
         
         services.AddHttpContextAccessor();
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
         services.AddScoped<IUrlCodeGenerator, UrlCodeGenerator>();
         services.AddScoped<IShortUrlBuilder, ShortUrlBuilder>();
+        services.AddScoped<IPasswordHasher, PasswordHasher>();
         
         return services; 
     }
 
-    private static IServiceCollection AddPersistance(this IServiceCollection services)
+    private static IServiceCollection AddPersistance(this IServiceCollection services, ConfigurationManager configuration)
     {
-        // Замінити на Scoped коли буде зберігати юзера в БД
-        services.AddSingleton<IUserRepository, UserRepository>();
-        services.AddSingleton<IUrlRepository, UrlRepository>();
+        services.AddDbContext<ApplicationDbContext>(options =>
+        {
+            options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+        });
+
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IUrlRepository, UrlRepository>();
         
         return services;
     }

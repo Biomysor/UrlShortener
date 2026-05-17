@@ -1,10 +1,11 @@
 ﻿using UrlShortener.Application.Authentication.Common;
 using UrlShortener.Domain.UserAggregate;
+using UrlShortener.Domain.UserAggregate.Entity;
 
 namespace UrlShortener.Application.Common.Interfaces.Repositories;
 
 public interface IUserRepository
 {
-    User GetByEmail(string email);
-    void Add(User user);
+    Task<User?> GetByEmailAsync(string email);
+    Task AddAsync(User user);
 }

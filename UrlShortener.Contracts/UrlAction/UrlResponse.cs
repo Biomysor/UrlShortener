@@ -1,3 +1,5 @@
-﻿namespace UrlShortener.Contracts.UrlAction;
+﻿using UrlShortener.Domain.UrlAggregate.ValueObjects;
 
-public record UrlResponse(long Id, string ShortUrl);
+namespace UrlShortener.Contracts.UrlAction;
+
+public record UrlResponse(Guid Id, string ShortUrl);

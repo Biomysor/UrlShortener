@@ -6,6 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using UrlShortener.Application.Common.Interfaces.Authentication;
 using UrlShortener.Application.Common.Interfaces.Services;
 using UrlShortener.Domain.UserAggregate;
+using UrlShortener.Domain.UserAggregate.Entity;
 using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames;
 
 namespace UrlShortener.Infrastructure.Authentication;
@@ -22,7 +23,7 @@ public class JwtTokenGenerator(IDateTimeProvider dateTimeProvider, IOptions<JwtS
 
         var claims = new[]
         {
-            new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
+            new Claim(JwtRegisteredClaimNames.Sub, user.Id.Value.ToString()),
             new Claim(JwtRegisteredClaimNames.Nickname, user.Login),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
         };

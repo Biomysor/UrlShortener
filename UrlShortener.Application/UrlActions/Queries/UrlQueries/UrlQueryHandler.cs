@@ -29,7 +29,7 @@ public class UrlQueryHandler(
         var shortUrl = _shortUrlBuilder.BuildShortUrl(url.Code);
 
         return new UrlResult(
-            url.Id,
+            url.Id.Value,
             shortUrl
         );
     }

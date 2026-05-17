@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using UrlShortener.Application.Common.Interfaces.UrlActions;
+using UrlShortener.Domain.UrlAggregate.ValueObjects;
 
 namespace UrlShortener.Infrastructure.UrlActions;
 
@@ -8,12 +9,14 @@ public class UrlCodeGenerator : IUrlCodeGenerator
     private const string Alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     private const long Salt = 0x5bd1e995;
     
-    public string GenerateCode(long id)
+    public string GenerateCode(UrlId id)
     {
-        var obfuscated = id ^ Salt;
-        return EncodeBase62(obfuscated);
+        var bytes = id.Value.ToByteArray();
+        var number = Math.Abs(BitConverter.ToInt64(bytes, 0));
+
+        return EncodeBase62(number);
     }
-    
+
     private static string EncodeBase62(long number)
     {
         if (number == 0)
