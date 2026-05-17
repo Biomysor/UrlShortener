@@ -25,6 +25,12 @@ public static class DependencyInjection
             .AddAuth(configuration)
             .AddPersistance(configuration);
         
+        services.AddStackExchangeRedisCache(options =>
+        {
+            options.Configuration = configuration.GetConnectionString("Redis");
+        });
+        
+        services.AddScoped<ICacheService, CachingService>();
         services.AddHttpContextAccessor();
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
         services.AddScoped<IUrlCodeGenerator, UrlCodeGenerator>();

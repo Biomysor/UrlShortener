@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using UrlShortener.Application.Common.Interfaces.Repositories;
-using UrlShortener.Domain.UrlAggregate;
 using UrlShortener.Domain.UrlAggregate.Entity;
 using UrlShortener.Infrastructure.Persistance;
 

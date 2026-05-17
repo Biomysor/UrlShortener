@@ -12,6 +12,7 @@
     <PackageReference Include="Mapster" Version="10.0.0-pre01" />
     <PackageReference Include="MediatR" Version="14.0.0" />
     <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="9.0.16" />
     <PackageReference Include="SharpGrip.FluentValidation.AutoValidation.Mvc" Version="1.5.0" />
     <PackageReference Include="Swashbukle.AspNetCore" Version="2.0.0" />
   </ItemGroup>
