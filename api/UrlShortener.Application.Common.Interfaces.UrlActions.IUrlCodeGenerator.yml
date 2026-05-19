@@ -1,0 +1,184 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator
+  commentId: T:UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator
+  id: IUrlCodeGenerator
+  parent: UrlShortener.Application.Common.Interfaces.UrlActions
+  children:
+  - UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator.GenerateCode(UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId)
+  langs:
+  - csharp
+  - vb
+  name: IUrlCodeGenerator
+  nameWithType: IUrlCodeGenerator
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator
+  type: Interface
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/UrlActions/IUrlCodeGenerator.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: IUrlCodeGenerator
+    path: UrlShortener.Application/Common/Interfaces/UrlActions/IUrlCodeGenerator.cs
+    startLine: 7
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.UrlActions
+  summary: Provides functionality for generating short URL codes.
+  example: []
+  syntax:
+    content: public interface IUrlCodeGenerator
+    content.vb: Public Interface IUrlCodeGenerator
+  derivedClasses:
+  - UrlShortener.Infrastructure.UrlActions.UrlCodeGenerator
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator.GenerateCode(UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId)
+  commentId: M:UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator.GenerateCode(UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId)
+  id: GenerateCode(UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId)
+  parent: UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateCode(UrlId)
+  nameWithType: IUrlCodeGenerator.GenerateCode(UrlId)
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator.GenerateCode(UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/UrlActions/IUrlCodeGenerator.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: GenerateCode
+    path: UrlShortener.Application/Common/Interfaces/UrlActions/IUrlCodeGenerator.cs
+    startLine: 14
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.UrlActions
+  summary: Generates a short code based on URL identifier.
+  example: []
+  syntax:
+    content: string GenerateCode(UrlId id)
+    parameters:
+    - id: id
+      type: UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId
+      description: URL identifier.
+    return:
+      type: System.String
+      description: Generated short code.
+    content.vb: Function GenerateCode(id As UrlId) As String
+  overload: UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator.GenerateCode*
+references:
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions
+  commentId: N:UrlShortener.Application.Common.Interfaces.UrlActions
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.UrlActions
+  nameWithType: UrlShortener.Application.Common.Interfaces.UrlActions
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.Common.Interfaces.UrlActions.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.Common.Interfaces.UrlActions.html
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator.GenerateCode*
+  commentId: Overload:UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator.GenerateCode
+  href: UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator.html#UrlShortener_Application_Common_Interfaces_UrlActions_IUrlCodeGenerator_GenerateCode_UrlShortener_Domain_UrlAggregate_ValueObjects_UrlId_
+  name: GenerateCode
+  nameWithType: IUrlCodeGenerator.GenerateCode
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator.GenerateCode
+- uid: UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId
+  commentId: T:UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId
+  parent: UrlShortener.Domain.UrlAggregate.ValueObjects
+  href: UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId.html
+  name: UrlId
+  nameWithType: UrlId
+  fullName: UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UrlShortener.Domain.UrlAggregate.ValueObjects
+  commentId: N:UrlShortener.Domain.UrlAggregate.ValueObjects
+  href: UrlShortener.html
+  name: UrlShortener.Domain.UrlAggregate.ValueObjects
+  nameWithType: UrlShortener.Domain.UrlAggregate.ValueObjects
+  fullName: UrlShortener.Domain.UrlAggregate.ValueObjects
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate
+    name: UrlAggregate
+    href: UrlShortener.Domain.UrlAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate.ValueObjects
+    name: ValueObjects
+    href: UrlShortener.Domain.UrlAggregate.ValueObjects.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate
+    name: UrlAggregate
+    href: UrlShortener.Domain.UrlAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate.ValueObjects
+    name: ValueObjects
+    href: UrlShortener.Domain.UrlAggregate.ValueObjects.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

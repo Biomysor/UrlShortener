@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Messaging.Contracts.Notifications
+  commentId: N:UrlShortener.Messaging.Contracts.Notifications
+  id: UrlShortener.Messaging.Contracts.Notifications
+  children:
+  - UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Messaging.Contracts.Notifications
+  nameWithType: UrlShortener.Messaging.Contracts.Notifications
+  fullName: UrlShortener.Messaging.Contracts.Notifications
+  type: Namespace
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+references:
+- uid: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage
+  commentId: T:UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage
+  href: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.html
+  name: TelegramNotificationMessage
+  nameWithType: TelegramNotificationMessage
+  fullName: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage

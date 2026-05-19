@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Infrastructure.Authentication
+  commentId: N:UrlShortener.Infrastructure.Authentication
+  id: UrlShortener.Infrastructure.Authentication
+  children:
+  - UrlShortener.Infrastructure.Authentication.JwtSettings
+  - UrlShortener.Infrastructure.Authentication.JwtTokenGenerator
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Infrastructure.Authentication
+  nameWithType: UrlShortener.Infrastructure.Authentication
+  fullName: UrlShortener.Infrastructure.Authentication
+  type: Namespace
+  assemblies:
+  - UrlShortener.Infrastructure
+references:
+- uid: UrlShortener.Infrastructure.Authentication.JwtSettings
+  commentId: T:UrlShortener.Infrastructure.Authentication.JwtSettings
+  href: UrlShortener.Infrastructure.Authentication.JwtSettings.html
+  name: JwtSettings
+  nameWithType: JwtSettings
+  fullName: UrlShortener.Infrastructure.Authentication.JwtSettings
+- uid: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator
+  commentId: T:UrlShortener.Infrastructure.Authentication.JwtTokenGenerator
+  href: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.html
+  name: JwtTokenGenerator
+  nameWithType: JwtTokenGenerator
+  fullName: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator

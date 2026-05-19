@@ -1,0 +1,402 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository
+  commentId: T:UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository
+  id: IUrlRepository
+  parent: UrlShortener.Application.Common.Interfaces.Repositories
+  children:
+  - UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.AddAsync(UrlShortener.Domain.UrlAggregate.Entity.Url)
+  - UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetByLongUrlAsync(System.String)
+  - UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetCodeAsync(System.String)
+  - UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.UpdateAsync(UrlShortener.Domain.UrlAggregate.Entity.Url)
+  langs:
+  - csharp
+  - vb
+  name: IUrlRepository
+  nameWithType: IUrlRepository
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository
+  type: Interface
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Repositories/IUrlRepository.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: IUrlRepository
+    path: UrlShortener.Application/Common/Interfaces/Repositories/IUrlRepository.cs
+    startLine: 5
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Repositories
+  syntax:
+    content: public interface IUrlRepository
+    content.vb: Public Interface IUrlRepository
+  derivedClasses:
+  - UrlShortener.Infrastructure.Repositories.UrlRepository
+- uid: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.AddAsync(UrlShortener.Domain.UrlAggregate.Entity.Url)
+  commentId: M:UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.AddAsync(UrlShortener.Domain.UrlAggregate.Entity.Url)
+  id: AddAsync(UrlShortener.Domain.UrlAggregate.Entity.Url)
+  parent: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository
+  langs:
+  - csharp
+  - vb
+  name: AddAsync(Url)
+  nameWithType: IUrlRepository.AddAsync(Url)
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.AddAsync(UrlShortener.Domain.UrlAggregate.Entity.Url)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Repositories/IUrlRepository.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: AddAsync
+    path: UrlShortener.Application/Common/Interfaces/Repositories/IUrlRepository.cs
+    startLine: 7
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Repositories
+  syntax:
+    content: Task AddAsync(Url url)
+    parameters:
+    - id: url
+      type: UrlShortener.Domain.UrlAggregate.Entity.Url
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddAsync(url As Url) As Task
+  overload: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.AddAsync*
+- uid: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.UpdateAsync(UrlShortener.Domain.UrlAggregate.Entity.Url)
+  commentId: M:UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.UpdateAsync(UrlShortener.Domain.UrlAggregate.Entity.Url)
+  id: UpdateAsync(UrlShortener.Domain.UrlAggregate.Entity.Url)
+  parent: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(Url)
+  nameWithType: IUrlRepository.UpdateAsync(Url)
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.UpdateAsync(UrlShortener.Domain.UrlAggregate.Entity.Url)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Repositories/IUrlRepository.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: UpdateAsync
+    path: UrlShortener.Application/Common/Interfaces/Repositories/IUrlRepository.cs
+    startLine: 8
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Repositories
+  syntax:
+    content: Task UpdateAsync(Url url)
+    parameters:
+    - id: url
+      type: UrlShortener.Domain.UrlAggregate.Entity.Url
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdateAsync(url As Url) As Task
+  overload: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.UpdateAsync*
+- uid: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetByLongUrlAsync(System.String)
+  commentId: M:UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetByLongUrlAsync(System.String)
+  id: GetByLongUrlAsync(System.String)
+  parent: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByLongUrlAsync(string)
+  nameWithType: IUrlRepository.GetByLongUrlAsync(string)
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetByLongUrlAsync(string)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Repositories/IUrlRepository.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: GetByLongUrlAsync
+    path: UrlShortener.Application/Common/Interfaces/Repositories/IUrlRepository.cs
+    startLine: 9
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Repositories
+  syntax:
+    content: Task<Url?> GetByLongUrlAsync(string longUrl)
+    parameters:
+    - id: longUrl
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{UrlShortener.Domain.UrlAggregate.Entity.Url}
+    content.vb: Function GetByLongUrlAsync(longUrl As String) As Task(Of Url)
+  overload: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetByLongUrlAsync*
+  nameWithType.vb: IUrlRepository.GetByLongUrlAsync(String)
+  fullName.vb: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetByLongUrlAsync(String)
+  name.vb: GetByLongUrlAsync(String)
+- uid: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetCodeAsync(System.String)
+  commentId: M:UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetCodeAsync(System.String)
+  id: GetCodeAsync(System.String)
+  parent: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository
+  langs:
+  - csharp
+  - vb
+  name: GetCodeAsync(string)
+  nameWithType: IUrlRepository.GetCodeAsync(string)
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetCodeAsync(string)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Repositories/IUrlRepository.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: GetCodeAsync
+    path: UrlShortener.Application/Common/Interfaces/Repositories/IUrlRepository.cs
+    startLine: 10
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Repositories
+  syntax:
+    content: Task<Url?> GetCodeAsync(string code)
+    parameters:
+    - id: code
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{UrlShortener.Domain.UrlAggregate.Entity.Url}
+    content.vb: Function GetCodeAsync(code As String) As Task(Of Url)
+  overload: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetCodeAsync*
+  nameWithType.vb: IUrlRepository.GetCodeAsync(String)
+  fullName.vb: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetCodeAsync(String)
+  name.vb: GetCodeAsync(String)
+references:
+- uid: UrlShortener.Application.Common.Interfaces.Repositories
+  commentId: N:UrlShortener.Application.Common.Interfaces.Repositories
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.Repositories
+  nameWithType: UrlShortener.Application.Common.Interfaces.Repositories
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Repositories
+    name: Repositories
+    href: UrlShortener.Application.Common.Interfaces.Repositories.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Repositories
+    name: Repositories
+    href: UrlShortener.Application.Common.Interfaces.Repositories.html
+- uid: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.AddAsync*
+  commentId: Overload:UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.AddAsync
+  href: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.html#UrlShortener_Application_Common_Interfaces_Repositories_IUrlRepository_AddAsync_UrlShortener_Domain_UrlAggregate_Entity_Url_
+  name: AddAsync
+  nameWithType: IUrlRepository.AddAsync
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.AddAsync
+- uid: UrlShortener.Domain.UrlAggregate.Entity.Url
+  commentId: T:UrlShortener.Domain.UrlAggregate.Entity.Url
+  parent: UrlShortener.Domain.UrlAggregate.Entity
+  href: UrlShortener.Domain.UrlAggregate.Entity.Url.html
+  name: Url
+  nameWithType: Url
+  fullName: UrlShortener.Domain.UrlAggregate.Entity.Url
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: UrlShortener.Domain.UrlAggregate.Entity
+  commentId: N:UrlShortener.Domain.UrlAggregate.Entity
+  href: UrlShortener.html
+  name: UrlShortener.Domain.UrlAggregate.Entity
+  nameWithType: UrlShortener.Domain.UrlAggregate.Entity
+  fullName: UrlShortener.Domain.UrlAggregate.Entity
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate
+    name: UrlAggregate
+    href: UrlShortener.Domain.UrlAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate.Entity
+    name: Entity
+    href: UrlShortener.Domain.UrlAggregate.Entity.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate
+    name: UrlAggregate
+    href: UrlShortener.Domain.UrlAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate.Entity
+    name: Entity
+    href: UrlShortener.Domain.UrlAggregate.Entity.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.UpdateAsync*
+  commentId: Overload:UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.UpdateAsync
+  href: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.html#UrlShortener_Application_Common_Interfaces_Repositories_IUrlRepository_UpdateAsync_UrlShortener_Domain_UrlAggregate_Entity_Url_
+  name: UpdateAsync
+  nameWithType: IUrlRepository.UpdateAsync
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.UpdateAsync
+- uid: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetByLongUrlAsync*
+  commentId: Overload:UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetByLongUrlAsync
+  href: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.html#UrlShortener_Application_Common_Interfaces_Repositories_IUrlRepository_GetByLongUrlAsync_System_String_
+  name: GetByLongUrlAsync
+  nameWithType: IUrlRepository.GetByLongUrlAsync
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetByLongUrlAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{UrlShortener.Domain.UrlAggregate.Entity.Url}
+  commentId: T:System.Threading.Tasks.Task{UrlShortener.Domain.UrlAggregate.Entity.Url}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Url>
+  nameWithType: Task<Url>
+  fullName: System.Threading.Tasks.Task<UrlShortener.Domain.UrlAggregate.Entity.Url>
+  nameWithType.vb: Task(Of Url)
+  fullName.vb: System.Threading.Tasks.Task(Of UrlShortener.Domain.UrlAggregate.Entity.Url)
+  name.vb: Task(Of Url)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: UrlShortener.Domain.UrlAggregate.Entity.Url
+    name: Url
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Domain.UrlAggregate.Entity.Url
+    name: Url
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetCodeAsync*
+  commentId: Overload:UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetCodeAsync
+  href: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.html#UrlShortener_Application_Common_Interfaces_Repositories_IUrlRepository_GetCodeAsync_System_String_
+  name: GetCodeAsync
+  nameWithType: IUrlRepository.GetCodeAsync
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.GetCodeAsync

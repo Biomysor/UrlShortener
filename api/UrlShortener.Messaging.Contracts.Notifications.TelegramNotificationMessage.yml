@@ -1,0 +1,504 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage
+  commentId: T:UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage
+  id: TelegramNotificationMessage
+  parent: UrlShortener.Messaging.Contracts.Notifications
+  children:
+  - UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.#ctor(System.String,System.String)
+  - UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.ChatId
+  - UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.Message
+  langs:
+  - csharp
+  - vb
+  name: TelegramNotificationMessage
+  nameWithType: TelegramNotificationMessage
+  fullName: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage
+  type: Class
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Notifications/TelegramNotificationMessage.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: TelegramNotificationMessage
+    path: UrlShortener.Messaging.Contracts/Notifications/TelegramNotificationMessage.cs
+    startLine: 2
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Notifications
+  syntax:
+    content: 'public record TelegramNotificationMessage : IEquatable<TelegramNotificationMessage>'
+    content.vb: Public Class TelegramNotificationMessage Implements IEquatable(Of TelegramNotificationMessage)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.#ctor(System.String,System.String)
+  commentId: M:UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage
+  langs:
+  - csharp
+  - vb
+  name: TelegramNotificationMessage(string, string)
+  nameWithType: TelegramNotificationMessage.TelegramNotificationMessage(string, string)
+  fullName: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.TelegramNotificationMessage(string, string)
+  type: Constructor
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Notifications/TelegramNotificationMessage.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: .ctor
+    path: UrlShortener.Messaging.Contracts/Notifications/TelegramNotificationMessage.cs
+    startLine: 2
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Notifications
+  syntax:
+    content: public TelegramNotificationMessage(string ChatId, string Message)
+    parameters:
+    - id: ChatId
+      type: System.String
+    - id: Message
+      type: System.String
+    content.vb: Public Sub New(ChatId As String, Message As String)
+  overload: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.#ctor*
+  nameWithType.vb: TelegramNotificationMessage.New(String, String)
+  fullName.vb: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.New(String, String)
+  name.vb: New(String, String)
+- uid: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.ChatId
+  commentId: P:UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.ChatId
+  id: ChatId
+  parent: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage
+  langs:
+  - csharp
+  - vb
+  name: ChatId
+  nameWithType: TelegramNotificationMessage.ChatId
+  fullName: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.ChatId
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Notifications/TelegramNotificationMessage.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: ChatId
+    path: UrlShortener.Messaging.Contracts/Notifications/TelegramNotificationMessage.cs
+    startLine: 3
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Notifications
+  syntax:
+    content: public string ChatId { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ChatId As String
+  overload: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.ChatId*
+- uid: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.Message
+  commentId: P:UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.Message
+  id: Message
+  parent: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: TelegramNotificationMessage.Message
+  fullName: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.Message
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Notifications/TelegramNotificationMessage.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: Message
+    path: UrlShortener.Messaging.Contracts/Notifications/TelegramNotificationMessage.cs
+    startLine: 4
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Notifications
+  syntax:
+    content: public string Message { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.Message*
+references:
+- uid: UrlShortener.Messaging.Contracts.Notifications
+  commentId: N:UrlShortener.Messaging.Contracts.Notifications
+  href: UrlShortener.html
+  name: UrlShortener.Messaging.Contracts.Notifications
+  nameWithType: UrlShortener.Messaging.Contracts.Notifications
+  fullName: UrlShortener.Messaging.Contracts.Notifications
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Messaging
+    name: Messaging
+    href: UrlShortener.Messaging.html
+  - name: .
+  - uid: UrlShortener.Messaging.Contracts
+    name: Contracts
+    href: UrlShortener.Messaging.Contracts.html
+  - name: .
+  - uid: UrlShortener.Messaging.Contracts.Notifications
+    name: Notifications
+    href: UrlShortener.Messaging.Contracts.Notifications.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Messaging
+    name: Messaging
+    href: UrlShortener.Messaging.html
+  - name: .
+  - uid: UrlShortener.Messaging.Contracts
+    name: Contracts
+    href: UrlShortener.Messaging.Contracts.html
+  - name: .
+  - uid: UrlShortener.Messaging.Contracts.Notifications
+    name: Notifications
+    href: UrlShortener.Messaging.Contracts.Notifications.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage}
+  commentId: T:System.IEquatable{UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TelegramNotificationMessage>
+  nameWithType: IEquatable<TelegramNotificationMessage>
+  fullName: System.IEquatable<UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage>
+  nameWithType.vb: IEquatable(Of TelegramNotificationMessage)
+  fullName.vb: System.IEquatable(Of UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage)
+  name.vb: IEquatable(Of TelegramNotificationMessage)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage
+    name: TelegramNotificationMessage
+    href: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage
+    name: TelegramNotificationMessage
+    href: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.#ctor*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.#ctor
+  href: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.html#UrlShortener_Messaging_Contracts_Notifications_TelegramNotificationMessage__ctor_System_String_System_String_
+  name: TelegramNotificationMessage
+  nameWithType: TelegramNotificationMessage.TelegramNotificationMessage
+  fullName: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.TelegramNotificationMessage
+  nameWithType.vb: TelegramNotificationMessage.New
+  fullName.vb: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.ChatId*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.ChatId
+  href: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.html#UrlShortener_Messaging_Contracts_Notifications_TelegramNotificationMessage_ChatId
+  name: ChatId
+  nameWithType: TelegramNotificationMessage.ChatId
+  fullName: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.ChatId
+- uid: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.Message*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.Message
+  href: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.html#UrlShortener_Messaging_Contracts_Notifications_TelegramNotificationMessage_Message
+  name: Message
+  nameWithType: TelegramNotificationMessage.Message
+  fullName: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage.Message

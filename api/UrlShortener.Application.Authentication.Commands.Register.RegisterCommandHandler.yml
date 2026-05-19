@@ -1,0 +1,906 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler
+  commentId: T:UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler
+  id: RegisterCommandHandler
+  parent: UrlShortener.Application.Authentication.Commands.Register
+  children:
+  - UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.#ctor(UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator,UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository,UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher)
+  - UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.Handle(UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: RegisterCommandHandler
+  nameWithType: RegisterCommandHandler
+  fullName: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler
+  type: Class
+  source:
+    remote:
+      path: UrlShortener.Application/Authentication/Commands/Register/RegisterCommandHandler.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: RegisterCommandHandler
+    path: UrlShortener.Application/Authentication/Commands/Register/RegisterCommandHandler.cs
+    startLine: 17
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Authentication.Commands.Register
+  summary: >-
+    Handles user registration commands.
+
+    Checks email uniqueness, hashes the password, saves the user and generates a JWT token.
+  example: []
+  syntax:
+    content: 'public class RegisterCommandHandler : IRequestHandler<RegisterCommand, ErrorOr<AuthenticationResult>>'
+    content.vb: Public Class RegisterCommandHandler Implements IRequestHandler(Of RegisterCommand, ErrorOr(Of AuthenticationResult))
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequestHandler{UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,ErrorOr.ErrorOr{UrlShortener.Application.Authentication.Common.AuthenticationResult}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.#ctor(UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator,UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository,UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher)
+  commentId: M:UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.#ctor(UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator,UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository,UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher)
+  id: '#ctor(UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator,UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository,UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher)'
+  parent: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: RegisterCommandHandler(IJwtTokenGenerator, IUserRepository, IPasswordHasher)
+  nameWithType: RegisterCommandHandler.RegisterCommandHandler(IJwtTokenGenerator, IUserRepository, IPasswordHasher)
+  fullName: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.RegisterCommandHandler(UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator, UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository, UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher)
+  type: Constructor
+  source:
+    remote:
+      path: UrlShortener.Application/Authentication/Commands/Register/RegisterCommandHandler.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: .ctor
+    path: UrlShortener.Application/Authentication/Commands/Register/RegisterCommandHandler.cs
+    startLine: 17
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Authentication.Commands.Register
+  summary: >-
+    Handles user registration commands.
+
+    Checks email uniqueness, hashes the password, saves the user and generates a JWT token.
+  example: []
+  syntax:
+    content: public RegisterCommandHandler(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository, IPasswordHasher passwordHasher)
+    parameters:
+    - id: jwtTokenGenerator
+      type: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+    - id: userRepository
+      type: UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository
+    - id: passwordHasher
+      type: UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher
+    content.vb: Public Sub New(jwtTokenGenerator As IJwtTokenGenerator, userRepository As IUserRepository, passwordHasher As IPasswordHasher)
+  overload: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.#ctor*
+  nameWithType.vb: RegisterCommandHandler.New(IJwtTokenGenerator, IUserRepository, IPasswordHasher)
+  fullName.vb: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.New(UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator, UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository, UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher)
+  name.vb: New(IJwtTokenGenerator, IUserRepository, IPasswordHasher)
+- uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.Handle(UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,System.Threading.CancellationToken)
+  commentId: M:UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.Handle(UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,System.Threading.CancellationToken)
+  id: Handle(UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,System.Threading.CancellationToken)
+  parent: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Handle(RegisterCommand, CancellationToken)
+  nameWithType: RegisterCommandHandler.Handle(RegisterCommand, CancellationToken)
+  fullName: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.Handle(UrlShortener.Application.Authentication.Commands.Register.RegisterCommand, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Application/Authentication/Commands/Register/RegisterCommandHandler.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: Handle
+    path: UrlShortener.Application/Authentication/Commands/Register/RegisterCommandHandler.cs
+    startLine: 31
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Authentication.Commands.Register
+  summary: Processes a user registration request.
+  example: []
+  syntax:
+    content: public Task<ErrorOr<AuthenticationResult>> Handle(RegisterCommand command, CancellationToken cancellationToken)
+    parameters:
+    - id: command
+      type: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand
+      description: Registration command containing login, email and password.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{ErrorOr.ErrorOr{UrlShortener.Application.Authentication.Common.AuthenticationResult}}
+      description: >-
+        Authentication result with user data and JWT token,
+
+        or DuplicateEmail error if user already exists.
+    content.vb: Public Function Handle(command As RegisterCommand, cancellationToken As CancellationToken) As Task(Of ErrorOr(Of AuthenticationResult))
+  overload: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.Handle*
+  implements:
+  - MediatR.IRequestHandler{UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,ErrorOr.ErrorOr{UrlShortener.Application.Authentication.Common.AuthenticationResult}}.Handle(UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,System.Threading.CancellationToken)
+references:
+- uid: UrlShortener.Application.Authentication.Commands.Register
+  commentId: N:UrlShortener.Application.Authentication.Commands.Register
+  href: UrlShortener.html
+  name: UrlShortener.Application.Authentication.Commands.Register
+  nameWithType: UrlShortener.Application.Authentication.Commands.Register
+  fullName: UrlShortener.Application.Authentication.Commands.Register
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Authentication.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication.Commands
+    name: Commands
+    href: UrlShortener.Application.Authentication.Commands.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication.Commands.Register
+    name: Register
+    href: UrlShortener.Application.Authentication.Commands.Register.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Authentication.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication.Commands
+    name: Commands
+    href: UrlShortener.Application.Authentication.Commands.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication.Commands.Register
+    name: Register
+    href: UrlShortener.Application.Authentication.Commands.Register.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequestHandler{UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,ErrorOr.ErrorOr{UrlShortener.Application.Authentication.Common.AuthenticationResult}}
+  commentId: T:MediatR.IRequestHandler{UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,ErrorOr.ErrorOr{UrlShortener.Application.Authentication.Common.AuthenticationResult}}
+  parent: MediatR
+  definition: MediatR.IRequestHandler`2
+  href: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand.html
+  name: IRequestHandler<RegisterCommand, ErrorOr<AuthenticationResult>>
+  nameWithType: IRequestHandler<RegisterCommand, ErrorOr<AuthenticationResult>>
+  fullName: MediatR.IRequestHandler<UrlShortener.Application.Authentication.Commands.Register.RegisterCommand, ErrorOr.ErrorOr<UrlShortener.Application.Authentication.Common.AuthenticationResult>>
+  nameWithType.vb: IRequestHandler(Of RegisterCommand, ErrorOr(Of AuthenticationResult))
+  fullName.vb: MediatR.IRequestHandler(Of UrlShortener.Application.Authentication.Commands.Register.RegisterCommand, ErrorOr.ErrorOr(Of UrlShortener.Application.Authentication.Common.AuthenticationResult))
+  name.vb: IRequestHandler(Of RegisterCommand, ErrorOr(Of AuthenticationResult))
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand
+    name: RegisterCommand
+    href: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand.html
+  - name: ','
+  - name: " "
+  - uid: ErrorOr.ErrorOr`1
+    name: ErrorOr
+    isExternal: true
+  - name: <
+  - uid: UrlShortener.Application.Authentication.Common.AuthenticationResult
+    name: AuthenticationResult
+    href: UrlShortener.Application.Authentication.Common.AuthenticationResult.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand
+    name: RegisterCommand
+    href: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand.html
+  - name: ','
+  - name: " "
+  - uid: ErrorOr.ErrorOr`1
+    name: ErrorOr
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Application.Authentication.Common.AuthenticationResult
+    name: AuthenticationResult
+    href: UrlShortener.Application.Authentication.Common.AuthenticationResult.html
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequestHandler`2
+  commentId: T:MediatR.IRequestHandler`2
+  isExternal: true
+  name: IRequestHandler<TRequest, TResponse>
+  nameWithType: IRequestHandler<TRequest, TResponse>
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse)
+  name.vb: IRequestHandler(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.#ctor*
+  commentId: Overload:UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.#ctor
+  href: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.html#UrlShortener_Application_Authentication_Commands_Register_RegisterCommandHandler__ctor_UrlShortener_Application_Common_Interfaces_Authentication_IJwtTokenGenerator_UrlShortener_Application_Common_Interfaces_Repositories_IUserRepository_UrlShortener_Application_Common_Interfaces_Services_IPasswordHasher_
+  name: RegisterCommandHandler
+  nameWithType: RegisterCommandHandler.RegisterCommandHandler
+  fullName: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.RegisterCommandHandler
+  nameWithType.vb: RegisterCommandHandler.New
+  fullName.vb: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.New
+  name.vb: New
+- uid: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+  commentId: T:UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+  parent: UrlShortener.Application.Common.Interfaces.Authentication
+  href: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.html
+  name: IJwtTokenGenerator
+  nameWithType: IJwtTokenGenerator
+  fullName: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+- uid: UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository
+  commentId: T:UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository
+  parent: UrlShortener.Application.Common.Interfaces.Repositories
+  href: UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository.html
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository
+- uid: UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher
+  commentId: T:UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher
+  parent: UrlShortener.Application.Common.Interfaces.Services
+  href: UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher.html
+  name: IPasswordHasher
+  nameWithType: IPasswordHasher
+  fullName: UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher
+- uid: UrlShortener.Application.Common.Interfaces.Authentication
+  commentId: N:UrlShortener.Application.Common.Interfaces.Authentication
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.Authentication
+  nameWithType: UrlShortener.Application.Common.Interfaces.Authentication
+  fullName: UrlShortener.Application.Common.Interfaces.Authentication
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Common.Interfaces.Authentication.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Common.Interfaces.Authentication.html
+- uid: UrlShortener.Application.Common.Interfaces.Repositories
+  commentId: N:UrlShortener.Application.Common.Interfaces.Repositories
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.Repositories
+  nameWithType: UrlShortener.Application.Common.Interfaces.Repositories
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Repositories
+    name: Repositories
+    href: UrlShortener.Application.Common.Interfaces.Repositories.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Repositories
+    name: Repositories
+    href: UrlShortener.Application.Common.Interfaces.Repositories.html
+- uid: UrlShortener.Application.Common.Interfaces.Services
+  commentId: N:UrlShortener.Application.Common.Interfaces.Services
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.Services
+  nameWithType: UrlShortener.Application.Common.Interfaces.Services
+  fullName: UrlShortener.Application.Common.Interfaces.Services
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Services
+    name: Services
+    href: UrlShortener.Application.Common.Interfaces.Services.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Services
+    name: Services
+    href: UrlShortener.Application.Common.Interfaces.Services.html
+- uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.Handle*
+  commentId: Overload:UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.Handle
+  href: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.html#UrlShortener_Application_Authentication_Commands_Register_RegisterCommandHandler_Handle_UrlShortener_Application_Authentication_Commands_Register_RegisterCommand_System_Threading_CancellationToken_
+  name: Handle
+  nameWithType: RegisterCommandHandler.Handle
+  fullName: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.Handle
+- uid: MediatR.IRequestHandler{UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,ErrorOr.ErrorOr{UrlShortener.Application.Authentication.Common.AuthenticationResult}}.Handle(UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler{UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,ErrorOr.ErrorOr{UrlShortener.Application.Authentication.Common.AuthenticationResult}}.Handle(UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,System.Threading.CancellationToken)
+  parent: MediatR.IRequestHandler{UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,ErrorOr.ErrorOr{UrlShortener.Application.Authentication.Common.AuthenticationResult}}
+  definition: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  href: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand.html
+  name: Handle(RegisterCommand, CancellationToken)
+  nameWithType: IRequestHandler<RegisterCommand, ErrorOr<AuthenticationResult>>.Handle(RegisterCommand, CancellationToken)
+  fullName: MediatR.IRequestHandler<UrlShortener.Application.Authentication.Commands.Register.RegisterCommand, ErrorOr.ErrorOr<UrlShortener.Application.Authentication.Common.AuthenticationResult>>.Handle(UrlShortener.Application.Authentication.Commands.Register.RegisterCommand, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of RegisterCommand, ErrorOr(Of AuthenticationResult)).Handle(RegisterCommand, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of UrlShortener.Application.Authentication.Commands.Register.RegisterCommand, ErrorOr.ErrorOr(Of UrlShortener.Application.Authentication.Common.AuthenticationResult)).Handle(UrlShortener.Application.Authentication.Commands.Register.RegisterCommand, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler{UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,ErrorOr.ErrorOr{UrlShortener.Application.Authentication.Common.AuthenticationResult}}.Handle(UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand
+    name: RegisterCommand
+    href: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler{UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,ErrorOr.ErrorOr{UrlShortener.Application.Authentication.Common.AuthenticationResult}}.Handle(UrlShortener.Application.Authentication.Commands.Register.RegisterCommand,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand
+    name: RegisterCommand
+    href: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand
+  commentId: T:UrlShortener.Application.Authentication.Commands.Register.RegisterCommand
+  parent: UrlShortener.Application.Authentication.Commands.Register
+  href: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand.html
+  name: RegisterCommand
+  nameWithType: RegisterCommand
+  fullName: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{ErrorOr.ErrorOr{UrlShortener.Application.Authentication.Common.AuthenticationResult}}
+  commentId: T:System.Threading.Tasks.Task{ErrorOr.ErrorOr{UrlShortener.Application.Authentication.Common.AuthenticationResult}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ErrorOr<AuthenticationResult>>
+  nameWithType: Task<ErrorOr<AuthenticationResult>>
+  fullName: System.Threading.Tasks.Task<ErrorOr.ErrorOr<UrlShortener.Application.Authentication.Common.AuthenticationResult>>
+  nameWithType.vb: Task(Of ErrorOr(Of AuthenticationResult))
+  fullName.vb: System.Threading.Tasks.Task(Of ErrorOr.ErrorOr(Of UrlShortener.Application.Authentication.Common.AuthenticationResult))
+  name.vb: Task(Of ErrorOr(Of AuthenticationResult))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: ErrorOr.ErrorOr`1
+    name: ErrorOr
+    isExternal: true
+  - name: <
+  - uid: UrlShortener.Application.Authentication.Common.AuthenticationResult
+    name: AuthenticationResult
+    href: UrlShortener.Application.Authentication.Common.AuthenticationResult.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ErrorOr.ErrorOr`1
+    name: ErrorOr
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Application.Authentication.Common.AuthenticationResult
+    name: AuthenticationResult
+    href: UrlShortener.Application.Authentication.Common.AuthenticationResult.html
+  - name: )
+  - name: )
+- uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TRequest, CancellationToken)
+  nameWithType: IRequestHandler<TRequest, TResponse>.Handle(TRequest, CancellationToken)
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>.Handle(TRequest, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse).Handle(TRequest, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse).Handle(TRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

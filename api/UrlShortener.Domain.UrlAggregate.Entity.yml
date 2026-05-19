@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Domain.UrlAggregate.Entity
+  commentId: N:UrlShortener.Domain.UrlAggregate.Entity
+  id: UrlShortener.Domain.UrlAggregate.Entity
+  children:
+  - UrlShortener.Domain.UrlAggregate.Entity.Url
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Domain.UrlAggregate.Entity
+  nameWithType: UrlShortener.Domain.UrlAggregate.Entity
+  fullName: UrlShortener.Domain.UrlAggregate.Entity
+  type: Namespace
+  assemblies:
+  - UrlShortener.Domain
+references:
+- uid: UrlShortener.Domain.UrlAggregate.Entity.Url
+  commentId: T:UrlShortener.Domain.UrlAggregate.Entity.Url
+  parent: UrlShortener.Domain.UrlAggregate.Entity
+  href: UrlShortener.Domain.UrlAggregate.Entity.Url.html
+  name: Url
+  nameWithType: Url
+  fullName: UrlShortener.Domain.UrlAggregate.Entity.Url
+- uid: UrlShortener.Domain.UrlAggregate.Entity
+  commentId: N:UrlShortener.Domain.UrlAggregate.Entity
+  href: UrlShortener.html
+  name: UrlShortener.Domain.UrlAggregate.Entity
+  nameWithType: UrlShortener.Domain.UrlAggregate.Entity
+  fullName: UrlShortener.Domain.UrlAggregate.Entity
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate
+    name: UrlAggregate
+    href: UrlShortener.Domain.UrlAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate.Entity
+    name: Entity
+    href: UrlShortener.Domain.UrlAggregate.Entity.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate
+    name: UrlAggregate
+    href: UrlShortener.Domain.UrlAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate.Entity
+    name: Entity
+    href: UrlShortener.Domain.UrlAggregate.Entity.html

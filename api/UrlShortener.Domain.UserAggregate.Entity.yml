@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Domain.UserAggregate.Entity
+  commentId: N:UrlShortener.Domain.UserAggregate.Entity
+  id: UrlShortener.Domain.UserAggregate.Entity
+  children:
+  - UrlShortener.Domain.UserAggregate.Entity.User
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Domain.UserAggregate.Entity
+  nameWithType: UrlShortener.Domain.UserAggregate.Entity
+  fullName: UrlShortener.Domain.UserAggregate.Entity
+  type: Namespace
+  assemblies:
+  - UrlShortener.Domain
+references:
+- uid: UrlShortener.Domain.UserAggregate.Entity.User
+  commentId: T:UrlShortener.Domain.UserAggregate.Entity.User
+  parent: UrlShortener.Domain.UserAggregate.Entity
+  href: UrlShortener.Domain.UserAggregate.Entity.User.html
+  name: User
+  nameWithType: User
+  fullName: UrlShortener.Domain.UserAggregate.Entity.User
+- uid: UrlShortener.Domain.UserAggregate.Entity
+  commentId: N:UrlShortener.Domain.UserAggregate.Entity
+  href: UrlShortener.html
+  name: UrlShortener.Domain.UserAggregate.Entity
+  nameWithType: UrlShortener.Domain.UserAggregate.Entity
+  fullName: UrlShortener.Domain.UserAggregate.Entity
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate
+    name: UserAggregate
+    href: UrlShortener.Domain.UserAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate.Entity
+    name: Entity
+    href: UrlShortener.Domain.UserAggregate.Entity.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate
+    name: UserAggregate
+    href: UrlShortener.Domain.UserAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate.Entity
+    name: Entity
+    href: UrlShortener.Domain.UserAggregate.Entity.html

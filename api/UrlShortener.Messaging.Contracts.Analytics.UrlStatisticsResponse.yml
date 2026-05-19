@@ -1,0 +1,642 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse
+  commentId: T:UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse
+  id: UrlStatisticsResponse
+  parent: UrlShortener.Messaging.Contracts.Analytics
+  children:
+  - UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.#ctor(System.String,System.String,System.Int32,System.Nullable{System.DateTime})
+  - UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.ClickCount
+  - UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.Code
+  - UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LastRedirectedAt
+  - UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LongUrl
+  langs:
+  - csharp
+  - vb
+  name: UrlStatisticsResponse
+  nameWithType: UrlStatisticsResponse
+  fullName: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse
+  type: Class
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Analytics/UrlStatisticsResponse.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: UrlStatisticsResponse
+    path: UrlShortener.Messaging.Contracts/Analytics/UrlStatisticsResponse.cs
+    startLine: 2
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Analytics
+  syntax:
+    content: 'public record UrlStatisticsResponse : IEquatable<UrlStatisticsResponse>'
+    content.vb: Public Class UrlStatisticsResponse Implements IEquatable(Of UrlStatisticsResponse)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.#ctor(System.String,System.String,System.Int32,System.Nullable{System.DateTime})
+  commentId: M:UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.#ctor(System.String,System.String,System.Int32,System.Nullable{System.DateTime})
+  id: '#ctor(System.String,System.String,System.Int32,System.Nullable{System.DateTime})'
+  parent: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse
+  langs:
+  - csharp
+  - vb
+  name: UrlStatisticsResponse(string, string, int, DateTime?)
+  nameWithType: UrlStatisticsResponse.UrlStatisticsResponse(string, string, int, DateTime?)
+  fullName: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.UrlStatisticsResponse(string, string, int, System.DateTime?)
+  type: Constructor
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Analytics/UrlStatisticsResponse.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: .ctor
+    path: UrlShortener.Messaging.Contracts/Analytics/UrlStatisticsResponse.cs
+    startLine: 2
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Analytics
+  syntax:
+    content: public UrlStatisticsResponse(string Code, string LongUrl, int ClickCount, DateTime? LastRedirectedAt)
+    parameters:
+    - id: Code
+      type: System.String
+    - id: LongUrl
+      type: System.String
+    - id: ClickCount
+      type: System.Int32
+    - id: LastRedirectedAt
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Sub New(Code As String, LongUrl As String, ClickCount As Integer, LastRedirectedAt As Date?)
+  overload: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.#ctor*
+  nameWithType.vb: UrlStatisticsResponse.New(String, String, Integer, Date?)
+  fullName.vb: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.New(String, String, Integer, Date?)
+  name.vb: New(String, String, Integer, Date?)
+- uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.Code
+  commentId: P:UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.Code
+  id: Code
+  parent: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: UrlStatisticsResponse.Code
+  fullName: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.Code
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Analytics/UrlStatisticsResponse.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: Code
+    path: UrlShortener.Messaging.Contracts/Analytics/UrlStatisticsResponse.cs
+    startLine: 3
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Analytics
+  syntax:
+    content: public string Code { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Code As String
+  overload: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.Code*
+- uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LongUrl
+  commentId: P:UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LongUrl
+  id: LongUrl
+  parent: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse
+  langs:
+  - csharp
+  - vb
+  name: LongUrl
+  nameWithType: UrlStatisticsResponse.LongUrl
+  fullName: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LongUrl
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Analytics/UrlStatisticsResponse.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: LongUrl
+    path: UrlShortener.Messaging.Contracts/Analytics/UrlStatisticsResponse.cs
+    startLine: 4
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Analytics
+  syntax:
+    content: public string LongUrl { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LongUrl As String
+  overload: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LongUrl*
+- uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.ClickCount
+  commentId: P:UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.ClickCount
+  id: ClickCount
+  parent: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse
+  langs:
+  - csharp
+  - vb
+  name: ClickCount
+  nameWithType: UrlStatisticsResponse.ClickCount
+  fullName: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.ClickCount
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Analytics/UrlStatisticsResponse.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: ClickCount
+    path: UrlShortener.Messaging.Contracts/Analytics/UrlStatisticsResponse.cs
+    startLine: 5
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Analytics
+  syntax:
+    content: public int ClickCount { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ClickCount As Integer
+  overload: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.ClickCount*
+- uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LastRedirectedAt
+  commentId: P:UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LastRedirectedAt
+  id: LastRedirectedAt
+  parent: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse
+  langs:
+  - csharp
+  - vb
+  name: LastRedirectedAt
+  nameWithType: UrlStatisticsResponse.LastRedirectedAt
+  fullName: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LastRedirectedAt
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Analytics/UrlStatisticsResponse.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: LastRedirectedAt
+    path: UrlShortener.Messaging.Contracts/Analytics/UrlStatisticsResponse.cs
+    startLine: 6
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Analytics
+  syntax:
+    content: public DateTime? LastRedirectedAt { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property LastRedirectedAt As Date?
+  overload: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LastRedirectedAt*
+references:
+- uid: UrlShortener.Messaging.Contracts.Analytics
+  commentId: N:UrlShortener.Messaging.Contracts.Analytics
+  href: UrlShortener.html
+  name: UrlShortener.Messaging.Contracts.Analytics
+  nameWithType: UrlShortener.Messaging.Contracts.Analytics
+  fullName: UrlShortener.Messaging.Contracts.Analytics
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Messaging
+    name: Messaging
+    href: UrlShortener.Messaging.html
+  - name: .
+  - uid: UrlShortener.Messaging.Contracts
+    name: Contracts
+    href: UrlShortener.Messaging.Contracts.html
+  - name: .
+  - uid: UrlShortener.Messaging.Contracts.Analytics
+    name: Analytics
+    href: UrlShortener.Messaging.Contracts.Analytics.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Messaging
+    name: Messaging
+    href: UrlShortener.Messaging.html
+  - name: .
+  - uid: UrlShortener.Messaging.Contracts
+    name: Contracts
+    href: UrlShortener.Messaging.Contracts.html
+  - name: .
+  - uid: UrlShortener.Messaging.Contracts.Analytics
+    name: Analytics
+    href: UrlShortener.Messaging.Contracts.Analytics.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse}
+  commentId: T:System.IEquatable{UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<UrlStatisticsResponse>
+  nameWithType: IEquatable<UrlStatisticsResponse>
+  fullName: System.IEquatable<UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse>
+  nameWithType.vb: IEquatable(Of UrlStatisticsResponse)
+  fullName.vb: System.IEquatable(Of UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse)
+  name.vb: IEquatable(Of UrlStatisticsResponse)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse
+    name: UrlStatisticsResponse
+    href: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse
+    name: UrlStatisticsResponse
+    href: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.#ctor*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.#ctor
+  href: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.html#UrlShortener_Messaging_Contracts_Analytics_UrlStatisticsResponse__ctor_System_String_System_String_System_Int32_System_Nullable_System_DateTime__
+  name: UrlStatisticsResponse
+  nameWithType: UrlStatisticsResponse.UrlStatisticsResponse
+  fullName: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.UrlStatisticsResponse
+  nameWithType.vb: UrlStatisticsResponse.New
+  fullName.vb: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.Code*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.Code
+  href: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.html#UrlShortener_Messaging_Contracts_Analytics_UrlStatisticsResponse_Code
+  name: Code
+  nameWithType: UrlStatisticsResponse.Code
+  fullName: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.Code
+- uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LongUrl*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LongUrl
+  href: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.html#UrlShortener_Messaging_Contracts_Analytics_UrlStatisticsResponse_LongUrl
+  name: LongUrl
+  nameWithType: UrlStatisticsResponse.LongUrl
+  fullName: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LongUrl
+- uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.ClickCount*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.ClickCount
+  href: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.html#UrlShortener_Messaging_Contracts_Analytics_UrlStatisticsResponse_ClickCount
+  name: ClickCount
+  nameWithType: UrlStatisticsResponse.ClickCount
+  fullName: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.ClickCount
+- uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LastRedirectedAt*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LastRedirectedAt
+  href: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.html#UrlShortener_Messaging_Contracts_Analytics_UrlStatisticsResponse_LastRedirectedAt
+  name: LastRedirectedAt
+  nameWithType: UrlStatisticsResponse.LastRedirectedAt
+  fullName: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.LastRedirectedAt

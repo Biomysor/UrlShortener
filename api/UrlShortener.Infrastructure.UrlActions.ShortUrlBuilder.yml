@@ -1,0 +1,535 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder
+  commentId: T:UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder
+  id: ShortUrlBuilder
+  parent: UrlShortener.Infrastructure.UrlActions
+  children:
+  - UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  - UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.BuildShortUrl(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ShortUrlBuilder
+  nameWithType: ShortUrlBuilder
+  fullName: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder
+  type: Class
+  source:
+    remote:
+      path: UrlShortener.Infrastructure/UrlActions/ShortUrlBuilder.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: ShortUrlBuilder
+    path: UrlShortener.Infrastructure/UrlActions/ShortUrlBuilder.cs
+    startLine: 5
+  assemblies:
+  - UrlShortener.Infrastructure
+  namespace: UrlShortener.Infrastructure.UrlActions
+  syntax:
+    content: 'public class ShortUrlBuilder : IShortUrlBuilder'
+    content.vb: Public Class ShortUrlBuilder Implements IShortUrlBuilder
+  inheritance:
+  - System.Object
+  implements:
+  - UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  commentId: M:UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  id: '#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)'
+  parent: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder
+  langs:
+  - csharp
+  - vb
+  name: ShortUrlBuilder(IHttpContextAccessor)
+  nameWithType: ShortUrlBuilder.ShortUrlBuilder(IHttpContextAccessor)
+  fullName: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.ShortUrlBuilder(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  type: Constructor
+  source:
+    remote:
+      path: UrlShortener.Infrastructure/UrlActions/ShortUrlBuilder.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: .ctor
+    path: UrlShortener.Infrastructure/UrlActions/ShortUrlBuilder.cs
+    startLine: 5
+  assemblies:
+  - UrlShortener.Infrastructure
+  namespace: UrlShortener.Infrastructure.UrlActions
+  syntax:
+    content: public ShortUrlBuilder(IHttpContextAccessor httpContextAccessor)
+    parameters:
+    - id: httpContextAccessor
+      type: Microsoft.AspNetCore.Http.IHttpContextAccessor
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor)
+  overload: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.#ctor*
+  nameWithType.vb: ShortUrlBuilder.New(IHttpContextAccessor)
+  fullName.vb: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.New(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  name.vb: New(IHttpContextAccessor)
+- uid: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.BuildShortUrl(System.String)
+  commentId: M:UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.BuildShortUrl(System.String)
+  id: BuildShortUrl(System.String)
+  parent: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildShortUrl(string)
+  nameWithType: ShortUrlBuilder.BuildShortUrl(string)
+  fullName: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.BuildShortUrl(string)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Infrastructure/UrlActions/ShortUrlBuilder.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: BuildShortUrl
+    path: UrlShortener.Infrastructure/UrlActions/ShortUrlBuilder.cs
+    startLine: 9
+  assemblies:
+  - UrlShortener.Infrastructure
+  namespace: UrlShortener.Infrastructure.UrlActions
+  summary: Builds a complete short URL using current HTTP request scheme and host.
+  example: []
+  syntax:
+    content: public string BuildShortUrl(string code)
+    parameters:
+    - id: code
+      type: System.String
+      description: Short URL code.
+    return:
+      type: System.String
+      description: Full short URL.
+    content.vb: Public Function BuildShortUrl(code As String) As String
+  overload: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.BuildShortUrl*
+  implements:
+  - UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl(System.String)
+  nameWithType.vb: ShortUrlBuilder.BuildShortUrl(String)
+  fullName.vb: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.BuildShortUrl(String)
+  name.vb: BuildShortUrl(String)
+references:
+- uid: UrlShortener.Infrastructure.UrlActions
+  commentId: N:UrlShortener.Infrastructure.UrlActions
+  href: UrlShortener.html
+  name: UrlShortener.Infrastructure.UrlActions
+  nameWithType: UrlShortener.Infrastructure.UrlActions
+  fullName: UrlShortener.Infrastructure.UrlActions
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Infrastructure
+    name: Infrastructure
+    href: UrlShortener.Infrastructure.html
+  - name: .
+  - uid: UrlShortener.Infrastructure.UrlActions
+    name: UrlActions
+    href: UrlShortener.Infrastructure.UrlActions.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Infrastructure
+    name: Infrastructure
+    href: UrlShortener.Infrastructure.html
+  - name: .
+  - uid: UrlShortener.Infrastructure.UrlActions
+    name: UrlActions
+    href: UrlShortener.Infrastructure.UrlActions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder
+  commentId: T:UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder
+  parent: UrlShortener.Application.Common.Interfaces.UrlActions
+  href: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.html
+  name: IShortUrlBuilder
+  nameWithType: IShortUrlBuilder
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions
+  commentId: N:UrlShortener.Application.Common.Interfaces.UrlActions
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.UrlActions
+  nameWithType: UrlShortener.Application.Common.Interfaces.UrlActions
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.Common.Interfaces.UrlActions.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.Common.Interfaces.UrlActions.html
+- uid: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.#ctor*
+  commentId: Overload:UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.#ctor
+  href: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.html#UrlShortener_Infrastructure_UrlActions_ShortUrlBuilder__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_
+  name: ShortUrlBuilder
+  nameWithType: ShortUrlBuilder.ShortUrlBuilder
+  fullName: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.ShortUrlBuilder
+  nameWithType.vb: ShortUrlBuilder.New
+  fullName.vb: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.New
+  name.vb: New
+- uid: Microsoft.AspNetCore.Http.IHttpContextAccessor
+  commentId: T:Microsoft.AspNetCore.Http.IHttpContextAccessor
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.ihttpcontextaccessor
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: Microsoft.AspNetCore.Http.IHttpContextAccessor
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+- uid: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.BuildShortUrl*
+  commentId: Overload:UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.BuildShortUrl
+  href: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.html#UrlShortener_Infrastructure_UrlActions_ShortUrlBuilder_BuildShortUrl_System_String_
+  name: BuildShortUrl
+  nameWithType: ShortUrlBuilder.BuildShortUrl
+  fullName: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.BuildShortUrl
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl(System.String)
+  commentId: M:UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl(System.String)
+  parent: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: BuildShortUrl(string)
+  nameWithType: IShortUrlBuilder.BuildShortUrl(string)
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl(string)
+  nameWithType.vb: IShortUrlBuilder.BuildShortUrl(String)
+  fullName.vb: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl(String)
+  name.vb: BuildShortUrl(String)
+  spec.csharp:
+  - uid: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl(System.String)
+    name: BuildShortUrl
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl(System.String)
+    name: BuildShortUrl
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

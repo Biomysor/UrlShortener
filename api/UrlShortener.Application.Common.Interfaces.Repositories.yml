@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Common.Interfaces.Repositories
+  commentId: N:UrlShortener.Application.Common.Interfaces.Repositories
+  id: UrlShortener.Application.Common.Interfaces.Repositories
+  children:
+  - UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository
+  - UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Application.Common.Interfaces.Repositories
+  nameWithType: UrlShortener.Application.Common.Interfaces.Repositories
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories
+  type: Namespace
+  assemblies:
+  - UrlShortener.Application
+references:
+- uid: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository
+  commentId: T:UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository
+  parent: UrlShortener.Application.Common.Interfaces.Repositories
+  href: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository.html
+  name: IUrlRepository
+  nameWithType: IUrlRepository
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository
+- uid: UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository
+  commentId: T:UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository
+  parent: UrlShortener.Application.Common.Interfaces.Repositories
+  href: UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository.html
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository
+- uid: UrlShortener.Application.Common.Interfaces.Repositories
+  commentId: N:UrlShortener.Application.Common.Interfaces.Repositories
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.Repositories
+  nameWithType: UrlShortener.Application.Common.Interfaces.Repositories
+  fullName: UrlShortener.Application.Common.Interfaces.Repositories
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Repositories
+    name: Repositories
+    href: UrlShortener.Application.Common.Interfaces.Repositories.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Repositories
+    name: Repositories
+    href: UrlShortener.Application.Common.Interfaces.Repositories.html

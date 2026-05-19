@@ -1,0 +1,142 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder
+  commentId: T:UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder
+  id: IShortUrlBuilder
+  parent: UrlShortener.Application.Common.Interfaces.UrlActions
+  children:
+  - UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IShortUrlBuilder
+  nameWithType: IShortUrlBuilder
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder
+  type: Interface
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/UrlActions/IShortUrlBuilder.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: IShortUrlBuilder
+    path: UrlShortener.Application/Common/Interfaces/UrlActions/IShortUrlBuilder.cs
+    startLine: 5
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.UrlActions
+  summary: Builds a full short URL from a generated short code.
+  example: []
+  syntax:
+    content: public interface IShortUrlBuilder
+    content.vb: Public Interface IShortUrlBuilder
+  derivedClasses:
+  - UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl(System.String)
+  commentId: M:UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl(System.String)
+  id: BuildShortUrl(System.String)
+  parent: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildShortUrl(string)
+  nameWithType: IShortUrlBuilder.BuildShortUrl(string)
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl(string)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/UrlActions/IShortUrlBuilder.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: BuildShortUrl
+    path: UrlShortener.Application/Common/Interfaces/UrlActions/IShortUrlBuilder.cs
+    startLine: 12
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.UrlActions
+  summary: Builds a complete short URL using current HTTP request scheme and host.
+  example: []
+  syntax:
+    content: string BuildShortUrl(string code)
+    parameters:
+    - id: code
+      type: System.String
+      description: Short URL code.
+    return:
+      type: System.String
+      description: Full short URL.
+    content.vb: Function BuildShortUrl(code As String) As String
+  overload: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl*
+  nameWithType.vb: IShortUrlBuilder.BuildShortUrl(String)
+  fullName.vb: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl(String)
+  name.vb: BuildShortUrl(String)
+references:
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions
+  commentId: N:UrlShortener.Application.Common.Interfaces.UrlActions
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.UrlActions
+  nameWithType: UrlShortener.Application.Common.Interfaces.UrlActions
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.Common.Interfaces.UrlActions.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.Common.Interfaces.UrlActions.html
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl*
+  commentId: Overload:UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl
+  href: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.html#UrlShortener_Application_Common_Interfaces_UrlActions_IShortUrlBuilder_BuildShortUrl_System_String_
+  name: BuildShortUrl
+  nameWithType: IShortUrlBuilder.BuildShortUrl
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.BuildShortUrl
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

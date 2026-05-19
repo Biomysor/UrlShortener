@@ -1,0 +1,715 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer
+  commentId: T:UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer
+  id: UrlCreatedEventConsumer
+  parent: UrlShortener.NotificationsService.Consumers
+  children:
+  - UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.#ctor(Telegram.Bot.ITelegramBotClient,Microsoft.Extensions.Configuration.IConfiguration)
+  - UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.Consume(MassTransit.ConsumeContext{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent})
+  langs:
+  - csharp
+  - vb
+  name: UrlCreatedEventConsumer
+  nameWithType: UrlCreatedEventConsumer
+  fullName: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer
+  type: Class
+  source:
+    remote:
+      path: UrlShortener.NotificationsService/Consumers/UrlCreatedEventConsumer.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: UrlCreatedEventConsumer
+    path: UrlShortener.NotificationsService/Consumers/UrlCreatedEventConsumer.cs
+    startLine: 9
+  assemblies:
+  - UrlShortener.NotificationsService
+  namespace: UrlShortener.NotificationsService.Consumers
+  summary: Consumes URL created events and sends Telegram notifications.
+  example: []
+  syntax:
+    content: 'public class UrlCreatedEventConsumer : IConsumer<UrlCreatedEvent>, IConsumer'
+    content.vb: Public Class UrlCreatedEventConsumer Implements IConsumer(Of UrlCreatedEvent), IConsumer
+  inheritance:
+  - System.Object
+  implements:
+  - MassTransit.IConsumer{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent}
+  - MassTransit.IConsumer
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.#ctor(Telegram.Bot.ITelegramBotClient,Microsoft.Extensions.Configuration.IConfiguration)
+  commentId: M:UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.#ctor(Telegram.Bot.ITelegramBotClient,Microsoft.Extensions.Configuration.IConfiguration)
+  id: '#ctor(Telegram.Bot.ITelegramBotClient,Microsoft.Extensions.Configuration.IConfiguration)'
+  parent: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer
+  langs:
+  - csharp
+  - vb
+  name: UrlCreatedEventConsumer(ITelegramBotClient, IConfiguration)
+  nameWithType: UrlCreatedEventConsumer.UrlCreatedEventConsumer(ITelegramBotClient, IConfiguration)
+  fullName: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.UrlCreatedEventConsumer(Telegram.Bot.ITelegramBotClient, Microsoft.Extensions.Configuration.IConfiguration)
+  type: Constructor
+  source:
+    remote:
+      path: UrlShortener.NotificationsService/Consumers/UrlCreatedEventConsumer.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: .ctor
+    path: UrlShortener.NotificationsService/Consumers/UrlCreatedEventConsumer.cs
+    startLine: 9
+  assemblies:
+  - UrlShortener.NotificationsService
+  namespace: UrlShortener.NotificationsService.Consumers
+  summary: Consumes URL created events and sends Telegram notifications.
+  example: []
+  syntax:
+    content: public UrlCreatedEventConsumer(ITelegramBotClient telegramBotClient, IConfiguration configuration)
+    parameters:
+    - id: telegramBotClient
+      type: Telegram.Bot.ITelegramBotClient
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    content.vb: Public Sub New(telegramBotClient As ITelegramBotClient, configuration As IConfiguration)
+  overload: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.#ctor*
+  nameWithType.vb: UrlCreatedEventConsumer.New(ITelegramBotClient, IConfiguration)
+  fullName.vb: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.New(Telegram.Bot.ITelegramBotClient, Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: New(ITelegramBotClient, IConfiguration)
+- uid: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.Consume(MassTransit.ConsumeContext{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent})
+  commentId: M:UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.Consume(MassTransit.ConsumeContext{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent})
+  id: Consume(MassTransit.ConsumeContext{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent})
+  parent: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer
+  langs:
+  - csharp
+  - vb
+  name: Consume(ConsumeContext<UrlCreatedEvent>)
+  nameWithType: UrlCreatedEventConsumer.Consume(ConsumeContext<UrlCreatedEvent>)
+  fullName: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.Consume(MassTransit.ConsumeContext<UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent>)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.NotificationsService/Consumers/UrlCreatedEventConsumer.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: Consume
+    path: UrlShortener.NotificationsService/Consumers/UrlCreatedEventConsumer.cs
+    startLine: 21
+  assemblies:
+  - UrlShortener.NotificationsService
+  namespace: UrlShortener.NotificationsService.Consumers
+  summary: Handles UrlCreatedEvent messages and sends notification to configured Telegram chat.
+  example: []
+  syntax:
+    content: public Task Consume(ConsumeContext<UrlCreatedEvent> context)
+    parameters:
+    - id: context
+      type: MassTransit.ConsumeContext{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent}
+      description: Message consume context.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Consume(context As ConsumeContext(Of UrlCreatedEvent)) As Task
+  overload: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.Consume*
+  implements:
+  - MassTransit.IConsumer{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent}.Consume(MassTransit.ConsumeContext{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent})
+  nameWithType.vb: UrlCreatedEventConsumer.Consume(ConsumeContext(Of UrlCreatedEvent))
+  fullName.vb: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.Consume(MassTransit.ConsumeContext(Of UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent))
+  name.vb: Consume(ConsumeContext(Of UrlCreatedEvent))
+references:
+- uid: UrlShortener.NotificationsService.Consumers
+  commentId: N:UrlShortener.NotificationsService.Consumers
+  href: UrlShortener.html
+  name: UrlShortener.NotificationsService.Consumers
+  nameWithType: UrlShortener.NotificationsService.Consumers
+  fullName: UrlShortener.NotificationsService.Consumers
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.NotificationsService
+    name: NotificationsService
+    href: UrlShortener.NotificationsService.html
+  - name: .
+  - uid: UrlShortener.NotificationsService.Consumers
+    name: Consumers
+    href: UrlShortener.NotificationsService.Consumers.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.NotificationsService
+    name: NotificationsService
+    href: UrlShortener.NotificationsService.html
+  - name: .
+  - uid: UrlShortener.NotificationsService.Consumers
+    name: Consumers
+    href: UrlShortener.NotificationsService.Consumers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MassTransit.IConsumer{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent}
+  commentId: T:MassTransit.IConsumer{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent}
+  parent: MassTransit
+  definition: MassTransit.IConsumer`1
+  name: IConsumer<UrlCreatedEvent>
+  nameWithType: IConsumer<UrlCreatedEvent>
+  fullName: MassTransit.IConsumer<UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent>
+  nameWithType.vb: IConsumer(Of UrlCreatedEvent)
+  fullName.vb: MassTransit.IConsumer(Of UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent)
+  name.vb: IConsumer(Of UrlCreatedEvent)
+  spec.csharp:
+  - uid: MassTransit.IConsumer`1
+    name: IConsumer
+    isExternal: true
+  - name: <
+  - uid: UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent
+    name: UrlCreatedEvent
+  - name: '>'
+  spec.vb:
+  - uid: MassTransit.IConsumer`1
+    name: IConsumer
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent
+    name: UrlCreatedEvent
+  - name: )
+- uid: MassTransit.IConsumer
+  commentId: T:MassTransit.IConsumer
+  parent: MassTransit
+  isExternal: true
+  name: IConsumer
+  nameWithType: IConsumer
+  fullName: MassTransit.IConsumer
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MassTransit.IConsumer`1
+  commentId: T:MassTransit.IConsumer`1
+  isExternal: true
+  name: IConsumer<TMessage>
+  nameWithType: IConsumer<TMessage>
+  fullName: MassTransit.IConsumer<TMessage>
+  nameWithType.vb: IConsumer(Of TMessage)
+  fullName.vb: MassTransit.IConsumer(Of TMessage)
+  name.vb: IConsumer(Of TMessage)
+  spec.csharp:
+  - uid: MassTransit.IConsumer`1
+    name: IConsumer
+    isExternal: true
+  - name: <
+  - name: TMessage
+  - name: '>'
+  spec.vb:
+  - uid: MassTransit.IConsumer`1
+    name: IConsumer
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+- uid: MassTransit
+  commentId: N:MassTransit
+  isExternal: true
+  name: MassTransit
+  nameWithType: MassTransit
+  fullName: MassTransit
+- uid: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.#ctor*
+  commentId: Overload:UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.#ctor
+  href: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.html#UrlShortener_NotificationsService_Consumers_UrlCreatedEventConsumer__ctor_Telegram_Bot_ITelegramBotClient_Microsoft_Extensions_Configuration_IConfiguration_
+  name: UrlCreatedEventConsumer
+  nameWithType: UrlCreatedEventConsumer.UrlCreatedEventConsumer
+  fullName: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.UrlCreatedEventConsumer
+  nameWithType.vb: UrlCreatedEventConsumer.New
+  fullName.vb: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.New
+  name.vb: New
+- uid: Telegram.Bot.ITelegramBotClient
+  commentId: T:Telegram.Bot.ITelegramBotClient
+  parent: Telegram.Bot
+  isExternal: true
+  href: https://github.com/TelegramBots/Telegram.Bot/blob/959a8af5d4ba971037fe395f7e0b7f8b6491a2a7/src/Telegram.Bot/ITelegramBotClient.cs
+  name: ITelegramBotClient
+  nameWithType: ITelegramBotClient
+  fullName: Telegram.Bot.ITelegramBotClient
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Telegram.Bot
+  commentId: N:Telegram.Bot
+  isExternal: true
+  name: Telegram.Bot
+  nameWithType: Telegram.Bot
+  fullName: Telegram.Bot
+  spec.csharp:
+  - uid: Telegram
+    name: Telegram
+    isExternal: true
+  - name: .
+  - uid: Telegram.Bot
+    name: Bot
+    isExternal: true
+  spec.vb:
+  - uid: Telegram
+    name: Telegram
+    isExternal: true
+  - name: .
+  - uid: Telegram.Bot
+    name: Bot
+    isExternal: true
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+- uid: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.Consume*
+  commentId: Overload:UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.Consume
+  href: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.html#UrlShortener_NotificationsService_Consumers_UrlCreatedEventConsumer_Consume_MassTransit_ConsumeContext_UrlShortener_Messaging_Contracts_Events_UrlCreatedEvent__
+  name: Consume
+  nameWithType: UrlCreatedEventConsumer.Consume
+  fullName: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.Consume
+- uid: MassTransit.IConsumer{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent}.Consume(MassTransit.ConsumeContext{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent})
+  commentId: M:MassTransit.IConsumer{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent}.Consume(MassTransit.ConsumeContext{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent})
+  parent: MassTransit.IConsumer{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent}
+  definition: MassTransit.IConsumer`1.Consume(MassTransit.ConsumeContext{`0})
+  name: Consume(ConsumeContext<UrlCreatedEvent>)
+  nameWithType: IConsumer<UrlCreatedEvent>.Consume(ConsumeContext<UrlCreatedEvent>)
+  fullName: MassTransit.IConsumer<UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent>.Consume(MassTransit.ConsumeContext<UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent>)
+  nameWithType.vb: IConsumer(Of UrlCreatedEvent).Consume(ConsumeContext(Of UrlCreatedEvent))
+  fullName.vb: MassTransit.IConsumer(Of UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent).Consume(MassTransit.ConsumeContext(Of UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent))
+  name.vb: Consume(ConsumeContext(Of UrlCreatedEvent))
+  spec.csharp:
+  - uid: MassTransit.IConsumer{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent}.Consume(MassTransit.ConsumeContext{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent})
+    name: Consume
+    isExternal: true
+  - name: (
+  - uid: MassTransit.ConsumeContext`1
+    name: ConsumeContext
+    isExternal: true
+  - name: <
+  - uid: UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent
+    name: UrlCreatedEvent
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MassTransit.IConsumer{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent}.Consume(MassTransit.ConsumeContext{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent})
+    name: Consume
+    isExternal: true
+  - name: (
+  - uid: MassTransit.ConsumeContext`1
+    name: ConsumeContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent
+    name: UrlCreatedEvent
+  - name: )
+  - name: )
+- uid: MassTransit.ConsumeContext{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent}
+  commentId: T:MassTransit.ConsumeContext{UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent}
+  parent: MassTransit
+  definition: MassTransit.ConsumeContext`1
+  name: ConsumeContext<UrlCreatedEvent>
+  nameWithType: ConsumeContext<UrlCreatedEvent>
+  fullName: MassTransit.ConsumeContext<UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent>
+  nameWithType.vb: ConsumeContext(Of UrlCreatedEvent)
+  fullName.vb: MassTransit.ConsumeContext(Of UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent)
+  name.vb: ConsumeContext(Of UrlCreatedEvent)
+  spec.csharp:
+  - uid: MassTransit.ConsumeContext`1
+    name: ConsumeContext
+    isExternal: true
+  - name: <
+  - uid: UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent
+    name: UrlCreatedEvent
+  - name: '>'
+  spec.vb:
+  - uid: MassTransit.ConsumeContext`1
+    name: ConsumeContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent
+    name: UrlCreatedEvent
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: MassTransit.IConsumer`1.Consume(MassTransit.ConsumeContext{`0})
+  commentId: M:MassTransit.IConsumer`1.Consume(MassTransit.ConsumeContext{`0})
+  isExternal: true
+  name: Consume(ConsumeContext<TMessage>)
+  nameWithType: IConsumer<TMessage>.Consume(ConsumeContext<TMessage>)
+  fullName: MassTransit.IConsumer<TMessage>.Consume(MassTransit.ConsumeContext<TMessage>)
+  nameWithType.vb: IConsumer(Of TMessage).Consume(ConsumeContext(Of TMessage))
+  fullName.vb: MassTransit.IConsumer(Of TMessage).Consume(MassTransit.ConsumeContext(Of TMessage))
+  name.vb: Consume(ConsumeContext(Of TMessage))
+  spec.csharp:
+  - uid: MassTransit.IConsumer`1.Consume(MassTransit.ConsumeContext{`0})
+    name: Consume
+    isExternal: true
+  - name: (
+  - uid: MassTransit.ConsumeContext`1
+    name: ConsumeContext
+    isExternal: true
+  - name: <
+  - name: TMessage
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MassTransit.IConsumer`1.Consume(MassTransit.ConsumeContext{`0})
+    name: Consume
+    isExternal: true
+  - name: (
+  - uid: MassTransit.ConsumeContext`1
+    name: ConsumeContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: )
+- uid: MassTransit.ConsumeContext`1
+  commentId: T:MassTransit.ConsumeContext`1
+  isExternal: true
+  name: ConsumeContext<T>
+  nameWithType: ConsumeContext<T>
+  fullName: MassTransit.ConsumeContext<T>
+  nameWithType.vb: ConsumeContext(Of T)
+  fullName.vb: MassTransit.ConsumeContext(Of T)
+  name.vb: ConsumeContext(Of T)
+  spec.csharp:
+  - uid: MassTransit.ConsumeContext`1
+    name: ConsumeContext
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MassTransit.ConsumeContext`1
+    name: ConsumeContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

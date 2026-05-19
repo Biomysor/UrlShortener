@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.UrlActions.Common
+  commentId: N:UrlShortener.Application.UrlActions.Common
+  id: UrlShortener.Application.UrlActions.Common
+  children:
+  - UrlShortener.Application.UrlActions.Common.CachedUrlRedirect
+  - UrlShortener.Application.UrlActions.Common.UrlResult
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Application.UrlActions.Common
+  nameWithType: UrlShortener.Application.UrlActions.Common
+  fullName: UrlShortener.Application.UrlActions.Common
+  type: Namespace
+  assemblies:
+  - UrlShortener.Application
+references:
+- uid: UrlShortener.Application.UrlActions.Common.CachedUrlRedirect
+  commentId: T:UrlShortener.Application.UrlActions.Common.CachedUrlRedirect
+  href: UrlShortener.Application.UrlActions.Common.CachedUrlRedirect.html
+  name: CachedUrlRedirect
+  nameWithType: CachedUrlRedirect
+  fullName: UrlShortener.Application.UrlActions.Common.CachedUrlRedirect
+- uid: UrlShortener.Application.UrlActions.Common.UrlResult
+  commentId: T:UrlShortener.Application.UrlActions.Common.UrlResult
+  href: UrlShortener.Application.UrlActions.Common.UrlResult.html
+  name: UrlResult
+  nameWithType: UrlResult
+  fullName: UrlShortener.Application.UrlActions.Common.UrlResult

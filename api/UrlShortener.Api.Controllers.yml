@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Api.Controllers
+  commentId: N:UrlShortener.Api.Controllers
+  id: UrlShortener.Api.Controllers
+  children:
+  - UrlShortener.Api.Controllers.ApiController
+  - UrlShortener.Api.Controllers.AuthenticateController
+  - UrlShortener.Api.Controllers.UrlActionController
+  - UrlShortener.Api.Controllers.UrlRedirectController
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Api.Controllers
+  nameWithType: UrlShortener.Api.Controllers
+  fullName: UrlShortener.Api.Controllers
+  type: Namespace
+  assemblies:
+  - UrlShortener.Api
+references:
+- uid: UrlShortener.Api.Controllers.ApiController
+  commentId: T:UrlShortener.Api.Controllers.ApiController
+  parent: UrlShortener.Api.Controllers
+  href: UrlShortener.Api.Controllers.ApiController.html
+  name: ApiController
+  nameWithType: ApiController
+  fullName: UrlShortener.Api.Controllers.ApiController
+- uid: UrlShortener.Api.Controllers.AuthenticateController
+  commentId: T:UrlShortener.Api.Controllers.AuthenticateController
+  href: UrlShortener.Api.Controllers.AuthenticateController.html
+  name: AuthenticateController
+  nameWithType: AuthenticateController
+  fullName: UrlShortener.Api.Controllers.AuthenticateController
+- uid: UrlShortener.Api.Controllers.UrlActionController
+  commentId: T:UrlShortener.Api.Controllers.UrlActionController
+  href: UrlShortener.Api.Controllers.UrlActionController.html
+  name: UrlActionController
+  nameWithType: UrlActionController
+  fullName: UrlShortener.Api.Controllers.UrlActionController
+- uid: UrlShortener.Api.Controllers.UrlRedirectController
+  commentId: T:UrlShortener.Api.Controllers.UrlRedirectController
+  href: UrlShortener.Api.Controllers.UrlRedirectController.html
+  name: UrlRedirectController
+  nameWithType: UrlRedirectController
+  fullName: UrlShortener.Api.Controllers.UrlRedirectController
+- uid: UrlShortener.Api.Controllers
+  commentId: N:UrlShortener.Api.Controllers
+  href: UrlShortener.html
+  name: UrlShortener.Api.Controllers
+  nameWithType: UrlShortener.Api.Controllers
+  fullName: UrlShortener.Api.Controllers
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Api
+    name: Api
+    href: UrlShortener.Api.html
+  - name: .
+  - uid: UrlShortener.Api.Controllers
+    name: Controllers
+    href: UrlShortener.Api.Controllers.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Api
+    name: Api
+    href: UrlShortener.Api.html
+  - name: .
+  - uid: UrlShortener.Api.Controllers
+    name: Controllers
+    href: UrlShortener.Api.Controllers.html

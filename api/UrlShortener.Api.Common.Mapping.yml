@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Api.Common.Mapping
+  commentId: N:UrlShortener.Api.Common.Mapping
+  id: UrlShortener.Api.Common.Mapping
+  children:
+  - UrlShortener.Api.Common.Mapping.AuthenticationMapping
+  - UrlShortener.Api.Common.Mapping.DependencyInjection
+  - UrlShortener.Api.Common.Mapping.UrlMapping
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Api.Common.Mapping
+  nameWithType: UrlShortener.Api.Common.Mapping
+  fullName: UrlShortener.Api.Common.Mapping
+  type: Namespace
+  assemblies:
+  - UrlShortener.Api
+references:
+- uid: UrlShortener.Api.Common.Mapping.AuthenticationMapping
+  commentId: T:UrlShortener.Api.Common.Mapping.AuthenticationMapping
+  href: UrlShortener.Api.Common.Mapping.AuthenticationMapping.html
+  name: AuthenticationMapping
+  nameWithType: AuthenticationMapping
+  fullName: UrlShortener.Api.Common.Mapping.AuthenticationMapping
+- uid: UrlShortener.Api.Common.Mapping.DependencyInjection
+  commentId: T:UrlShortener.Api.Common.Mapping.DependencyInjection
+  href: UrlShortener.Api.Common.Mapping.DependencyInjection.html
+  name: DependencyInjection
+  nameWithType: DependencyInjection
+  fullName: UrlShortener.Api.Common.Mapping.DependencyInjection
+- uid: UrlShortener.Api.Common.Mapping.UrlMapping
+  commentId: T:UrlShortener.Api.Common.Mapping.UrlMapping
+  href: UrlShortener.Api.Common.Mapping.UrlMapping.html
+  name: UrlMapping
+  nameWithType: UrlMapping
+  fullName: UrlShortener.Api.Common.Mapping.UrlMapping

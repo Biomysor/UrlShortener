@@ -1,0 +1,644 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Domain.UserAggregate.ValueObjects.UserId
+  commentId: T:UrlShortener.Domain.UserAggregate.ValueObjects.UserId
+  id: UserId
+  parent: UrlShortener.Domain.UserAggregate.ValueObjects
+  children:
+  - UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Create(System.Guid)
+  - UrlShortener.Domain.UserAggregate.ValueObjects.UserId.CreateUnique
+  - UrlShortener.Domain.UserAggregate.ValueObjects.UserId.GetEqualityComponents
+  - UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Value
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: UserId
+  fullName: UrlShortener.Domain.UserAggregate.ValueObjects.UserId
+  type: Class
+  source:
+    remote:
+      path: UrlShortener.Domain/UserAggregate/ValueObjects/UserId.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: UserId
+    path: UrlShortener.Domain/UserAggregate/ValueObjects/UserId.cs
+    startLine: 8
+  assemblies:
+  - UrlShortener.Domain
+  namespace: UrlShortener.Domain.UserAggregate.ValueObjects
+  summary: >-
+    Strongly typed identifier for the User entity.
+
+    Wraps a Guid value and provides value-based equality.
+  example: []
+  syntax:
+    content: 'public class UserId : ValueObject'
+    content.vb: Public Class UserId Inherits ValueObject
+  inheritance:
+  - System.Object
+  - UrlShortener.Domain.Common.ValueObject
+  inheritedMembers:
+  - UrlShortener.Domain.Common.ValueObject.Equals(System.Object)
+  - UrlShortener.Domain.Common.ValueObject.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Value
+  commentId: P:UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Value
+  id: Value
+  parent: UrlShortener.Domain.UserAggregate.ValueObjects.UserId
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: UserId.Value
+  fullName: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Value
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Domain/UserAggregate/ValueObjects/UserId.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: Value
+    path: UrlShortener.Domain/UserAggregate/ValueObjects/UserId.cs
+    startLine: 13
+  assemblies:
+  - UrlShortener.Domain
+  namespace: UrlShortener.Domain.UserAggregate.ValueObjects
+  summary: Gets the underlying Guid value.
+  example: []
+  syntax:
+    content: public Guid Value { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public ReadOnly Property Value As Guid
+  overload: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Value*
+- uid: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.CreateUnique
+  commentId: M:UrlShortener.Domain.UserAggregate.ValueObjects.UserId.CreateUnique
+  id: CreateUnique
+  parent: UrlShortener.Domain.UserAggregate.ValueObjects.UserId
+  langs:
+  - csharp
+  - vb
+  name: CreateUnique()
+  nameWithType: UserId.CreateUnique()
+  fullName: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.CreateUnique()
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Domain/UserAggregate/ValueObjects/UserId.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: CreateUnique
+    path: UrlShortener.Domain/UserAggregate/ValueObjects/UserId.cs
+    startLine: 24
+  assemblies:
+  - UrlShortener.Domain
+  namespace: UrlShortener.Domain.UserAggregate.ValueObjects
+  summary: Creates a new unique UserId.
+  example: []
+  syntax:
+    content: public static UserId CreateUnique()
+    return:
+      type: UrlShortener.Domain.UserAggregate.ValueObjects.UserId
+      description: New UserId instance with a generated Guid.
+    content.vb: Public Shared Function CreateUnique() As UserId
+  overload: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.CreateUnique*
+- uid: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Create(System.Guid)
+  commentId: M:UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Create(System.Guid)
+  id: Create(System.Guid)
+  parent: UrlShortener.Domain.UserAggregate.ValueObjects.UserId
+  langs:
+  - csharp
+  - vb
+  name: Create(Guid)
+  nameWithType: UserId.Create(Guid)
+  fullName: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Create(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Domain/UserAggregate/ValueObjects/UserId.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: Create
+    path: UrlShortener.Domain/UserAggregate/ValueObjects/UserId.cs
+    startLine: 35
+  assemblies:
+  - UrlShortener.Domain
+  namespace: UrlShortener.Domain.UserAggregate.ValueObjects
+  summary: >-
+    Creates a UserId from an existing Guid value.
+
+    Used when restoring entities from the database.
+  example: []
+  syntax:
+    content: public static UserId Create(Guid value)
+    parameters:
+    - id: value
+      type: System.Guid
+      description: Existing Guid value.
+    return:
+      type: UrlShortener.Domain.UserAggregate.ValueObjects.UserId
+      description: UserId instance.
+    content.vb: Public Shared Function Create(value As Guid) As UserId
+  overload: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Create*
+- uid: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.GetEqualityComponents
+  commentId: M:UrlShortener.Domain.UserAggregate.ValueObjects.UserId.GetEqualityComponents
+  id: GetEqualityComponents
+  parent: UrlShortener.Domain.UserAggregate.ValueObjects.UserId
+  langs:
+  - csharp
+  - vb
+  name: GetEqualityComponents()
+  nameWithType: UserId.GetEqualityComponents()
+  fullName: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.GetEqualityComponents()
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Domain/UserAggregate/ValueObjects/UserId.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: GetEqualityComponents
+    path: UrlShortener.Domain/UserAggregate/ValueObjects/UserId.cs
+    startLine: 41
+  assemblies:
+  - UrlShortener.Domain
+  namespace: UrlShortener.Domain.UserAggregate.ValueObjects
+  summary: Gets the components that are used to compare value objects.
+  example: []
+  syntax:
+    content: public override IEnumerable<object> GetEqualityComponents()
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object}
+      description: Collection of equality components.
+    content.vb: Public Overrides Function GetEqualityComponents() As IEnumerable(Of Object)
+  overridden: UrlShortener.Domain.Common.ValueObject.GetEqualityComponents
+  overload: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.GetEqualityComponents*
+references:
+- uid: UrlShortener.Domain.UserAggregate.ValueObjects
+  commentId: N:UrlShortener.Domain.UserAggregate.ValueObjects
+  href: UrlShortener.html
+  name: UrlShortener.Domain.UserAggregate.ValueObjects
+  nameWithType: UrlShortener.Domain.UserAggregate.ValueObjects
+  fullName: UrlShortener.Domain.UserAggregate.ValueObjects
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate
+    name: UserAggregate
+    href: UrlShortener.Domain.UserAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate.ValueObjects
+    name: ValueObjects
+    href: UrlShortener.Domain.UserAggregate.ValueObjects.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate
+    name: UserAggregate
+    href: UrlShortener.Domain.UserAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate.ValueObjects
+    name: ValueObjects
+    href: UrlShortener.Domain.UserAggregate.ValueObjects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UrlShortener.Domain.Common.ValueObject
+  commentId: T:UrlShortener.Domain.Common.ValueObject
+  parent: UrlShortener.Domain.Common
+  href: UrlShortener.Domain.Common.ValueObject.html
+  name: ValueObject
+  nameWithType: ValueObject
+  fullName: UrlShortener.Domain.Common.ValueObject
+- uid: UrlShortener.Domain.Common.ValueObject.Equals(System.Object)
+  commentId: M:UrlShortener.Domain.Common.ValueObject.Equals(System.Object)
+  parent: UrlShortener.Domain.Common.ValueObject
+  isExternal: true
+  href: UrlShortener.Domain.Common.ValueObject.html#UrlShortener_Domain_Common_ValueObject_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: ValueObject.Equals(object)
+  fullName: UrlShortener.Domain.Common.ValueObject.Equals(object)
+  nameWithType.vb: ValueObject.Equals(Object)
+  fullName.vb: UrlShortener.Domain.Common.ValueObject.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: UrlShortener.Domain.Common.ValueObject.Equals(System.Object)
+    name: Equals
+    href: UrlShortener.Domain.Common.ValueObject.html#UrlShortener_Domain_Common_ValueObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UrlShortener.Domain.Common.ValueObject.Equals(System.Object)
+    name: Equals
+    href: UrlShortener.Domain.Common.ValueObject.html#UrlShortener_Domain_Common_ValueObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UrlShortener.Domain.Common.ValueObject.GetHashCode
+  commentId: M:UrlShortener.Domain.Common.ValueObject.GetHashCode
+  parent: UrlShortener.Domain.Common.ValueObject
+  href: UrlShortener.Domain.Common.ValueObject.html#UrlShortener_Domain_Common_ValueObject_GetHashCode
+  name: GetHashCode()
+  nameWithType: ValueObject.GetHashCode()
+  fullName: UrlShortener.Domain.Common.ValueObject.GetHashCode()
+  spec.csharp:
+  - uid: UrlShortener.Domain.Common.ValueObject.GetHashCode
+    name: GetHashCode
+    href: UrlShortener.Domain.Common.ValueObject.html#UrlShortener_Domain_Common_ValueObject_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UrlShortener.Domain.Common.ValueObject.GetHashCode
+    name: GetHashCode
+    href: UrlShortener.Domain.Common.ValueObject.html#UrlShortener_Domain_Common_ValueObject_GetHashCode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UrlShortener.Domain.Common
+  commentId: N:UrlShortener.Domain.Common
+  href: UrlShortener.html
+  name: UrlShortener.Domain.Common
+  nameWithType: UrlShortener.Domain.Common
+  fullName: UrlShortener.Domain.Common
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.Common
+    name: Common
+    href: UrlShortener.Domain.Common.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.Common
+    name: Common
+    href: UrlShortener.Domain.Common.html
+- uid: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Value*
+  commentId: Overload:UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Value
+  href: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.html#UrlShortener_Domain_UserAggregate_ValueObjects_UserId_Value
+  name: Value
+  nameWithType: UserId.Value
+  fullName: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Value
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.CreateUnique*
+  commentId: Overload:UrlShortener.Domain.UserAggregate.ValueObjects.UserId.CreateUnique
+  href: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.html#UrlShortener_Domain_UserAggregate_ValueObjects_UserId_CreateUnique
+  name: CreateUnique
+  nameWithType: UserId.CreateUnique
+  fullName: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.CreateUnique
+- uid: UrlShortener.Domain.UserAggregate.ValueObjects.UserId
+  commentId: T:UrlShortener.Domain.UserAggregate.ValueObjects.UserId
+  parent: UrlShortener.Domain.UserAggregate.ValueObjects
+  href: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.html
+  name: UserId
+  nameWithType: UserId
+  fullName: UrlShortener.Domain.UserAggregate.ValueObjects.UserId
+- uid: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Create*
+  commentId: Overload:UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Create
+  href: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.html#UrlShortener_Domain_UserAggregate_ValueObjects_UserId_Create_System_Guid_
+  name: Create
+  nameWithType: UserId.Create
+  fullName: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Create
+- uid: UrlShortener.Domain.Common.ValueObject.GetEqualityComponents
+  commentId: M:UrlShortener.Domain.Common.ValueObject.GetEqualityComponents
+  parent: UrlShortener.Domain.Common.ValueObject
+  href: UrlShortener.Domain.Common.ValueObject.html#UrlShortener_Domain_Common_ValueObject_GetEqualityComponents
+  name: GetEqualityComponents()
+  nameWithType: ValueObject.GetEqualityComponents()
+  fullName: UrlShortener.Domain.Common.ValueObject.GetEqualityComponents()
+  spec.csharp:
+  - uid: UrlShortener.Domain.Common.ValueObject.GetEqualityComponents
+    name: GetEqualityComponents
+    href: UrlShortener.Domain.Common.ValueObject.html#UrlShortener_Domain_Common_ValueObject_GetEqualityComponents
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UrlShortener.Domain.Common.ValueObject.GetEqualityComponents
+    name: GetEqualityComponents
+    href: UrlShortener.Domain.Common.ValueObject.html#UrlShortener_Domain_Common_ValueObject_GetEqualityComponents
+  - name: (
+  - name: )
+- uid: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.GetEqualityComponents*
+  commentId: Overload:UrlShortener.Domain.UserAggregate.ValueObjects.UserId.GetEqualityComponents
+  href: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.html#UrlShortener_Domain_UserAggregate_ValueObjects_UserId_GetEqualityComponents
+  name: GetEqualityComponents
+  nameWithType: UserId.GetEqualityComponents
+  fullName: UrlShortener.Domain.UserAggregate.ValueObjects.UserId.GetEqualityComponents
+- uid: System.Collections.Generic.IEnumerable{System.Object}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<object>
+  nameWithType: IEnumerable<object>
+  fullName: System.Collections.Generic.IEnumerable<object>
+  nameWithType.vb: IEnumerable(Of Object)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Object)
+  name.vb: IEnumerable(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

@@ -1,0 +1,673 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator
+  commentId: T:UrlShortener.Infrastructure.Authentication.JwtTokenGenerator
+  id: JwtTokenGenerator
+  parent: UrlShortener.Infrastructure.Authentication
+  children:
+  - UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.#ctor(UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider,Microsoft.Extensions.Options.IOptions{UrlShortener.Infrastructure.Authentication.JwtSettings})
+  - UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+  langs:
+  - csharp
+  - vb
+  name: JwtTokenGenerator
+  nameWithType: JwtTokenGenerator
+  fullName: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator
+  type: Class
+  source:
+    remote:
+      path: UrlShortener.Infrastructure/Authentication/JwtTokenGenerator.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: JwtTokenGenerator
+    path: UrlShortener.Infrastructure/Authentication/JwtTokenGenerator.cs
+    startLine: 13
+  assemblies:
+  - UrlShortener.Infrastructure
+  namespace: UrlShortener.Infrastructure.Authentication
+  syntax:
+    content: 'public class JwtTokenGenerator : IJwtTokenGenerator'
+    content.vb: Public Class JwtTokenGenerator Implements IJwtTokenGenerator
+  inheritance:
+  - System.Object
+  implements:
+  - UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.#ctor(UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider,Microsoft.Extensions.Options.IOptions{UrlShortener.Infrastructure.Authentication.JwtSettings})
+  commentId: M:UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.#ctor(UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider,Microsoft.Extensions.Options.IOptions{UrlShortener.Infrastructure.Authentication.JwtSettings})
+  id: '#ctor(UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider,Microsoft.Extensions.Options.IOptions{UrlShortener.Infrastructure.Authentication.JwtSettings})'
+  parent: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator
+  langs:
+  - csharp
+  - vb
+  name: JwtTokenGenerator(IDateTimeProvider, IOptions<JwtSettings>)
+  nameWithType: JwtTokenGenerator.JwtTokenGenerator(IDateTimeProvider, IOptions<JwtSettings>)
+  fullName: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.JwtTokenGenerator(UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider, Microsoft.Extensions.Options.IOptions<UrlShortener.Infrastructure.Authentication.JwtSettings>)
+  type: Constructor
+  source:
+    remote:
+      path: UrlShortener.Infrastructure/Authentication/JwtTokenGenerator.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: .ctor
+    path: UrlShortener.Infrastructure/Authentication/JwtTokenGenerator.cs
+    startLine: 13
+  assemblies:
+  - UrlShortener.Infrastructure
+  namespace: UrlShortener.Infrastructure.Authentication
+  syntax:
+    content: public JwtTokenGenerator(IDateTimeProvider dateTimeProvider, IOptions<JwtSettings> jwtSettings)
+    parameters:
+    - id: dateTimeProvider
+      type: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider
+    - id: jwtSettings
+      type: Microsoft.Extensions.Options.IOptions{UrlShortener.Infrastructure.Authentication.JwtSettings}
+    content.vb: Public Sub New(dateTimeProvider As IDateTimeProvider, jwtSettings As IOptions(Of JwtSettings))
+  overload: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.#ctor*
+  nameWithType.vb: JwtTokenGenerator.New(IDateTimeProvider, IOptions(Of JwtSettings))
+  fullName.vb: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.New(UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider, Microsoft.Extensions.Options.IOptions(Of UrlShortener.Infrastructure.Authentication.JwtSettings))
+  name.vb: New(IDateTimeProvider, IOptions(Of JwtSettings))
+- uid: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+  commentId: M:UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+  id: GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+  parent: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateToken(User)
+  nameWithType: JwtTokenGenerator.GenerateToken(User)
+  fullName: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Infrastructure/Authentication/JwtTokenGenerator.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: GenerateToken
+    path: UrlShortener.Infrastructure/Authentication/JwtTokenGenerator.cs
+    startLine: 16
+  assemblies:
+  - UrlShortener.Infrastructure
+  namespace: UrlShortener.Infrastructure.Authentication
+  example: []
+  syntax:
+    content: public string GenerateToken(User user)
+    parameters:
+    - id: user
+      type: UrlShortener.Domain.UserAggregate.Entity.User
+    return:
+      type: System.String
+    content.vb: Public Function GenerateToken(user As User) As String
+  overload: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.GenerateToken*
+  implements:
+  - UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+references:
+- uid: UrlShortener.Infrastructure.Authentication
+  commentId: N:UrlShortener.Infrastructure.Authentication
+  href: UrlShortener.html
+  name: UrlShortener.Infrastructure.Authentication
+  nameWithType: UrlShortener.Infrastructure.Authentication
+  fullName: UrlShortener.Infrastructure.Authentication
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Infrastructure
+    name: Infrastructure
+    href: UrlShortener.Infrastructure.html
+  - name: .
+  - uid: UrlShortener.Infrastructure.Authentication
+    name: Authentication
+    href: UrlShortener.Infrastructure.Authentication.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Infrastructure
+    name: Infrastructure
+    href: UrlShortener.Infrastructure.html
+  - name: .
+  - uid: UrlShortener.Infrastructure.Authentication
+    name: Authentication
+    href: UrlShortener.Infrastructure.Authentication.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+  commentId: T:UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+  parent: UrlShortener.Application.Common.Interfaces.Authentication
+  href: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.html
+  name: IJwtTokenGenerator
+  nameWithType: IJwtTokenGenerator
+  fullName: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UrlShortener.Application.Common.Interfaces.Authentication
+  commentId: N:UrlShortener.Application.Common.Interfaces.Authentication
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.Authentication
+  nameWithType: UrlShortener.Application.Common.Interfaces.Authentication
+  fullName: UrlShortener.Application.Common.Interfaces.Authentication
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Common.Interfaces.Authentication.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Common.Interfaces.Authentication.html
+- uid: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.#ctor*
+  commentId: Overload:UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.#ctor
+  href: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.html#UrlShortener_Infrastructure_Authentication_JwtTokenGenerator__ctor_UrlShortener_Application_Common_Interfaces_Services_IDateTimeProvider_Microsoft_Extensions_Options_IOptions_UrlShortener_Infrastructure_Authentication_JwtSettings__
+  name: JwtTokenGenerator
+  nameWithType: JwtTokenGenerator.JwtTokenGenerator
+  fullName: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.JwtTokenGenerator
+  nameWithType.vb: JwtTokenGenerator.New
+  fullName.vb: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.New
+  name.vb: New
+- uid: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider
+  commentId: T:UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider
+  parent: UrlShortener.Application.Common.Interfaces.Services
+  href: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider.html
+  name: IDateTimeProvider
+  nameWithType: IDateTimeProvider
+  fullName: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider
+- uid: Microsoft.Extensions.Options.IOptions{UrlShortener.Infrastructure.Authentication.JwtSettings}
+  commentId: T:Microsoft.Extensions.Options.IOptions{UrlShortener.Infrastructure.Authentication.JwtSettings}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<JwtSettings>
+  nameWithType: IOptions<JwtSettings>
+  fullName: Microsoft.Extensions.Options.IOptions<UrlShortener.Infrastructure.Authentication.JwtSettings>
+  nameWithType.vb: IOptions(Of JwtSettings)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of UrlShortener.Infrastructure.Authentication.JwtSettings)
+  name.vb: IOptions(Of JwtSettings)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: UrlShortener.Infrastructure.Authentication.JwtSettings
+    name: JwtSettings
+    href: UrlShortener.Infrastructure.Authentication.JwtSettings.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Infrastructure.Authentication.JwtSettings
+    name: JwtSettings
+    href: UrlShortener.Infrastructure.Authentication.JwtSettings.html
+  - name: )
+- uid: UrlShortener.Application.Common.Interfaces.Services
+  commentId: N:UrlShortener.Application.Common.Interfaces.Services
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.Services
+  nameWithType: UrlShortener.Application.Common.Interfaces.Services
+  fullName: UrlShortener.Application.Common.Interfaces.Services
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Services
+    name: Services
+    href: UrlShortener.Application.Common.Interfaces.Services.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Services
+    name: Services
+    href: UrlShortener.Application.Common.Interfaces.Services.html
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+- uid: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.GenerateToken*
+  commentId: Overload:UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.GenerateToken
+  href: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.html#UrlShortener_Infrastructure_Authentication_JwtTokenGenerator_GenerateToken_UrlShortener_Domain_UserAggregate_Entity_User_
+  name: GenerateToken
+  nameWithType: JwtTokenGenerator.GenerateToken
+  fullName: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator.GenerateToken
+- uid: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+  commentId: M:UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+  parent: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+  name: GenerateToken(User)
+  nameWithType: IJwtTokenGenerator.GenerateToken(User)
+  fullName: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+  spec.csharp:
+  - uid: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+    name: GenerateToken
+  - name: (
+  - uid: UrlShortener.Domain.UserAggregate.Entity.User
+    name: User
+  - name: )
+  spec.vb:
+  - uid: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+    name: GenerateToken
+  - name: (
+  - uid: UrlShortener.Domain.UserAggregate.Entity.User
+    name: User
+  - name: )
+- uid: UrlShortener.Domain.UserAggregate.Entity.User
+  commentId: T:UrlShortener.Domain.UserAggregate.Entity.User
+  parent: UrlShortener.Domain.UserAggregate.Entity
+  href: UrlShortener.Domain.UserAggregate.Entity.User.html
+  name: User
+  nameWithType: User
+  fullName: UrlShortener.Domain.UserAggregate.Entity.User
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UrlShortener.Domain.UserAggregate.Entity
+  commentId: N:UrlShortener.Domain.UserAggregate.Entity
+  href: UrlShortener.html
+  name: UrlShortener.Domain.UserAggregate.Entity
+  nameWithType: UrlShortener.Domain.UserAggregate.Entity
+  fullName: UrlShortener.Domain.UserAggregate.Entity
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate
+    name: UserAggregate
+    href: UrlShortener.Domain.UserAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate.Entity
+    name: Entity
+    href: UrlShortener.Domain.UserAggregate.Entity.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate
+    name: UserAggregate
+    href: UrlShortener.Domain.UserAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate.Entity
+    name: Entity
+    href: UrlShortener.Domain.UserAggregate.Entity.html

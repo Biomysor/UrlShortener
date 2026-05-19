@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Infrastructure.UrlActions
+  commentId: N:UrlShortener.Infrastructure.UrlActions
+  id: UrlShortener.Infrastructure.UrlActions
+  children:
+  - UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder
+  - UrlShortener.Infrastructure.UrlActions.UrlCodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Infrastructure.UrlActions
+  nameWithType: UrlShortener.Infrastructure.UrlActions
+  fullName: UrlShortener.Infrastructure.UrlActions
+  type: Namespace
+  assemblies:
+  - UrlShortener.Infrastructure
+references:
+- uid: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder
+  commentId: T:UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder
+  href: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder.html
+  name: ShortUrlBuilder
+  nameWithType: ShortUrlBuilder
+  fullName: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder
+- uid: UrlShortener.Infrastructure.UrlActions.UrlCodeGenerator
+  commentId: T:UrlShortener.Infrastructure.UrlActions.UrlCodeGenerator
+  href: UrlShortener.Infrastructure.UrlActions.UrlCodeGenerator.html
+  name: UrlCodeGenerator
+  nameWithType: UrlCodeGenerator
+  fullName: UrlShortener.Infrastructure.UrlActions.UrlCodeGenerator

@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Infrastructure.Repositories
+  commentId: N:UrlShortener.Infrastructure.Repositories
+  id: UrlShortener.Infrastructure.Repositories
+  children:
+  - UrlShortener.Infrastructure.Repositories.UrlRepository
+  - UrlShortener.Infrastructure.Repositories.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Infrastructure.Repositories
+  nameWithType: UrlShortener.Infrastructure.Repositories
+  fullName: UrlShortener.Infrastructure.Repositories
+  type: Namespace
+  assemblies:
+  - UrlShortener.Infrastructure
+references:
+- uid: UrlShortener.Infrastructure.Repositories.UrlRepository
+  commentId: T:UrlShortener.Infrastructure.Repositories.UrlRepository
+  href: UrlShortener.Infrastructure.Repositories.UrlRepository.html
+  name: UrlRepository
+  nameWithType: UrlRepository
+  fullName: UrlShortener.Infrastructure.Repositories.UrlRepository
+- uid: UrlShortener.Infrastructure.Repositories.UserRepository
+  commentId: T:UrlShortener.Infrastructure.Repositories.UserRepository
+  href: UrlShortener.Infrastructure.Repositories.UserRepository.html
+  name: UserRepository
+  nameWithType: UserRepository
+  fullName: UrlShortener.Infrastructure.Repositories.UserRepository
