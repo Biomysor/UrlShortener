@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Authentication.Commands.Register
+  commentId: N:UrlShortener.Application.Authentication.Commands.Register
+  id: UrlShortener.Application.Authentication.Commands.Register
+  children:
+  - UrlShortener.Application.Authentication.Commands.Register.RegisterCommand
+  - UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler
+  - UrlShortener.Application.Authentication.Commands.Register.RegisterCommandValidation
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Application.Authentication.Commands.Register
+  nameWithType: UrlShortener.Application.Authentication.Commands.Register
+  fullName: UrlShortener.Application.Authentication.Commands.Register
+  type: Namespace
+  assemblies:
+  - UrlShortener.Application
+references:
+- uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand
+  commentId: T:UrlShortener.Application.Authentication.Commands.Register.RegisterCommand
+  parent: UrlShortener.Application.Authentication.Commands.Register
+  href: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand.html
+  name: RegisterCommand
+  nameWithType: RegisterCommand
+  fullName: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand
+- uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler
+  commentId: T:UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler
+  href: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler.html
+  name: RegisterCommandHandler
+  nameWithType: RegisterCommandHandler
+  fullName: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler
+- uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandValidation
+  commentId: T:UrlShortener.Application.Authentication.Commands.Register.RegisterCommandValidation
+  href: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandValidation.html
+  name: RegisterCommandValidation
+  nameWithType: RegisterCommandValidation
+  fullName: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandValidation
+- uid: UrlShortener.Application.Authentication.Commands.Register
+  commentId: N:UrlShortener.Application.Authentication.Commands.Register
+  href: UrlShortener.html
+  name: UrlShortener.Application.Authentication.Commands.Register
+  nameWithType: UrlShortener.Application.Authentication.Commands.Register
+  fullName: UrlShortener.Application.Authentication.Commands.Register
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Authentication.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication.Commands
+    name: Commands
+    href: UrlShortener.Application.Authentication.Commands.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication.Commands.Register
+    name: Register
+    href: UrlShortener.Application.Authentication.Commands.Register.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Authentication.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication.Commands
+    name: Commands
+    href: UrlShortener.Application.Authentication.Commands.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication.Commands.Register
+    name: Register
+    href: UrlShortener.Application.Authentication.Commands.Register.html

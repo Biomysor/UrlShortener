@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.UrlActions.Queries.RedirectQueries
+  commentId: N:UrlShortener.Application.UrlActions.Queries.RedirectQueries
+  id: UrlShortener.Application.UrlActions.Queries.RedirectQueries
+  children:
+  - UrlShortener.Application.UrlActions.Queries.RedirectQueries.RedirectQuery
+  - UrlShortener.Application.UrlActions.Queries.RedirectQueries.RedirectQueryHandler
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Application.UrlActions.Queries.RedirectQueries
+  nameWithType: UrlShortener.Application.UrlActions.Queries.RedirectQueries
+  fullName: UrlShortener.Application.UrlActions.Queries.RedirectQueries
+  type: Namespace
+  assemblies:
+  - UrlShortener.Application
+references:
+- uid: UrlShortener.Application.UrlActions.Queries.RedirectQueries.RedirectQuery
+  commentId: T:UrlShortener.Application.UrlActions.Queries.RedirectQueries.RedirectQuery
+  parent: UrlShortener.Application.UrlActions.Queries.RedirectQueries
+  href: UrlShortener.Application.UrlActions.Queries.RedirectQueries.RedirectQuery.html
+  name: RedirectQuery
+  nameWithType: RedirectQuery
+  fullName: UrlShortener.Application.UrlActions.Queries.RedirectQueries.RedirectQuery
+- uid: UrlShortener.Application.UrlActions.Queries.RedirectQueries.RedirectQueryHandler
+  commentId: T:UrlShortener.Application.UrlActions.Queries.RedirectQueries.RedirectQueryHandler
+  href: UrlShortener.Application.UrlActions.Queries.RedirectQueries.RedirectQueryHandler.html
+  name: RedirectQueryHandler
+  nameWithType: RedirectQueryHandler
+  fullName: UrlShortener.Application.UrlActions.Queries.RedirectQueries.RedirectQueryHandler
+- uid: UrlShortener.Application.UrlActions.Queries.RedirectQueries
+  commentId: N:UrlShortener.Application.UrlActions.Queries.RedirectQueries
+  href: UrlShortener.html
+  name: UrlShortener.Application.UrlActions.Queries.RedirectQueries
+  nameWithType: UrlShortener.Application.UrlActions.Queries.RedirectQueries
+  fullName: UrlShortener.Application.UrlActions.Queries.RedirectQueries
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.UrlActions.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions.Queries
+    name: Queries
+    href: UrlShortener.Application.UrlActions.Queries.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions.Queries.RedirectQueries
+    name: RedirectQueries
+    href: UrlShortener.Application.UrlActions.Queries.RedirectQueries.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.UrlActions.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions.Queries
+    name: Queries
+    href: UrlShortener.Application.UrlActions.Queries.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions.Queries.RedirectQueries
+    name: RedirectQueries
+    href: UrlShortener.Application.UrlActions.Queries.RedirectQueries.html

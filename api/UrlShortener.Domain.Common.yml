@@ -1,0 +1,80 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Domain.Common
+  commentId: N:UrlShortener.Domain.Common
+  id: UrlShortener.Domain.Common
+  children:
+  - UrlShortener.Domain.Common.Entity`1
+  - UrlShortener.Domain.Common.ValueObject
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Domain.Common
+  nameWithType: UrlShortener.Domain.Common
+  fullName: UrlShortener.Domain.Common
+  type: Namespace
+  assemblies:
+  - UrlShortener.Domain
+references:
+- uid: UrlShortener.Domain.Common.Entity`1
+  commentId: T:UrlShortener.Domain.Common.Entity`1
+  href: UrlShortener.Domain.Common.Entity-1.html
+  name: Entity<TId>
+  nameWithType: Entity<TId>
+  fullName: UrlShortener.Domain.Common.Entity<TId>
+  nameWithType.vb: Entity(Of TId)
+  fullName.vb: UrlShortener.Domain.Common.Entity(Of TId)
+  name.vb: Entity(Of TId)
+  spec.csharp:
+  - uid: UrlShortener.Domain.Common.Entity`1
+    name: Entity
+    href: UrlShortener.Domain.Common.Entity-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: UrlShortener.Domain.Common.Entity`1
+    name: Entity
+    href: UrlShortener.Domain.Common.Entity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: UrlShortener.Domain.Common.ValueObject
+  commentId: T:UrlShortener.Domain.Common.ValueObject
+  parent: UrlShortener.Domain.Common
+  href: UrlShortener.Domain.Common.ValueObject.html
+  name: ValueObject
+  nameWithType: ValueObject
+  fullName: UrlShortener.Domain.Common.ValueObject
+- uid: UrlShortener.Domain.Common
+  commentId: N:UrlShortener.Domain.Common
+  href: UrlShortener.html
+  name: UrlShortener.Domain.Common
+  nameWithType: UrlShortener.Domain.Common
+  fullName: UrlShortener.Domain.Common
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.Common
+    name: Common
+    href: UrlShortener.Domain.Common.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.Common
+    name: Common
+    href: UrlShortener.Domain.Common.html

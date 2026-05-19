@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider
+  commentId: T:UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider
+  id: IDateTimeProvider
+  parent: UrlShortener.Application.Common.Interfaces.Services
+  children:
+  - UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider.UtcNow
+  langs:
+  - csharp
+  - vb
+  name: IDateTimeProvider
+  nameWithType: IDateTimeProvider
+  fullName: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider
+  type: Interface
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Services/IDateTimeProvider.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: IDateTimeProvider
+    path: UrlShortener.Application/Common/Interfaces/Services/IDateTimeProvider.cs
+    startLine: 2
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Services
+  syntax:
+    content: public interface IDateTimeProvider
+    content.vb: Public Interface IDateTimeProvider
+  derivedClasses:
+  - UrlShortener.Infrastructure.Services.DateTimeProvider
+- uid: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider.UtcNow
+  commentId: P:UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider.UtcNow
+  id: UtcNow
+  parent: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider
+  langs:
+  - csharp
+  - vb
+  name: UtcNow
+  nameWithType: IDateTimeProvider.UtcNow
+  fullName: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider.UtcNow
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Services/IDateTimeProvider.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: UtcNow
+    path: UrlShortener.Application/Common/Interfaces/Services/IDateTimeProvider.cs
+    startLine: 4
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Services
+  syntax:
+    content: DateTime UtcNow { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: ReadOnly Property UtcNow As Date
+  overload: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider.UtcNow*
+references:
+- uid: UrlShortener.Application.Common.Interfaces.Services
+  commentId: N:UrlShortener.Application.Common.Interfaces.Services
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.Services
+  nameWithType: UrlShortener.Application.Common.Interfaces.Services
+  fullName: UrlShortener.Application.Common.Interfaces.Services
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Services
+    name: Services
+    href: UrlShortener.Application.Common.Interfaces.Services.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Services
+    name: Services
+    href: UrlShortener.Application.Common.Interfaces.Services.html
+- uid: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider.UtcNow*
+  commentId: Overload:UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider.UtcNow
+  href: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider.html#UrlShortener_Application_Common_Interfaces_Services_IDateTimeProvider_UtcNow
+  name: UtcNow
+  nameWithType: IDateTimeProvider.UtcNow
+  fullName: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider.UtcNow
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

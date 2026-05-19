@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Infrastructure.Persistance
+  commentId: N:UrlShortener.Infrastructure.Persistance
+  id: UrlShortener.Infrastructure.Persistance
+  children:
+  - UrlShortener.Infrastructure.Persistance.ApplicationDbContext
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Infrastructure.Persistance
+  nameWithType: UrlShortener.Infrastructure.Persistance
+  fullName: UrlShortener.Infrastructure.Persistance
+  type: Namespace
+  assemblies:
+  - UrlShortener.Infrastructure
+references:
+- uid: UrlShortener.Infrastructure.Persistance.ApplicationDbContext
+  commentId: T:UrlShortener.Infrastructure.Persistance.ApplicationDbContext
+  parent: UrlShortener.Infrastructure.Persistance
+  href: UrlShortener.Infrastructure.Persistance.ApplicationDbContext.html
+  name: ApplicationDbContext
+  nameWithType: ApplicationDbContext
+  fullName: UrlShortener.Infrastructure.Persistance.ApplicationDbContext
+- uid: UrlShortener.Infrastructure.Persistance
+  commentId: N:UrlShortener.Infrastructure.Persistance
+  href: UrlShortener.html
+  name: UrlShortener.Infrastructure.Persistance
+  nameWithType: UrlShortener.Infrastructure.Persistance
+  fullName: UrlShortener.Infrastructure.Persistance
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Infrastructure
+    name: Infrastructure
+    href: UrlShortener.Infrastructure.html
+  - name: .
+  - uid: UrlShortener.Infrastructure.Persistance
+    name: Persistance
+    href: UrlShortener.Infrastructure.Persistance.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Infrastructure
+    name: Infrastructure
+    href: UrlShortener.Infrastructure.html
+  - name: .
+  - uid: UrlShortener.Infrastructure.Persistance
+    name: Persistance
+    href: UrlShortener.Infrastructure.Persistance.html

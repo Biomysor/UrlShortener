@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Common.Interfaces.Authentication
+  commentId: N:UrlShortener.Application.Common.Interfaces.Authentication
+  id: UrlShortener.Application.Common.Interfaces.Authentication
+  children:
+  - UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Application.Common.Interfaces.Authentication
+  nameWithType: UrlShortener.Application.Common.Interfaces.Authentication
+  fullName: UrlShortener.Application.Common.Interfaces.Authentication
+  type: Namespace
+  assemblies:
+  - UrlShortener.Application
+references:
+- uid: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+  commentId: T:UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+  parent: UrlShortener.Application.Common.Interfaces.Authentication
+  href: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.html
+  name: IJwtTokenGenerator
+  nameWithType: IJwtTokenGenerator
+  fullName: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+- uid: UrlShortener.Application.Common.Interfaces.Authentication
+  commentId: N:UrlShortener.Application.Common.Interfaces.Authentication
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.Authentication
+  nameWithType: UrlShortener.Application.Common.Interfaces.Authentication
+  fullName: UrlShortener.Application.Common.Interfaces.Authentication
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Common.Interfaces.Authentication.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Common.Interfaces.Authentication.html

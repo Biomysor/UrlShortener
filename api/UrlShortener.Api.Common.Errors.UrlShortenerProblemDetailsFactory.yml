@@ -1,0 +1,1096 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory
+  commentId: T:UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory
+  id: UrlShortenerProblemDetailsFactory
+  parent: UrlShortener.Api.Common.Errors
+  children:
+  - UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.ApiBehaviorOptions})
+  - UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateProblemDetails(Microsoft.AspNetCore.Http.HttpContext,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+  - UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateValidationProblemDetails(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: UrlShortenerProblemDetailsFactory
+  nameWithType: UrlShortenerProblemDetailsFactory
+  fullName: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory
+  type: Class
+  source:
+    remote:
+      path: UrlShortener.Api/Common/Errors/UrlShortenerProblemDetailsFactory.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: UrlShortenerProblemDetailsFactory
+    path: UrlShortener.Api/Common/Errors/UrlShortenerProblemDetailsFactory.cs
+    startLine: 10
+  assemblies:
+  - UrlShortener.Api
+  namespace: UrlShortener.Api.Common.Errors
+  syntax:
+    content: 'public class UrlShortenerProblemDetailsFactory : ProblemDetailsFactory'
+    content.vb: Public Class UrlShortenerProblemDetailsFactory Inherits ProblemDetailsFactory
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.ApiBehaviorOptions})
+  commentId: M:UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.ApiBehaviorOptions})
+  id: '#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.ApiBehaviorOptions})'
+  parent: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory
+  langs:
+  - csharp
+  - vb
+  name: UrlShortenerProblemDetailsFactory(IOptions<ApiBehaviorOptions>)
+  nameWithType: UrlShortenerProblemDetailsFactory.UrlShortenerProblemDetailsFactory(IOptions<ApiBehaviorOptions>)
+  fullName: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.UrlShortenerProblemDetailsFactory(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.ApiBehaviorOptions>)
+  type: Constructor
+  source:
+    remote:
+      path: UrlShortener.Api/Common/Errors/UrlShortenerProblemDetailsFactory.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: .ctor
+    path: UrlShortener.Api/Common/Errors/UrlShortenerProblemDetailsFactory.cs
+    startLine: 14
+  assemblies:
+  - UrlShortener.Api
+  namespace: UrlShortener.Api.Common.Errors
+  syntax:
+    content: public UrlShortenerProblemDetailsFactory(IOptions<ApiBehaviorOptions> options)
+    parameters:
+    - id: options
+      type: Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.ApiBehaviorOptions}
+    content.vb: Public Sub New(options As IOptions(Of ApiBehaviorOptions))
+  overload: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.#ctor*
+  nameWithType.vb: UrlShortenerProblemDetailsFactory.New(IOptions(Of ApiBehaviorOptions))
+  fullName.vb: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.New(Microsoft.Extensions.Options.IOptions(Of Microsoft.AspNetCore.Mvc.ApiBehaviorOptions))
+  name.vb: New(IOptions(Of ApiBehaviorOptions))
+- uid: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateProblemDetails(Microsoft.AspNetCore.Http.HttpContext,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+  commentId: M:UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateProblemDetails(Microsoft.AspNetCore.Http.HttpContext,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+  id: CreateProblemDetails(Microsoft.AspNetCore.Http.HttpContext,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+  parent: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateProblemDetails(HttpContext, int?, string?, string?, string?, string?)
+  nameWithType: UrlShortenerProblemDetailsFactory.CreateProblemDetails(HttpContext, int?, string?, string?, string?, string?)
+  fullName: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateProblemDetails(Microsoft.AspNetCore.Http.HttpContext, int?, string?, string?, string?, string?)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Api/Common/Errors/UrlShortenerProblemDetailsFactory.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: CreateProblemDetails
+    path: UrlShortener.Api/Common/Errors/UrlShortenerProblemDetailsFactory.cs
+    startLine: 19
+  assemblies:
+  - UrlShortener.Api
+  namespace: UrlShortener.Api.Common.Errors
+  summary: Creates a <xref href="Microsoft.AspNetCore.Mvc.ProblemDetails" data-throw-if-not-resolved="false"></xref> instance that configures defaults based on values specified in <xref href="Microsoft.AspNetCore.Mvc.ApiBehaviorOptions" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override ProblemDetails CreateProblemDetails(HttpContext httpContext, int? statusCode = null, string? title = null, string? type = null, string? detail = null, string? instance = null)
+    parameters:
+    - id: httpContext
+      type: Microsoft.AspNetCore.Http.HttpContext
+      description: The <xref href="Microsoft.AspNetCore.Http.HttpContext" data-throw-if-not-resolved="false"></xref>.
+    - id: statusCode
+      type: System.Nullable{System.Int32}
+      description: The value for <xref href="Microsoft.AspNetCore.Mvc.ProblemDetails.Status" data-throw-if-not-resolved="false"></xref>.
+    - id: title
+      type: System.String
+      description: The value for <xref href="Microsoft.AspNetCore.Mvc.ProblemDetails.Title" data-throw-if-not-resolved="false"></xref>.
+    - id: type
+      type: System.String
+      description: The value for <xref href="Microsoft.AspNetCore.Mvc.ProblemDetails.Type" data-throw-if-not-resolved="false"></xref>.
+    - id: detail
+      type: System.String
+      description: The value for <xref href="Microsoft.AspNetCore.Mvc.ProblemDetails.Detail" data-throw-if-not-resolved="false"></xref>.
+    - id: instance
+      type: System.String
+      description: The value for <xref href="Microsoft.AspNetCore.Mvc.ProblemDetails.Instance" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: Microsoft.AspNetCore.Mvc.ProblemDetails
+      description: The <xref href="Microsoft.AspNetCore.Mvc.ProblemDetails" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Overrides Function CreateProblemDetails(httpContext As HttpContext, statusCode As Integer? = Nothing, title As String = Nothing, type As String = Nothing, detail As String = Nothing, instance As String = Nothing) As ProblemDetails
+  overridden: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory.CreateProblemDetails(Microsoft.AspNetCore.Http.HttpContext,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+  overload: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateProblemDetails*
+  nameWithType.vb: UrlShortenerProblemDetailsFactory.CreateProblemDetails(HttpContext, Integer?, String, String, String, String)
+  fullName.vb: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateProblemDetails(Microsoft.AspNetCore.Http.HttpContext, Integer?, String, String, String, String)
+  name.vb: CreateProblemDetails(HttpContext, Integer?, String, String, String, String)
+- uid: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateValidationProblemDetails(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+  commentId: M:UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateValidationProblemDetails(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+  id: CreateValidationProblemDetails(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+  parent: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateValidationProblemDetails(HttpContext, ModelStateDictionary, int?, string?, string?, string?, string?)
+  nameWithType: UrlShortenerProblemDetailsFactory.CreateValidationProblemDetails(HttpContext, ModelStateDictionary, int?, string?, string?, string?, string?)
+  fullName: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateValidationProblemDetails(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, int?, string?, string?, string?, string?)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Api/Common/Errors/UrlShortenerProblemDetailsFactory.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: CreateValidationProblemDetails
+    path: UrlShortener.Api/Common/Errors/UrlShortenerProblemDetailsFactory.cs
+    startLine: 43
+  assemblies:
+  - UrlShortener.Api
+  namespace: UrlShortener.Api.Common.Errors
+  summary: Creates a <xref href="Microsoft.AspNetCore.Mvc.ValidationProblemDetails" data-throw-if-not-resolved="false"></xref> instance that configures defaults based on values specified in <xref href="Microsoft.AspNetCore.Mvc.ApiBehaviorOptions" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override ValidationProblemDetails CreateValidationProblemDetails(HttpContext httpContext, ModelStateDictionary modelStateDictionary, int? statusCode = null, string? title = null, string? type = null, string? detail = null, string? instance = null)
+    parameters:
+    - id: httpContext
+      type: Microsoft.AspNetCore.Http.HttpContext
+      description: The <xref href="Microsoft.AspNetCore.Http.HttpContext" data-throw-if-not-resolved="false"></xref>.
+    - id: modelStateDictionary
+      type: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+      description: The <xref href="Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary" data-throw-if-not-resolved="false"></xref>.
+    - id: statusCode
+      type: System.Nullable{System.Int32}
+      description: The value for <xref href="Microsoft.AspNetCore.Mvc.ProblemDetails.Status" data-throw-if-not-resolved="false"></xref>.
+    - id: title
+      type: System.String
+      description: The value for <xref href="Microsoft.AspNetCore.Mvc.ProblemDetails.Title" data-throw-if-not-resolved="false"></xref>.
+    - id: type
+      type: System.String
+      description: The value for <xref href="Microsoft.AspNetCore.Mvc.ProblemDetails.Type" data-throw-if-not-resolved="false"></xref>.
+    - id: detail
+      type: System.String
+      description: The value for <xref href="Microsoft.AspNetCore.Mvc.ProblemDetails.Detail" data-throw-if-not-resolved="false"></xref>.
+    - id: instance
+      type: System.String
+      description: The value for <xref href="Microsoft.AspNetCore.Mvc.ProblemDetails.Instance" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: Microsoft.AspNetCore.Mvc.ValidationProblemDetails
+      description: The <xref href="Microsoft.AspNetCore.Mvc.ValidationProblemDetails" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Overrides Function CreateValidationProblemDetails(httpContext As HttpContext, modelStateDictionary As ModelStateDictionary, statusCode As Integer? = Nothing, title As String = Nothing, type As String = Nothing, detail As String = Nothing, instance As String = Nothing) As ValidationProblemDetails
+  overridden: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory.CreateValidationProblemDetails(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+  overload: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateValidationProblemDetails*
+  nameWithType.vb: UrlShortenerProblemDetailsFactory.CreateValidationProblemDetails(HttpContext, ModelStateDictionary, Integer?, String, String, String, String)
+  fullName.vb: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateValidationProblemDetails(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, Integer?, String, String, String, String)
+  name.vb: CreateValidationProblemDetails(HttpContext, ModelStateDictionary, Integer?, String, String, String, String)
+references:
+- uid: UrlShortener.Api.Common.Errors
+  commentId: N:UrlShortener.Api.Common.Errors
+  href: UrlShortener.html
+  name: UrlShortener.Api.Common.Errors
+  nameWithType: UrlShortener.Api.Common.Errors
+  fullName: UrlShortener.Api.Common.Errors
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Api
+    name: Api
+    href: UrlShortener.Api.html
+  - name: .
+  - uid: UrlShortener.Api.Common
+    name: Common
+    href: UrlShortener.Api.Common.html
+  - name: .
+  - uid: UrlShortener.Api.Common.Errors
+    name: Errors
+    href: UrlShortener.Api.Common.Errors.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Api
+    name: Api
+    href: UrlShortener.Api.html
+  - name: .
+  - uid: UrlShortener.Api.Common
+    name: Common
+    href: UrlShortener.Api.Common.html
+  - name: .
+  - uid: UrlShortener.Api.Common.Errors
+    name: Errors
+    href: UrlShortener.Api.Common.Errors.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory
+  commentId: T:Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory
+  parent: Microsoft.AspNetCore.Mvc.Infrastructure
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.infrastructure.problemdetailsfactory
+  name: ProblemDetailsFactory
+  nameWithType: ProblemDetailsFactory
+  fullName: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Mvc.Infrastructure
+  commentId: N:Microsoft.AspNetCore.Mvc.Infrastructure
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.Infrastructure
+  nameWithType: Microsoft.AspNetCore.Mvc.Infrastructure
+  fullName: Microsoft.AspNetCore.Mvc.Infrastructure
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.Infrastructure
+    name: Infrastructure
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.infrastructure
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.Infrastructure
+    name: Infrastructure
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.infrastructure
+- uid: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.#ctor*
+  commentId: Overload:UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.#ctor
+  href: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.html#UrlShortener_Api_Common_Errors_UrlShortenerProblemDetailsFactory__ctor_Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Mvc_ApiBehaviorOptions__
+  name: UrlShortenerProblemDetailsFactory
+  nameWithType: UrlShortenerProblemDetailsFactory.UrlShortenerProblemDetailsFactory
+  fullName: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.UrlShortenerProblemDetailsFactory
+  nameWithType.vb: UrlShortenerProblemDetailsFactory.New
+  fullName.vb: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.New
+  name.vb: New
+- uid: Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.ApiBehaviorOptions}
+  commentId: T:Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.ApiBehaviorOptions}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<ApiBehaviorOptions>
+  nameWithType: IOptions<ApiBehaviorOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.ApiBehaviorOptions>
+  nameWithType.vb: IOptions(Of ApiBehaviorOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of Microsoft.AspNetCore.Mvc.ApiBehaviorOptions)
+  name.vb: IOptions(Of ApiBehaviorOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: Microsoft.AspNetCore.Mvc.ApiBehaviorOptions
+    name: ApiBehaviorOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.apibehavioroptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.ApiBehaviorOptions
+    name: ApiBehaviorOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.apibehavioroptions
+  - name: )
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+- uid: Microsoft.AspNetCore.Mvc.ProblemDetails
+  commentId: T:Microsoft.AspNetCore.Mvc.ProblemDetails
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.problemdetails
+  name: ProblemDetails
+  nameWithType: ProblemDetails
+  fullName: Microsoft.AspNetCore.Mvc.ProblemDetails
+- uid: Microsoft.AspNetCore.Mvc.ApiBehaviorOptions
+  commentId: T:Microsoft.AspNetCore.Mvc.ApiBehaviorOptions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.apibehavioroptions
+  name: ApiBehaviorOptions
+  nameWithType: ApiBehaviorOptions
+  fullName: Microsoft.AspNetCore.Mvc.ApiBehaviorOptions
+- uid: Microsoft.AspNetCore.Http.HttpContext
+  commentId: T:Microsoft.AspNetCore.Http.HttpContext
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: Microsoft.AspNetCore.Http.HttpContext
+- uid: Microsoft.AspNetCore.Mvc.ProblemDetails.Status
+  commentId: P:Microsoft.AspNetCore.Mvc.ProblemDetails.Status
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.problemdetails.status
+  name: Status
+  nameWithType: ProblemDetails.Status
+  fullName: Microsoft.AspNetCore.Mvc.ProblemDetails.Status
+- uid: Microsoft.AspNetCore.Mvc.ProblemDetails.Title
+  commentId: P:Microsoft.AspNetCore.Mvc.ProblemDetails.Title
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.problemdetails.title
+  name: Title
+  nameWithType: ProblemDetails.Title
+  fullName: Microsoft.AspNetCore.Mvc.ProblemDetails.Title
+- uid: Microsoft.AspNetCore.Mvc.ProblemDetails.Type
+  commentId: P:Microsoft.AspNetCore.Mvc.ProblemDetails.Type
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.problemdetails.type
+  name: Type
+  nameWithType: ProblemDetails.Type
+  fullName: Microsoft.AspNetCore.Mvc.ProblemDetails.Type
+- uid: Microsoft.AspNetCore.Mvc.ProblemDetails.Detail
+  commentId: P:Microsoft.AspNetCore.Mvc.ProblemDetails.Detail
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.problemdetails.detail
+  name: Detail
+  nameWithType: ProblemDetails.Detail
+  fullName: Microsoft.AspNetCore.Mvc.ProblemDetails.Detail
+- uid: Microsoft.AspNetCore.Mvc.ProblemDetails.Instance
+  commentId: P:Microsoft.AspNetCore.Mvc.ProblemDetails.Instance
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.problemdetails.instance
+  name: Instance
+  nameWithType: ProblemDetails.Instance
+  fullName: Microsoft.AspNetCore.Mvc.ProblemDetails.Instance
+- uid: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory.CreateProblemDetails(Microsoft.AspNetCore.Http.HttpContext,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+  commentId: M:Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory.CreateProblemDetails(Microsoft.AspNetCore.Http.HttpContext,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+  parent: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.infrastructure.problemdetailsfactory.createproblemdetails
+  name: CreateProblemDetails(HttpContext, int?, string, string, string, string)
+  nameWithType: ProblemDetailsFactory.CreateProblemDetails(HttpContext, int?, string, string, string, string)
+  fullName: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory.CreateProblemDetails(Microsoft.AspNetCore.Http.HttpContext, int?, string, string, string, string)
+  nameWithType.vb: ProblemDetailsFactory.CreateProblemDetails(HttpContext, Integer?, String, String, String, String)
+  fullName.vb: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory.CreateProblemDetails(Microsoft.AspNetCore.Http.HttpContext, Integer?, String, String, String, String)
+  name.vb: CreateProblemDetails(HttpContext, Integer?, String, String, String, String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory.CreateProblemDetails(Microsoft.AspNetCore.Http.HttpContext,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+    name: CreateProblemDetails
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.infrastructure.problemdetailsfactory.createproblemdetails
+  - name: (
+  - uid: Microsoft.AspNetCore.Http.HttpContext
+    name: HttpContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory.CreateProblemDetails(Microsoft.AspNetCore.Http.HttpContext,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+    name: CreateProblemDetails
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.infrastructure.problemdetailsfactory.createproblemdetails
+  - name: (
+  - uid: Microsoft.AspNetCore.Http.HttpContext
+    name: HttpContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateProblemDetails*
+  commentId: Overload:UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateProblemDetails
+  href: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.html#UrlShortener_Api_Common_Errors_UrlShortenerProblemDetailsFactory_CreateProblemDetails_Microsoft_AspNetCore_Http_HttpContext_System_Nullable_System_Int32__System_String_System_String_System_String_System_String_
+  name: CreateProblemDetails
+  nameWithType: UrlShortenerProblemDetailsFactory.CreateProblemDetails
+  fullName: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateProblemDetails
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.AspNetCore.Mvc.ValidationProblemDetails
+  commentId: T:Microsoft.AspNetCore.Mvc.ValidationProblemDetails
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.validationproblemdetails
+  name: ValidationProblemDetails
+  nameWithType: ValidationProblemDetails
+  fullName: Microsoft.AspNetCore.Mvc.ValidationProblemDetails
+- uid: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+  commentId: T:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+  parent: Microsoft.AspNetCore.Mvc.ModelBinding
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.modelstatedictionary
+  name: ModelStateDictionary
+  nameWithType: ModelStateDictionary
+  fullName: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+- uid: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory.CreateValidationProblemDetails(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+  commentId: M:Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory.CreateValidationProblemDetails(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+  parent: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.infrastructure.problemdetailsfactory.createvalidationproblemdetails
+  name: CreateValidationProblemDetails(HttpContext, ModelStateDictionary, int?, string, string, string, string)
+  nameWithType: ProblemDetailsFactory.CreateValidationProblemDetails(HttpContext, ModelStateDictionary, int?, string, string, string, string)
+  fullName: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory.CreateValidationProblemDetails(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, int?, string, string, string, string)
+  nameWithType.vb: ProblemDetailsFactory.CreateValidationProblemDetails(HttpContext, ModelStateDictionary, Integer?, String, String, String, String)
+  fullName.vb: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory.CreateValidationProblemDetails(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, Integer?, String, String, String, String)
+  name.vb: CreateValidationProblemDetails(HttpContext, ModelStateDictionary, Integer?, String, String, String, String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory.CreateValidationProblemDetails(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+    name: CreateValidationProblemDetails
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.infrastructure.problemdetailsfactory.createvalidationproblemdetails
+  - name: (
+  - uid: Microsoft.AspNetCore.Http.HttpContext
+    name: HttpContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+    name: ModelStateDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.modelstatedictionary
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory.CreateValidationProblemDetails(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)
+    name: CreateValidationProblemDetails
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.infrastructure.problemdetailsfactory.createvalidationproblemdetails
+  - name: (
+  - uid: Microsoft.AspNetCore.Http.HttpContext
+    name: HttpContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+    name: ModelStateDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.modelstatedictionary
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateValidationProblemDetails*
+  commentId: Overload:UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateValidationProblemDetails
+  href: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.html#UrlShortener_Api_Common_Errors_UrlShortenerProblemDetailsFactory_CreateValidationProblemDetails_Microsoft_AspNetCore_Http_HttpContext_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_Nullable_System_Int32__System_String_System_String_System_String_System_String_
+  name: CreateValidationProblemDetails
+  nameWithType: UrlShortenerProblemDetailsFactory.CreateValidationProblemDetails
+  fullName: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory.CreateValidationProblemDetails
+- uid: Microsoft.AspNetCore.Mvc.ModelBinding
+  commentId: N:Microsoft.AspNetCore.Mvc.ModelBinding
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.ModelBinding
+  nameWithType: Microsoft.AspNetCore.Mvc.ModelBinding
+  fullName: Microsoft.AspNetCore.Mvc.ModelBinding
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ModelBinding
+    name: ModelBinding
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ModelBinding
+    name: ModelBinding
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding

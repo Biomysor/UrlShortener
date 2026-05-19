@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Api.Common.Http
+  commentId: N:UrlShortener.Api.Common.Http
+  id: UrlShortener.Api.Common.Http
+  children:
+  - UrlShortener.Api.Common.Http.HttpContextItemKeys
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Api.Common.Http
+  nameWithType: UrlShortener.Api.Common.Http
+  fullName: UrlShortener.Api.Common.Http
+  type: Namespace
+  assemblies:
+  - UrlShortener.Api
+references:
+- uid: UrlShortener.Api.Common.Http.HttpContextItemKeys
+  commentId: T:UrlShortener.Api.Common.Http.HttpContextItemKeys
+  href: UrlShortener.Api.Common.Http.HttpContextItemKeys.html
+  name: HttpContextItemKeys
+  nameWithType: HttpContextItemKeys
+  fullName: UrlShortener.Api.Common.Http.HttpContextItemKeys

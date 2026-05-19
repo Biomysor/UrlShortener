@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.AnalyticsService.Models
+  commentId: N:UrlShortener.AnalyticsService.Models
+  id: UrlShortener.AnalyticsService.Models
+  children:
+  - UrlShortener.AnalyticsService.Models.UrlClick
+  - UrlShortener.AnalyticsService.Models.UrlStatistic
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.AnalyticsService.Models
+  nameWithType: UrlShortener.AnalyticsService.Models
+  fullName: UrlShortener.AnalyticsService.Models
+  type: Namespace
+  assemblies:
+  - UrlShortener.AnalyticsService
+references:
+- uid: UrlShortener.AnalyticsService.Models.UrlClick
+  commentId: T:UrlShortener.AnalyticsService.Models.UrlClick
+  href: UrlShortener.AnalyticsService.Models.UrlClick.html
+  name: UrlClick
+  nameWithType: UrlClick
+  fullName: UrlShortener.AnalyticsService.Models.UrlClick
+- uid: UrlShortener.AnalyticsService.Models.UrlStatistic
+  commentId: T:UrlShortener.AnalyticsService.Models.UrlStatistic
+  href: UrlShortener.AnalyticsService.Models.UrlStatistic.html
+  name: UrlStatistic
+  nameWithType: UrlStatistic
+  fullName: UrlShortener.AnalyticsService.Models.UrlStatistic

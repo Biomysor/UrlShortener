@@ -1,0 +1,399 @@
+### YamlMime:TableOfContent
+items:
+- uid: UrlShortener.AnalyticsService.Consumers
+  name: UrlShortener.AnalyticsService.Consumers
+  type: Namespace
+  items:
+  - uid: UrlShortener.AnalyticsService.Consumers.UrlRedirectedEventConsumer
+    name: UrlRedirectedEventConsumer
+    type: Class
+- uid: UrlShortener.AnalyticsService.Controllers
+  name: UrlShortener.AnalyticsService.Controllers
+  type: Namespace
+  items:
+  - uid: UrlShortener.AnalyticsService.Controllers.AnalyticsController
+    name: AnalyticsController
+    type: Class
+- uid: UrlShortener.AnalyticsService.Migrations
+  name: UrlShortener.AnalyticsService.Migrations
+  type: Namespace
+  items:
+  - uid: UrlShortener.AnalyticsService.Migrations.InitialAnalyticsCreate
+    name: InitialAnalyticsCreate
+    type: Class
+- uid: UrlShortener.AnalyticsService.Models
+  name: UrlShortener.AnalyticsService.Models
+  type: Namespace
+  items:
+  - uid: UrlShortener.AnalyticsService.Models.UrlClick
+    name: UrlClick
+    type: Class
+  - uid: UrlShortener.AnalyticsService.Models.UrlStatistic
+    name: UrlStatistic
+    type: Class
+- uid: UrlShortener.AnalyticsService.Persistance
+  name: UrlShortener.AnalyticsService.Persistance
+  type: Namespace
+  items:
+  - uid: UrlShortener.AnalyticsService.Persistance.AnalyticsDbContext
+    name: AnalyticsDbContext
+    type: Class
+- uid: UrlShortener.Api
+  name: UrlShortener.Api
+  type: Namespace
+  items:
+  - uid: UrlShortener.Api.DependencyInjection
+    name: DependencyInjection
+    type: Class
+- uid: UrlShortener.Api.Common.Errors
+  name: UrlShortener.Api.Common.Errors
+  type: Namespace
+  items:
+  - uid: UrlShortener.Api.Common.Errors.UrlShortenerProblemDetailsFactory
+    name: UrlShortenerProblemDetailsFactory
+    type: Class
+- uid: UrlShortener.Api.Common.Http
+  name: UrlShortener.Api.Common.Http
+  type: Namespace
+  items:
+  - uid: UrlShortener.Api.Common.Http.HttpContextItemKeys
+    name: HttpContextItemKeys
+    type: Class
+- uid: UrlShortener.Api.Common.Mapping
+  name: UrlShortener.Api.Common.Mapping
+  type: Namespace
+  items:
+  - uid: UrlShortener.Api.Common.Mapping.AuthenticationMapping
+    name: AuthenticationMapping
+    type: Class
+  - uid: UrlShortener.Api.Common.Mapping.DependencyInjection
+    name: DependencyInjection
+    type: Class
+  - uid: UrlShortener.Api.Common.Mapping.UrlMapping
+    name: UrlMapping
+    type: Class
+- uid: UrlShortener.Api.Controllers
+  name: UrlShortener.Api.Controllers
+  type: Namespace
+  items:
+  - uid: UrlShortener.Api.Controllers.ApiController
+    name: ApiController
+    type: Class
+  - uid: UrlShortener.Api.Controllers.AuthenticateController
+    name: AuthenticateController
+    type: Class
+  - uid: UrlShortener.Api.Controllers.UrlActionController
+    name: UrlActionController
+    type: Class
+  - uid: UrlShortener.Api.Controllers.UrlRedirectController
+    name: UrlRedirectController
+    type: Class
+- uid: UrlShortener.Application
+  name: UrlShortener.Application
+  type: Namespace
+  items:
+  - uid: UrlShortener.Application.DependencyInjection
+    name: DependencyInjection
+    type: Class
+- uid: UrlShortener.Application.Authentication.Behavior
+  name: UrlShortener.Application.Authentication.Behavior
+  type: Namespace
+  items:
+  - uid: UrlShortener.Application.Authentication.Behavior.ValidationBehavior`2
+    name: ValidationBehavior<TRequest, TResponse>
+    type: Class
+- uid: UrlShortener.Application.Authentication.Commands.Register
+  name: UrlShortener.Application.Authentication.Commands.Register
+  type: Namespace
+  items:
+  - uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommand
+    name: RegisterCommand
+    type: Class
+  - uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandHandler
+    name: RegisterCommandHandler
+    type: Class
+  - uid: UrlShortener.Application.Authentication.Commands.Register.RegisterCommandValidation
+    name: RegisterCommandValidation
+    type: Class
+- uid: UrlShortener.Application.Authentication.Common
+  name: UrlShortener.Application.Authentication.Common
+  type: Namespace
+  items:
+  - uid: UrlShortener.Application.Authentication.Common.AuthenticationResult
+    name: AuthenticationResult
+    type: Class
+- uid: UrlShortener.Application.Authentication.Queries
+  name: UrlShortener.Application.Authentication.Queries
+  type: Namespace
+  items:
+  - uid: UrlShortener.Application.Authentication.Queries.LoginQuery
+    name: LoginQuery
+    type: Class
+  - uid: UrlShortener.Application.Authentication.Queries.LoginQueryHandler
+    name: LoginQueryHandler
+    type: Class
+  - uid: UrlShortener.Application.Authentication.Queries.LoginQueryValidation
+    name: LoginQueryValidation
+    type: Class
+- uid: UrlShortener.Application.Common.Interfaces.Authentication
+  name: UrlShortener.Application.Common.Interfaces.Authentication
+  type: Namespace
+  items:
+  - uid: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+    name: IJwtTokenGenerator
+    type: Interface
+- uid: UrlShortener.Application.Common.Interfaces.Repositories
+  name: UrlShortener.Application.Common.Interfaces.Repositories
+  type: Namespace
+  items:
+  - uid: UrlShortener.Application.Common.Interfaces.Repositories.IUrlRepository
+    name: IUrlRepository
+    type: Interface
+  - uid: UrlShortener.Application.Common.Interfaces.Repositories.IUserRepository
+    name: IUserRepository
+    type: Interface
+- uid: UrlShortener.Application.Common.Interfaces.Services
+  name: UrlShortener.Application.Common.Interfaces.Services
+  type: Namespace
+  items:
+  - uid: UrlShortener.Application.Common.Interfaces.Services.ICacheService
+    name: ICacheService
+    type: Interface
+  - uid: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider
+    name: IDateTimeProvider
+    type: Interface
+  - uid: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher
+    name: IMessagePublisher
+    type: Interface
+  - uid: UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher
+    name: IPasswordHasher
+    type: Interface
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions
+  name: UrlShortener.Application.Common.Interfaces.UrlActions
+  type: Namespace
+  items:
+  - uid: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder
+    name: IShortUrlBuilder
+    type: Interface
+  - uid: UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator
+    name: IUrlCodeGenerator
+    type: Interface
+- uid: UrlShortener.Application.UrlActions.Commands
+  name: UrlShortener.Application.UrlActions.Commands
+  type: Namespace
+  items:
+  - uid: UrlShortener.Application.UrlActions.Commands.ShortenUrlCommand
+    name: ShortenUrlCommand
+    type: Class
+  - uid: UrlShortener.Application.UrlActions.Commands.ShortenUrlCommandHandler
+    name: ShortenUrlCommandHandler
+    type: Class
+  - uid: UrlShortener.Application.UrlActions.Commands.ShortenUrlValidation
+    name: ShortenUrlValidation
+    type: Class
+- uid: UrlShortener.Application.UrlActions.Common
+  name: UrlShortener.Application.UrlActions.Common
+  type: Namespace
+  items:
+  - uid: UrlShortener.Application.UrlActions.Common.CachedUrlRedirect
+    name: CachedUrlRedirect
+    type: Class
+  - uid: UrlShortener.Application.UrlActions.Common.UrlResult
+    name: UrlResult
+    type: Class
+- uid: UrlShortener.Application.UrlActions.Queries.RedirectQueries
+  name: UrlShortener.Application.UrlActions.Queries.RedirectQueries
+  type: Namespace
+  items:
+  - uid: UrlShortener.Application.UrlActions.Queries.RedirectQueries.RedirectQuery
+    name: RedirectQuery
+    type: Class
+  - uid: UrlShortener.Application.UrlActions.Queries.RedirectQueries.RedirectQueryHandler
+    name: RedirectQueryHandler
+    type: Class
+- uid: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  name: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  type: Namespace
+  items:
+  - uid: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery
+    name: UrlQuery
+    type: Class
+  - uid: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQueryHandler
+    name: UrlQueryHandler
+    type: Class
+  - uid: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQueryValidation
+    name: UrlQueryValidation
+    type: Class
+- uid: UrlShortener.Domain.Common
+  name: UrlShortener.Domain.Common
+  type: Namespace
+  items:
+  - uid: UrlShortener.Domain.Common.Entity`1
+    name: Entity<TId>
+    type: Class
+  - uid: UrlShortener.Domain.Common.ValueObject
+    name: ValueObject
+    type: Class
+- uid: UrlShortener.Domain.Common.Errors
+  name: UrlShortener.Domain.Common.Errors
+  type: Namespace
+  items:
+  - uid: UrlShortener.Domain.Common.Errors.Errors
+    name: Errors
+    type: Class
+  - uid: UrlShortener.Domain.Common.Errors.Errors.Authentication
+    name: Errors.Authentication
+    type: Class
+  - uid: UrlShortener.Domain.Common.Errors.Errors.User
+    name: Errors.User
+    type: Class
+- uid: UrlShortener.Domain.UrlAggregate.Entity
+  name: UrlShortener.Domain.UrlAggregate.Entity
+  type: Namespace
+  items:
+  - uid: UrlShortener.Domain.UrlAggregate.Entity.Url
+    name: Url
+    type: Class
+- uid: UrlShortener.Domain.UrlAggregate.ValueObjects
+  name: UrlShortener.Domain.UrlAggregate.ValueObjects
+  type: Namespace
+  items:
+  - uid: UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId
+    name: UrlId
+    type: Class
+- uid: UrlShortener.Domain.UserAggregate.Entity
+  name: UrlShortener.Domain.UserAggregate.Entity
+  type: Namespace
+  items:
+  - uid: UrlShortener.Domain.UserAggregate.Entity.User
+    name: User
+    type: Class
+- uid: UrlShortener.Domain.UserAggregate.ValueObjects
+  name: UrlShortener.Domain.UserAggregate.ValueObjects
+  type: Namespace
+  items:
+  - uid: UrlShortener.Domain.UserAggregate.ValueObjects.UserId
+    name: UserId
+    type: Class
+- uid: UrlShortener.Infrastructure
+  name: UrlShortener.Infrastructure
+  type: Namespace
+  items:
+  - uid: UrlShortener.Infrastructure.DependencyInjection
+    name: DependencyInjection
+    type: Class
+- uid: UrlShortener.Infrastructure.Authentication
+  name: UrlShortener.Infrastructure.Authentication
+  type: Namespace
+  items:
+  - uid: UrlShortener.Infrastructure.Authentication.JwtSettings
+    name: JwtSettings
+    type: Class
+  - uid: UrlShortener.Infrastructure.Authentication.JwtTokenGenerator
+    name: JwtTokenGenerator
+    type: Class
+- uid: UrlShortener.Infrastructure.Migrations
+  name: UrlShortener.Infrastructure.Migrations
+  type: Namespace
+  items:
+  - uid: UrlShortener.Infrastructure.Migrations.AddValueObjectIds
+    name: AddValueObjectIds
+    type: Class
+- uid: UrlShortener.Infrastructure.Persistance
+  name: UrlShortener.Infrastructure.Persistance
+  type: Namespace
+  items:
+  - uid: UrlShortener.Infrastructure.Persistance.ApplicationDbContext
+    name: ApplicationDbContext
+    type: Class
+- uid: UrlShortener.Infrastructure.Persistance.Configuration
+  name: UrlShortener.Infrastructure.Persistance.Configuration
+  type: Namespace
+  items:
+  - uid: UrlShortener.Infrastructure.Persistance.Configuration.UrlConfiguration
+    name: UrlConfiguration
+    type: Class
+  - uid: UrlShortener.Infrastructure.Persistance.Configuration.UserConfiguration
+    name: UserConfiguration
+    type: Class
+- uid: UrlShortener.Infrastructure.Repositories
+  name: UrlShortener.Infrastructure.Repositories
+  type: Namespace
+  items:
+  - uid: UrlShortener.Infrastructure.Repositories.UrlRepository
+    name: UrlRepository
+    type: Class
+  - uid: UrlShortener.Infrastructure.Repositories.UserRepository
+    name: UserRepository
+    type: Class
+- uid: UrlShortener.Infrastructure.Services
+  name: UrlShortener.Infrastructure.Services
+  type: Namespace
+  items:
+  - uid: UrlShortener.Infrastructure.Services.CachingService
+    name: CachingService
+    type: Class
+  - uid: UrlShortener.Infrastructure.Services.DateTimeProvider
+    name: DateTimeProvider
+    type: Class
+  - uid: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher
+    name: MassTransitMessagePublisher
+    type: Class
+  - uid: UrlShortener.Infrastructure.Services.MessagePublisherTests
+    name: MessagePublisherTests
+    type: Class
+  - uid: UrlShortener.Infrastructure.Services.PasswordHasher
+    name: PasswordHasher
+    type: Class
+- uid: UrlShortener.Infrastructure.UrlActions
+  name: UrlShortener.Infrastructure.UrlActions
+  type: Namespace
+  items:
+  - uid: UrlShortener.Infrastructure.UrlActions.ShortUrlBuilder
+    name: ShortUrlBuilder
+    type: Class
+  - uid: UrlShortener.Infrastructure.UrlActions.UrlCodeGenerator
+    name: UrlCodeGenerator
+    type: Class
+- uid: UrlShortener.Messaging.Contracts.Analytics
+  name: UrlShortener.Messaging.Contracts.Analytics
+  type: Namespace
+  items:
+  - uid: UrlShortener.Messaging.Contracts.Analytics.UrlRedirectResponse
+    name: UrlRedirectResponse
+    type: Class
+  - uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse
+    name: UrlStatisticsResponse
+    type: Class
+- uid: UrlShortener.Messaging.Contracts.Events
+  name: UrlShortener.Messaging.Contracts.Events
+  type: Namespace
+  items:
+  - uid: UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent
+    name: UrlCreatedEvent
+    type: Class
+  - uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+    name: UrlRedirectedEvent
+    type: Class
+- uid: UrlShortener.Messaging.Contracts.Notifications
+  name: UrlShortener.Messaging.Contracts.Notifications
+  type: Namespace
+  items:
+  - uid: UrlShortener.Messaging.Contracts.Notifications.TelegramNotificationMessage
+    name: TelegramNotificationMessage
+    type: Class
+- uid: UrlShortener.NotificationsService
+  name: UrlShortener.NotificationsService
+  type: Namespace
+  items:
+  - uid: UrlShortener.NotificationsService.Worker
+    name: Worker
+    type: Class
+- uid: UrlShortener.NotificationsService.Consumers
+  name: UrlShortener.NotificationsService.Consumers
+  type: Namespace
+  items:
+  - uid: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer
+    name: UrlCreatedEventConsumer
+    type: Class
+memberLayout: SamePage

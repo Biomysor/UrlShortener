@@ -1,0 +1,653 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher
+  commentId: T:UrlShortener.Infrastructure.Services.MassTransitMessagePublisher
+  id: MassTransitMessagePublisher
+  parent: UrlShortener.Infrastructure.Services
+  children:
+  - UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.#ctor(MassTransit.IPublishEndpoint)
+  - UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: MassTransitMessagePublisher
+  nameWithType: MassTransitMessagePublisher
+  fullName: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher
+  type: Class
+  source:
+    remote:
+      path: UrlShortener.Infrastructure/Services/MassTransitMessagePublisher.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: MassTransitMessagePublisher
+    path: UrlShortener.Infrastructure/Services/MassTransitMessagePublisher.cs
+    startLine: 9
+  assemblies:
+  - UrlShortener.Infrastructure
+  namespace: UrlShortener.Infrastructure.Services
+  summary: >-
+    Message publisher implementation based on MassTransit.
+
+    Publishes integration events to RabbitMQ.
+  example: []
+  syntax:
+    content: 'public class MassTransitMessagePublisher : IMessagePublisher'
+    content.vb: Public Class MassTransitMessagePublisher Implements IMessagePublisher
+  inheritance:
+  - System.Object
+  implements:
+  - UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.#ctor(MassTransit.IPublishEndpoint)
+  commentId: M:UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.#ctor(MassTransit.IPublishEndpoint)
+  id: '#ctor(MassTransit.IPublishEndpoint)'
+  parent: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher
+  langs:
+  - csharp
+  - vb
+  name: MassTransitMessagePublisher(IPublishEndpoint)
+  nameWithType: MassTransitMessagePublisher.MassTransitMessagePublisher(IPublishEndpoint)
+  fullName: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.MassTransitMessagePublisher(MassTransit.IPublishEndpoint)
+  type: Constructor
+  source:
+    remote:
+      path: UrlShortener.Infrastructure/Services/MassTransitMessagePublisher.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: .ctor
+    path: UrlShortener.Infrastructure/Services/MassTransitMessagePublisher.cs
+    startLine: 9
+  assemblies:
+  - UrlShortener.Infrastructure
+  namespace: UrlShortener.Infrastructure.Services
+  summary: >-
+    Message publisher implementation based on MassTransit.
+
+    Publishes integration events to RabbitMQ.
+  example: []
+  syntax:
+    content: public MassTransitMessagePublisher(IPublishEndpoint publishEndpoint)
+    parameters:
+    - id: publishEndpoint
+      type: MassTransit.IPublishEndpoint
+    content.vb: Public Sub New(publishEndpoint As IPublishEndpoint)
+  overload: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.#ctor*
+  nameWithType.vb: MassTransitMessagePublisher.New(IPublishEndpoint)
+  fullName.vb: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.New(MassTransit.IPublishEndpoint)
+  name.vb: New(IPublishEndpoint)
+- uid: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  commentId: M:UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  id: PublishAsync``1(``0,System.Threading.CancellationToken)
+  parent: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher
+  langs:
+  - csharp
+  - vb
+  name: PublishAsync<TMessage>(TMessage, CancellationToken)
+  nameWithType: MassTransitMessagePublisher.PublishAsync<TMessage>(TMessage, CancellationToken)
+  fullName: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.PublishAsync<TMessage>(TMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Infrastructure/Services/MassTransitMessagePublisher.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: PublishAsync
+    path: UrlShortener.Infrastructure/Services/MassTransitMessagePublisher.cs
+    startLine: 15
+  assemblies:
+  - UrlShortener.Infrastructure
+  namespace: UrlShortener.Infrastructure.Services
+  summary: Publishes a message to the configured message broker.
+  example: []
+  syntax:
+    content: 'public Task PublishAsync<TMessage>(TMessage message, CancellationToken cancellationToken = default) where TMessage : class'
+    parameters:
+    - id: message
+      type: '{TMessage}'
+      description: Message instance.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    typeParameters:
+    - id: TMessage
+      description: Type of message.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function PublishAsync(Of TMessage As Class)(message As TMessage, cancellationToken As CancellationToken = Nothing) As Task
+  overload: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.PublishAsync*
+  implements:
+  - UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync``1({TMessage},System.Threading.CancellationToken)
+  nameWithType.vb: MassTransitMessagePublisher.PublishAsync(Of TMessage)(TMessage, CancellationToken)
+  fullName.vb: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.PublishAsync(Of TMessage)(TMessage, System.Threading.CancellationToken)
+  name.vb: PublishAsync(Of TMessage)(TMessage, CancellationToken)
+references:
+- uid: UrlShortener.Infrastructure.Services
+  commentId: N:UrlShortener.Infrastructure.Services
+  href: UrlShortener.html
+  name: UrlShortener.Infrastructure.Services
+  nameWithType: UrlShortener.Infrastructure.Services
+  fullName: UrlShortener.Infrastructure.Services
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Infrastructure
+    name: Infrastructure
+    href: UrlShortener.Infrastructure.html
+  - name: .
+  - uid: UrlShortener.Infrastructure.Services
+    name: Services
+    href: UrlShortener.Infrastructure.Services.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Infrastructure
+    name: Infrastructure
+    href: UrlShortener.Infrastructure.html
+  - name: .
+  - uid: UrlShortener.Infrastructure.Services
+    name: Services
+    href: UrlShortener.Infrastructure.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher
+  commentId: T:UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher
+  parent: UrlShortener.Application.Common.Interfaces.Services
+  href: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.html
+  name: IMessagePublisher
+  nameWithType: IMessagePublisher
+  fullName: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UrlShortener.Application.Common.Interfaces.Services
+  commentId: N:UrlShortener.Application.Common.Interfaces.Services
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.Services
+  nameWithType: UrlShortener.Application.Common.Interfaces.Services
+  fullName: UrlShortener.Application.Common.Interfaces.Services
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Services
+    name: Services
+    href: UrlShortener.Application.Common.Interfaces.Services.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Services
+    name: Services
+    href: UrlShortener.Application.Common.Interfaces.Services.html
+- uid: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.#ctor*
+  commentId: Overload:UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.#ctor
+  href: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.html#UrlShortener_Infrastructure_Services_MassTransitMessagePublisher__ctor_MassTransit_IPublishEndpoint_
+  name: MassTransitMessagePublisher
+  nameWithType: MassTransitMessagePublisher.MassTransitMessagePublisher
+  fullName: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.MassTransitMessagePublisher
+  nameWithType.vb: MassTransitMessagePublisher.New
+  fullName.vb: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.New
+  name.vb: New
+- uid: MassTransit.IPublishEndpoint
+  commentId: T:MassTransit.IPublishEndpoint
+  parent: MassTransit
+  isExternal: true
+  name: IPublishEndpoint
+  nameWithType: IPublishEndpoint
+  fullName: MassTransit.IPublishEndpoint
+- uid: MassTransit
+  commentId: N:MassTransit
+  isExternal: true
+  name: MassTransit
+  nameWithType: MassTransit
+  fullName: MassTransit
+- uid: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.PublishAsync*
+  commentId: Overload:UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.PublishAsync
+  href: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.html#UrlShortener_Infrastructure_Services_MassTransitMessagePublisher_PublishAsync__1___0_System_Threading_CancellationToken_
+  name: PublishAsync
+  nameWithType: MassTransitMessagePublisher.PublishAsync
+  fullName: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.PublishAsync
+- uid: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync``1({TMessage},System.Threading.CancellationToken)
+  commentId: M:UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  parent: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher
+  definition: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: PublishAsync<TMessage>(TMessage, CancellationToken)
+  nameWithType: IMessagePublisher.PublishAsync<TMessage>(TMessage, CancellationToken)
+  fullName: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync<TMessage>(TMessage, System.Threading.CancellationToken)
+  nameWithType.vb: IMessagePublisher.PublishAsync(Of TMessage)(TMessage, CancellationToken)
+  fullName.vb: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync(Of TMessage)(TMessage, System.Threading.CancellationToken)
+  name.vb: PublishAsync(Of TMessage)(TMessage, CancellationToken)
+  spec.csharp:
+  - uid: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+    name: PublishAsync
+  - name: <
+  - name: TMessage
+  - name: '>'
+  - name: (
+  - name: TMessage
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+    name: PublishAsync
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: (
+  - name: TMessage
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: '{TMessage}'
+  commentId: '!:TMessage'
+  definition: TMessage
+  name: TMessage
+  nameWithType: TMessage
+  fullName: TMessage
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  commentId: M:UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: PublishAsync<TMessage>(TMessage, CancellationToken)
+  nameWithType: IMessagePublisher.PublishAsync<TMessage>(TMessage, CancellationToken)
+  fullName: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync<TMessage>(TMessage, System.Threading.CancellationToken)
+  nameWithType.vb: IMessagePublisher.PublishAsync(Of TMessage)(TMessage, CancellationToken)
+  fullName.vb: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync(Of TMessage)(TMessage, System.Threading.CancellationToken)
+  name.vb: PublishAsync(Of TMessage)(TMessage, CancellationToken)
+  spec.csharp:
+  - uid: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+    name: PublishAsync
+  - name: <
+  - name: TMessage
+  - name: '>'
+  - name: (
+  - name: TMessage
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+    name: PublishAsync
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TMessage
+  - name: )
+  - name: (
+  - name: TMessage
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: TMessage
+  name: TMessage
+  nameWithType: TMessage
+  fullName: TMessage
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Infrastructure.Migrations
+  commentId: N:UrlShortener.Infrastructure.Migrations
+  id: UrlShortener.Infrastructure.Migrations
+  children:
+  - UrlShortener.Infrastructure.Migrations.AddValueObjectIds
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Infrastructure.Migrations
+  nameWithType: UrlShortener.Infrastructure.Migrations
+  fullName: UrlShortener.Infrastructure.Migrations
+  type: Namespace
+  assemblies:
+  - UrlShortener.Infrastructure
+references:
+- uid: UrlShortener.Infrastructure.Migrations.AddValueObjectIds
+  commentId: T:UrlShortener.Infrastructure.Migrations.AddValueObjectIds
+  href: UrlShortener.Infrastructure.Migrations.AddValueObjectIds.html
+  name: AddValueObjectIds
+  nameWithType: AddValueObjectIds
+  fullName: UrlShortener.Infrastructure.Migrations.AddValueObjectIds

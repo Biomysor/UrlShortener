@@ -1,0 +1,449 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Common.Interfaces.Services.ICacheService
+  commentId: T:UrlShortener.Application.Common.Interfaces.Services.ICacheService
+  id: ICacheService
+  parent: UrlShortener.Application.Common.Interfaces.Services
+  children:
+  - UrlShortener.Application.Common.Interfaces.Services.ICacheService.GetAsync``1(System.String,System.Threading.CancellationToken)
+  - UrlShortener.Application.Common.Interfaces.Services.ICacheService.RemoveAsync(System.String,System.Threading.CancellationToken)
+  - UrlShortener.Application.Common.Interfaces.Services.ICacheService.SetAsync``1(System.String,``0,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ICacheService
+  nameWithType: ICacheService
+  fullName: UrlShortener.Application.Common.Interfaces.Services.ICacheService
+  type: Interface
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Services/ICacheService.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: ICacheService
+    path: UrlShortener.Application/Common/Interfaces/Services/ICacheService.cs
+    startLine: 6
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Services
+  summary: >-
+    Provides abstraction for cache operations.
+
+    Application layer does not depend on a concrete cache provider.
+  example: []
+  syntax:
+    content: public interface ICacheService
+    content.vb: Public Interface ICacheService
+  derivedClasses:
+  - UrlShortener.Infrastructure.Services.CachingService
+- uid: UrlShortener.Application.Common.Interfaces.Services.ICacheService.GetAsync``1(System.String,System.Threading.CancellationToken)
+  commentId: M:UrlShortener.Application.Common.Interfaces.Services.ICacheService.GetAsync``1(System.String,System.Threading.CancellationToken)
+  id: GetAsync``1(System.String,System.Threading.CancellationToken)
+  parent: UrlShortener.Application.Common.Interfaces.Services.ICacheService
+  langs:
+  - csharp
+  - vb
+  name: GetAsync<T>(string, CancellationToken)
+  nameWithType: ICacheService.GetAsync<T>(string, CancellationToken)
+  fullName: UrlShortener.Application.Common.Interfaces.Services.ICacheService.GetAsync<T>(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Services/ICacheService.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: GetAsync
+    path: UrlShortener.Application/Common/Interfaces/Services/ICacheService.cs
+    startLine: 15
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Services
+  summary: Gets a cached value by key.
+  example: []
+  syntax:
+    content: Task<T?> GetAsync<T>(string key, CancellationToken cancellationToken = default)
+    parameters:
+    - id: key
+      type: System.String
+      description: Cache key.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    typeParameters:
+    - id: T
+      description: Type of cached value.
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: Cached value or null if key does not exist.
+    content.vb: Function GetAsync(Of T)(key As String, cancellationToken As CancellationToken = Nothing) As Task(Of T)
+  overload: UrlShortener.Application.Common.Interfaces.Services.ICacheService.GetAsync*
+  nameWithType.vb: ICacheService.GetAsync(Of T)(String, CancellationToken)
+  fullName.vb: UrlShortener.Application.Common.Interfaces.Services.ICacheService.GetAsync(Of T)(String, System.Threading.CancellationToken)
+  name.vb: GetAsync(Of T)(String, CancellationToken)
+- uid: UrlShortener.Application.Common.Interfaces.Services.ICacheService.SetAsync``1(System.String,``0,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  commentId: M:UrlShortener.Application.Common.Interfaces.Services.ICacheService.SetAsync``1(System.String,``0,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  id: SetAsync``1(System.String,``0,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  parent: UrlShortener.Application.Common.Interfaces.Services.ICacheService
+  langs:
+  - csharp
+  - vb
+  name: SetAsync<T>(string, T, TimeSpan?, CancellationToken)
+  nameWithType: ICacheService.SetAsync<T>(string, T, TimeSpan?, CancellationToken)
+  fullName: UrlShortener.Application.Common.Interfaces.Services.ICacheService.SetAsync<T>(string, T, System.TimeSpan?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Services/ICacheService.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: SetAsync
+    path: UrlShortener.Application/Common/Interfaces/Services/ICacheService.cs
+    startLine: 27
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Services
+  summary: Saves a value to cache with expiration time.
+  example: []
+  syntax:
+    content: Task SetAsync<T>(string key, T value, TimeSpan? expiration = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: key
+      type: System.String
+      description: Cache key.
+    - id: value
+      type: '{T}'
+      description: Value to cache.
+    - id: expiration
+      type: System.Nullable{System.TimeSpan}
+      description: Cache lifetime.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    typeParameters:
+    - id: T
+      description: Type of value to cache.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SetAsync(Of T)(key As String, value As T, expiration As TimeSpan? = Nothing, cancellationToken As CancellationToken = Nothing) As Task
+  overload: UrlShortener.Application.Common.Interfaces.Services.ICacheService.SetAsync*
+  nameWithType.vb: ICacheService.SetAsync(Of T)(String, T, TimeSpan?, CancellationToken)
+  fullName.vb: UrlShortener.Application.Common.Interfaces.Services.ICacheService.SetAsync(Of T)(String, T, System.TimeSpan?, System.Threading.CancellationToken)
+  name.vb: SetAsync(Of T)(String, T, TimeSpan?, CancellationToken)
+- uid: UrlShortener.Application.Common.Interfaces.Services.ICacheService.RemoveAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:UrlShortener.Application.Common.Interfaces.Services.ICacheService.RemoveAsync(System.String,System.Threading.CancellationToken)
+  id: RemoveAsync(System.String,System.Threading.CancellationToken)
+  parent: UrlShortener.Application.Common.Interfaces.Services.ICacheService
+  langs:
+  - csharp
+  - vb
+  name: RemoveAsync(string, CancellationToken)
+  nameWithType: ICacheService.RemoveAsync(string, CancellationToken)
+  fullName: UrlShortener.Application.Common.Interfaces.Services.ICacheService.RemoveAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Services/ICacheService.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: RemoveAsync
+    path: UrlShortener.Application/Common/Interfaces/Services/ICacheService.cs
+    startLine: 38
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Services
+  summary: Removes a value from cache by key.
+  example: []
+  syntax:
+    content: Task RemoveAsync(string key, CancellationToken cancellationToken = default)
+    parameters:
+    - id: key
+      type: System.String
+      description: Cache key.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function RemoveAsync(key As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: UrlShortener.Application.Common.Interfaces.Services.ICacheService.RemoveAsync*
+  nameWithType.vb: ICacheService.RemoveAsync(String, CancellationToken)
+  fullName.vb: UrlShortener.Application.Common.Interfaces.Services.ICacheService.RemoveAsync(String, System.Threading.CancellationToken)
+  name.vb: RemoveAsync(String, CancellationToken)
+references:
+- uid: UrlShortener.Application.Common.Interfaces.Services
+  commentId: N:UrlShortener.Application.Common.Interfaces.Services
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.Services
+  nameWithType: UrlShortener.Application.Common.Interfaces.Services
+  fullName: UrlShortener.Application.Common.Interfaces.Services
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Services
+    name: Services
+    href: UrlShortener.Application.Common.Interfaces.Services.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Services
+    name: Services
+    href: UrlShortener.Application.Common.Interfaces.Services.html
+- uid: UrlShortener.Application.Common.Interfaces.Services.ICacheService.GetAsync*
+  commentId: Overload:UrlShortener.Application.Common.Interfaces.Services.ICacheService.GetAsync
+  href: UrlShortener.Application.Common.Interfaces.Services.ICacheService.html#UrlShortener_Application_Common_Interfaces_Services_ICacheService_GetAsync__1_System_String_System_Threading_CancellationToken_
+  name: GetAsync
+  nameWithType: ICacheService.GetAsync
+  fullName: UrlShortener.Application.Common.Interfaces.Services.ICacheService.GetAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: UrlShortener.Application.Common.Interfaces.Services.ICacheService.SetAsync*
+  commentId: Overload:UrlShortener.Application.Common.Interfaces.Services.ICacheService.SetAsync
+  href: UrlShortener.Application.Common.Interfaces.Services.ICacheService.html#UrlShortener_Application_Common_Interfaces_Services_ICacheService_SetAsync__1_System_String___0_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  name: SetAsync
+  nameWithType: ICacheService.SetAsync
+  fullName: UrlShortener.Application.Common.Interfaces.Services.ICacheService.SetAsync
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan?
+  nameWithType: TimeSpan?
+  fullName: System.TimeSpan?
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UrlShortener.Application.Common.Interfaces.Services.ICacheService.RemoveAsync*
+  commentId: Overload:UrlShortener.Application.Common.Interfaces.Services.ICacheService.RemoveAsync
+  href: UrlShortener.Application.Common.Interfaces.Services.ICacheService.html#UrlShortener_Application_Common_Interfaces_Services_ICacheService_RemoveAsync_System_String_System_Threading_CancellationToken_
+  name: RemoveAsync
+  nameWithType: ICacheService.RemoveAsync
+  fullName: UrlShortener.Application.Common.Interfaces.Services.ICacheService.RemoveAsync

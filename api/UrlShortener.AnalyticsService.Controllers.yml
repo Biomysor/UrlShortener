@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.AnalyticsService.Controllers
+  commentId: N:UrlShortener.AnalyticsService.Controllers
+  id: UrlShortener.AnalyticsService.Controllers
+  children:
+  - UrlShortener.AnalyticsService.Controllers.AnalyticsController
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.AnalyticsService.Controllers
+  nameWithType: UrlShortener.AnalyticsService.Controllers
+  fullName: UrlShortener.AnalyticsService.Controllers
+  type: Namespace
+  assemblies:
+  - UrlShortener.AnalyticsService
+references:
+- uid: UrlShortener.AnalyticsService.Controllers.AnalyticsController
+  commentId: T:UrlShortener.AnalyticsService.Controllers.AnalyticsController
+  href: UrlShortener.AnalyticsService.Controllers.AnalyticsController.html
+  name: AnalyticsController
+  nameWithType: AnalyticsController
+  fullName: UrlShortener.AnalyticsService.Controllers.AnalyticsController

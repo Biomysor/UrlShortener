@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Messaging.Contracts.Events
+  commentId: N:UrlShortener.Messaging.Contracts.Events
+  id: UrlShortener.Messaging.Contracts.Events
+  children:
+  - UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent
+  - UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Messaging.Contracts.Events
+  nameWithType: UrlShortener.Messaging.Contracts.Events
+  fullName: UrlShortener.Messaging.Contracts.Events
+  type: Namespace
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+references:
+- uid: UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent
+  commentId: T:UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent
+  href: UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent.html
+  name: UrlCreatedEvent
+  nameWithType: UrlCreatedEvent
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlCreatedEvent
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+  commentId: T:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+  href: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.html
+  name: UrlRedirectedEvent
+  nameWithType: UrlRedirectedEvent
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent

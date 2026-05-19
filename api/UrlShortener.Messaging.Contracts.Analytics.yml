@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Messaging.Contracts.Analytics
+  commentId: N:UrlShortener.Messaging.Contracts.Analytics
+  id: UrlShortener.Messaging.Contracts.Analytics
+  children:
+  - UrlShortener.Messaging.Contracts.Analytics.UrlRedirectResponse
+  - UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Messaging.Contracts.Analytics
+  nameWithType: UrlShortener.Messaging.Contracts.Analytics
+  fullName: UrlShortener.Messaging.Contracts.Analytics
+  type: Namespace
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+references:
+- uid: UrlShortener.Messaging.Contracts.Analytics.UrlRedirectResponse
+  commentId: T:UrlShortener.Messaging.Contracts.Analytics.UrlRedirectResponse
+  href: UrlShortener.Messaging.Contracts.Analytics.UrlRedirectResponse.html
+  name: UrlRedirectResponse
+  nameWithType: UrlRedirectResponse
+  fullName: UrlShortener.Messaging.Contracts.Analytics.UrlRedirectResponse
+- uid: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse
+  commentId: T:UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse
+  href: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse.html
+  name: UrlStatisticsResponse
+  nameWithType: UrlStatisticsResponse
+  fullName: UrlShortener.Messaging.Contracts.Analytics.UrlStatisticsResponse

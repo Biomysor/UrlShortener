@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Authentication.Common
+  commentId: N:UrlShortener.Application.Authentication.Common
+  id: UrlShortener.Application.Authentication.Common
+  children:
+  - UrlShortener.Application.Authentication.Common.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Application.Authentication.Common
+  nameWithType: UrlShortener.Application.Authentication.Common
+  fullName: UrlShortener.Application.Authentication.Common
+  type: Namespace
+  assemblies:
+  - UrlShortener.Application
+references:
+- uid: UrlShortener.Application.Authentication.Common.AuthenticationResult
+  commentId: T:UrlShortener.Application.Authentication.Common.AuthenticationResult
+  href: UrlShortener.Application.Authentication.Common.AuthenticationResult.html
+  name: AuthenticationResult
+  nameWithType: AuthenticationResult
+  fullName: UrlShortener.Application.Authentication.Common.AuthenticationResult

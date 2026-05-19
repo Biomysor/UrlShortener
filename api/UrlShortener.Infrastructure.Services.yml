@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Infrastructure.Services
+  commentId: N:UrlShortener.Infrastructure.Services
+  id: UrlShortener.Infrastructure.Services
+  children:
+  - UrlShortener.Infrastructure.Services.CachingService
+  - UrlShortener.Infrastructure.Services.DateTimeProvider
+  - UrlShortener.Infrastructure.Services.MassTransitMessagePublisher
+  - UrlShortener.Infrastructure.Services.MessagePublisherTests
+  - UrlShortener.Infrastructure.Services.PasswordHasher
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Infrastructure.Services
+  nameWithType: UrlShortener.Infrastructure.Services
+  fullName: UrlShortener.Infrastructure.Services
+  type: Namespace
+  assemblies:
+  - UrlShortener.Infrastructure
+references:
+- uid: UrlShortener.Infrastructure.Services.CachingService
+  commentId: T:UrlShortener.Infrastructure.Services.CachingService
+  href: UrlShortener.Infrastructure.Services.CachingService.html
+  name: CachingService
+  nameWithType: CachingService
+  fullName: UrlShortener.Infrastructure.Services.CachingService
+- uid: UrlShortener.Infrastructure.Services.DateTimeProvider
+  commentId: T:UrlShortener.Infrastructure.Services.DateTimeProvider
+  href: UrlShortener.Infrastructure.Services.DateTimeProvider.html
+  name: DateTimeProvider
+  nameWithType: DateTimeProvider
+  fullName: UrlShortener.Infrastructure.Services.DateTimeProvider
+- uid: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher
+  commentId: T:UrlShortener.Infrastructure.Services.MassTransitMessagePublisher
+  href: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher.html
+  name: MassTransitMessagePublisher
+  nameWithType: MassTransitMessagePublisher
+  fullName: UrlShortener.Infrastructure.Services.MassTransitMessagePublisher
+- uid: UrlShortener.Infrastructure.Services.MessagePublisherTests
+  commentId: T:UrlShortener.Infrastructure.Services.MessagePublisherTests
+  href: UrlShortener.Infrastructure.Services.MessagePublisherTests.html
+  name: MessagePublisherTests
+  nameWithType: MessagePublisherTests
+  fullName: UrlShortener.Infrastructure.Services.MessagePublisherTests
+- uid: UrlShortener.Infrastructure.Services.PasswordHasher
+  commentId: T:UrlShortener.Infrastructure.Services.PasswordHasher
+  href: UrlShortener.Infrastructure.Services.PasswordHasher.html
+  name: PasswordHasher
+  nameWithType: PasswordHasher
+  fullName: UrlShortener.Infrastructure.Services.PasswordHasher

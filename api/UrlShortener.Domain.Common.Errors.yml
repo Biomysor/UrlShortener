@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Domain.Common.Errors
+  commentId: N:UrlShortener.Domain.Common.Errors
+  id: UrlShortener.Domain.Common.Errors
+  children:
+  - UrlShortener.Domain.Common.Errors.Errors
+  - UrlShortener.Domain.Common.Errors.Errors.Authentication
+  - UrlShortener.Domain.Common.Errors.Errors.User
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Domain.Common.Errors
+  nameWithType: UrlShortener.Domain.Common.Errors
+  fullName: UrlShortener.Domain.Common.Errors
+  type: Namespace
+  assemblies:
+  - UrlShortener.Domain
+references:
+- uid: UrlShortener.Domain.Common.Errors.Errors
+  commentId: T:UrlShortener.Domain.Common.Errors.Errors
+  href: UrlShortener.Domain.Common.Errors.Errors.html
+  name: Errors
+  nameWithType: Errors
+  fullName: UrlShortener.Domain.Common.Errors.Errors
+- uid: UrlShortener.Domain.Common.Errors.Errors.Authentication
+  commentId: T:UrlShortener.Domain.Common.Errors.Errors.Authentication
+  href: UrlShortener.Domain.Common.Errors.Errors.html
+  name: Errors.Authentication
+  nameWithType: Errors.Authentication
+  fullName: UrlShortener.Domain.Common.Errors.Errors.Authentication
+  spec.csharp:
+  - uid: UrlShortener.Domain.Common.Errors.Errors
+    name: Errors
+    href: UrlShortener.Domain.Common.Errors.Errors.html
+  - name: .
+  - uid: UrlShortener.Domain.Common.Errors.Errors.Authentication
+    name: Authentication
+    href: UrlShortener.Domain.Common.Errors.Errors.Authentication.html
+  spec.vb:
+  - uid: UrlShortener.Domain.Common.Errors.Errors
+    name: Errors
+    href: UrlShortener.Domain.Common.Errors.Errors.html
+  - name: .
+  - uid: UrlShortener.Domain.Common.Errors.Errors.Authentication
+    name: Authentication
+    href: UrlShortener.Domain.Common.Errors.Errors.Authentication.html
+- uid: UrlShortener.Domain.Common.Errors.Errors.User
+  commentId: T:UrlShortener.Domain.Common.Errors.Errors.User
+  href: UrlShortener.Domain.Common.Errors.Errors.html
+  name: Errors.User
+  nameWithType: Errors.User
+  fullName: UrlShortener.Domain.Common.Errors.Errors.User
+  spec.csharp:
+  - uid: UrlShortener.Domain.Common.Errors.Errors
+    name: Errors
+    href: UrlShortener.Domain.Common.Errors.Errors.html
+  - name: .
+  - uid: UrlShortener.Domain.Common.Errors.Errors.User
+    name: User
+    href: UrlShortener.Domain.Common.Errors.Errors.User.html
+  spec.vb:
+  - uid: UrlShortener.Domain.Common.Errors.Errors
+    name: Errors
+    href: UrlShortener.Domain.Common.Errors.Errors.html
+  - name: .
+  - uid: UrlShortener.Domain.Common.Errors.Errors.User
+    name: User
+    href: UrlShortener.Domain.Common.Errors.Errors.User.html

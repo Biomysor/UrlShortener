@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Common.Interfaces.Services
+  commentId: N:UrlShortener.Application.Common.Interfaces.Services
+  id: UrlShortener.Application.Common.Interfaces.Services
+  children:
+  - UrlShortener.Application.Common.Interfaces.Services.ICacheService
+  - UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider
+  - UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher
+  - UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Application.Common.Interfaces.Services
+  nameWithType: UrlShortener.Application.Common.Interfaces.Services
+  fullName: UrlShortener.Application.Common.Interfaces.Services
+  type: Namespace
+  assemblies:
+  - UrlShortener.Application
+references:
+- uid: UrlShortener.Application.Common.Interfaces.Services.ICacheService
+  commentId: T:UrlShortener.Application.Common.Interfaces.Services.ICacheService
+  parent: UrlShortener.Application.Common.Interfaces.Services
+  href: UrlShortener.Application.Common.Interfaces.Services.ICacheService.html
+  name: ICacheService
+  nameWithType: ICacheService
+  fullName: UrlShortener.Application.Common.Interfaces.Services.ICacheService
+- uid: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider
+  commentId: T:UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider
+  parent: UrlShortener.Application.Common.Interfaces.Services
+  href: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider.html
+  name: IDateTimeProvider
+  nameWithType: IDateTimeProvider
+  fullName: UrlShortener.Application.Common.Interfaces.Services.IDateTimeProvider
+- uid: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher
+  commentId: T:UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher
+  parent: UrlShortener.Application.Common.Interfaces.Services
+  href: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.html
+  name: IMessagePublisher
+  nameWithType: IMessagePublisher
+  fullName: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher
+- uid: UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher
+  commentId: T:UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher
+  parent: UrlShortener.Application.Common.Interfaces.Services
+  href: UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher.html
+  name: IPasswordHasher
+  nameWithType: IPasswordHasher
+  fullName: UrlShortener.Application.Common.Interfaces.Services.IPasswordHasher
+- uid: UrlShortener.Application.Common.Interfaces.Services
+  commentId: N:UrlShortener.Application.Common.Interfaces.Services
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.Services
+  nameWithType: UrlShortener.Application.Common.Interfaces.Services
+  fullName: UrlShortener.Application.Common.Interfaces.Services
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Services
+    name: Services
+    href: UrlShortener.Application.Common.Interfaces.Services.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Services
+    name: Services
+    href: UrlShortener.Application.Common.Interfaces.Services.html

@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+  commentId: T:UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+  id: IJwtTokenGenerator
+  parent: UrlShortener.Application.Common.Interfaces.Authentication
+  children:
+  - UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+  langs:
+  - csharp
+  - vb
+  name: IJwtTokenGenerator
+  nameWithType: IJwtTokenGenerator
+  fullName: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+  type: Interface
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Authentication/IJwtTokenGenerator.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: IJwtTokenGenerator
+    path: UrlShortener.Application/Common/Interfaces/Authentication/IJwtTokenGenerator.cs
+    startLine: 5
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Authentication
+  syntax:
+    content: public interface IJwtTokenGenerator
+    content.vb: Public Interface IJwtTokenGenerator
+  derivedClasses:
+  - UrlShortener.Infrastructure.Authentication.JwtTokenGenerator
+- uid: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+  commentId: M:UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+  id: GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+  parent: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateToken(User)
+  nameWithType: IJwtTokenGenerator.GenerateToken(User)
+  fullName: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.GenerateToken(UrlShortener.Domain.UserAggregate.Entity.User)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Authentication/IJwtTokenGenerator.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: GenerateToken
+    path: UrlShortener.Application/Common/Interfaces/Authentication/IJwtTokenGenerator.cs
+    startLine: 7
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Authentication
+  syntax:
+    content: string GenerateToken(User user)
+    parameters:
+    - id: user
+      type: UrlShortener.Domain.UserAggregate.Entity.User
+    return:
+      type: System.String
+    content.vb: Function GenerateToken(user As User) As String
+  overload: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.GenerateToken*
+references:
+- uid: UrlShortener.Application.Common.Interfaces.Authentication
+  commentId: N:UrlShortener.Application.Common.Interfaces.Authentication
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.Authentication
+  nameWithType: UrlShortener.Application.Common.Interfaces.Authentication
+  fullName: UrlShortener.Application.Common.Interfaces.Authentication
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Common.Interfaces.Authentication.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Common.Interfaces.Authentication.html
+- uid: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.GenerateToken*
+  commentId: Overload:UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.GenerateToken
+  href: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.html#UrlShortener_Application_Common_Interfaces_Authentication_IJwtTokenGenerator_GenerateToken_UrlShortener_Domain_UserAggregate_Entity_User_
+  name: GenerateToken
+  nameWithType: IJwtTokenGenerator.GenerateToken
+  fullName: UrlShortener.Application.Common.Interfaces.Authentication.IJwtTokenGenerator.GenerateToken
+- uid: UrlShortener.Domain.UserAggregate.Entity.User
+  commentId: T:UrlShortener.Domain.UserAggregate.Entity.User
+  parent: UrlShortener.Domain.UserAggregate.Entity
+  href: UrlShortener.Domain.UserAggregate.Entity.User.html
+  name: User
+  nameWithType: User
+  fullName: UrlShortener.Domain.UserAggregate.Entity.User
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UrlShortener.Domain.UserAggregate.Entity
+  commentId: N:UrlShortener.Domain.UserAggregate.Entity
+  href: UrlShortener.html
+  name: UrlShortener.Domain.UserAggregate.Entity
+  nameWithType: UrlShortener.Domain.UserAggregate.Entity
+  fullName: UrlShortener.Domain.UserAggregate.Entity
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate
+    name: UserAggregate
+    href: UrlShortener.Domain.UserAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate.Entity
+    name: Entity
+    href: UrlShortener.Domain.UserAggregate.Entity.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate
+    name: UserAggregate
+    href: UrlShortener.Domain.UserAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate.Entity
+    name: Entity
+    href: UrlShortener.Domain.UserAggregate.Entity.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

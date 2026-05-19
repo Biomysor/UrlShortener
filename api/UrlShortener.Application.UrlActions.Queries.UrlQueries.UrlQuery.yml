@@ -1,0 +1,557 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery
+  commentId: T:UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery
+  id: UrlQuery
+  parent: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  children:
+  - UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.#ctor(System.String)
+  - UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.Url
+  langs:
+  - csharp
+  - vb
+  name: UrlQuery
+  nameWithType: UrlQuery
+  fullName: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery
+  type: Class
+  source:
+    remote:
+      path: UrlShortener.Application/UrlActions/Queries/UrlQueries/UrlQuery.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: UrlQuery
+    path: UrlShortener.Application/UrlActions/Queries/UrlQueries/UrlQuery.cs
+    startLine: 6
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  syntax:
+    content: 'public record UrlQuery : IRequest<ErrorOr<UrlResult>>, IBaseRequest, IEquatable<UrlQuery>'
+    content.vb: Public Class UrlQuery Implements IRequest(Of ErrorOr(Of UrlResult)), IBaseRequest, IEquatable(Of UrlQuery)
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequest{ErrorOr.ErrorOr{UrlShortener.Application.UrlActions.Common.UrlResult}}
+  - MediatR.IBaseRequest
+  - System.IEquatable{UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.#ctor(System.String)
+  commentId: M:UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery
+  langs:
+  - csharp
+  - vb
+  name: UrlQuery(string)
+  nameWithType: UrlQuery.UrlQuery(string)
+  fullName: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.UrlQuery(string)
+  type: Constructor
+  source:
+    remote:
+      path: UrlShortener.Application/UrlActions/Queries/UrlQueries/UrlQuery.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: .ctor
+    path: UrlShortener.Application/UrlActions/Queries/UrlQueries/UrlQuery.cs
+    startLine: 6
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  syntax:
+    content: public UrlQuery(string Url)
+    parameters:
+    - id: Url
+      type: System.String
+    content.vb: Public Sub New(Url As String)
+  overload: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.#ctor*
+  nameWithType.vb: UrlQuery.New(String)
+  fullName.vb: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.New(String)
+  name.vb: New(String)
+- uid: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.Url
+  commentId: P:UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.Url
+  id: Url
+  parent: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: UrlQuery.Url
+  fullName: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.Url
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Application/UrlActions/Queries/UrlQueries/UrlQuery.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: Url
+    path: UrlShortener.Application/UrlActions/Queries/UrlQueries/UrlQuery.cs
+    startLine: 7
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  syntax:
+    content: public string Url { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Url As String
+  overload: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.Url*
+references:
+- uid: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  commentId: N:UrlShortener.Application.UrlActions.Queries.UrlQueries
+  href: UrlShortener.html
+  name: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  nameWithType: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  fullName: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.UrlActions.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions.Queries
+    name: Queries
+    href: UrlShortener.Application.UrlActions.Queries.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions.Queries.UrlQueries
+    name: UrlQueries
+    href: UrlShortener.Application.UrlActions.Queries.UrlQueries.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.UrlActions.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions.Queries
+    name: Queries
+    href: UrlShortener.Application.UrlActions.Queries.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions.Queries.UrlQueries
+    name: UrlQueries
+    href: UrlShortener.Application.UrlActions.Queries.UrlQueries.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequest{ErrorOr.ErrorOr{UrlShortener.Application.UrlActions.Common.UrlResult}}
+  commentId: T:MediatR.IRequest{ErrorOr.ErrorOr{UrlShortener.Application.UrlActions.Common.UrlResult}}
+  parent: MediatR
+  definition: MediatR.IRequest`1
+  href: UrlShortener.Application.UrlActions.Common.UrlResult.html
+  name: IRequest<ErrorOr<UrlResult>>
+  nameWithType: IRequest<ErrorOr<UrlResult>>
+  fullName: MediatR.IRequest<ErrorOr.ErrorOr<UrlShortener.Application.UrlActions.Common.UrlResult>>
+  nameWithType.vb: IRequest(Of ErrorOr(Of UrlResult))
+  fullName.vb: MediatR.IRequest(Of ErrorOr.ErrorOr(Of UrlShortener.Application.UrlActions.Common.UrlResult))
+  name.vb: IRequest(Of ErrorOr(Of UrlResult))
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - uid: ErrorOr.ErrorOr`1
+    name: ErrorOr
+    isExternal: true
+  - name: <
+  - uid: UrlShortener.Application.UrlActions.Common.UrlResult
+    name: UrlResult
+    href: UrlShortener.Application.UrlActions.Common.UrlResult.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ErrorOr.ErrorOr`1
+    name: ErrorOr
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Application.UrlActions.Common.UrlResult
+    name: UrlResult
+    href: UrlShortener.Application.UrlActions.Common.UrlResult.html
+  - name: )
+  - name: )
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: System.IEquatable{UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery}
+  commentId: T:System.IEquatable{UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<UrlQuery>
+  nameWithType: IEquatable<UrlQuery>
+  fullName: System.IEquatable<UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery>
+  nameWithType.vb: IEquatable(Of UrlQuery)
+  fullName.vb: System.IEquatable(Of UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery)
+  name.vb: IEquatable(Of UrlQuery)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery
+    name: UrlQuery
+    href: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery
+    name: UrlQuery
+    href: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequest`1
+  commentId: T:MediatR.IRequest`1
+  isExternal: true
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: MediatR.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: MediatR.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.#ctor*
+  commentId: Overload:UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.#ctor
+  href: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.html#UrlShortener_Application_UrlActions_Queries_UrlQueries_UrlQuery__ctor_System_String_
+  name: UrlQuery
+  nameWithType: UrlQuery.UrlQuery
+  fullName: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.UrlQuery
+  nameWithType.vb: UrlQuery.New
+  fullName.vb: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.Url*
+  commentId: Overload:UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.Url
+  href: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.html#UrlShortener_Application_UrlActions_Queries_UrlQueries_UrlQuery_Url
+  name: Url
+  nameWithType: UrlQuery.Url
+  fullName: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.Url

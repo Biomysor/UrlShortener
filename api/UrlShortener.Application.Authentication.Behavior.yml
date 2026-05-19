@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Authentication.Behavior
+  commentId: N:UrlShortener.Application.Authentication.Behavior
+  id: UrlShortener.Application.Authentication.Behavior
+  children:
+  - UrlShortener.Application.Authentication.Behavior.ValidationBehavior`2
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Application.Authentication.Behavior
+  nameWithType: UrlShortener.Application.Authentication.Behavior
+  fullName: UrlShortener.Application.Authentication.Behavior
+  type: Namespace
+  assemblies:
+  - UrlShortener.Application
+references:
+- uid: UrlShortener.Application.Authentication.Behavior.ValidationBehavior`2
+  commentId: T:UrlShortener.Application.Authentication.Behavior.ValidationBehavior`2
+  href: UrlShortener.Application.Authentication.Behavior.ValidationBehavior-2.html
+  name: ValidationBehavior<TRequest, TResponse>
+  nameWithType: ValidationBehavior<TRequest, TResponse>
+  fullName: UrlShortener.Application.Authentication.Behavior.ValidationBehavior<TRequest, TResponse>
+  nameWithType.vb: ValidationBehavior(Of TRequest, TResponse)
+  fullName.vb: UrlShortener.Application.Authentication.Behavior.ValidationBehavior(Of TRequest, TResponse)
+  name.vb: ValidationBehavior(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: UrlShortener.Application.Authentication.Behavior.ValidationBehavior`2
+    name: ValidationBehavior
+    href: UrlShortener.Application.Authentication.Behavior.ValidationBehavior-2.html
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: UrlShortener.Application.Authentication.Behavior.ValidationBehavior`2
+    name: ValidationBehavior
+    href: UrlShortener.Application.Authentication.Behavior.ValidationBehavior-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )

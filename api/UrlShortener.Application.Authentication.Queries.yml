@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Authentication.Queries
+  commentId: N:UrlShortener.Application.Authentication.Queries
+  id: UrlShortener.Application.Authentication.Queries
+  children:
+  - UrlShortener.Application.Authentication.Queries.LoginQuery
+  - UrlShortener.Application.Authentication.Queries.LoginQueryHandler
+  - UrlShortener.Application.Authentication.Queries.LoginQueryValidation
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Application.Authentication.Queries
+  nameWithType: UrlShortener.Application.Authentication.Queries
+  fullName: UrlShortener.Application.Authentication.Queries
+  type: Namespace
+  assemblies:
+  - UrlShortener.Application
+references:
+- uid: UrlShortener.Application.Authentication.Queries.LoginQuery
+  commentId: T:UrlShortener.Application.Authentication.Queries.LoginQuery
+  parent: UrlShortener.Application.Authentication.Queries
+  href: UrlShortener.Application.Authentication.Queries.LoginQuery.html
+  name: LoginQuery
+  nameWithType: LoginQuery
+  fullName: UrlShortener.Application.Authentication.Queries.LoginQuery
+- uid: UrlShortener.Application.Authentication.Queries.LoginQueryHandler
+  commentId: T:UrlShortener.Application.Authentication.Queries.LoginQueryHandler
+  href: UrlShortener.Application.Authentication.Queries.LoginQueryHandler.html
+  name: LoginQueryHandler
+  nameWithType: LoginQueryHandler
+  fullName: UrlShortener.Application.Authentication.Queries.LoginQueryHandler
+- uid: UrlShortener.Application.Authentication.Queries.LoginQueryValidation
+  commentId: T:UrlShortener.Application.Authentication.Queries.LoginQueryValidation
+  href: UrlShortener.Application.Authentication.Queries.LoginQueryValidation.html
+  name: LoginQueryValidation
+  nameWithType: LoginQueryValidation
+  fullName: UrlShortener.Application.Authentication.Queries.LoginQueryValidation
+- uid: UrlShortener.Application.Authentication.Queries
+  commentId: N:UrlShortener.Application.Authentication.Queries
+  href: UrlShortener.html
+  name: UrlShortener.Application.Authentication.Queries
+  nameWithType: UrlShortener.Application.Authentication.Queries
+  fullName: UrlShortener.Application.Authentication.Queries
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Authentication.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication.Queries
+    name: Queries
+    href: UrlShortener.Application.Authentication.Queries.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Authentication.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication.Queries
+    name: Queries
+    href: UrlShortener.Application.Authentication.Queries.html
