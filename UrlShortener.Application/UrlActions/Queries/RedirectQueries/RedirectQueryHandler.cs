@@ -7,6 +7,10 @@ using UrlShortener.Messaging.Contracts.Events;
 
 namespace UrlShortener.Application.UrlActions.Queries.RedirectQueries;
 
+/// <summary>
+/// Handles redirect queries by short URL code.
+/// Uses Redis cache to speed up redirects and publishes redirect events for analytics.
+/// </summary>
 public class RedirectQueryHandler(
     IUrlRepository repository,
     ICacheService cacheService,
@@ -16,6 +20,14 @@ public class RedirectQueryHandler(
     private readonly IUrlRepository _repository = repository;
     private readonly ICacheService _cacheService = cacheService;
 
+    /// <summary>
+    /// Finds the original long URL by short code.
+    /// The method first checks cache. If the value is not cached,
+    /// it loads URL data from the database, caches it and publishes a redirect event.
+    /// </summary>
+    /// <param name="request">Redirect query containing short URL code.</param>
+    /// <param name="cancellationToken">Cancellation token.</param>
+    /// <returns>Original long URL or NotFound error.</returns>
     public async Task<ErrorOr<string>> Handle(RedirectQuery request, CancellationToken cancellationToken)
     {
         var cacheKey = $"url:code:{request.Code}";

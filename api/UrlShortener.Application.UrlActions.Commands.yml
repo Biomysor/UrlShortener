@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.UrlActions.Commands
+  commentId: N:UrlShortener.Application.UrlActions.Commands
+  id: UrlShortener.Application.UrlActions.Commands
+  children:
+  - UrlShortener.Application.UrlActions.Commands.ShortenUrlCommand
+  - UrlShortener.Application.UrlActions.Commands.ShortenUrlCommandHandler
+  - UrlShortener.Application.UrlActions.Commands.ShortenUrlValidation
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Application.UrlActions.Commands
+  nameWithType: UrlShortener.Application.UrlActions.Commands
+  fullName: UrlShortener.Application.UrlActions.Commands
+  type: Namespace
+  assemblies:
+  - UrlShortener.Application
+references:
+- uid: UrlShortener.Application.UrlActions.Commands.ShortenUrlCommand
+  commentId: T:UrlShortener.Application.UrlActions.Commands.ShortenUrlCommand
+  parent: UrlShortener.Application.UrlActions.Commands
+  href: UrlShortener.Application.UrlActions.Commands.ShortenUrlCommand.html
+  name: ShortenUrlCommand
+  nameWithType: ShortenUrlCommand
+  fullName: UrlShortener.Application.UrlActions.Commands.ShortenUrlCommand
+- uid: UrlShortener.Application.UrlActions.Commands.ShortenUrlCommandHandler
+  commentId: T:UrlShortener.Application.UrlActions.Commands.ShortenUrlCommandHandler
+  href: UrlShortener.Application.UrlActions.Commands.ShortenUrlCommandHandler.html
+  name: ShortenUrlCommandHandler
+  nameWithType: ShortenUrlCommandHandler
+  fullName: UrlShortener.Application.UrlActions.Commands.ShortenUrlCommandHandler
+- uid: UrlShortener.Application.UrlActions.Commands.ShortenUrlValidation
+  commentId: T:UrlShortener.Application.UrlActions.Commands.ShortenUrlValidation
+  href: UrlShortener.Application.UrlActions.Commands.ShortenUrlValidation.html
+  name: ShortenUrlValidation
+  nameWithType: ShortenUrlValidation
+  fullName: UrlShortener.Application.UrlActions.Commands.ShortenUrlValidation
+- uid: UrlShortener.Application.UrlActions.Commands
+  commentId: N:UrlShortener.Application.UrlActions.Commands
+  href: UrlShortener.html
+  name: UrlShortener.Application.UrlActions.Commands
+  nameWithType: UrlShortener.Application.UrlActions.Commands
+  fullName: UrlShortener.Application.UrlActions.Commands
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.UrlActions.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions.Commands
+    name: Commands
+    href: UrlShortener.Application.UrlActions.Commands.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.UrlActions.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions.Commands
+    name: Commands
+    href: UrlShortener.Application.UrlActions.Commands.html

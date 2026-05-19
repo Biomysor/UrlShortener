@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Infrastructure
+  commentId: N:UrlShortener.Infrastructure
+  id: UrlShortener.Infrastructure
+  children:
+  - UrlShortener.Infrastructure.DependencyInjection
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Infrastructure
+  nameWithType: UrlShortener.Infrastructure
+  fullName: UrlShortener.Infrastructure
+  type: Namespace
+  assemblies:
+  - UrlShortener.Infrastructure
+references:
+- uid: UrlShortener.Infrastructure.DependencyInjection
+  commentId: T:UrlShortener.Infrastructure.DependencyInjection
+  href: UrlShortener.Infrastructure.DependencyInjection.html
+  name: DependencyInjection
+  nameWithType: DependencyInjection
+  fullName: UrlShortener.Infrastructure.DependencyInjection

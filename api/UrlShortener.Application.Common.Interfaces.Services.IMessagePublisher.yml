@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher
+  commentId: T:UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher
+  id: IMessagePublisher
+  parent: UrlShortener.Application.Common.Interfaces.Services
+  children:
+  - UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IMessagePublisher
+  nameWithType: IMessagePublisher
+  fullName: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher
+  type: Interface
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Services/IMessagePublisher.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: IMessagePublisher
+    path: UrlShortener.Application/Common/Interfaces/Services/IMessagePublisher.cs
+    startLine: 6
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Services
+  summary: >-
+    Provides abstraction for publishing integration events.
+
+    Application layer does not depend on RabbitMQ or another concrete message broker.
+  example: []
+  syntax:
+    content: public interface IMessagePublisher
+    content.vb: Public Interface IMessagePublisher
+  derivedClasses:
+  - UrlShortener.Infrastructure.Services.MassTransitMessagePublisher
+- uid: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  commentId: M:UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  id: PublishAsync``1(``0,System.Threading.CancellationToken)
+  parent: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher
+  langs:
+  - csharp
+  - vb
+  name: PublishAsync<TMessage>(TMessage, CancellationToken)
+  nameWithType: IMessagePublisher.PublishAsync<TMessage>(TMessage, CancellationToken)
+  fullName: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync<TMessage>(TMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Application/Common/Interfaces/Services/IMessagePublisher.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: PublishAsync
+    path: UrlShortener.Application/Common/Interfaces/Services/IMessagePublisher.cs
+    startLine: 14
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Common.Interfaces.Services
+  summary: Publishes a message to the configured message broker.
+  example: []
+  syntax:
+    content: 'Task PublishAsync<TMessage>(TMessage message, CancellationToken cancellationToken = default) where TMessage : class'
+    parameters:
+    - id: message
+      type: '{TMessage}'
+      description: Message instance.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    typeParameters:
+    - id: TMessage
+      description: Type of message.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function PublishAsync(Of TMessage As Class)(message As TMessage, cancellationToken As CancellationToken = Nothing) As Task
+  overload: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync*
+  nameWithType.vb: IMessagePublisher.PublishAsync(Of TMessage)(TMessage, CancellationToken)
+  fullName.vb: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync(Of TMessage)(TMessage, System.Threading.CancellationToken)
+  name.vb: PublishAsync(Of TMessage)(TMessage, CancellationToken)
+references:
+- uid: UrlShortener.Application.Common.Interfaces.Services
+  commentId: N:UrlShortener.Application.Common.Interfaces.Services
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.Services
+  nameWithType: UrlShortener.Application.Common.Interfaces.Services
+  fullName: UrlShortener.Application.Common.Interfaces.Services
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Services
+    name: Services
+    href: UrlShortener.Application.Common.Interfaces.Services.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.Services
+    name: Services
+    href: UrlShortener.Application.Common.Interfaces.Services.html
+- uid: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync*
+  commentId: Overload:UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync
+  href: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.html#UrlShortener_Application_Common_Interfaces_Services_IMessagePublisher_PublishAsync__1___0_System_Threading_CancellationToken_
+  name: PublishAsync
+  nameWithType: IMessagePublisher.PublishAsync
+  fullName: UrlShortener.Application.Common.Interfaces.Services.IMessagePublisher.PublishAsync
+- uid: '{TMessage}'
+  commentId: '!:TMessage'
+  definition: TMessage
+  name: TMessage
+  nameWithType: TMessage
+  fullName: TMessage
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: TMessage
+  name: TMessage
+  nameWithType: TMessage
+  fullName: TMessage
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

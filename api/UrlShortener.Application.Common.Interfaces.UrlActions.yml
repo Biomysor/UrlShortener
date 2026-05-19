@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions
+  commentId: N:UrlShortener.Application.Common.Interfaces.UrlActions
+  id: UrlShortener.Application.Common.Interfaces.UrlActions
+  children:
+  - UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder
+  - UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Application.Common.Interfaces.UrlActions
+  nameWithType: UrlShortener.Application.Common.Interfaces.UrlActions
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions
+  type: Namespace
+  assemblies:
+  - UrlShortener.Application
+references:
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder
+  commentId: T:UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder
+  parent: UrlShortener.Application.Common.Interfaces.UrlActions
+  href: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder.html
+  name: IShortUrlBuilder
+  nameWithType: IShortUrlBuilder
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions.IShortUrlBuilder
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator
+  commentId: T:UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator
+  parent: UrlShortener.Application.Common.Interfaces.UrlActions
+  href: UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator.html
+  name: IUrlCodeGenerator
+  nameWithType: IUrlCodeGenerator
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions.IUrlCodeGenerator
+- uid: UrlShortener.Application.Common.Interfaces.UrlActions
+  commentId: N:UrlShortener.Application.Common.Interfaces.UrlActions
+  href: UrlShortener.html
+  name: UrlShortener.Application.Common.Interfaces.UrlActions
+  nameWithType: UrlShortener.Application.Common.Interfaces.UrlActions
+  fullName: UrlShortener.Application.Common.Interfaces.UrlActions
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.Common.Interfaces.UrlActions.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Common
+    name: Common
+    href: UrlShortener.Application.Common.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces
+    name: Interfaces
+    href: UrlShortener.Application.Common.Interfaces.html
+  - name: .
+  - uid: UrlShortener.Application.Common.Interfaces.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.Common.Interfaces.UrlActions.html

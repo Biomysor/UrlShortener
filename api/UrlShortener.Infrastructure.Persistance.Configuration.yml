@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Infrastructure.Persistance.Configuration
+  commentId: N:UrlShortener.Infrastructure.Persistance.Configuration
+  id: UrlShortener.Infrastructure.Persistance.Configuration
+  children:
+  - UrlShortener.Infrastructure.Persistance.Configuration.UrlConfiguration
+  - UrlShortener.Infrastructure.Persistance.Configuration.UserConfiguration
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Infrastructure.Persistance.Configuration
+  nameWithType: UrlShortener.Infrastructure.Persistance.Configuration
+  fullName: UrlShortener.Infrastructure.Persistance.Configuration
+  type: Namespace
+  assemblies:
+  - UrlShortener.Infrastructure
+references:
+- uid: UrlShortener.Infrastructure.Persistance.Configuration.UrlConfiguration
+  commentId: T:UrlShortener.Infrastructure.Persistance.Configuration.UrlConfiguration
+  href: UrlShortener.Infrastructure.Persistance.Configuration.UrlConfiguration.html
+  name: UrlConfiguration
+  nameWithType: UrlConfiguration
+  fullName: UrlShortener.Infrastructure.Persistance.Configuration.UrlConfiguration
+- uid: UrlShortener.Infrastructure.Persistance.Configuration.UserConfiguration
+  commentId: T:UrlShortener.Infrastructure.Persistance.Configuration.UserConfiguration
+  href: UrlShortener.Infrastructure.Persistance.Configuration.UserConfiguration.html
+  name: UserConfiguration
+  nameWithType: UserConfiguration
+  fullName: UrlShortener.Infrastructure.Persistance.Configuration.UserConfiguration

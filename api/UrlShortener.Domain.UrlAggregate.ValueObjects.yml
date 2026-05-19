@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Domain.UrlAggregate.ValueObjects
+  commentId: N:UrlShortener.Domain.UrlAggregate.ValueObjects
+  id: UrlShortener.Domain.UrlAggregate.ValueObjects
+  children:
+  - UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Domain.UrlAggregate.ValueObjects
+  nameWithType: UrlShortener.Domain.UrlAggregate.ValueObjects
+  fullName: UrlShortener.Domain.UrlAggregate.ValueObjects
+  type: Namespace
+  assemblies:
+  - UrlShortener.Domain
+references:
+- uid: UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId
+  commentId: T:UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId
+  parent: UrlShortener.Domain.UrlAggregate.ValueObjects
+  href: UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId.html
+  name: UrlId
+  nameWithType: UrlId
+  fullName: UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId
+- uid: UrlShortener.Domain.UrlAggregate.ValueObjects
+  commentId: N:UrlShortener.Domain.UrlAggregate.ValueObjects
+  href: UrlShortener.html
+  name: UrlShortener.Domain.UrlAggregate.ValueObjects
+  nameWithType: UrlShortener.Domain.UrlAggregate.ValueObjects
+  fullName: UrlShortener.Domain.UrlAggregate.ValueObjects
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate
+    name: UrlAggregate
+    href: UrlShortener.Domain.UrlAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate.ValueObjects
+    name: ValueObjects
+    href: UrlShortener.Domain.UrlAggregate.ValueObjects.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate
+    name: UrlAggregate
+    href: UrlShortener.Domain.UrlAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate.ValueObjects
+    name: ValueObjects
+    href: UrlShortener.Domain.UrlAggregate.ValueObjects.html

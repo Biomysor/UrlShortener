@@ -10,6 +10,10 @@ using UrlShortener.Messaging.Contracts.Events;
 
 namespace UrlShortener.Application.UrlActions.Commands;
 
+/// <summary>
+/// Handles commands for creating short URLs.
+/// Uses database storage, Redis cache and RabbitMQ messaging.
+/// </summary>
 public class ShortenUrlCommandHandler(
     IUrlRepository repository,
     IUrlCodeGenerator codeGenerator,
@@ -24,6 +28,14 @@ public class ShortenUrlCommandHandler(
     private readonly IUrlRepository _repository = repository;
     private readonly IUrlCodeGenerator _codeGenerator = codeGenerator;
 
+    /// <summary>
+    /// Creates a new short URL or returns an existing one.
+    /// If a new URL is created, the method saves it to the database,
+    /// stores redirect data in cache and publishes a URL created event.
+    /// </summary>
+    /// <param name="request">Command containing the original long URL.</param>
+    /// <param name="cancellationToken">Cancellation token.</param>
+    /// <returns>UrlResult with URL identifier and generated short URL.</returns>
     public async Task<ErrorOr<UrlResult>> Handle(ShortenUrlCommand request, CancellationToken cancellationToken)
     {
         var existing = await _repository.GetByLongUrlAsync(request.Url);

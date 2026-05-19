@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.AnalyticsService.Persistance
+  commentId: N:UrlShortener.AnalyticsService.Persistance
+  id: UrlShortener.AnalyticsService.Persistance
+  children:
+  - UrlShortener.AnalyticsService.Persistance.AnalyticsDbContext
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.AnalyticsService.Persistance
+  nameWithType: UrlShortener.AnalyticsService.Persistance
+  fullName: UrlShortener.AnalyticsService.Persistance
+  type: Namespace
+  assemblies:
+  - UrlShortener.AnalyticsService
+references:
+- uid: UrlShortener.AnalyticsService.Persistance.AnalyticsDbContext
+  commentId: T:UrlShortener.AnalyticsService.Persistance.AnalyticsDbContext
+  parent: UrlShortener.AnalyticsService.Persistance
+  href: UrlShortener.AnalyticsService.Persistance.AnalyticsDbContext.html
+  name: AnalyticsDbContext
+  nameWithType: AnalyticsDbContext
+  fullName: UrlShortener.AnalyticsService.Persistance.AnalyticsDbContext
+- uid: UrlShortener.AnalyticsService.Persistance
+  commentId: N:UrlShortener.AnalyticsService.Persistance
+  href: UrlShortener.html
+  name: UrlShortener.AnalyticsService.Persistance
+  nameWithType: UrlShortener.AnalyticsService.Persistance
+  fullName: UrlShortener.AnalyticsService.Persistance
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.AnalyticsService
+    name: AnalyticsService
+    href: UrlShortener.AnalyticsService.html
+  - name: .
+  - uid: UrlShortener.AnalyticsService.Persistance
+    name: Persistance
+    href: UrlShortener.AnalyticsService.Persistance.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.AnalyticsService
+    name: AnalyticsService
+    href: UrlShortener.AnalyticsService.html
+  - name: .
+  - uid: UrlShortener.AnalyticsService.Persistance
+    name: Persistance
+    href: UrlShortener.AnalyticsService.Persistance.html

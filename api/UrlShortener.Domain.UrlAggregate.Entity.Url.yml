@@ -1,0 +1,658 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Domain.UrlAggregate.Entity.Url
+  commentId: T:UrlShortener.Domain.UrlAggregate.Entity.Url
+  id: Url
+  parent: UrlShortener.Domain.UrlAggregate.Entity
+  children:
+  - UrlShortener.Domain.UrlAggregate.Entity.Url.Code
+  - UrlShortener.Domain.UrlAggregate.Entity.Url.Create(System.String)
+  - UrlShortener.Domain.UrlAggregate.Entity.Url.CreatedAt
+  - UrlShortener.Domain.UrlAggregate.Entity.Url.LongUrl
+  - UrlShortener.Domain.UrlAggregate.Entity.Url.SetCode(System.String)
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: Url
+  fullName: UrlShortener.Domain.UrlAggregate.Entity.Url
+  type: Class
+  source:
+    remote:
+      path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: Url
+    path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
+    startLine: 10
+  assemblies:
+  - UrlShortener.Domain
+  namespace: UrlShortener.Domain.UrlAggregate.Entity
+  summary: >-
+    Represents a shortened URL in the domain model.
+
+    Contains the original long URL, generated short code and creation date.
+  example: []
+  syntax:
+    content: 'public class Url : Entity<UrlId>'
+    content.vb: Public Class Url Inherits Entity(Of UrlId)
+  inheritance:
+  - System.Object
+  - UrlShortener.Domain.Common.Entity{UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId}
+  inheritedMembers:
+  - UrlShortener.Domain.Common.Entity{UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId}.Id
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UrlShortener.Domain.UrlAggregate.Entity.Url.LongUrl
+  commentId: P:UrlShortener.Domain.UrlAggregate.Entity.Url.LongUrl
+  id: LongUrl
+  parent: UrlShortener.Domain.UrlAggregate.Entity.Url
+  langs:
+  - csharp
+  - vb
+  name: LongUrl
+  nameWithType: Url.LongUrl
+  fullName: UrlShortener.Domain.UrlAggregate.Entity.Url.LongUrl
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: LongUrl
+    path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
+    startLine: 15
+  assemblies:
+  - UrlShortener.Domain
+  namespace: UrlShortener.Domain.UrlAggregate.Entity
+  summary: Gets the original long URL provided by the user.
+  example: []
+  syntax:
+    content: public string LongUrl { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LongUrl As String
+  overload: UrlShortener.Domain.UrlAggregate.Entity.Url.LongUrl*
+- uid: UrlShortener.Domain.UrlAggregate.Entity.Url.Code
+  commentId: P:UrlShortener.Domain.UrlAggregate.Entity.Url.Code
+  id: Code
+  parent: UrlShortener.Domain.UrlAggregate.Entity.Url
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: Url.Code
+  fullName: UrlShortener.Domain.UrlAggregate.Entity.Url.Code
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: Code
+    path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
+    startLine: 20
+  assemblies:
+  - UrlShortener.Domain
+  namespace: UrlShortener.Domain.UrlAggregate.Entity
+  summary: Gets the generated short code used for redirection.
+  example: []
+  syntax:
+    content: public string Code { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Code As String
+  overload: UrlShortener.Domain.UrlAggregate.Entity.Url.Code*
+- uid: UrlShortener.Domain.UrlAggregate.Entity.Url.CreatedAt
+  commentId: P:UrlShortener.Domain.UrlAggregate.Entity.Url.CreatedAt
+  id: CreatedAt
+  parent: UrlShortener.Domain.UrlAggregate.Entity.Url
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: Url.CreatedAt
+  fullName: UrlShortener.Domain.UrlAggregate.Entity.Url.CreatedAt
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: CreatedAt
+    path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
+    startLine: 25
+  assemblies:
+  - UrlShortener.Domain
+  namespace: UrlShortener.Domain.UrlAggregate.Entity
+  summary: Gets the date and time when the URL was created.
+  example: []
+  syntax:
+    content: public DateTime CreatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property CreatedAt As Date
+  overload: UrlShortener.Domain.UrlAggregate.Entity.Url.CreatedAt*
+- uid: UrlShortener.Domain.UrlAggregate.Entity.Url.SetCode(System.String)
+  commentId: M:UrlShortener.Domain.UrlAggregate.Entity.Url.SetCode(System.String)
+  id: SetCode(System.String)
+  parent: UrlShortener.Domain.UrlAggregate.Entity.Url
+  langs:
+  - csharp
+  - vb
+  name: SetCode(string)
+  nameWithType: Url.SetCode(string)
+  fullName: UrlShortener.Domain.UrlAggregate.Entity.Url.SetCode(string)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: SetCode
+    path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
+    startLine: 42
+  assemblies:
+  - UrlShortener.Domain
+  namespace: UrlShortener.Domain.UrlAggregate.Entity
+  summary: Sets the generated short code for this URL.
+  example: []
+  syntax:
+    content: public void SetCode(string code)
+    parameters:
+    - id: code
+      type: System.String
+      description: Generated short code.
+    content.vb: Public Sub SetCode(code As String)
+  overload: UrlShortener.Domain.UrlAggregate.Entity.Url.SetCode*
+  nameWithType.vb: Url.SetCode(String)
+  fullName.vb: UrlShortener.Domain.UrlAggregate.Entity.Url.SetCode(String)
+  name.vb: SetCode(String)
+- uid: UrlShortener.Domain.UrlAggregate.Entity.Url.Create(System.String)
+  commentId: M:UrlShortener.Domain.UrlAggregate.Entity.Url.Create(System.String)
+  id: Create(System.String)
+  parent: UrlShortener.Domain.UrlAggregate.Entity.Url
+  langs:
+  - csharp
+  - vb
+  name: Create(string)
+  nameWithType: Url.Create(string)
+  fullName: UrlShortener.Domain.UrlAggregate.Entity.Url.Create(string)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: Create
+    path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
+    startLine: 53
+  assemblies:
+  - UrlShortener.Domain
+  namespace: UrlShortener.Domain.UrlAggregate.Entity
+  summary: >-
+    Creates a new URL entity with a unique identifier and empty code.
+
+    The short code is generated later by the application layer.
+  example: []
+  syntax:
+    content: public static Url Create(string longUrl)
+    parameters:
+    - id: longUrl
+      type: System.String
+      description: Original long URL.
+    return:
+      type: UrlShortener.Domain.UrlAggregate.Entity.Url
+      description: New Url entity.
+    content.vb: Public Shared Function Create(longUrl As String) As Url
+  overload: UrlShortener.Domain.UrlAggregate.Entity.Url.Create*
+  nameWithType.vb: Url.Create(String)
+  fullName.vb: UrlShortener.Domain.UrlAggregate.Entity.Url.Create(String)
+  name.vb: Create(String)
+references:
+- uid: UrlShortener.Domain.UrlAggregate.Entity
+  commentId: N:UrlShortener.Domain.UrlAggregate.Entity
+  href: UrlShortener.html
+  name: UrlShortener.Domain.UrlAggregate.Entity
+  nameWithType: UrlShortener.Domain.UrlAggregate.Entity
+  fullName: UrlShortener.Domain.UrlAggregate.Entity
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate
+    name: UrlAggregate
+    href: UrlShortener.Domain.UrlAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate.Entity
+    name: Entity
+    href: UrlShortener.Domain.UrlAggregate.Entity.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate
+    name: UrlAggregate
+    href: UrlShortener.Domain.UrlAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UrlAggregate.Entity
+    name: Entity
+    href: UrlShortener.Domain.UrlAggregate.Entity.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UrlShortener.Domain.Common.Entity{UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId}
+  commentId: T:UrlShortener.Domain.Common.Entity{UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId}
+  parent: UrlShortener.Domain.Common
+  definition: UrlShortener.Domain.Common.Entity`1
+  href: UrlShortener.Domain.Common.Entity-1.html
+  name: Entity<UrlId>
+  nameWithType: Entity<UrlId>
+  fullName: UrlShortener.Domain.Common.Entity<UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId>
+  nameWithType.vb: Entity(Of UrlId)
+  fullName.vb: UrlShortener.Domain.Common.Entity(Of UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId)
+  name.vb: Entity(Of UrlId)
+  spec.csharp:
+  - uid: UrlShortener.Domain.Common.Entity`1
+    name: Entity
+    href: UrlShortener.Domain.Common.Entity-1.html
+  - name: <
+  - uid: UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId
+    name: UrlId
+    href: UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId.html
+  - name: '>'
+  spec.vb:
+  - uid: UrlShortener.Domain.Common.Entity`1
+    name: Entity
+    href: UrlShortener.Domain.Common.Entity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId
+    name: UrlId
+    href: UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId.html
+  - name: )
+- uid: UrlShortener.Domain.Common.Entity{UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId}.Id
+  commentId: P:UrlShortener.Domain.Common.Entity{UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId}.Id
+  parent: UrlShortener.Domain.Common.Entity{UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId}
+  definition: UrlShortener.Domain.Common.Entity`1.Id
+  href: UrlShortener.Domain.Common.Entity-1.html#UrlShortener_Domain_Common_Entity_1_Id
+  name: Id
+  nameWithType: Entity<UrlId>.Id
+  fullName: UrlShortener.Domain.Common.Entity<UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId>.Id
+  nameWithType.vb: Entity(Of UrlId).Id
+  fullName.vb: UrlShortener.Domain.Common.Entity(Of UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId).Id
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UrlShortener.Domain.Common.Entity`1
+  commentId: T:UrlShortener.Domain.Common.Entity`1
+  href: UrlShortener.Domain.Common.Entity-1.html
+  name: Entity<TId>
+  nameWithType: Entity<TId>
+  fullName: UrlShortener.Domain.Common.Entity<TId>
+  nameWithType.vb: Entity(Of TId)
+  fullName.vb: UrlShortener.Domain.Common.Entity(Of TId)
+  name.vb: Entity(Of TId)
+  spec.csharp:
+  - uid: UrlShortener.Domain.Common.Entity`1
+    name: Entity
+    href: UrlShortener.Domain.Common.Entity-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: UrlShortener.Domain.Common.Entity`1
+    name: Entity
+    href: UrlShortener.Domain.Common.Entity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: UrlShortener.Domain.Common
+  commentId: N:UrlShortener.Domain.Common
+  href: UrlShortener.html
+  name: UrlShortener.Domain.Common
+  nameWithType: UrlShortener.Domain.Common
+  fullName: UrlShortener.Domain.Common
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.Common
+    name: Common
+    href: UrlShortener.Domain.Common.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.Common
+    name: Common
+    href: UrlShortener.Domain.Common.html
+- uid: UrlShortener.Domain.Common.Entity`1.Id
+  commentId: P:UrlShortener.Domain.Common.Entity`1.Id
+  href: UrlShortener.Domain.Common.Entity-1.html#UrlShortener_Domain_Common_Entity_1_Id
+  name: Id
+  nameWithType: Entity<TId>.Id
+  fullName: UrlShortener.Domain.Common.Entity<TId>.Id
+  nameWithType.vb: Entity(Of TId).Id
+  fullName.vb: UrlShortener.Domain.Common.Entity(Of TId).Id
+- uid: UrlShortener.Domain.UrlAggregate.Entity.Url.LongUrl*
+  commentId: Overload:UrlShortener.Domain.UrlAggregate.Entity.Url.LongUrl
+  href: UrlShortener.Domain.UrlAggregate.Entity.Url.html#UrlShortener_Domain_UrlAggregate_Entity_Url_LongUrl
+  name: LongUrl
+  nameWithType: Url.LongUrl
+  fullName: UrlShortener.Domain.UrlAggregate.Entity.Url.LongUrl
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UrlShortener.Domain.UrlAggregate.Entity.Url.Code*
+  commentId: Overload:UrlShortener.Domain.UrlAggregate.Entity.Url.Code
+  href: UrlShortener.Domain.UrlAggregate.Entity.Url.html#UrlShortener_Domain_UrlAggregate_Entity_Url_Code
+  name: Code
+  nameWithType: Url.Code
+  fullName: UrlShortener.Domain.UrlAggregate.Entity.Url.Code
+- uid: UrlShortener.Domain.UrlAggregate.Entity.Url.CreatedAt*
+  commentId: Overload:UrlShortener.Domain.UrlAggregate.Entity.Url.CreatedAt
+  href: UrlShortener.Domain.UrlAggregate.Entity.Url.html#UrlShortener_Domain_UrlAggregate_Entity_Url_CreatedAt
+  name: CreatedAt
+  nameWithType: Url.CreatedAt
+  fullName: UrlShortener.Domain.UrlAggregate.Entity.Url.CreatedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: UrlShortener.Domain.UrlAggregate.Entity.Url.SetCode*
+  commentId: Overload:UrlShortener.Domain.UrlAggregate.Entity.Url.SetCode
+  href: UrlShortener.Domain.UrlAggregate.Entity.Url.html#UrlShortener_Domain_UrlAggregate_Entity_Url_SetCode_System_String_
+  name: SetCode
+  nameWithType: Url.SetCode
+  fullName: UrlShortener.Domain.UrlAggregate.Entity.Url.SetCode
+- uid: UrlShortener.Domain.UrlAggregate.Entity.Url.Create*
+  commentId: Overload:UrlShortener.Domain.UrlAggregate.Entity.Url.Create
+  href: UrlShortener.Domain.UrlAggregate.Entity.Url.html#UrlShortener_Domain_UrlAggregate_Entity_Url_Create_System_String_
+  name: Create
+  nameWithType: Url.Create
+  fullName: UrlShortener.Domain.UrlAggregate.Entity.Url.Create
+- uid: UrlShortener.Domain.UrlAggregate.Entity.Url
+  commentId: T:UrlShortener.Domain.UrlAggregate.Entity.Url
+  parent: UrlShortener.Domain.UrlAggregate.Entity
+  href: UrlShortener.Domain.UrlAggregate.Entity.Url.html
+  name: Url
+  nameWithType: Url
+  fullName: UrlShortener.Domain.UrlAggregate.Entity.Url

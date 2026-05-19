@@ -1,0 +1,549 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.Authentication.Common.AuthenticationResult
+  commentId: T:UrlShortener.Application.Authentication.Common.AuthenticationResult
+  id: AuthenticationResult
+  parent: UrlShortener.Application.Authentication.Common
+  children:
+  - UrlShortener.Application.Authentication.Common.AuthenticationResult.#ctor(UrlShortener.Domain.UserAggregate.Entity.User,System.String)
+  - UrlShortener.Application.Authentication.Common.AuthenticationResult.token
+  - UrlShortener.Application.Authentication.Common.AuthenticationResult.user
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationResult
+  nameWithType: AuthenticationResult
+  fullName: UrlShortener.Application.Authentication.Common.AuthenticationResult
+  type: Class
+  source:
+    remote:
+      path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: AuthenticationResult
+    path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
+    startLine: 5
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Authentication.Common
+  syntax:
+    content: 'public record AuthenticationResult : IEquatable<AuthenticationResult>'
+    content.vb: Public Class AuthenticationResult Implements IEquatable(Of AuthenticationResult)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{UrlShortener.Application.Authentication.Common.AuthenticationResult}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UrlShortener.Application.Authentication.Common.AuthenticationResult.#ctor(UrlShortener.Domain.UserAggregate.Entity.User,System.String)
+  commentId: M:UrlShortener.Application.Authentication.Common.AuthenticationResult.#ctor(UrlShortener.Domain.UserAggregate.Entity.User,System.String)
+  id: '#ctor(UrlShortener.Domain.UserAggregate.Entity.User,System.String)'
+  parent: UrlShortener.Application.Authentication.Common.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationResult(User, string)
+  nameWithType: AuthenticationResult.AuthenticationResult(User, string)
+  fullName: UrlShortener.Application.Authentication.Common.AuthenticationResult.AuthenticationResult(UrlShortener.Domain.UserAggregate.Entity.User, string)
+  type: Constructor
+  source:
+    remote:
+      path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: .ctor
+    path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
+    startLine: 5
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Authentication.Common
+  syntax:
+    content: public AuthenticationResult(User user, string token)
+    parameters:
+    - id: user
+      type: UrlShortener.Domain.UserAggregate.Entity.User
+    - id: token
+      type: System.String
+    content.vb: Public Sub New(user As User, token As String)
+  overload: UrlShortener.Application.Authentication.Common.AuthenticationResult.#ctor*
+  nameWithType.vb: AuthenticationResult.New(User, String)
+  fullName.vb: UrlShortener.Application.Authentication.Common.AuthenticationResult.New(UrlShortener.Domain.UserAggregate.Entity.User, String)
+  name.vb: New(User, String)
+- uid: UrlShortener.Application.Authentication.Common.AuthenticationResult.user
+  commentId: P:UrlShortener.Application.Authentication.Common.AuthenticationResult.user
+  id: user
+  parent: UrlShortener.Application.Authentication.Common.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: user
+  nameWithType: AuthenticationResult.user
+  fullName: UrlShortener.Application.Authentication.Common.AuthenticationResult.user
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: user
+    path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
+    startLine: 6
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Authentication.Common
+  syntax:
+    content: public User user { get; init; }
+    parameters: []
+    return:
+      type: UrlShortener.Domain.UserAggregate.Entity.User
+    content.vb: Public Property user As User
+  overload: UrlShortener.Application.Authentication.Common.AuthenticationResult.user*
+- uid: UrlShortener.Application.Authentication.Common.AuthenticationResult.token
+  commentId: P:UrlShortener.Application.Authentication.Common.AuthenticationResult.token
+  id: token
+  parent: UrlShortener.Application.Authentication.Common.AuthenticationResult
+  langs:
+  - csharp
+  - vb
+  name: token
+  nameWithType: AuthenticationResult.token
+  fullName: UrlShortener.Application.Authentication.Common.AuthenticationResult.token
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: token
+    path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
+    startLine: 7
+  assemblies:
+  - UrlShortener.Application
+  namespace: UrlShortener.Application.Authentication.Common
+  syntax:
+    content: public string token { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property token As String
+  overload: UrlShortener.Application.Authentication.Common.AuthenticationResult.token*
+references:
+- uid: UrlShortener.Application.Authentication.Common
+  commentId: N:UrlShortener.Application.Authentication.Common
+  href: UrlShortener.html
+  name: UrlShortener.Application.Authentication.Common
+  nameWithType: UrlShortener.Application.Authentication.Common
+  fullName: UrlShortener.Application.Authentication.Common
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Authentication.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication.Common
+    name: Common
+    href: UrlShortener.Application.Authentication.Common.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication
+    name: Authentication
+    href: UrlShortener.Application.Authentication.html
+  - name: .
+  - uid: UrlShortener.Application.Authentication.Common
+    name: Common
+    href: UrlShortener.Application.Authentication.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{UrlShortener.Application.Authentication.Common.AuthenticationResult}
+  commentId: T:System.IEquatable{UrlShortener.Application.Authentication.Common.AuthenticationResult}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<AuthenticationResult>
+  nameWithType: IEquatable<AuthenticationResult>
+  fullName: System.IEquatable<UrlShortener.Application.Authentication.Common.AuthenticationResult>
+  nameWithType.vb: IEquatable(Of AuthenticationResult)
+  fullName.vb: System.IEquatable(Of UrlShortener.Application.Authentication.Common.AuthenticationResult)
+  name.vb: IEquatable(Of AuthenticationResult)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: UrlShortener.Application.Authentication.Common.AuthenticationResult
+    name: AuthenticationResult
+    href: UrlShortener.Application.Authentication.Common.AuthenticationResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Application.Authentication.Common.AuthenticationResult
+    name: AuthenticationResult
+    href: UrlShortener.Application.Authentication.Common.AuthenticationResult.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UrlShortener.Application.Authentication.Common.AuthenticationResult.#ctor*
+  commentId: Overload:UrlShortener.Application.Authentication.Common.AuthenticationResult.#ctor
+  href: UrlShortener.Application.Authentication.Common.AuthenticationResult.html#UrlShortener_Application_Authentication_Common_AuthenticationResult__ctor_UrlShortener_Domain_UserAggregate_Entity_User_System_String_
+  name: AuthenticationResult
+  nameWithType: AuthenticationResult.AuthenticationResult
+  fullName: UrlShortener.Application.Authentication.Common.AuthenticationResult.AuthenticationResult
+  nameWithType.vb: AuthenticationResult.New
+  fullName.vb: UrlShortener.Application.Authentication.Common.AuthenticationResult.New
+  name.vb: New
+- uid: UrlShortener.Domain.UserAggregate.Entity.User
+  commentId: T:UrlShortener.Domain.UserAggregate.Entity.User
+  parent: UrlShortener.Domain.UserAggregate.Entity
+  href: UrlShortener.Domain.UserAggregate.Entity.User.html
+  name: User
+  nameWithType: User
+  fullName: UrlShortener.Domain.UserAggregate.Entity.User
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UrlShortener.Domain.UserAggregate.Entity
+  commentId: N:UrlShortener.Domain.UserAggregate.Entity
+  href: UrlShortener.html
+  name: UrlShortener.Domain.UserAggregate.Entity
+  nameWithType: UrlShortener.Domain.UserAggregate.Entity
+  fullName: UrlShortener.Domain.UserAggregate.Entity
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate
+    name: UserAggregate
+    href: UrlShortener.Domain.UserAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate.Entity
+    name: Entity
+    href: UrlShortener.Domain.UserAggregate.Entity.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Domain
+    name: Domain
+    href: UrlShortener.Domain.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate
+    name: UserAggregate
+    href: UrlShortener.Domain.UserAggregate.html
+  - name: .
+  - uid: UrlShortener.Domain.UserAggregate.Entity
+    name: Entity
+    href: UrlShortener.Domain.UserAggregate.Entity.html
+- uid: UrlShortener.Application.Authentication.Common.AuthenticationResult.user*
+  commentId: Overload:UrlShortener.Application.Authentication.Common.AuthenticationResult.user
+  href: UrlShortener.Application.Authentication.Common.AuthenticationResult.html#UrlShortener_Application_Authentication_Common_AuthenticationResult_user
+  name: user
+  nameWithType: AuthenticationResult.user
+  fullName: UrlShortener.Application.Authentication.Common.AuthenticationResult.user
+- uid: UrlShortener.Application.Authentication.Common.AuthenticationResult.token*
+  commentId: Overload:UrlShortener.Application.Authentication.Common.AuthenticationResult.token
+  href: UrlShortener.Application.Authentication.Common.AuthenticationResult.html#UrlShortener_Application_Authentication_Common_AuthenticationResult_token
+  name: token
+  nameWithType: AuthenticationResult.token
+  fullName: UrlShortener.Application.Authentication.Common.AuthenticationResult.token

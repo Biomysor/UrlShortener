@@ -5,8 +5,13 @@ using UrlShortener.Application.Common.Interfaces.Services;
 
 namespace UrlShortener.Infrastructure.Services;
 
+/// <summary>
+/// Redis implementation of the cache service.
+/// Uses IDistributedCache and JSON serialization for storing objects.
+/// </summary>
 public class CachingService(IDistributedCache cache) : ICacheService
 {
+    /// <inheritdoc />
     public async Task<T?> GetAsync<T>(
         string key,
         CancellationToken cancellationToken = default)
@@ -18,6 +23,7 @@ public class CachingService(IDistributedCache cache) : ICacheService
             : JsonSerializer.Deserialize<T>(json);
     }
 
+    /// <inheritdoc />
     public async Task SetAsync<T>(
         string key,
         T value,
@@ -34,6 +40,7 @@ public class CachingService(IDistributedCache cache) : ICacheService
         await cache.SetStringAsync(key, json, options, cancellationToken);
     }
 
+    /// <inheritdoc />
     public async Task RemoveAsync(
         string key,
         CancellationToken cancellationToken = default)

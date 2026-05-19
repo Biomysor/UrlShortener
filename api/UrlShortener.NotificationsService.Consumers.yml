@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.NotificationsService.Consumers
+  commentId: N:UrlShortener.NotificationsService.Consumers
+  id: UrlShortener.NotificationsService.Consumers
+  children:
+  - UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.NotificationsService.Consumers
+  nameWithType: UrlShortener.NotificationsService.Consumers
+  fullName: UrlShortener.NotificationsService.Consumers
+  type: Namespace
+  assemblies:
+  - UrlShortener.NotificationsService
+references:
+- uid: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer
+  commentId: T:UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer
+  href: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer.html
+  name: UrlCreatedEventConsumer
+  nameWithType: UrlCreatedEventConsumer
+  fullName: UrlShortener.NotificationsService.Consumers.UrlCreatedEventConsumer

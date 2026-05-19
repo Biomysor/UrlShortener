@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  commentId: N:UrlShortener.Application.UrlActions.Queries.UrlQueries
+  id: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  children:
+  - UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery
+  - UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQueryHandler
+  - UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQueryValidation
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  nameWithType: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  fullName: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  type: Namespace
+  assemblies:
+  - UrlShortener.Application
+references:
+- uid: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery
+  commentId: T:UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery
+  parent: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  href: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery.html
+  name: UrlQuery
+  nameWithType: UrlQuery
+  fullName: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQuery
+- uid: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQueryHandler
+  commentId: T:UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQueryHandler
+  href: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQueryHandler.html
+  name: UrlQueryHandler
+  nameWithType: UrlQueryHandler
+  fullName: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQueryHandler
+- uid: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQueryValidation
+  commentId: T:UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQueryValidation
+  href: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQueryValidation.html
+  name: UrlQueryValidation
+  nameWithType: UrlQueryValidation
+  fullName: UrlShortener.Application.UrlActions.Queries.UrlQueries.UrlQueryValidation
+- uid: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  commentId: N:UrlShortener.Application.UrlActions.Queries.UrlQueries
+  href: UrlShortener.html
+  name: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  nameWithType: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  fullName: UrlShortener.Application.UrlActions.Queries.UrlQueries
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.UrlActions.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions.Queries
+    name: Queries
+    href: UrlShortener.Application.UrlActions.Queries.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions.Queries.UrlQueries
+    name: UrlQueries
+    href: UrlShortener.Application.UrlActions.Queries.UrlQueries.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Application
+    name: Application
+    href: UrlShortener.Application.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions
+    name: UrlActions
+    href: UrlShortener.Application.UrlActions.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions.Queries
+    name: Queries
+    href: UrlShortener.Application.UrlActions.Queries.html
+  - name: .
+  - uid: UrlShortener.Application.UrlActions.Queries.UrlQueries
+    name: UrlQueries
+    href: UrlShortener.Application.UrlActions.Queries.UrlQueries.html

@@ -11,10 +11,24 @@ using UrlShortener.Domain.UserAggregate.Entity;
 
 namespace UrlShortener.Application.Authentication.Commands.Register;
 
+/// <summary>
+/// Handles user registration commands.
+/// Checks email uniqueness, hashes the password, saves the user and generates a JWT token.
+/// </summary>
 public class RegisterCommandHandler(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository, IPasswordHasher passwordHasher)
     : IRequestHandler<RegisterCommand, ErrorOr<AuthenticationResult>>
 {
     private  readonly IPasswordHasher _passwordHasher = passwordHasher;
+    
+    /// <summary>
+    /// Processes a user registration request.
+    /// </summary>
+    /// <param name="command">Registration command containing login, email and password.</param>
+    /// <param name="cancellationToken">Cancellation token.</param>
+    /// <returns>
+    /// Authentication result with user data and JWT token,
+    /// or DuplicateEmail error if user already exists.
+    /// </returns>
     public async Task<ErrorOr<AuthenticationResult>> Handle(RegisterCommand command, CancellationToken cancellationToken)
     {
         if ( await userRepository.GetByEmailAsync(command.Email) is not null)

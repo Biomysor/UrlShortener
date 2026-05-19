@@ -4,6 +4,9 @@ using UrlShortener.Messaging.Contracts.Events;
 
 namespace UrlShortener.NotificationsService.Consumers;
 
+/// <summary>
+/// Consumes URL created events and sends Telegram notifications.
+/// </summary>
 public class UrlCreatedEventConsumer(
     ITelegramBotClient telegramBotClient,
     IConfiguration configuration)
@@ -12,6 +15,10 @@ public class UrlCreatedEventConsumer(
     private readonly ITelegramBotClient _telegramBotClient = telegramBotClient;
     private readonly IConfiguration _configuration = configuration;
 
+    /// <summary>
+    /// Handles UrlCreatedEvent messages and sends notification to configured Telegram chat.
+    /// </summary>
+    /// <param name="context">Message consume context.</param>
     public async Task Consume(ConsumeContext<UrlCreatedEvent> context)
     {
         var message = context.Message;

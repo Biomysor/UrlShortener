@@ -12,10 +12,24 @@ using UrlShortener.Domain.UserAggregate.Entity;
 
 namespace UrlShortener.Application.Authentication.Queries;
 
+/// <summary>
+/// Handles user login queries.
+/// Validates user credentials and generates a JWT token.
+/// </summary>
 public class LoginQueryHandler(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository, IPasswordHasher passwordHasher)
     : IRequestHandler<LoginQuery, ErrorOr<AuthenticationResult>>
 {
     private readonly IPasswordHasher _passwordHasher = passwordHasher;
+    
+    /// <summary>
+    /// Processes a login request.
+    /// </summary>
+    /// <param name="query">Login query containing email and password.</param>
+    /// <param name="cancellationToken">Cancellation token.</param>
+    /// <returns>
+    /// Authentication result with JWT token if credentials are valid;
+    /// otherwise InvalidCredentials error.
+    /// </returns>
     public async Task<ErrorOr<AuthenticationResult>> Handle(LoginQuery query, CancellationToken cancellationToken)
     {
         await Task.CompletedTask;

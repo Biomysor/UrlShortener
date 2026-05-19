@@ -1,0 +1,400 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Api.Common.Mapping.AuthenticationMapping
+  commentId: T:UrlShortener.Api.Common.Mapping.AuthenticationMapping
+  id: AuthenticationMapping
+  parent: UrlShortener.Api.Common.Mapping
+  children:
+  - UrlShortener.Api.Common.Mapping.AuthenticationMapping.Register(Mapster.TypeAdapterConfig)
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationMapping
+  nameWithType: AuthenticationMapping
+  fullName: UrlShortener.Api.Common.Mapping.AuthenticationMapping
+  type: Class
+  source:
+    remote:
+      path: UrlShortener.Api/Common/Mapping/AuthenticationMapping.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: AuthenticationMapping
+    path: UrlShortener.Api/Common/Mapping/AuthenticationMapping.cs
+    startLine: 9
+  assemblies:
+  - UrlShortener.Api
+  namespace: UrlShortener.Api.Common.Mapping
+  syntax:
+    content: 'public class AuthenticationMapping : IRegister'
+    content.vb: Public Class AuthenticationMapping Implements IRegister
+  inheritance:
+  - System.Object
+  implements:
+  - Mapster.IRegister
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UrlShortener.Api.Common.Mapping.AuthenticationMapping.Register(Mapster.TypeAdapterConfig)
+  commentId: M:UrlShortener.Api.Common.Mapping.AuthenticationMapping.Register(Mapster.TypeAdapterConfig)
+  id: Register(Mapster.TypeAdapterConfig)
+  parent: UrlShortener.Api.Common.Mapping.AuthenticationMapping
+  langs:
+  - csharp
+  - vb
+  name: Register(TypeAdapterConfig)
+  nameWithType: AuthenticationMapping.Register(TypeAdapterConfig)
+  fullName: UrlShortener.Api.Common.Mapping.AuthenticationMapping.Register(Mapster.TypeAdapterConfig)
+  type: Method
+  source:
+    remote:
+      path: UrlShortener.Api/Common/Mapping/AuthenticationMapping.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: Register
+    path: UrlShortener.Api/Common/Mapping/AuthenticationMapping.cs
+    startLine: 11
+  assemblies:
+  - UrlShortener.Api
+  namespace: UrlShortener.Api.Common.Mapping
+  example: []
+  syntax:
+    content: public void Register(TypeAdapterConfig config)
+    parameters:
+    - id: config
+      type: Mapster.TypeAdapterConfig
+    content.vb: Public Sub Register(config As TypeAdapterConfig)
+  overload: UrlShortener.Api.Common.Mapping.AuthenticationMapping.Register*
+  implements:
+  - Mapster.IRegister.Register(Mapster.TypeAdapterConfig)
+references:
+- uid: UrlShortener.Api.Common.Mapping
+  commentId: N:UrlShortener.Api.Common.Mapping
+  href: UrlShortener.html
+  name: UrlShortener.Api.Common.Mapping
+  nameWithType: UrlShortener.Api.Common.Mapping
+  fullName: UrlShortener.Api.Common.Mapping
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Api
+    name: Api
+    href: UrlShortener.Api.html
+  - name: .
+  - uid: UrlShortener.Api.Common
+    name: Common
+    href: UrlShortener.Api.Common.html
+  - name: .
+  - uid: UrlShortener.Api.Common.Mapping
+    name: Mapping
+    href: UrlShortener.Api.Common.Mapping.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Api
+    name: Api
+    href: UrlShortener.Api.html
+  - name: .
+  - uid: UrlShortener.Api.Common
+    name: Common
+    href: UrlShortener.Api.Common.html
+  - name: .
+  - uid: UrlShortener.Api.Common.Mapping
+    name: Mapping
+    href: UrlShortener.Api.Common.Mapping.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Mapster.IRegister
+  commentId: T:Mapster.IRegister
+  parent: Mapster
+  isExternal: true
+  name: IRegister
+  nameWithType: IRegister
+  fullName: Mapster.IRegister
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mapster
+  commentId: N:Mapster
+  isExternal: true
+  name: Mapster
+  nameWithType: Mapster
+  fullName: Mapster
+- uid: UrlShortener.Api.Common.Mapping.AuthenticationMapping.Register*
+  commentId: Overload:UrlShortener.Api.Common.Mapping.AuthenticationMapping.Register
+  href: UrlShortener.Api.Common.Mapping.AuthenticationMapping.html#UrlShortener_Api_Common_Mapping_AuthenticationMapping_Register_Mapster_TypeAdapterConfig_
+  name: Register
+  nameWithType: AuthenticationMapping.Register
+  fullName: UrlShortener.Api.Common.Mapping.AuthenticationMapping.Register
+- uid: Mapster.IRegister.Register(Mapster.TypeAdapterConfig)
+  commentId: M:Mapster.IRegister.Register(Mapster.TypeAdapterConfig)
+  parent: Mapster.IRegister
+  isExternal: true
+  name: Register(TypeAdapterConfig)
+  nameWithType: IRegister.Register(TypeAdapterConfig)
+  fullName: Mapster.IRegister.Register(Mapster.TypeAdapterConfig)
+  spec.csharp:
+  - uid: Mapster.IRegister.Register(Mapster.TypeAdapterConfig)
+    name: Register
+    isExternal: true
+  - name: (
+  - uid: Mapster.TypeAdapterConfig
+    name: TypeAdapterConfig
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Mapster.IRegister.Register(Mapster.TypeAdapterConfig)
+    name: Register
+    isExternal: true
+  - name: (
+  - uid: Mapster.TypeAdapterConfig
+    name: TypeAdapterConfig
+    isExternal: true
+  - name: )
+- uid: Mapster.TypeAdapterConfig
+  commentId: T:Mapster.TypeAdapterConfig
+  parent: Mapster
+  isExternal: true
+  name: TypeAdapterConfig
+  nameWithType: TypeAdapterConfig
+  fullName: Mapster.TypeAdapterConfig

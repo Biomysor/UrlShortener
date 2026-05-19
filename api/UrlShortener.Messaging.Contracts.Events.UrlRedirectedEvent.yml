@@ -1,0 +1,703 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+  commentId: T:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+  id: UrlRedirectedEvent
+  parent: UrlShortener.Messaging.Contracts.Events
+  children:
+  - UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.#ctor(System.Guid,System.String,System.String,System.DateTime,System.String,System.String)
+  - UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.Code
+  - UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.IpAddress
+  - UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.LongUrl
+  - UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.RedirectedAt
+  - UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UrlId
+  - UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UserAgent
+  langs:
+  - csharp
+  - vb
+  name: UrlRedirectedEvent
+  nameWithType: UrlRedirectedEvent
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+  type: Class
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: UrlRedirectedEvent
+    path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+    startLine: 12
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Events
+  summary: >-
+    Integration event that is published when a short URL is redirected.
+
+    Used by analytics service to update redirect statistics.
+  example: []
+  syntax:
+    content: 'public record UrlRedirectedEvent : IEquatable<UrlRedirectedEvent>'
+    content.vb: Public Class UrlRedirectedEvent Implements IEquatable(Of UrlRedirectedEvent)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.#ctor(System.Guid,System.String,System.String,System.DateTime,System.String,System.String)
+  commentId: M:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.#ctor(System.Guid,System.String,System.String,System.DateTime,System.String,System.String)
+  id: '#ctor(System.Guid,System.String,System.String,System.DateTime,System.String,System.String)'
+  parent: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+  langs:
+  - csharp
+  - vb
+  name: UrlRedirectedEvent(Guid, string, string, DateTime, string?, string?)
+  nameWithType: UrlRedirectedEvent.UrlRedirectedEvent(Guid, string, string, DateTime, string?, string?)
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UrlRedirectedEvent(System.Guid, string, string, System.DateTime, string?, string?)
+  type: Constructor
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: .ctor
+    path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+    startLine: 12
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Events
+  summary: >-
+    Integration event that is published when a short URL is redirected.
+
+    Used by analytics service to update redirect statistics.
+  example: []
+  syntax:
+    content: public UrlRedirectedEvent(Guid UrlId, string Code, string LongUrl, DateTime RedirectedAt, string? IpAddress, string? UserAgent)
+    parameters:
+    - id: UrlId
+      type: System.Guid
+      description: Identifier of the URL.
+    - id: Code
+      type: System.String
+      description: Short URL code.
+    - id: LongUrl
+      type: System.String
+      description: Original long URL.
+    - id: RedirectedAt
+      type: System.DateTime
+      description: Date and time of redirect.
+    - id: IpAddress
+      type: System.String
+      description: Optional client IP address.
+    - id: UserAgent
+      type: System.String
+      description: Optional client user agent.
+    content.vb: Public Sub New(UrlId As Guid, Code As String, LongUrl As String, RedirectedAt As Date, IpAddress As String, UserAgent As String)
+  overload: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.#ctor*
+  nameWithType.vb: UrlRedirectedEvent.New(Guid, String, String, Date, String, String)
+  fullName.vb: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.New(System.Guid, String, String, Date, String, String)
+  name.vb: New(Guid, String, String, Date, String, String)
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UrlId
+  commentId: P:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UrlId
+  id: UrlId
+  parent: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+  langs:
+  - csharp
+  - vb
+  name: UrlId
+  nameWithType: UrlRedirectedEvent.UrlId
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UrlId
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: UrlId
+    path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+    startLine: 13
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Events
+  summary: Identifier of the URL.
+  example: []
+  syntax:
+    content: public Guid UrlId { get; init; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property UrlId As Guid
+  overload: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UrlId*
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.Code
+  commentId: P:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.Code
+  id: Code
+  parent: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: UrlRedirectedEvent.Code
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.Code
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: Code
+    path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+    startLine: 14
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Events
+  summary: Short URL code.
+  example: []
+  syntax:
+    content: public string Code { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Code As String
+  overload: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.Code*
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.LongUrl
+  commentId: P:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.LongUrl
+  id: LongUrl
+  parent: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+  langs:
+  - csharp
+  - vb
+  name: LongUrl
+  nameWithType: UrlRedirectedEvent.LongUrl
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.LongUrl
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: LongUrl
+    path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+    startLine: 15
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Events
+  summary: Original long URL.
+  example: []
+  syntax:
+    content: public string LongUrl { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LongUrl As String
+  overload: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.LongUrl*
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.RedirectedAt
+  commentId: P:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.RedirectedAt
+  id: RedirectedAt
+  parent: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+  langs:
+  - csharp
+  - vb
+  name: RedirectedAt
+  nameWithType: UrlRedirectedEvent.RedirectedAt
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.RedirectedAt
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: RedirectedAt
+    path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+    startLine: 16
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Events
+  summary: Date and time of redirect.
+  example: []
+  syntax:
+    content: public DateTime RedirectedAt { get; init; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property RedirectedAt As Date
+  overload: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.RedirectedAt*
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.IpAddress
+  commentId: P:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.IpAddress
+  id: IpAddress
+  parent: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+  langs:
+  - csharp
+  - vb
+  name: IpAddress
+  nameWithType: UrlRedirectedEvent.IpAddress
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.IpAddress
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: IpAddress
+    path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+    startLine: 17
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Events
+  summary: Optional client IP address.
+  example: []
+  syntax:
+    content: public string? IpAddress { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IpAddress As String
+  overload: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.IpAddress*
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UserAgent
+  commentId: P:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UserAgent
+  id: UserAgent
+  parent: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+  langs:
+  - csharp
+  - vb
+  name: UserAgent
+  nameWithType: UrlRedirectedEvent.UserAgent
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UserAgent
+  type: Property
+  source:
+    remote:
+      path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+      branch: Develop
+      repo: https://github.com/Biomysor/UrlShortener.git
+    id: UserAgent
+    path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
+    startLine: 18
+  assemblies:
+  - UrlShortener.Messaging.Contracts
+  namespace: UrlShortener.Messaging.Contracts.Events
+  summary: Optional client user agent.
+  example: []
+  syntax:
+    content: public string? UserAgent { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UserAgent As String
+  overload: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UserAgent*
+references:
+- uid: UrlShortener.Messaging.Contracts.Events
+  commentId: N:UrlShortener.Messaging.Contracts.Events
+  href: UrlShortener.html
+  name: UrlShortener.Messaging.Contracts.Events
+  nameWithType: UrlShortener.Messaging.Contracts.Events
+  fullName: UrlShortener.Messaging.Contracts.Events
+  spec.csharp:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Messaging
+    name: Messaging
+    href: UrlShortener.Messaging.html
+  - name: .
+  - uid: UrlShortener.Messaging.Contracts
+    name: Contracts
+    href: UrlShortener.Messaging.Contracts.html
+  - name: .
+  - uid: UrlShortener.Messaging.Contracts.Events
+    name: Events
+    href: UrlShortener.Messaging.Contracts.Events.html
+  spec.vb:
+  - uid: UrlShortener
+    name: UrlShortener
+    href: UrlShortener.html
+  - name: .
+  - uid: UrlShortener.Messaging
+    name: Messaging
+    href: UrlShortener.Messaging.html
+  - name: .
+  - uid: UrlShortener.Messaging.Contracts
+    name: Contracts
+    href: UrlShortener.Messaging.Contracts.html
+  - name: .
+  - uid: UrlShortener.Messaging.Contracts.Events
+    name: Events
+    href: UrlShortener.Messaging.Contracts.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent}
+  commentId: T:System.IEquatable{UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<UrlRedirectedEvent>
+  nameWithType: IEquatable<UrlRedirectedEvent>
+  fullName: System.IEquatable<UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent>
+  nameWithType.vb: IEquatable(Of UrlRedirectedEvent)
+  fullName.vb: System.IEquatable(Of UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent)
+  name.vb: IEquatable(Of UrlRedirectedEvent)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+    name: UrlRedirectedEvent
+    href: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent
+    name: UrlRedirectedEvent
+    href: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.#ctor*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.#ctor
+  href: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.html#UrlShortener_Messaging_Contracts_Events_UrlRedirectedEvent__ctor_System_Guid_System_String_System_String_System_DateTime_System_String_System_String_
+  name: UrlRedirectedEvent
+  nameWithType: UrlRedirectedEvent.UrlRedirectedEvent
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UrlRedirectedEvent
+  nameWithType.vb: UrlRedirectedEvent.New
+  fullName.vb: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.New
+  name.vb: New
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UrlId*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UrlId
+  href: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.html#UrlShortener_Messaging_Contracts_Events_UrlRedirectedEvent_UrlId
+  name: UrlId
+  nameWithType: UrlRedirectedEvent.UrlId
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UrlId
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.Code*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.Code
+  href: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.html#UrlShortener_Messaging_Contracts_Events_UrlRedirectedEvent_Code
+  name: Code
+  nameWithType: UrlRedirectedEvent.Code
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.Code
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.LongUrl*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.LongUrl
+  href: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.html#UrlShortener_Messaging_Contracts_Events_UrlRedirectedEvent_LongUrl
+  name: LongUrl
+  nameWithType: UrlRedirectedEvent.LongUrl
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.LongUrl
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.RedirectedAt*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.RedirectedAt
+  href: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.html#UrlShortener_Messaging_Contracts_Events_UrlRedirectedEvent_RedirectedAt
+  name: RedirectedAt
+  nameWithType: UrlRedirectedEvent.RedirectedAt
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.RedirectedAt
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.IpAddress*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.IpAddress
+  href: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.html#UrlShortener_Messaging_Contracts_Events_UrlRedirectedEvent_IpAddress
+  name: IpAddress
+  nameWithType: UrlRedirectedEvent.IpAddress
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.IpAddress
+- uid: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UserAgent*
+  commentId: Overload:UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UserAgent
+  href: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.html#UrlShortener_Messaging_Contracts_Events_UrlRedirectedEvent_UserAgent
+  name: UserAgent
+  nameWithType: UrlRedirectedEvent.UserAgent
+  fullName: UrlShortener.Messaging.Contracts.Events.UrlRedirectedEvent.UserAgent

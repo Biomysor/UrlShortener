@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: UrlShortener.AnalyticsService.Consumers
+  commentId: N:UrlShortener.AnalyticsService.Consumers
+  id: UrlShortener.AnalyticsService.Consumers
+  children:
+  - UrlShortener.AnalyticsService.Consumers.UrlRedirectedEventConsumer
+  langs:
+  - csharp
+  - vb
+  name: UrlShortener.AnalyticsService.Consumers
+  nameWithType: UrlShortener.AnalyticsService.Consumers
+  fullName: UrlShortener.AnalyticsService.Consumers
+  type: Namespace
+  assemblies:
+  - UrlShortener.AnalyticsService
+references:
+- uid: UrlShortener.AnalyticsService.Consumers.UrlRedirectedEventConsumer
+  commentId: T:UrlShortener.AnalyticsService.Consumers.UrlRedirectedEventConsumer
+  href: UrlShortener.AnalyticsService.Consumers.UrlRedirectedEventConsumer.html
+  name: UrlRedirectedEventConsumer
+  nameWithType: UrlRedirectedEventConsumer
+  fullName: UrlShortener.AnalyticsService.Consumers.UrlRedirectedEventConsumer
