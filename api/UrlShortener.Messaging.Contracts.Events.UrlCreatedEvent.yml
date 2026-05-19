@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlCreatedEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlCreatedEvent
     path: UrlShortener.Messaging.Contracts/Events/UrlCreatedEvent.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlCreatedEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Messaging.Contracts/Events/UrlCreatedEvent.cs
@@ -113,7 +113,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlCreatedEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlId
     path: UrlShortener.Messaging.Contracts/Events/UrlCreatedEvent.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlCreatedEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Code
     path: UrlShortener.Messaging.Contracts/Events/UrlCreatedEvent.cs
@@ -175,7 +175,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlCreatedEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: LongUrl
     path: UrlShortener.Messaging.Contracts/Events/UrlCreatedEvent.cs
@@ -206,7 +206,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlCreatedEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: ShortUrl
     path: UrlShortener.Messaging.Contracts/Events/UrlCreatedEvent.cs
@@ -237,7 +237,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlCreatedEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: CreatedAt
     path: UrlShortener.Messaging.Contracts/Events/UrlCreatedEvent.cs

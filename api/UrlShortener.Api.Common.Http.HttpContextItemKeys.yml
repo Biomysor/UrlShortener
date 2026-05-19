@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/Common/Http/HttpContextItemKeys.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: HttpContextItemKeys
     path: UrlShortener.Api/Common/Http/HttpContextItemKeys.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/Common/Http/HttpContextItemKeys.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Errors
     path: UrlShortener.Api/Common/Http/HttpContextItemKeys.cs

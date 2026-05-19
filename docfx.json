@@ -33,7 +33,7 @@
       },
       {
         "files": [
-          "docs/**.md",
+          "docs-src/**.md",
           "docs/**/toc.yml",
           "toc.yml",
           "*.md"
@@ -50,7 +50,7 @@
         ]
       }
     ],
-    "dest": "_site",
+    "dest": "docs",
     "template": [
       "default",
       "modern"

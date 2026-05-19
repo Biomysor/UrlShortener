@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/UrlActions/Common/CachedUrlRedirect.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: CachedUrlRedirect
     path: UrlShortener.Application/UrlActions/Common/CachedUrlRedirect.cs
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/UrlActions/Common/CachedUrlRedirect.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Application/UrlActions/Common/CachedUrlRedirect.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/UrlActions/Common/CachedUrlRedirect.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlId
     path: UrlShortener.Application/UrlActions/Common/CachedUrlRedirect.cs
@@ -121,7 +121,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/UrlActions/Common/CachedUrlRedirect.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Code
     path: UrlShortener.Application/UrlActions/Common/CachedUrlRedirect.cs
@@ -150,7 +150,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/UrlActions/Common/CachedUrlRedirect.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: LongUrl
     path: UrlShortener.Application/UrlActions/Common/CachedUrlRedirect.cs

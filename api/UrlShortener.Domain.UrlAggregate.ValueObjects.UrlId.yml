@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UrlAggregate/ValueObjects/UrlId.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlId
     path: UrlShortener.Domain/UrlAggregate/ValueObjects/UrlId.cs
@@ -59,7 +59,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UrlAggregate/ValueObjects/UrlId.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Value
     path: UrlShortener.Domain/UrlAggregate/ValueObjects/UrlId.cs
@@ -90,7 +90,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UrlAggregate/ValueObjects/UrlId.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: CreateUnique
     path: UrlShortener.Domain/UrlAggregate/ValueObjects/UrlId.cs
@@ -121,7 +121,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UrlAggregate/ValueObjects/UrlId.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Create
     path: UrlShortener.Domain/UrlAggregate/ValueObjects/UrlId.cs
@@ -159,7 +159,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UrlAggregate/ValueObjects/UrlId.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: GetEqualityComponents
     path: UrlShortener.Domain/UrlAggregate/ValueObjects/UrlId.cs

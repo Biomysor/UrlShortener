@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlRedirectedEvent
     path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
@@ -64,7 +64,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
@@ -117,7 +117,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlId
     path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
@@ -148,7 +148,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Code
     path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
@@ -179,7 +179,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: LongUrl
     path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
@@ -210,7 +210,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: RedirectedAt
     path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
@@ -241,7 +241,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: IpAddress
     path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
@@ -272,7 +272,7 @@ items:
   source:
     remote:
       path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UserAgent
     path: UrlShortener.Messaging.Contracts/Events/UrlRedirectEvent.cs

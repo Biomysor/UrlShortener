@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/Controllers/UrlRedirectController.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlRedirectController
     path: UrlShortener.Api/Controllers/UrlRedirectController.cs
@@ -240,7 +240,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/Controllers/UrlRedirectController.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Api/Controllers/UrlRedirectController.cs
@@ -272,7 +272,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/Controllers/UrlRedirectController.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: RedirectToLongUrl
     path: UrlShortener.Api/Controllers/UrlRedirectController.cs

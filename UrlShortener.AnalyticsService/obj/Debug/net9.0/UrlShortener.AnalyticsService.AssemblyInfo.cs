@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UrlShortener.AnalyticsService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d6cb9ff2aef383b3af1b95e2a67cea8211f73b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a69bf6c06e92f9fae024a0225930b2341e72dd15")]
 [assembly: System.Reflection.AssemblyProductAttribute("UrlShortener.AnalyticsService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UrlShortener.AnalyticsService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

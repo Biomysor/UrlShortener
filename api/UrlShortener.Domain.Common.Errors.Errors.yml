@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/Common/Errors/Errors.User.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Errors
     path: UrlShortener.Domain/Common/Errors/Errors.User.cs

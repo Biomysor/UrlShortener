@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/Common/Mapping/AuthenticationMapping.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: AuthenticationMapping
     path: UrlShortener.Api/Common/Mapping/AuthenticationMapping.cs
@@ -53,7 +53,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/Common/Mapping/AuthenticationMapping.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Register
     path: UrlShortener.Api/Common/Mapping/AuthenticationMapping.cs

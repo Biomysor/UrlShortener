@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Persistance/ApplicationDbContext.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: ApplicationDbContext
     path: UrlShortener.Infrastructure/Persistance/ApplicationDbContext.cs
@@ -109,7 +109,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Persistance/ApplicationDbContext.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Infrastructure/Persistance/ApplicationDbContext.cs
@@ -141,7 +141,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Persistance/ApplicationDbContext.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Users
     path: UrlShortener.Infrastructure/Persistance/ApplicationDbContext.cs
@@ -170,7 +170,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Persistance/ApplicationDbContext.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Urls
     path: UrlShortener.Infrastructure/Persistance/ApplicationDbContext.cs
@@ -199,7 +199,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Persistance/ApplicationDbContext.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: OnModelCreating
     path: UrlShortener.Infrastructure/Persistance/ApplicationDbContext.cs

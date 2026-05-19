@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/DependencyInjection.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: DependencyInjection
     path: UrlShortener.Api/DependencyInjection.cs
@@ -53,7 +53,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/DependencyInjection.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: AddPresentation
     path: UrlShortener.Api/DependencyInjection.cs
@@ -85,7 +85,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/DependencyInjection.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: AddOpenApi
     path: UrlShortener.Api/DependencyInjection.cs

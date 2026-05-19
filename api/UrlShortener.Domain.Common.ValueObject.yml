@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/Common/ValueObject.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: ValueObject
     path: UrlShortener.Domain/Common/ValueObject.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/Common/ValueObject.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: GetEqualityComponents
     path: UrlShortener.Domain/Common/ValueObject.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/Common/ValueObject.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Equals
     path: UrlShortener.Domain/Common/ValueObject.cs
@@ -131,7 +131,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/Common/ValueObject.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: op_Equality
     path: UrlShortener.Domain/Common/ValueObject.cs
@@ -169,7 +169,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/Common/ValueObject.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: op_Inequality
     path: UrlShortener.Domain/Common/ValueObject.cs
@@ -207,7 +207,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/Common/ValueObject.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: GetHashCode
     path: UrlShortener.Domain/Common/ValueObject.cs

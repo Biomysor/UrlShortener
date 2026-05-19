@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Models/UrlClick.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlClick
     path: UrlShortener.AnalyticsService/Models/UrlClick.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Models/UrlClick.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Id
     path: UrlShortener.AnalyticsService/Models/UrlClick.cs
@@ -84,7 +84,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Models/UrlClick.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Code
     path: UrlShortener.AnalyticsService/Models/UrlClick.cs
@@ -113,7 +113,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Models/UrlClick.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: RedirectedAt
     path: UrlShortener.AnalyticsService/Models/UrlClick.cs
@@ -142,7 +142,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Models/UrlClick.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: IpAddress
     path: UrlShortener.AnalyticsService/Models/UrlClick.cs
@@ -171,7 +171,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Models/UrlClick.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UserAgent
     path: UrlShortener.AnalyticsService/Models/UrlClick.cs

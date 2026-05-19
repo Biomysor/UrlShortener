@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: UrlShortener.NotificationsService/Worker.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Worker
     path: UrlShortener.NotificationsService/Worker.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: UrlShortener.NotificationsService/Worker.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.NotificationsService/Worker.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: UrlShortener.NotificationsService/Worker.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: ExecuteAsync
     path: UrlShortener.NotificationsService/Worker.cs

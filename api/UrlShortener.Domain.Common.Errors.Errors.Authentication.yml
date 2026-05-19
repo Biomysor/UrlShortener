@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/Common/Errors/Errors.Authentication.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Authentication
     path: UrlShortener.Domain/Common/Errors/Errors.Authentication.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/Common/Errors/Errors.Authentication.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: InvalidCredentials
     path: UrlShortener.Domain/Common/Errors/Errors.Authentication.cs

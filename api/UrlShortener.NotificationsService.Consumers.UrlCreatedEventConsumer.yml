@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: UrlShortener.NotificationsService/Consumers/UrlCreatedEventConsumer.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlCreatedEventConsumer
     path: UrlShortener.NotificationsService/Consumers/UrlCreatedEventConsumer.cs
@@ -57,7 +57,7 @@ items:
   source:
     remote:
       path: UrlShortener.NotificationsService/Consumers/UrlCreatedEventConsumer.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.NotificationsService/Consumers/UrlCreatedEventConsumer.cs
@@ -93,7 +93,7 @@ items:
   source:
     remote:
       path: UrlShortener.NotificationsService/Consumers/UrlCreatedEventConsumer.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Consume
     path: UrlShortener.NotificationsService/Consumers/UrlCreatedEventConsumer.cs

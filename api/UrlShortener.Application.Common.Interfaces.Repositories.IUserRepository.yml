@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Common/Interfaces/Repositories/IUserRepository.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: IUserRepository
     path: UrlShortener.Application/Common/Interfaces/Repositories/IUserRepository.cs
@@ -44,7 +44,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Common/Interfaces/Repositories/IUserRepository.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: GetByEmailAsync
     path: UrlShortener.Application/Common/Interfaces/Repositories/IUserRepository.cs
@@ -78,7 +78,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Common/Interfaces/Repositories/IUserRepository.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: AddAsync
     path: UrlShortener.Application/Common/Interfaces/Repositories/IUserRepository.cs

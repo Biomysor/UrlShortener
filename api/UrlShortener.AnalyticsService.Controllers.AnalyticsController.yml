@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Controllers/AnalyticsController.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: AnalyticsController
     path: UrlShortener.AnalyticsService/Controllers/AnalyticsController.cs
@@ -249,7 +249,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Controllers/AnalyticsController.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.AnalyticsService/Controllers/AnalyticsController.cs
@@ -283,7 +283,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Controllers/AnalyticsController.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: GetStatistics
     path: UrlShortener.AnalyticsService/Controllers/AnalyticsController.cs

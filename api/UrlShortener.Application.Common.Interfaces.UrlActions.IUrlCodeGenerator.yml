@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Common/Interfaces/UrlActions/IUrlCodeGenerator.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: IUrlCodeGenerator
     path: UrlShortener.Application/Common/Interfaces/UrlActions/IUrlCodeGenerator.cs
@@ -45,7 +45,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Common/Interfaces/UrlActions/IUrlCodeGenerator.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: GenerateCode
     path: UrlShortener.Application/Common/Interfaces/UrlActions/IUrlCodeGenerator.cs

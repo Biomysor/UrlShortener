@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Migrations/20260516113512_AddValueObjectIds.Designer.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: AddValueObjectIds
     path: UrlShortener.Infrastructure/Migrations/20260516113512_AddValueObjectIds.Designer.cs
@@ -83,7 +83,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Migrations/20260516113512_AddValueObjectIds.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Up
     path: UrlShortener.Infrastructure/Migrations/20260516113512_AddValueObjectIds.cs
@@ -129,7 +129,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Migrations/20260516113512_AddValueObjectIds.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Down
     path: UrlShortener.Infrastructure/Migrations/20260516113512_AddValueObjectIds.cs
@@ -177,7 +177,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Migrations/20260516113512_AddValueObjectIds.Designer.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: BuildTargetModel
     path: UrlShortener.Infrastructure/Migrations/20260516113512_AddValueObjectIds.Designer.cs

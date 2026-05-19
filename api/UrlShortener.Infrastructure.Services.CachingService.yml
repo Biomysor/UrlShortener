@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Services/CachingService.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: CachingService
     path: UrlShortener.Infrastructure/Services/CachingService.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Services/CachingService.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Infrastructure/Services/CachingService.cs
@@ -98,7 +98,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Services/CachingService.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: GetAsync
     path: UrlShortener.Infrastructure/Services/CachingService.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Services/CachingService.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: SetAsync
     path: UrlShortener.Infrastructure/Services/CachingService.cs
@@ -195,7 +195,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Services/CachingService.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: RemoveAsync
     path: UrlShortener.Infrastructure/Services/CachingService.cs

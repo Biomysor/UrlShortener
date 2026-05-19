@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/UrlActions/Queries/RedirectQueries/RedirectQuery.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: RedirectQuery
     path: UrlShortener.Application/UrlActions/Queries/RedirectQueries/RedirectQuery.cs
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/UrlActions/Queries/RedirectQueries/RedirectQuery.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Application/UrlActions/Queries/RedirectQueries/RedirectQuery.cs
@@ -88,7 +88,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/UrlActions/Queries/RedirectQueries/RedirectQuery.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Code
     path: UrlShortener.Application/UrlActions/Queries/RedirectQueries/RedirectQuery.cs

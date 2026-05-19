@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/UrlActions/Queries/UrlQueries/UrlQueryHandler.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlQueryHandler
     path: UrlShortener.Application/UrlActions/Queries/UrlQueries/UrlQueryHandler.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/UrlActions/Queries/UrlQueries/UrlQueryHandler.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Application/UrlActions/Queries/UrlQueries/UrlQueryHandler.cs
@@ -88,7 +88,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/UrlActions/Queries/UrlQueries/UrlQueryHandler.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Handle
     path: UrlShortener.Application/UrlActions/Queries/UrlQueries/UrlQueryHandler.cs

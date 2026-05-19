@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: AuthenticationResult
     path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: user
     path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
@@ -118,7 +118,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: token
     path: UrlShortener.Application/Authentication/Common/AuthenticationResult.cs

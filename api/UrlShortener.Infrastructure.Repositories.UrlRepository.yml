@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Repositories/UrlRepository.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlRepository
     path: UrlShortener.Infrastructure/Repositories/UrlRepository.cs
@@ -57,7 +57,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Repositories/UrlRepository.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Infrastructure/Repositories/UrlRepository.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Repositories/UrlRepository.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: AddAsync
     path: UrlShortener.Infrastructure/Repositories/UrlRepository.cs
@@ -123,7 +123,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Repositories/UrlRepository.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UpdateAsync
     path: UrlShortener.Infrastructure/Repositories/UrlRepository.cs
@@ -157,7 +157,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Repositories/UrlRepository.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: GetByLongUrlAsync
     path: UrlShortener.Infrastructure/Repositories/UrlRepository.cs
@@ -194,7 +194,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Repositories/UrlRepository.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: GetCodeAsync
     path: UrlShortener.Infrastructure/Repositories/UrlRepository.cs

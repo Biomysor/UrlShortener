@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Authentication/Behavior/ValidationBehavior.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: ValidationBehavior
     path: UrlShortener.Application/Authentication/Behavior/ValidationBehavior.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Authentication/Behavior/ValidationBehavior.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Application/Authentication/Behavior/ValidationBehavior.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Authentication/Behavior/ValidationBehavior.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Handle
     path: UrlShortener.Application/Authentication/Behavior/ValidationBehavior.cs

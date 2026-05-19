@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Services/MessagePublisherTests.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: MessagePublisherTests
     path: UrlShortener.Infrastructure/Services/MessagePublisherTests.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Services/MessagePublisherTests.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: PublishAsync_ShouldPublishMessage_UsingMassTransit
     path: UrlShortener.Infrastructure/Services/MessagePublisherTests.cs

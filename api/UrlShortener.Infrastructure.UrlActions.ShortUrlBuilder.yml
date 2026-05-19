@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/UrlActions/ShortUrlBuilder.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: ShortUrlBuilder
     path: UrlShortener.Infrastructure/UrlActions/ShortUrlBuilder.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/UrlActions/ShortUrlBuilder.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Infrastructure/UrlActions/ShortUrlBuilder.cs
@@ -86,7 +86,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/UrlActions/ShortUrlBuilder.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: BuildShortUrl
     path: UrlShortener.Infrastructure/UrlActions/ShortUrlBuilder.cs

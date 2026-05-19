@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Models/UrlStatistic.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlStatistic
     path: UrlShortener.AnalyticsService/Models/UrlStatistic.cs
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Models/UrlStatistic.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Id
     path: UrlShortener.AnalyticsService/Models/UrlStatistic.cs
@@ -85,7 +85,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Models/UrlStatistic.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlId
     path: UrlShortener.AnalyticsService/Models/UrlStatistic.cs
@@ -114,7 +114,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Models/UrlStatistic.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Code
     path: UrlShortener.AnalyticsService/Models/UrlStatistic.cs
@@ -143,7 +143,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Models/UrlStatistic.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: LongUrl
     path: UrlShortener.AnalyticsService/Models/UrlStatistic.cs
@@ -172,7 +172,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Models/UrlStatistic.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: ClickCount
     path: UrlShortener.AnalyticsService/Models/UrlStatistic.cs
@@ -201,7 +201,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Models/UrlStatistic.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: LastRedirectedAt
     path: UrlShortener.AnalyticsService/Models/UrlStatistic.cs

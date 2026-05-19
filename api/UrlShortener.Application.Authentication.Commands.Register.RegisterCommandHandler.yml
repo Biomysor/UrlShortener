@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Authentication/Commands/Register/RegisterCommandHandler.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: RegisterCommandHandler
     path: UrlShortener.Application/Authentication/Commands/Register/RegisterCommandHandler.cs
@@ -59,7 +59,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Authentication/Commands/Register/RegisterCommandHandler.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Application/Authentication/Commands/Register/RegisterCommandHandler.cs
@@ -100,7 +100,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Authentication/Commands/Register/RegisterCommandHandler.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Handle
     path: UrlShortener.Application/Authentication/Commands/Register/RegisterCommandHandler.cs

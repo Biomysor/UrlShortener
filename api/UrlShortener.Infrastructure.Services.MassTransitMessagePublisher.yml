@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Services/MassTransitMessagePublisher.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: MassTransitMessagePublisher
     path: UrlShortener.Infrastructure/Services/MassTransitMessagePublisher.cs
@@ -59,7 +59,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Services/MassTransitMessagePublisher.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Infrastructure/Services/MassTransitMessagePublisher.cs
@@ -96,7 +96,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Services/MassTransitMessagePublisher.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: PublishAsync
     path: UrlShortener.Infrastructure/Services/MassTransitMessagePublisher.cs

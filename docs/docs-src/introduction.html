@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Introduction | UrlShortener </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Introduction | UrlShortener ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Biomysor/UrlShortener/blob/main/docs-src/introduction.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UrlShortener">
+            UrlShortener
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="introduction">Introduction</h1>
+
+<p><strong>UrlShortener</strong> is a distributed web application for creating short URLs, redirecting users by short codes, caching redirect data, collecting analytics, and sending notifications.</p>
+<p>The system is built with <strong>ASP.NET Core</strong>, <strong>.NET 9</strong>, <strong>Entity Framework Core</strong>, <strong>SQL Server</strong>, <strong>Redis</strong>, and <strong>RabbitMQ</strong>.</p>
+<p>The project follows a layered architecture with separate projects for API, application logic, domain models, infrastructure, messaging contracts, analytics, notifications, and unit testing.</p>
+<h2 id="main-features">Main Features</h2>
+<ul>
+<li>User registration and login</li>
+<li>Password hashing with BCrypt</li>
+<li>JWT authentication</li>
+<li>Creating short URLs</li>
+<li>Redirecting users by short code</li>
+<li>Redis caching for faster redirects</li>
+<li>RabbitMQ messaging between services</li>
+<li>Analytics microservice for redirect statistics</li>
+<li>Notifications microservice for Telegram messages</li>
+<li>Unit tests for handlers, services, and domain logic</li>
+</ul>
+<h2 id="architecture-overview">Architecture Overview</h2>
+<table>
+<thead>
+<tr>
+<th>Project</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>UrlShortener.Api</code></td>
+<td>Main REST API with controllers and Swagger</td>
+</tr>
+<tr>
+<td><code>UrlShortener.Application</code></td>
+<td>CQRS handlers, interfaces, validation and business logic</td>
+</tr>
+<tr>
+<td><code>UrlShortener.Domain</code></td>
+<td>Domain entities, value objects and domain errors</td>
+</tr>
+<tr>
+<td><code>UrlShortener.Infrastructure</code></td>
+<td>Database, repositories, Redis cache, JWT and RabbitMQ publisher</td>
+</tr>
+<tr>
+<td><code>UrlShortener.Messaging.Contracts</code></td>
+<td>Shared integration events between services</td>
+</tr>
+<tr>
+<td><code>UrlShortener.AnalyticsService</code></td>
+<td>Microservice that stores redirect statistics</td>
+</tr>
+<tr>
+<td><code>UrlShortener.NotificationsService</code></td>
+<td>Microservice that sends Telegram notifications</td>
+</tr>
+<tr>
+<td><code>UrlShortener.UnitTests</code></td>
+<td>Unit tests for application and domain logic</td>
+</tr>
+</tbody>
+</table>
+<h2 id="request-flow">Request Flow</h2>
+<h3 id="creating-a-short-url">Creating a short URL</h3>
+<ol>
+<li>User sends a request to <code>POST /url/shortenUrl</code>.</li>
+<li><code>ShortenUrlCommandHandler</code> checks if the long URL already exists.</li>
+<li>If the URL is new, the system creates a <code>Url</code> entity.</li>
+<li>A short code is generated.</li>
+<li>The URL is saved to SQL Server.</li>
+<li>Redirect data is saved to Redis cache.</li>
+<li><code>UrlCreatedEvent</code> is published to RabbitMQ.</li>
+<li>Notifications service receives the event and sends a Telegram message.</li>
+</ol>
+<h3 id="redirecting-by-short-code">Redirecting by short code</h3>
+<ol>
+<li>User opens <code>/r/{code}</code>.</li>
+<li><code>RedirectQueryHandler</code> checks Redis cache.</li>
+<li>If data exists in cache, the original URL is returned immediately.</li>
+<li>If cache is empty, the URL is loaded from SQL Server and saved to Redis.</li>
+<li><code>UrlRedirectedEvent</code> is published to RabbitMQ.</li>
+<li>Analytics service receives the event and updates redirect statistics.</li>
+</ol>
+<h2 id="technologies">Technologies</h2>
+<ul>
+<li>ASP.NET Core</li>
+<li>.NET 9</li>
+<li>Entity Framework Core</li>
+<li>SQL Server</li>
+<li>Redis</li>
+<li>RabbitMQ</li>
+<li>MediatR</li>
+<li>ErrorOr</li>
+<li>Mapster</li>
+<li>BCrypt</li>
+<li>JWT</li>
+<li>Swagger</li>
+<li>xUnit</li>
+<li>Moq</li>
+<li>FluentAssertions</li>
+<li>DocFX</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Biomysor/UrlShortener/blob/main/docs-src/introduction.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

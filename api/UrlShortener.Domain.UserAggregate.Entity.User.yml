@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UserAggregate/Entity/User.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: User
     path: UrlShortener.Domain/UserAggregate/Entity/User.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UserAggregate/Entity/User.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Login
     path: UrlShortener.Domain/UserAggregate/Entity/User.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UserAggregate/Entity/User.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Email
     path: UrlShortener.Domain/UserAggregate/Entity/User.cs
@@ -123,7 +123,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UserAggregate/Entity/User.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: PasswordHash
     path: UrlShortener.Domain/UserAggregate/Entity/User.cs
@@ -157,7 +157,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UserAggregate/Entity/User.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Create
     path: UrlShortener.Domain/UserAggregate/Entity/User.cs

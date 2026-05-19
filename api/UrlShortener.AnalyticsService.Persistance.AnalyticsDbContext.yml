@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Persistance/AnalyticsDbContext.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: AnalyticsDbContext
     path: UrlShortener.AnalyticsService/Persistance/AnalyticsDbContext.cs
@@ -109,7 +109,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Persistance/AnalyticsDbContext.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.AnalyticsService/Persistance/AnalyticsDbContext.cs
@@ -141,7 +141,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Persistance/AnalyticsDbContext.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlStatistics
     path: UrlShortener.AnalyticsService/Persistance/AnalyticsDbContext.cs
@@ -170,7 +170,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Persistance/AnalyticsDbContext.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlClicks
     path: UrlShortener.AnalyticsService/Persistance/AnalyticsDbContext.cs
@@ -199,7 +199,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Persistance/AnalyticsDbContext.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: OnModelCreating
     path: UrlShortener.AnalyticsService/Persistance/AnalyticsDbContext.cs

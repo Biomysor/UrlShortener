@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Common/Interfaces/Services/IMessagePublisher.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: IMessagePublisher
     path: UrlShortener.Application/Common/Interfaces/Services/IMessagePublisher.cs
@@ -48,7 +48,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Common/Interfaces/Services/IMessagePublisher.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: PublishAsync
     path: UrlShortener.Application/Common/Interfaces/Services/IMessagePublisher.cs

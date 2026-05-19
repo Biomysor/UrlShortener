@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Url
     path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
@@ -62,7 +62,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: LongUrl
     path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
@@ -93,7 +93,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Code
     path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
@@ -124,7 +124,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: CreatedAt
     path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
@@ -155,7 +155,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: SetCode
     path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
@@ -190,7 +190,7 @@ items:
   source:
     remote:
       path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Create
     path: UrlShortener.Domain/UrlAggregate/Entity/Url.cs

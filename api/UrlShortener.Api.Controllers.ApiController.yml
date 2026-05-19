@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/Controllers/ApiController.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: ApiController
     path: UrlShortener.Api/Controllers/ApiController.cs
@@ -248,7 +248,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/Controllers/ApiController.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Problem
     path: UrlShortener.Api/Controllers/ApiController.cs

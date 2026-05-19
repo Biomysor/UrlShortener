@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Common/Interfaces/UrlActions/IShortUrlBuilder.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: IShortUrlBuilder
     path: UrlShortener.Application/Common/Interfaces/UrlActions/IShortUrlBuilder.cs
@@ -45,7 +45,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Common/Interfaces/UrlActions/IShortUrlBuilder.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: BuildShortUrl
     path: UrlShortener.Application/Common/Interfaces/UrlActions/IShortUrlBuilder.cs

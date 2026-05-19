@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Authentication/Queries/LoginQuery.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: LoginQuery
     path: UrlShortener.Application/Authentication/Queries/LoginQuery.cs
@@ -57,7 +57,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Authentication/Queries/LoginQuery.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Application/Authentication/Queries/LoginQuery.cs
@@ -91,7 +91,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Authentication/Queries/LoginQuery.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Email
     path: UrlShortener.Application/Authentication/Queries/LoginQuery.cs
@@ -120,7 +120,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Authentication/Queries/LoginQuery.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Password
     path: UrlShortener.Application/Authentication/Queries/LoginQuery.cs

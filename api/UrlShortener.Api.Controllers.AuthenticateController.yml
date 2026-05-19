@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/Controllers/AuthenticateController.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: AuthenticateController
     path: UrlShortener.Api/Controllers/AuthenticateController.cs
@@ -250,7 +250,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/Controllers/AuthenticateController.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.Api/Controllers/AuthenticateController.cs
@@ -284,7 +284,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/Controllers/AuthenticateController.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Register
     path: UrlShortener.Api/Controllers/AuthenticateController.cs
@@ -327,7 +327,7 @@ items:
   source:
     remote:
       path: UrlShortener.Api/Controllers/AuthenticateController.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Login
     path: UrlShortener.Api/Controllers/AuthenticateController.cs

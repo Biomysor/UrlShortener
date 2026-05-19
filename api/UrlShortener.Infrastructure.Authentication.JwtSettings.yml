@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Authentication/JwtSettings.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: JwtSettings
     path: UrlShortener.Infrastructure/Authentication/JwtSettings.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Authentication/JwtSettings.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: SectionName
     path: UrlShortener.Infrastructure/Authentication/JwtSettings.cs
@@ -82,7 +82,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Authentication/JwtSettings.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Secret
     path: UrlShortener.Infrastructure/Authentication/JwtSettings.cs
@@ -111,7 +111,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Authentication/JwtSettings.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: ExpiryMinutes
     path: UrlShortener.Infrastructure/Authentication/JwtSettings.cs
@@ -140,7 +140,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Authentication/JwtSettings.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Issuer
     path: UrlShortener.Infrastructure/Authentication/JwtSettings.cs
@@ -169,7 +169,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Authentication/JwtSettings.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Audience
     path: UrlShortener.Infrastructure/Authentication/JwtSettings.cs

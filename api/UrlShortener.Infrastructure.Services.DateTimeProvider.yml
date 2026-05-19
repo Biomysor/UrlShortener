@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Services/DateTimeProvider.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: DateTimeProvider
     path: UrlShortener.Infrastructure/Services/DateTimeProvider.cs
@@ -53,7 +53,7 @@ items:
   source:
     remote:
       path: UrlShortener.Infrastructure/Services/DateTimeProvider.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UtcNow
     path: UrlShortener.Infrastructure/Services/DateTimeProvider.cs

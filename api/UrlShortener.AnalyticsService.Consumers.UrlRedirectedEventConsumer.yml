@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Consumers/UrlRedirectedEventConsumer.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: UrlRedirectedEventConsumer
     path: UrlShortener.AnalyticsService/Consumers/UrlRedirectedEventConsumer.cs
@@ -57,7 +57,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Consumers/UrlRedirectedEventConsumer.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: .ctor
     path: UrlShortener.AnalyticsService/Consumers/UrlRedirectedEventConsumer.cs
@@ -91,7 +91,7 @@ items:
   source:
     remote:
       path: UrlShortener.AnalyticsService/Consumers/UrlRedirectedEventConsumer.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: Consume
     path: UrlShortener.AnalyticsService/Consumers/UrlRedirectedEventConsumer.cs

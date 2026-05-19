@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Common/Interfaces/Authentication/IJwtTokenGenerator.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: IJwtTokenGenerator
     path: UrlShortener.Application/Common/Interfaces/Authentication/IJwtTokenGenerator.cs
@@ -43,7 +43,7 @@ items:
   source:
     remote:
       path: UrlShortener.Application/Common/Interfaces/Authentication/IJwtTokenGenerator.cs
-      branch: Develop
+      branch: main
       repo: https://github.com/Biomysor/UrlShortener.git
     id: GenerateToken
     path: UrlShortener.Application/Common/Interfaces/Authentication/IJwtTokenGenerator.cs
