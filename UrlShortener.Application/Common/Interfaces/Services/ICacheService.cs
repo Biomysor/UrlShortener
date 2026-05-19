@@ -2,9 +2,17 @@
 
 public interface ICacheService
 {
-    Task<string?> GetAsync(string key, CancellationToken token = default);
-    
-    Task SetAsync(string key, string value, TimeSpan? expiration = null, CancellationToken token = default);
-    
-    Task RemoveAsync(string key, CancellationToken token = default);
+    Task<T?> GetAsync<T>(
+        string key,
+        CancellationToken cancellationToken = default);
+
+    Task SetAsync<T>(
+        string key,
+        T value,
+        TimeSpan? expiration = null,
+        CancellationToken cancellationToken = default);
+
+    Task RemoveAsync(
+        string key,
+        CancellationToken cancellationToken = default);
 }

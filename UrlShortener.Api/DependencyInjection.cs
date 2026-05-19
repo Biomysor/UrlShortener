@@ -1,5 +1,4 @@
-﻿using FluentValidation.AspNetCore;
-using Microsoft.OpenApi.Models;
+﻿using Microsoft.OpenApi.Models;
 using UrlShortener.Api.Common.Mapping;
 
 namespace UrlShortener.Api;

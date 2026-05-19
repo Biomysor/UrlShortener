@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\UrlShortener.Domain\UrlShortener.Domain.csproj" />
+    <ProjectReference Include="..\UrlShortener.Messaging.Contracts\UrlShortener.Messaging.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>

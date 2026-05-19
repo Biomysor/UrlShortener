@@ -6,7 +6,6 @@ using UrlShortener.Application.Authentication.Behavior;
 using UrlShortener.Application.Authentication.Commands.Register;
 using UrlShortener.Application.Authentication.Queries;
 using UrlShortener.Application.UrlActions.Commands;
-using UrlShortener.Application.UrlActions.Queries;
 using UrlShortener.Application.UrlActions.Queries.UrlQueries;
 
 namespace UrlShortener.Application;
@@ -21,7 +20,7 @@ public static class DependencyInjection
             cfg.LicenseKey = configuration["MediatR:LicenseKey"];
         });
         
-            
+        
         services.AddScoped<IValidator<RegisterCommand>, RegisterCommandValidation>();
         services.AddScoped<IValidator<LoginQuery>, LoginQueryValidation>();
         services.AddScoped<IValidator<ShortenUrlCommand>, ShortenUrlValidation>();

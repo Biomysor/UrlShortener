@@ -1,35 +1,43 @@
-﻿using Microsoft.Extensions.Caching.Distributed;
+﻿using System.Text.Json;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
 using UrlShortener.Application.Common.Interfaces.Services;
 
 namespace UrlShortener.Infrastructure.Services;
 
-public class CachingService: ICacheService
+public class CachingService(IDistributedCache cache) : ICacheService
 {
-    private readonly IDistributedCache _distributedCache;
-
-    public CachingService(IDistributedCache distributedCache)
+    public async Task<T?> GetAsync<T>(
+        string key,
+        CancellationToken cancellationToken = default)
     {
-        _distributedCache = distributedCache;
+        var json = await cache.GetStringAsync(key, cancellationToken);
+
+        return json is null
+            ? default
+            : JsonSerializer.Deserialize<T>(json);
     }
 
-    public async Task<string?> GetAsync(string key, CancellationToken token = default)
+    public async Task SetAsync<T>(
+        string key,
+        T value,
+        TimeSpan? expiration = null,
+        CancellationToken cancellationToken = default)
     {
-        return await _distributedCache.GetStringAsync(key, token);
-    }
+        var json = JsonSerializer.Serialize(value);
 
-    public async Task SetAsync(string key, string value, TimeSpan? expiration = null, CancellationToken token = default)
-    { 
         var options = new DistributedCacheEntryOptions
         {
-            AbsoluteExpirationRelativeToNow = expiration ?? TimeSpan.FromMinutes(30)
+            AbsoluteExpirationRelativeToNow = expiration ?? TimeSpan.FromHours(1)
         };
-        
-        await _distributedCache.SetStringAsync(key, value, options, token);
+
+        await cache.SetStringAsync(key, json, options, cancellationToken);
     }
 
-    public async Task RemoveAsync(string key, CancellationToken token = default)
+    public async Task RemoveAsync(
+        string key,
+        CancellationToken cancellationToken = default)
     {
-        await _distributedCache.RemoveAsync(key, token);
+        await cache.RemoveAsync(key, cancellationToken);
     }
 }

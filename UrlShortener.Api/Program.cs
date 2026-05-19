@@ -1,6 +1,5 @@
 using UrlShortener.Api;
 using UrlShortener.Application;
-using UrlShortener.Contracts;
 using UrlShortener.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,11 +17,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "UrlShortener API v1");
-        c.RoutePrefix = ""; // optional, serve Swagger at root /
+        c.RoutePrefix = "swagger"; // optional, serve Swagger at root /
     });
 }
 app.UseExceptionHandler("/error");
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

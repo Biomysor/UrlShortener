@@ -4,8 +4,9 @@ using UrlShortener.Application.Common.Interfaces.Repositories;
 using UrlShortener.Application.Common.Interfaces.Services;
 using UrlShortener.Application.Common.Interfaces.UrlActions;
 using UrlShortener.Application.UrlActions.Common;
-using UrlShortener.Domain.UrlAggregate;
 using UrlShortener.Domain.UrlAggregate.Entity;
+using UrlShortener.Messaging.Contracts;
+using UrlShortener.Messaging.Contracts.Events;
 
 namespace UrlShortener.Application.UrlActions.Commands;
 
@@ -13,9 +14,11 @@ public class ShortenUrlCommandHandler(
     IUrlRepository repository,
     IUrlCodeGenerator codeGenerator,
     IShortUrlBuilder shortUrlBuilder,
-    ICacheService cacheService)
+    ICacheService cacheService,
+    IMessagePublisher messagePublisher)
     : IRequestHandler<ShortenUrlCommand, ErrorOr<UrlResult>>
 {
+    private readonly IMessagePublisher _messagePublisher = messagePublisher;
     private readonly ICacheService _cacheService = cacheService;
     private readonly IShortUrlBuilder _shortUrlBuilder = shortUrlBuilder;
     private readonly IUrlRepository _repository = repository;
@@ -30,7 +33,10 @@ public class ShortenUrlCommandHandler(
             
             await _cacheService.SetAsync(
                 $"url:code:{existing.Code}",
-                existing.LongUrl,
+                new CachedUrlRedirect(
+                    existing.Id.Value,
+                    existing.Code,
+                    existing.LongUrl),
                 TimeSpan.FromHours(1),
                 cancellationToken);
             
@@ -44,14 +50,26 @@ public class ShortenUrlCommandHandler(
         url.SetCode(code);
         
         await _repository.AddAsync(url);
+
+        var newShortUrl = _shortUrlBuilder.BuildShortUrl(code);
         
         await _cacheService.SetAsync(
             $"url:code:{code}",
-            url.LongUrl,
+            new CachedUrlRedirect(
+                url.Id.Value,
+                url.Code,
+                url.LongUrl),
             TimeSpan.FromHours(1),
             cancellationToken);
-
-        var newShortUrl = _shortUrlBuilder.BuildShortUrl(code);
+    
+        await _messagePublisher.PublishAsync(
+            new UrlCreatedEvent(
+                url.Id.Value,
+                url.Code,
+                url.LongUrl,
+                newShortUrl,
+                url.CreatedAt),
+            cancellationToken);
 
         return new UrlResult(url.Id.Value, newShortUrl);
     }
