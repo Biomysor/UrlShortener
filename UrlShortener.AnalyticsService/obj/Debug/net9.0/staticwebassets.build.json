@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "4j7zIYE9VqT2KUqWdSbAfJHq1K/SUKK5CXhdzzbMBJ0=",
+  "Source": "UrlShortener.AnalyticsService",
+  "BasePath": "_content/UrlShortener.AnalyticsService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

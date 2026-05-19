@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UrlShortener.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:UrlShortener.Domain.Common.Entity`1">
+            <summary>
+            Base class for all domain entities.
+            Provides a strongly typed identifier for each entity.
+            </summary>
+            <typeparam name="TId">Type of the entity identifier.</typeparam>
+        </member>
+        <member name="P:UrlShortener.Domain.Common.Entity`1.Id">
+            <summary>
+            Gets the unique identifier of the entity.
+            </summary>
+        </member>
+        <member name="M:UrlShortener.Domain.Common.Entity`1.#ctor">
+            <summary>
+            Required by Entity Framework Core for materialization.
+            </summary>
+        </member>
+        <member name="M:UrlShortener.Domain.Common.Entity`1.#ctor(`0)">
+            <summary>
+            Initializes a new entity with the specified identifier.
+            </summary>
+            <param name="id">The unique identifier of the entity.</param>
+        </member>
+        <member name="T:UrlShortener.Domain.Common.ValueObject">
+            <summary>
+            Base class for value objects.
+            Value objects are compared by their values instead of object references.
+            </summary>
+        </member>
+        <member name="M:UrlShortener.Domain.Common.ValueObject.GetEqualityComponents">
+            <summary>
+            Gets the components that are used to compare value objects.
+            </summary>
+            <returns>Collection of equality components.</returns>
+        </member>
+        <member name="M:UrlShortener.Domain.Common.ValueObject.Equals(System.Object)">
+            <summary>
+            Determines whether the current value object is equal to another object.
+            </summary>
+            <param name="obj">Object to compare with.</param>
+            <returns>True if objects are equal; otherwise, false.</returns>
+        </member>
+        <member name="M:UrlShortener.Domain.Common.ValueObject.op_Equality(UrlShortener.Domain.Common.ValueObject,UrlShortener.Domain.Common.ValueObject)">
+            <summary>
+            Compares two value objects for equality.
+            </summary>
+        </member>
+        <member name="M:UrlShortener.Domain.Common.ValueObject.op_Inequality(UrlShortener.Domain.Common.ValueObject,UrlShortener.Domain.Common.ValueObject)">
+            <summary>
+            Compares two value objects for inequality.
+            </summary>
+        </member>
+        <member name="M:UrlShortener.Domain.Common.ValueObject.GetHashCode">
+            <summary>
+            Gets the hash code based on value object equality components.
+            </summary>
+            <returns>Calculated hash code.</returns>
+        </member>
+        <member name="T:UrlShortener.Domain.UrlAggregate.Entity.Url">
+            <summary>
+            Represents a shortened URL in the domain model.
+            Contains the original long URL, generated short code and creation date.
+            </summary>
+        </member>
+        <member name="P:UrlShortener.Domain.UrlAggregate.Entity.Url.LongUrl">
+            <summary>
+            Gets the original long URL provided by the user.
+            </summary>
+        </member>
+        <member name="P:UrlShortener.Domain.UrlAggregate.Entity.Url.Code">
+            <summary>
+            Gets the generated short code used for redirection.
+            </summary>
+        </member>
+        <member name="P:UrlShortener.Domain.UrlAggregate.Entity.Url.CreatedAt">
+            <summary>
+            Gets the date and time when the URL was created.
+            </summary>
+        </member>
+        <member name="M:UrlShortener.Domain.UrlAggregate.Entity.Url.#ctor(UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId,System.String,System.String,System.DateTime)">
+            <summary>
+            Required by Entity Framework Core.
+            </summary>
+        </member>
+        <member name="M:UrlShortener.Domain.UrlAggregate.Entity.Url.SetCode(System.String)">
+            <summary>
+            Sets the generated short code for this URL.
+            </summary>
+            <param name="code">Generated short code.</param>
+        </member>
+        <member name="M:UrlShortener.Domain.UrlAggregate.Entity.Url.Create(System.String)">
+            <summary>
+            Creates a new URL entity with a unique identifier and empty code.
+            The short code is generated later by the application layer.
+            </summary>
+            <param name="longUrl">Original long URL.</param>
+            <returns>New Url entity.</returns>
+        </member>
+        <member name="T:UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId">
+            <summary>
+            Strongly typed identifier for the Url entity.
+            Wraps a Guid value and provides value-based equality.
+            </summary>
+        </member>
+        <member name="P:UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId.Value">
+            <summary>
+            Gets the underlying Guid value.
+            </summary>
+        </member>
+        <member name="M:UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId.CreateUnique">
+            <summary>
+            Creates a new unique UrlId.
+            </summary>
+            <returns>New UrlId instance with a generated Guid.</returns>
+        </member>
+        <member name="M:UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId.Create(System.Guid)">
+            <summary>
+            Creates a UrlId from an existing Guid value.
+            Used when restoring entities from the database.
+            </summary>
+            <param name="value">Existing Guid value.</param>
+            <returns>UrlId instance.</returns>
+        </member>
+        <member name="M:UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId.GetEqualityComponents">
+            <inheritdoc />
+        </member>
+        <member name="T:UrlShortener.Domain.UserAggregate.Entity.User">
+            <summary>
+            Represents an application user.
+            Stores user identity data and password hash.
+            </summary>
+        </member>
+        <member name="P:UrlShortener.Domain.UserAggregate.Entity.User.Login">
+            <summary>
+            Gets the user login.
+            </summary>
+        </member>
+        <member name="P:UrlShortener.Domain.UserAggregate.Entity.User.Email">
+            <summary>
+            Gets the user email address.
+            </summary>
+        </member>
+        <member name="P:UrlShortener.Domain.UserAggregate.Entity.User.PasswordHash">
+            <summary>
+            Gets the hashed user password.
+            Plain passwords are not stored in the database.
+            </summary>
+        </member>
+        <member name="M:UrlShortener.Domain.UserAggregate.Entity.User.#ctor(UrlShortener.Domain.UserAggregate.ValueObjects.UserId,System.String,System.String,System.String)">
+            <summary>
+            Required by Entity Framework Core.
+            </summary>
+        </member>
+        <member name="M:UrlShortener.Domain.UserAggregate.Entity.User.Create(System.String,System.String,System.String)">
+            <summary>
+            Creates a new user with a unique identifier.
+            </summary>
+            <param name="login">User login.</param>
+            <param name="email">User email.</param>
+            <param name="passwordHash">Hashed password.</param>
+            <returns>New User entity.</returns>
+        </member>
+        <member name="T:UrlShortener.Domain.UserAggregate.ValueObjects.UserId">
+            <summary>
+            Strongly typed identifier for the User entity.
+            Wraps a Guid value and provides value-based equality.
+            </summary>
+        </member>
+        <member name="P:UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Value">
+            <summary>
+            Gets the underlying Guid value.
+            </summary>
+        </member>
+        <member name="M:UrlShortener.Domain.UserAggregate.ValueObjects.UserId.CreateUnique">
+            <summary>
+            Creates a new unique UserId.
+            </summary>
+            <returns>New UserId instance with a generated Guid.</returns>
+        </member>
+        <member name="M:UrlShortener.Domain.UserAggregate.ValueObjects.UserId.Create(System.Guid)">
+            <summary>
+            Creates a UserId from an existing Guid value.
+            Used when restoring entities from the database.
+            </summary>
+            <param name="value">Existing Guid value.</param>
+            <returns>UserId instance.</returns>
+        </member>
+        <member name="M:UrlShortener.Domain.UserAggregate.ValueObjects.UserId.GetEqualityComponents">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

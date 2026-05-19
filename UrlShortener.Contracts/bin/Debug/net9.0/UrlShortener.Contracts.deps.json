@@ -1,0 +1,305 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "UrlShortener.Contracts/1.0.0": {
+        "dependencies": {
+          "ErrorOr": "2.0.1",
+          "FluentValidation": "12.1.1",
+          "FluentValidation.AspNetCore": "11.3.1",
+          "Mapster": "10.0.0-pre01",
+          "SharpGrip.FluentValidation.AutoValidation.Mvc": "1.5.0",
+          "Swashbukle.AspNetCore": "2.0.0",
+          "UrlShortener.Domain": "1.0.0"
+        },
+        "runtime": {
+          "UrlShortener.Contracts.dll": {}
+        }
+      },
+      "ErrorOr/2.0.1": {
+        "runtime": {
+          "lib/net6.0/ErrorOr.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "FluentValidation/12.1.1": {
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.1.1.0"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/11.3.1": {
+        "dependencies": {
+          "FluentValidation": "12.1.1",
+          "FluentValidation.DependencyInjectionExtensions": "11.11.0"
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.3.1.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.11.0": {
+        "dependencies": {
+          "FluentValidation": "12.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.11.0.0"
+          }
+        }
+      },
+      "Mapster/10.0.0-pre01": {
+        "dependencies": {
+          "Mapster.Core": "10.0.0-pre01"
+        },
+        "runtime": {
+          "lib/net9.0/Mapster.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
+          }
+        }
+      },
+      "Mapster.Core/10.0.0-pre01": {
+        "runtime": {
+          "lib/netstandard2.0/Mapster.Core.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {},
+      "Microsoft.OpenApi/1.2.3": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "assemblyVersion": "1.2.3.0",
+            "fileVersion": "1.2.3.0"
+          }
+        }
+      },
+      "SharpGrip.FluentValidation.AutoValidation.Mvc/1.5.0": {
+        "dependencies": {
+          "SharpGrip.FluentValidation.AutoValidation.Shared": "1.5.0"
+        },
+        "runtime": {
+          "lib/net9.0/SharpGrip.FluentValidation.AutoValidation.Mvc.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SharpGrip.FluentValidation.AutoValidation.Shared/1.5.0": {
+        "dependencies": {
+          "FluentValidation": "12.1.1"
+        },
+        "runtime": {
+          "lib/net9.0/SharpGrip.FluentValidation.AutoValidation.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore/6.2.3": {
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
+          "Swashbuckle.AspNetCore.Swagger": "6.2.3",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.2.3",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.2.3"
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/6.2.3": {
+        "dependencies": {
+          "Microsoft.OpenApi": "1.2.3"
+        },
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "assemblyVersion": "6.2.3.0",
+            "fileVersion": "6.2.3.0"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/6.2.3": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "6.2.3"
+        },
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "assemblyVersion": "6.2.3.0",
+            "fileVersion": "6.2.3.0"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/6.2.3": {
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "assemblyVersion": "6.2.3.0",
+            "fileVersion": "6.2.3.0"
+          }
+        }
+      },
+      "Swashbukle.AspNetCore/2.0.0": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore": "6.2.3"
+        },
+        "runtime": {
+          "lib/net6.0/Swashbukle.AspNetCore.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "UrlShortener.Domain/1.0.0": {
+        "dependencies": {
+          "ErrorOr": "2.0.1",
+          "FluentValidation": "12.1.1",
+          "FluentValidation.AspNetCore": "11.3.1",
+          "Mapster": "10.0.0-pre01",
+          "SharpGrip.FluentValidation.AutoValidation.Mvc": "1.5.0",
+          "Swashbukle.AspNetCore": "2.0.0"
+        },
+        "runtime": {
+          "UrlShortener.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UrlShortener.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ErrorOr/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aje9lUVEAsusPFmaRcVM5EUqWBofd7hYtb9N8+ycgPYrtOzyFajMpzRgIO4uuiCllNLBc3x48+cpA+4v4koUDQ==",
+      "path": "erroror/2.0.1",
+      "hashPath": "erroror.2.0.1.nupkg.sha512"
+    },
+    "FluentValidation/12.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EPpkIe1yh1a0OXyC100oOA8WMbZvqUu5plwhvYcb7oSELfyUZzfxV48BLhvs3kKo4NwG7MGLNgy1RJiYtT8Dpw==",
+      "path": "fluentvalidation/12.1.1",
+      "hashPath": "fluentvalidation.12.1.1.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/11.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FjkfrGGwC+25oH8QpX1ti3gxkFjDDtotkAQWyQz2CkwQwEfRKTANjhh77I79kY8dov2ydK1SY+e4jiOWsbbDdQ==",
+      "path": "fluentvalidation.aspnetcore/11.3.1",
+      "hashPath": "fluentvalidation.aspnetcore.11.3.1.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-viTKWaMbL3yJYgGI0DiCeavNbE9UPMWFVK2XS9nYXGbm3NDMd0/L5ER4wBzmTtW3BYh3SrlSXm9RACiKZ6stlA==",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.11.0",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512"
+    },
+    "Mapster/10.0.0-pre01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p3MDNxabwTyrxKTudmHajv3ENIhyfkdD7POxK7kvFFI5H90ORawVSpJ6zvr1SBEv46oCZI7Ajmr4yRBQA7/vdA==",
+      "path": "mapster/10.0.0-pre01",
+      "hashPath": "mapster.10.0.0-pre01.nupkg.sha512"
+    },
+    "Mapster.Core/10.0.0-pre01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QXtgC4bDQhky9qFA+oMe2vaQdsT+FAAZb9CwuOeqHkAsKQken0XKutXN3SFMs/o7guJFzCe7hLG1KLwD3Wa7sA==",
+      "path": "mapster.core/10.0.0-pre01",
+      "hashPath": "mapster.core.10.0.0-pre01.nupkg.sha512"
+    },
+    "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
+      "path": "microsoft.extensions.apidescription.server/3.0.0",
+      "hashPath": "microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8/CtASu80UIoyG+r8FstrmZW5GLtXxzoYpjj3jV0FKZCL5CiFgSH3pAmqut/dC68mu7N1bU6v0UtKKL3gCUQGQ==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+    },
+    "Microsoft.OpenApi/1.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
+      "path": "microsoft.openapi/1.2.3",
+      "hashPath": "microsoft.openapi.1.2.3.nupkg.sha512"
+    },
+    "SharpGrip.FluentValidation.AutoValidation.Mvc/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gqzRTuyZSn8eGbOg0OVQIY9mHCW78WMq1sLg+tqTDQVZJC/clbi9g9AV0ErZj1PZfuGIqG35cBo32Px0MVW5Ow==",
+      "path": "sharpgrip.fluentvalidation.autovalidation.mvc/1.5.0",
+      "hashPath": "sharpgrip.fluentvalidation.autovalidation.mvc.1.5.0.nupkg.sha512"
+    },
+    "SharpGrip.FluentValidation.AutoValidation.Shared/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vTZhTWRrTk051yXEOmkU9jMbHuckcBTW7P/3o1SX7R7arJ+JhTNinVeECkLJRcliW6qMto5aYRI2GEOP+DR4Dg==",
+      "path": "sharpgrip.fluentvalidation.autovalidation.shared/1.5.0",
+      "hashPath": "sharpgrip.fluentvalidation.autovalidation.shared.1.5.0.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore/6.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cnzQDn0Le+hInsw2SYwlOhOCPXpYi/szcvnyqZJ12v+QyrLBwAmWXBg6RIyHB18s/mLeywC+Rg2O9ndz0IUNYQ==",
+      "path": "swashbuckle.aspnetcore/6.2.3",
+      "hashPath": "swashbuckle.aspnetcore.6.2.3.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.Swagger/6.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qOF7j1sL0bWm8g/qqHVPCvkO3JlVvUIB8WfC98kSh6BT5y5DAnBNctfac7XR5EZf+eD7/WasvANncTqwZYfmWQ==",
+      "path": "swashbuckle.aspnetcore.swagger/6.2.3",
+      "hashPath": "swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/6.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+Xq7WdMCCfcXlnbLJVFNgY8ITdP2TRYIlpbt6IKzDw5FwFxdi9lBfNDtcT+/wkKwX70iBBFmXldnnd02/VO72A==",
+      "path": "swashbuckle.aspnetcore.swaggergen/6.2.3",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/6.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bCRI87uKJVb4G+KURWm8LQrL64St04dEFZcF6gIM67Zc0Sr/N47EO83ybLMYOvfNdO1DCv8xwPcrz9J/VEhQ5g==",
+      "path": "swashbuckle.aspnetcore.swaggerui/6.2.3",
+      "hashPath": "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    },
+    "Swashbukle.AspNetCore/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g9bdxGyi9//kNLDmzqS+nlYZNDN8FmoPN3QVELXoC9A2QDX58/xx6qdZESiQ14uFLKgoU5pxPaWRtFhbUj4g5Q==",
+      "path": "swashbukle.aspnetcore/2.0.0",
+      "hashPath": "swashbukle.aspnetcore.2.0.0.nupkg.sha512"
+    },
+    "UrlShortener.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
