@@ -13,6 +13,7 @@
         "packagesPath": "C:\\Users\\misha\\.nuget\\packages\\",
         "outputPath": "D:\\UrlShortenerApi\\UrlShortener\\UrlShortener.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
@@ -59,44 +60,87 @@
           "dependencies": {
             "ErrorOr": {
               "target": "Package",
-              "version": "[2.0.1, )"
+              "version": "[2.0.1, )",
+              "versionCentrallyManaged": true
             },
             "FluentResults": {
               "target": "Package",
-              "version": "[4.0.0, )"
+              "version": "[4.0.0, )",
+              "versionCentrallyManaged": true
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[12.1.1, )"
+              "version": "[12.1.1, )",
+              "versionCentrallyManaged": true
             },
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[11.3.1, )"
+              "version": "[11.3.1, )",
+              "versionCentrallyManaged": true
             },
             "Mapster": {
               "target": "Package",
-              "version": "[10.0.0-pre01, )"
+              "version": "[10.0.0-pre01, )",
+              "versionCentrallyManaged": true
             },
             "MediatR": {
               "target": "Package",
-              "version": "[14.0.0, )"
+              "version": "[14.0.0, )",
+              "versionCentrallyManaged": true
             },
             "MediatR.Contracts": {
               "target": "Package",
-              "version": "[2.0.1, )"
+              "version": "[2.0.1, )",
+              "versionCentrallyManaged": true
             },
             "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
-              "version": "[9.0.16, )"
+              "version": "[9.0.16, )",
+              "versionCentrallyManaged": true
             },
             "SharpGrip.FluentValidation.AutoValidation.Mvc": {
               "target": "Package",
-              "version": "[1.5.0, )"
+              "version": "[1.5.0, )",
+              "versionCentrallyManaged": true
             },
             "Swashbukle.AspNetCore": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[2.0.0, )",
+              "versionCentrallyManaged": true
             }
+          },
+          "centralPackageVersions": {
+            "BCrypt.Net-Next": "4.2.0",
+            "coverlet.collector": "6.0.2",
+            "ErrorOr": "2.0.1",
+            "FluentAssertions": "8.10.0",
+            "FluentResults": "4.0.0",
+            "FluentValidation": "12.1.1",
+            "FluentValidation.AspNetCore": "11.3.1",
+            "Mapster": "10.0.0-pre01",
+            "Mapster.DependencyInjection": "9.0.0-pre01",
+            "MassTransit.RabbitMQ": "8.5.10-develop.2432",
+            "MediatR": "14.0.0",
+            "MediatR.Contracts": "2.0.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.0",
+            "Microsoft.AspNetCore.OpenApi": "9.0.3",
+            "Microsoft.EntityFrameworkCore": "9.0.16",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.16",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.16",
+            "Microsoft.EntityFrameworkCore.Tools": "9.0.16",
+            "Microsoft.Extensions.Caching.StackExchangeRedis": "9.0.16",
+            "Microsoft.Extensions.Hosting": "9.0.3",
+            "Microsoft.Extensions.Options": "10.0.8",
+            "Microsoft.NET.Test.Sdk": "17.12.0",
+            "Moq": "4.20.72",
+            "SharpGrip.FluentValidation.AutoValidation.Mvc": "1.5.0",
+            "Swashbuckle.AspNetCore": "6.9.0",
+            "Swashbukle.AspNetCore": "2.0.0",
+            "System.IdentityModel.Tokens.Jwt": "8.15.0",
+            "Telegram.Bot": "22.10.0.1",
+            "xunit": "2.9.2",
+            "xunit.extensibility.core": "2.9.2",
+            "xunit.runner.visualstudio": "2.8.2"
           },
           "imports": [
             "net461",
@@ -127,6 +171,7 @@
         "packagesPath": "C:\\Users\\misha\\.nuget\\packages\\",
         "outputPath": "D:\\UrlShortenerApi\\UrlShortener\\UrlShortener.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
@@ -166,28 +211,67 @@
           "dependencies": {
             "ErrorOr": {
               "target": "Package",
-              "version": "[2.0.1, )"
+              "version": "[2.0.1, )",
+              "versionCentrallyManaged": true
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[12.1.1, )"
+              "version": "[12.1.1, )",
+              "versionCentrallyManaged": true
             },
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[11.3.1, )"
+              "version": "[11.3.1, )",
+              "versionCentrallyManaged": true
             },
             "Mapster": {
               "target": "Package",
-              "version": "[10.0.0-pre01, )"
+              "version": "[10.0.0-pre01, )",
+              "versionCentrallyManaged": true
             },
             "SharpGrip.FluentValidation.AutoValidation.Mvc": {
               "target": "Package",
-              "version": "[1.5.0, )"
+              "version": "[1.5.0, )",
+              "versionCentrallyManaged": true
             },
             "Swashbukle.AspNetCore": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[2.0.0, )",
+              "versionCentrallyManaged": true
             }
+          },
+          "centralPackageVersions": {
+            "BCrypt.Net-Next": "4.2.0",
+            "coverlet.collector": "6.0.2",
+            "ErrorOr": "2.0.1",
+            "FluentAssertions": "8.10.0",
+            "FluentResults": "4.0.0",
+            "FluentValidation": "12.1.1",
+            "FluentValidation.AspNetCore": "11.3.1",
+            "Mapster": "10.0.0-pre01",
+            "Mapster.DependencyInjection": "9.0.0-pre01",
+            "MassTransit.RabbitMQ": "8.5.10-develop.2432",
+            "MediatR": "14.0.0",
+            "MediatR.Contracts": "2.0.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.0",
+            "Microsoft.AspNetCore.OpenApi": "9.0.3",
+            "Microsoft.EntityFrameworkCore": "9.0.16",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.16",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.16",
+            "Microsoft.EntityFrameworkCore.Tools": "9.0.16",
+            "Microsoft.Extensions.Caching.StackExchangeRedis": "9.0.16",
+            "Microsoft.Extensions.Hosting": "9.0.3",
+            "Microsoft.Extensions.Options": "10.0.8",
+            "Microsoft.NET.Test.Sdk": "17.12.0",
+            "Moq": "4.20.72",
+            "SharpGrip.FluentValidation.AutoValidation.Mvc": "1.5.0",
+            "Swashbuckle.AspNetCore": "6.9.0",
+            "Swashbukle.AspNetCore": "2.0.0",
+            "System.IdentityModel.Tokens.Jwt": "8.15.0",
+            "Telegram.Bot": "22.10.0.1",
+            "xunit": "2.9.2",
+            "xunit.extensibility.core": "2.9.2",
+            "xunit.runner.visualstudio": "2.8.2"
           },
           "imports": [
             "net461",
@@ -218,6 +302,7 @@
         "packagesPath": "C:\\Users\\misha\\.nuget\\packages\\",
         "outputPath": "D:\\UrlShortenerApi\\UrlShortener\\UrlShortener.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
@@ -261,72 +346,121 @@
           "dependencies": {
             "BCrypt.Net-Next": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.2.0, )",
+              "versionCentrallyManaged": true
             },
             "ErrorOr": {
               "target": "Package",
-              "version": "[2.0.1, )"
+              "version": "[2.0.1, )",
+              "versionCentrallyManaged": true
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[12.1.1, )"
+              "version": "[12.1.1, )",
+              "versionCentrallyManaged": true
             },
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[11.3.1, )"
+              "version": "[11.3.1, )",
+              "versionCentrallyManaged": true
             },
             "Mapster": {
               "target": "Package",
-              "version": "[10.0.0-pre01, )"
+              "version": "[10.0.0-pre01, )",
+              "versionCentrallyManaged": true
             },
             "MassTransit.RabbitMQ": {
               "target": "Package",
-              "version": "[8.5.10-develop.2432, )"
+              "version": "[8.5.10-develop.2432, )",
+              "versionCentrallyManaged": true
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[9.0.0, )",
+              "versionCentrallyManaged": true
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.16, )"
+              "version": "[9.0.16, )",
+              "versionCentrallyManaged": true
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.16, )"
+              "version": "[9.0.16, )",
+              "versionCentrallyManaged": true
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.16, )"
+              "version": "[9.0.16, )",
+              "versionCentrallyManaged": true
             },
             "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
-              "version": "[9.0.16, )"
+              "version": "[9.0.16, )",
+              "versionCentrallyManaged": true
             },
             "Moq": {
               "target": "Package",
-              "version": "[4.20.72, )"
+              "version": "[4.20.72, )",
+              "versionCentrallyManaged": true
             },
             "SharpGrip.FluentValidation.AutoValidation.Mvc": {
               "target": "Package",
-              "version": "[1.5.0, )"
+              "version": "[1.5.0, )",
+              "versionCentrallyManaged": true
             },
             "Swashbukle.AspNetCore": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[2.0.0, )",
+              "versionCentrallyManaged": true
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[8.15.0, )"
+              "version": "[8.15.0, )",
+              "versionCentrallyManaged": true
             },
             "xunit.extensibility.core": {
               "target": "Package",
-              "version": "[2.9.2, )"
+              "version": "[2.9.2, )",
+              "versionCentrallyManaged": true
             }
+          },
+          "centralPackageVersions": {
+            "BCrypt.Net-Next": "4.2.0",
+            "coverlet.collector": "6.0.2",
+            "ErrorOr": "2.0.1",
+            "FluentAssertions": "8.10.0",
+            "FluentResults": "4.0.0",
+            "FluentValidation": "12.1.1",
+            "FluentValidation.AspNetCore": "11.3.1",
+            "Mapster": "10.0.0-pre01",
+            "Mapster.DependencyInjection": "9.0.0-pre01",
+            "MassTransit.RabbitMQ": "8.5.10-develop.2432",
+            "MediatR": "14.0.0",
+            "MediatR.Contracts": "2.0.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.0",
+            "Microsoft.AspNetCore.OpenApi": "9.0.3",
+            "Microsoft.EntityFrameworkCore": "9.0.16",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.16",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.16",
+            "Microsoft.EntityFrameworkCore.Tools": "9.0.16",
+            "Microsoft.Extensions.Caching.StackExchangeRedis": "9.0.16",
+            "Microsoft.Extensions.Hosting": "9.0.3",
+            "Microsoft.Extensions.Options": "10.0.8",
+            "Microsoft.NET.Test.Sdk": "17.12.0",
+            "Moq": "4.20.72",
+            "SharpGrip.FluentValidation.AutoValidation.Mvc": "1.5.0",
+            "Swashbuckle.AspNetCore": "6.9.0",
+            "Swashbukle.AspNetCore": "2.0.0",
+            "System.IdentityModel.Tokens.Jwt": "8.15.0",
+            "Telegram.Bot": "22.10.0.1",
+            "xunit": "2.9.2",
+            "xunit.extensibility.core": "2.9.2",
+            "xunit.runner.visualstudio": "2.8.2"
           },
           "imports": [
             "net461",
@@ -357,6 +491,7 @@
         "packagesPath": "C:\\Users\\misha\\.nuget\\packages\\",
         "outputPath": "D:\\UrlShortenerApi\\UrlShortener\\UrlShortener.Messaging.Contracts\\obj\\",
         "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
@@ -393,6 +528,39 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "centralPackageVersions": {
+            "BCrypt.Net-Next": "4.2.0",
+            "coverlet.collector": "6.0.2",
+            "ErrorOr": "2.0.1",
+            "FluentAssertions": "8.10.0",
+            "FluentResults": "4.0.0",
+            "FluentValidation": "12.1.1",
+            "FluentValidation.AspNetCore": "11.3.1",
+            "Mapster": "10.0.0-pre01",
+            "Mapster.DependencyInjection": "9.0.0-pre01",
+            "MassTransit.RabbitMQ": "8.5.10-develop.2432",
+            "MediatR": "14.0.0",
+            "MediatR.Contracts": "2.0.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.0",
+            "Microsoft.AspNetCore.OpenApi": "9.0.3",
+            "Microsoft.EntityFrameworkCore": "9.0.16",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.16",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.16",
+            "Microsoft.EntityFrameworkCore.Tools": "9.0.16",
+            "Microsoft.Extensions.Caching.StackExchangeRedis": "9.0.16",
+            "Microsoft.Extensions.Hosting": "9.0.3",
+            "Microsoft.Extensions.Options": "10.0.8",
+            "Microsoft.NET.Test.Sdk": "17.12.0",
+            "Moq": "4.20.72",
+            "SharpGrip.FluentValidation.AutoValidation.Mvc": "1.5.0",
+            "Swashbuckle.AspNetCore": "6.9.0",
+            "Swashbukle.AspNetCore": "2.0.0",
+            "System.IdentityModel.Tokens.Jwt": "8.15.0",
+            "Telegram.Bot": "22.10.0.1",
+            "xunit": "2.9.2",
+            "xunit.extensibility.core": "2.9.2",
+            "xunit.runner.visualstudio": "2.8.2"
+          },
           "imports": [
             "net461",
             "net462",
