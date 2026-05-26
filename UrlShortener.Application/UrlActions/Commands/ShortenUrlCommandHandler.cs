@@ -80,7 +80,7 @@ public class ShortenUrlCommandHandler(
                 url.Code,
                 url.LongUrl,
                 newShortUrl,
-                url.CreatedAt),
+                url.CreatedAtUtc),
             cancellationToken);
 
         return new UrlResult(url.Id.Value, newShortUrl);

@@ -1,9 +1,11 @@
-﻿using MassTransit;
+﻿using System.Text;
+using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using UrlShortener.Application.Common.Interfaces.Authentication;
 using UrlShortener.Application.Common.Interfaces.Repositories;
 using UrlShortener.Application.Common.Interfaces.Services;
@@ -16,7 +18,7 @@ using UrlShortener.Infrastructure.UrlActions;
 
 namespace UrlShortener.Infrastructure;
 
-public static class DependencyInjection 
+public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(
         this IServiceCollection services,
@@ -25,12 +27,16 @@ public static class DependencyInjection
         services
             .AddAuth(configuration)
             .AddPersistance(configuration);
-        
+
         services.AddStackExchangeRedisCache(options =>
         {
             options.Configuration = configuration.GetConnectionString("Redis");
         });
-        
+
+        var rabbitMqOptions = new RabbitMqOptions();
+        configuration.Bind(RabbitMqOptions.SectionName, rabbitMqOptions);
+        services.AddSingleton(Options.Create(rabbitMqOptions));
+
         services.AddScoped<IMessagePublisher, MassTransitMessagePublisher>();
 
         services.AddMassTransit(x =>
@@ -38,27 +44,28 @@ public static class DependencyInjection
             x.SetKebabCaseEndpointNameFormatter();
             x.UsingRabbitMq((context, cfg) =>
             {
-                cfg.Host(configuration["RabbitMq:Host"], "/", h =>
+                cfg.Host(rabbitMqOptions.Host, "/", h =>
                 {
-                    h.Username(configuration["RabbitMq:Username"]!);
-                    h.Password(configuration["RabbitMq:Password"]!);
+                    h.Username(rabbitMqOptions.Username!);
+                    h.Password(rabbitMqOptions.Password!);
                 });
 
                 cfg.ConfigureEndpoints(context);
             });
         });
-        
+
         services.AddScoped<ICacheService, CachingService>();
         services.AddHttpContextAccessor();
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
         services.AddScoped<IUrlCodeGenerator, UrlCodeGenerator>();
         services.AddScoped<IShortUrlBuilder, ShortUrlBuilder>();
         services.AddScoped<IPasswordHasher, PasswordHasher>();
-        
-        return services; 
+
+        return services;
     }
 
-    private static IServiceCollection AddPersistance(this IServiceCollection services, ConfigurationManager configuration)
+    private static IServiceCollection AddPersistance(this IServiceCollection services,
+        ConfigurationManager configuration)
     {
         services.AddDbContext<ApplicationDbContext>(options =>
         {
@@ -67,7 +74,7 @@ public static class DependencyInjection
 
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IUrlRepository, UrlRepository>();
-        
+
         return services;
     }
 
@@ -81,10 +88,10 @@ public static class DependencyInjection
         services.AddSingleton(Options.Create(jwtSettings));
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
 
-        services.AddAuthentication(defaultScheme: JwtBearerDefaults.AuthenticationScheme)
+        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>
             {
-                options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuer = true,
                     ValidateAudience = true,
@@ -92,13 +99,12 @@ public static class DependencyInjection
                     ValidateIssuerSigningKey = true,
                     ValidIssuer = jwtSettings.Issuer,
                     ValidAudience = jwtSettings.Audience,
-                    IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(
-                        System.Text.Encoding.UTF8.GetBytes(
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(
                             jwtSettings.Secret))
                 };
             });
 
         return services;
-           
     }
 }

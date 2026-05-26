@@ -23,17 +23,17 @@ public class Url : Entity<UrlId>
     /// <summary>
     /// Gets the date and time when the URL was created.
     /// </summary>
-    public DateTime CreatedAt { get; set; }
+    public DateTime CreatedAtUtc { get; set; }
     
     /// <summary>
     /// Required by Entity Framework Core.
     /// </summary>
-    private Url(UrlId id, string longUrl, string code, DateTime createdAt)
+    private Url(UrlId id, string longUrl, string code, DateTime createdAtUtc)
         : base(id)
     {
         LongUrl = longUrl;
         Code = code;
-        CreatedAt = createdAt;
+        CreatedAtUtc = createdAtUtc;
     }
 
     /// <summary>
@@ -57,6 +57,6 @@ public class Url : Entity<UrlId>
             UrlId.CreateUnique(),
             longUrl,
             string.Empty,
-            DateTime.UtcNow);
+            DateTime.SpecifyKind(DateTime.UtcNow, DateTimeKind.Utc));
     }
 }

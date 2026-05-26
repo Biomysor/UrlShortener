@@ -1,9 +1,9 @@
 ﻿using MassTransit;
 using Moq;
+using UrlShortener.Infrastructure.Services;
 using UrlShortener.Messaging.Contracts.Events;
-using Xunit;
 
-namespace UrlShortener.Infrastructure.Services;
+namespace UrlShortener.UnitTests.Services;
 
 public class MessagePublisherTests
 {

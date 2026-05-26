@@ -10,7 +10,7 @@ public class UrlConfiguration : IEntityTypeConfiguration<Url>
     public void Configure(EntityTypeBuilder<Url> builder)
     {
         builder.ToTable("Urls");
-        
+
         builder.HasKey(x => x.Id);
 
         builder.Property(x => x.Id)
@@ -20,16 +20,15 @@ public class UrlConfiguration : IEntityTypeConfiguration<Url>
             .ValueGeneratedNever();
 
         builder.Property(x => x.LongUrl);
-        
+
         builder.Property(x => x.Code);
-        
-        builder.Property(x => x.CreatedAt);
-        
+
+        builder.Property(x => x.CreatedAtUtc);
+
         builder.HasIndex(x => x.LongUrl)
             .IsUnique();
-        
+
         builder.HasIndex(x => x.Code)
             .IsUnique();
-        
     }
 }
