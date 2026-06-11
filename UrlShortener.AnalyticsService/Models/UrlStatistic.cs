@@ -12,5 +12,5 @@ public class UrlStatistic
 
     public int ClickCount { get; set; }
 
-    public DateTime? LastRedirectedAt { get; set; }
+    public DateTime? LastRedirectedAtUtc { get; set; }
 }

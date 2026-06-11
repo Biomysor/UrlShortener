@@ -42,13 +42,13 @@ public class UrlRedirectedEventConsumer(AnalyticsDbContext dbContext)
         }
 
         statistic.ClickCount++;
-        statistic.LastRedirectedAt = message.RedirectedAt;
+        statistic.LastRedirectedAtUtc = message.RedirectedAtUtc;
 
         var click = new UrlClick
         {
             Id = Guid.NewGuid(),
             Code = message.Code,
-            RedirectedAt = message.RedirectedAt,
+            RedirectedAtUtc = message.RedirectedAtUtc,
             IpAddress = message.IpAddress,
             UserAgent = message.UserAgent
         };

@@ -1,7 +1,7 @@
 ﻿namespace UrlShortener.Messaging.Contracts.Analytics;
 
-public record UrlRedirectResponse (
+public record UrlRedirectResponse(
     string Code,
-    DateTime RedirectedAt,
+    DateTimeOffset RedirectedAtUtc,
     string? IpAddress,
     string? UserAgent);

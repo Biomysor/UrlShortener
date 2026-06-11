@@ -19,7 +19,8 @@ public class UrlConfiguration : IEntityTypeConfiguration<Url>
                 value => UrlId.Create(value))
             .ValueGeneratedNever();
 
-        builder.Property(x => x.LongUrl);
+        builder.Property(x => x.LongUrl)
+            .HasMaxLength(1024);
 
         builder.Property(x => x.Code);
 

@@ -11,26 +11,25 @@ public class UrlQueryHandler(
     IShortUrlBuilder shortUrlBuilder) :
     IRequestHandler<UrlQuery, ErrorOr<UrlResult>>
 {
-    private readonly IShortUrlBuilder _shortUrlBuilder = shortUrlBuilder;
     private readonly IUrlRepository _repository = repository;
+    private readonly IShortUrlBuilder _shortUrlBuilder = shortUrlBuilder;
 
     public async Task<ErrorOr<UrlResult>> Handle(UrlQuery request, CancellationToken cancellationToken)
     {
         var url = await _repository.GetByLongUrlAsync(request.Url);
 
         if (url is null)
-        {
             return Error.NotFound(
-                code: "Url.NotFound",
-                description: "Url not found"
+                "Url.NotFound",
+                "Url not found"
             );
-        }
 
         var shortUrl = _shortUrlBuilder.BuildShortUrl(url.Code);
 
         return new UrlResult(
             url.Id.Value,
-            shortUrl
+            shortUrl,
+            url.CreatedAtUtc
         );
     }
 }

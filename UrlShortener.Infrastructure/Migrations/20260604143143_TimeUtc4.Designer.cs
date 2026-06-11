@@ -12,8 +12,8 @@ using UrlShortener.Infrastructure.Persistance;
 namespace UrlShortener.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260516113512_AddValueObjectIds")]
-    partial class AddValueObjectIds
+    [Migration("20260604143143_TimeUtc4")]
+    partial class TimeUtc4
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,8 +34,8 @@ namespace UrlShortener.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("datetimeoffset");
 
                     b.Property<string>("LongUrl")
                         .IsRequired()

@@ -36,6 +36,6 @@ public class AnalyticsController(AnalyticsDbContext dbContext) : ControllerBase
             statistic.Code,
             statistic.LongUrl,
             statistic.ClickCount,
-            statistic.LastRedirectedAt));
+            statistic.LastRedirectedAtUtc));
     }
 }

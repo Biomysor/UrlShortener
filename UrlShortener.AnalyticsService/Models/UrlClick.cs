@@ -6,7 +6,7 @@ public class UrlClick
 
     public string Code { get; set; } = string.Empty;
 
-    public DateTime RedirectedAt { get; set; }
+    public DateTime RedirectedAtUtc { get; set; }
 
     public string? IpAddress { get; set; }
 
