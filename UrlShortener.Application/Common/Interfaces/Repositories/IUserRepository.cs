@@ -4,6 +4,6 @@ namespace UrlShortener.Application.Common.Interfaces.Repositories;
 
 public interface IUserRepository
 {
-    Task<User?> GetByEmailAsync(string email);
-    Task AddAsync(User user);
+    Task<User?> GetByEmailAsync(string email, CancellationToken cancellationToken);
+    Task AddAsync(User user, CancellationToken cancellationToken);
 }

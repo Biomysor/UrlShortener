@@ -33,13 +33,14 @@ public class RegisterCommandHandler(
     public async Task<ErrorOr<AuthenticationResult>> Handle(RegisterCommand command,
         CancellationToken cancellationToken)
     {
-        if (await userRepository.GetByEmailAsync(command.Email) is not null)
+        if (await userRepository.GetByEmailAsync(command.Email, cancellationToken) is not null)
             return Errors.User.DuplicateEmail(command.Email);
+        
         var passwordHash = _passwordHasher.HashPassword(command.Password);
 
         var user = User.Create(command.Login, command.Email, passwordHash);
 
-        await userRepository.AddAsync(user);
+        await userRepository.AddAsync(user,  cancellationToken);
 
         var token = jwtTokenGenerator.GenerateToken(user);
 

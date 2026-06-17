@@ -52,7 +52,7 @@ public class RedirectQueryHandler(
             return cachedUrl.LongUrl;
         }
 
-        var url = await _repository.GetCodeAsync(request.Code);
+        var url = await _repository.GetCodeAsync(request.Code, cancellationToken);
 
         if (url is null) return Error.NotFound("404", "Url Not found");
 

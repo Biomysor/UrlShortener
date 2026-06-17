@@ -25,7 +25,7 @@ public class ShortenUrlCommandHandlerTests
         existingUrl.SetCode("abc123");
 
         _repositoryMock
-            .Setup(x => x.GetByLongUrlAsync(longUrl))
+            .Setup(x => x.GetByLongUrlAsync(longUrl, CancellationToken.None))
             .ReturnsAsync(existingUrl);
 
         _shortUrlBuilderMock
@@ -43,7 +43,7 @@ public class ShortenUrlCommandHandlerTests
         result.IsError.Should().BeFalse();
         result.Value.ShortUrl.Should().Be("http://localhost:5018/r/abc123");
 
-        _repositoryMock.Verify(x => x.AddAsync(It.IsAny<UrlShortener.Domain.UrlAggregate.Entity.Url>()), Times.Never);
+        _repositoryMock.Verify(x => x.AddAsync(It.IsAny<UrlShortener.Domain.UrlAggregate.Entity.Url>(), CancellationToken.None), Times.Never);
         _messagePublisherMock.Verify(
             x => x.PublishAsync(It.IsAny<object>(), It.IsAny<CancellationToken>()),
             Times.Never);
@@ -56,7 +56,7 @@ public class ShortenUrlCommandHandlerTests
         var longUrl = "https://example.com";
 
         _repositoryMock
-            .Setup(x => x.GetByLongUrlAsync(longUrl))
+            .Setup(x => x.GetByLongUrlAsync(longUrl, CancellationToken.None))
             .ReturnsAsync((UrlShortener.Domain.UrlAggregate.Entity.Url?)null);
 
         _codeGeneratorMock
@@ -80,7 +80,7 @@ public class ShortenUrlCommandHandlerTests
 
         _repositoryMock.Verify(
             x => x.AddAsync(
-                It.Is<UrlShortener.Domain.UrlAggregate.Entity.Url>(u => u.LongUrl == longUrl && u.Code == "abc123")),
+                It.Is<UrlShortener.Domain.UrlAggregate.Entity.Url>(u => u.LongUrl == longUrl && u.Code == "abc123"), CancellationToken.None),
             Times.Once);
 
         _cacheServiceMock.Verify(x => x.SetAsync(

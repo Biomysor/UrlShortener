@@ -35,8 +35,9 @@ public class LoginQueryHandler(
         await Task.CompletedTask;
         // If user exist
 
-        if (await userRepository.GetByEmailAsync(query.Email) is not User user)
+        if (await userRepository.GetByEmailAsync(query.Email, cancellationToken) is not User user)
             return Errors.Authentication.InvalidCredentials;
+        
         // password
         var isPassworValid = _passwordHasher.VerifyHashedPassword(query.Password, user.PasswordHash);
 

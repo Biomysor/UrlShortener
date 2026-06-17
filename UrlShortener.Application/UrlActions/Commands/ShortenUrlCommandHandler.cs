@@ -37,7 +37,7 @@ public class ShortenUrlCommandHandler(
     /// <returns>UrlResult with URL identifier and generated short URL.</returns>
     public async Task<ErrorOr<UrlResult>> Handle(ShortenUrlCommand request, CancellationToken cancellationToken)
     {
-        var existing = await _repository.GetByLongUrlAsync(request.Url);
+        var existing = await _repository.GetByLongUrlAsync(request.Url, cancellationToken);
         if (existing != null)
         {
             var shortUrl = _shortUrlBuilder.BuildShortUrl(existing.Code);
@@ -60,7 +60,7 @@ public class ShortenUrlCommandHandler(
         var code = _codeGenerator.GenerateCode(url.Id);
         url.SetCode(code);
 
-        await _repository.AddAsync(url);
+        await _repository.AddAsync(url, cancellationToken);
 
         var newShortUrl = _shortUrlBuilder.BuildShortUrl(code);
 

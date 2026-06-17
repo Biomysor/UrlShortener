@@ -16,10 +16,10 @@ public class AuthenticateController(IMapper mapper, ISender sender ) : ApiContro
     private readonly ISender _sender = sender;
 
     [HttpPost("register")]
-    public async Task<IActionResult> Register(RegisterRequest request)
+    public async Task<IActionResult> Register(RegisterRequest request, CancellationToken cancellationToken)
     {
         var command = _mapper.Map<RegisterCommand>(request);
-        var authResult = await _sender.Send(command);
+        var authResult = await _sender.Send(command, cancellationToken);
         
         return authResult.Match(
             result => Ok(_mapper.Map<AuthenticationResponce>(result)),
@@ -27,10 +27,10 @@ public class AuthenticateController(IMapper mapper, ISender sender ) : ApiContro
     }
 
     [HttpPost("login")]
-    public async Task<IActionResult> Login(LoginRequest request)
+    public async Task<IActionResult> Login(LoginRequest request, CancellationToken cancellationToken)
     {
         var query = _mapper.Map<LoginQuery>(request);
-        var authResult = await _sender.Send(query);
+        var authResult = await _sender.Send(query, cancellationToken);
         
         return authResult.Match(
             result => Ok(_mapper.Map<AuthenticationResponce>(result)),

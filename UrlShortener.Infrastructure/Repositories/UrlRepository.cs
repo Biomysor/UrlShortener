@@ -14,25 +14,25 @@ public class UrlRepository : IUrlRepository
         _dbContext = dbContext;
     }
 
-    public async Task AddAsync(Url url)
+    public async Task AddAsync(Url url, CancellationToken cancellationToken)
     {
-        await _dbContext.Urls.AddAsync(url);
-        await _dbContext.SaveChangesAsync();
+        await _dbContext.Urls.AddAsync(url, cancellationToken);
+        await _dbContext.SaveChangesAsync(cancellationToken);
     }
 
-    public async Task UpdateAsync(Url url)
+    public async Task UpdateAsync(Url url, CancellationToken cancellationToken)
     {
         _dbContext.Urls.Update(url);
-        await _dbContext.SaveChangesAsync();
+        await _dbContext.SaveChangesAsync(cancellationToken);
     }
 
-    public async Task<Url?> GetByLongUrlAsync(string longUrl)
+    public async Task<Url?> GetByLongUrlAsync(string longUrl, CancellationToken cancellationToken)
     {
-        return await _dbContext.Urls.FirstOrDefaultAsync(x => x.LongUrl == longUrl);
+        return await _dbContext.Urls.FirstOrDefaultAsync(x => x.LongUrl == longUrl, cancellationToken);
     }
 
-    public async Task<Url?> GetCodeAsync(string code)
+    public async Task<Url?> GetCodeAsync(string code, CancellationToken cancellationToken)
     {
-        return await _dbContext.Urls.FirstOrDefaultAsync(x => x.Code == code);
+        return await _dbContext.Urls.FirstOrDefaultAsync(x => x.Code == code, cancellationToken);
     }
 }
