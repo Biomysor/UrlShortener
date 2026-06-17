@@ -1,5 +1,4 @@
-﻿using UrlShortener.Domain.UrlAggregate;
-using UrlShortener.Domain.UrlAggregate.Entity;
+﻿using UrlShortener.Domain.UrlAggregate.Entity;
 
 namespace UrlShortener.Application.Common.Interfaces.Repositories;
 

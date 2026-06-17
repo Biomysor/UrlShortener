@@ -72,9 +72,9 @@ public class ShortenUrlCommandHandler(
                 url.LongUrl),
             TimeSpan.FromHours(1),
             cancellationToken);
-        
+
         var time = TimeZoneInfo.Local.GetUtcOffset(url.CreatedAtUtc);
-        
+
         await _messagePublisher.PublishAsync(
             new UrlCreatedEvent(
                 url.Id.Value,

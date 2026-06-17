@@ -4,17 +4,17 @@ using UrlShortener.Application.Common.Interfaces.Repositories;
 using UrlShortener.Application.Common.Interfaces.Services;
 using UrlShortener.Application.Common.Interfaces.UrlActions;
 using UrlShortener.Application.UrlActions.Commands;
-using UrlShortener.Domain.UrlAggregate.Entity;
+using UrlShortener.Domain.UrlAggregate.ValueObjects;
 
 namespace UrlShortener.UnitTests.Url.Shorten;
 
 public class ShortenUrlCommandHandlerTests
 {
-    private readonly Mock<IUrlRepository> _repositoryMock = new();
-    private readonly Mock<IUrlCodeGenerator> _codeGeneratorMock = new();
-    private readonly Mock<IShortUrlBuilder> _shortUrlBuilderMock = new();
     private readonly Mock<ICacheService> _cacheServiceMock = new();
+    private readonly Mock<IUrlCodeGenerator> _codeGeneratorMock = new();
     private readonly Mock<IMessagePublisher> _messagePublisherMock = new();
+    private readonly Mock<IUrlRepository> _repositoryMock = new();
+    private readonly Mock<IShortUrlBuilder> _shortUrlBuilderMock = new();
 
     [Fact]
     public async Task Handle_ShouldReturnExistingShortUrl_WhenLongUrlAlreadyExists()
@@ -60,7 +60,7 @@ public class ShortenUrlCommandHandlerTests
             .ReturnsAsync((UrlShortener.Domain.UrlAggregate.Entity.Url?)null);
 
         _codeGeneratorMock
-            .Setup(x => x.GenerateCode(It.IsAny<UrlShortener.Domain.UrlAggregate.ValueObjects.UrlId>()))
+            .Setup(x => x.GenerateCode(It.IsAny<UrlId>()))
             .Returns("abc123");
 
         _shortUrlBuilderMock
@@ -78,8 +78,10 @@ public class ShortenUrlCommandHandlerTests
         result.IsError.Should().BeFalse();
         result.Value.ShortUrl.Should().Be("http://localhost:5018/r/abc123");
 
-        _repositoryMock.Verify(x => x.AddAsync(It.Is<UrlShortener.Domain.UrlAggregate.Entity.Url>(
-            u => u.LongUrl == longUrl && u.Code == "abc123")), Times.Once);
+        _repositoryMock.Verify(
+            x => x.AddAsync(
+                It.Is<UrlShortener.Domain.UrlAggregate.Entity.Url>(u => u.LongUrl == longUrl && u.Code == "abc123")),
+            Times.Once);
 
         _cacheServiceMock.Verify(x => x.SetAsync(
             "url:code:abc123",

@@ -4,16 +4,14 @@ using UrlShortener.Application.Common.Interfaces.Repositories;
 using UrlShortener.Application.Common.Interfaces.Services;
 using UrlShortener.Application.UrlActions.Common;
 using UrlShortener.Application.UrlActions.Queries.RedirectQueries;
-using UrlShortener.Domain.UrlAggregate.Entity;
 
 namespace UrlShortener.UnitTests.Url.Redirect;
 
-
 public class RedirectQueryHandlerTests
 {
-    private readonly Mock<IUrlRepository> _repositoryMock = new();
     private readonly Mock<ICacheService> _cacheServiceMock = new();
     private readonly Mock<IMessagePublisher> _messagePublisherMock = new();
+    private readonly Mock<IUrlRepository> _repositoryMock = new();
 
     [Fact]
     public async Task Handle_ShouldReturnCachedLongUrl_AndPublishRedirectEvent_WhenCacheHit()

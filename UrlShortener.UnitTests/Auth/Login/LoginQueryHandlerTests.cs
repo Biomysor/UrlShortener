@@ -12,8 +12,8 @@ namespace UrlShortener.UnitTests.Auth.Login;
 public class LoginQueryHandlerTests
 {
     private readonly Mock<IJwtTokenGenerator> _jwtTokenGeneratorMock = new();
-    private readonly Mock<IUserRepository> _userRepositoryMock = new();
     private readonly Mock<IPasswordHasher> _passwordHasherMock = new();
+    private readonly Mock<IUserRepository> _userRepositoryMock = new();
 
     [Fact]
     public async Task Handle_ShouldReturnInvalidCredentials_WhenUserDoesNotExist()
