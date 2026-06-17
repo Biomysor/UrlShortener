@@ -14,4 +14,4 @@ public record UrlCreatedEvent(
     string Code,
     string LongUrl,
     string ShortUrl,
-    DateTime CreatedAt);
+    DateTimeOffset CreatedAt);

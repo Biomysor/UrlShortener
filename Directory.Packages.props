@@ -1,0 +1,39 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="BCrypt.Net-Next" Version="4.2.0" />
+    <PackageVersion Include="coverlet.collector" Version="6.0.2" />
+    <PackageVersion Include="ErrorOr" Version="2.0.1" />
+    <PackageVersion Include="FluentAssertions" Version="8.10.0" />
+    <PackageVersion Include="FluentResults" Version="4.0.0" />
+    <PackageVersion Include="FluentValidation" Version="12.1.1" />
+    <PackageVersion Include="FluentValidation.AspNetCore" Version="11.3.1" />
+    <PackageVersion Include="Mapster" Version="10.0.0-pre01" />
+    <PackageVersion Include="Mapster.DependencyInjection" Version="9.0.0-pre01" />
+    <PackageVersion Include="MassTransit.RabbitMQ" Version="8.5.10-develop.2432" />
+    <PackageVersion Include="MediatR" Version="14.0.0" />
+    <PackageVersion Include="MediatR.Contracts" Version="2.0.1" />
+    <PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="9.0.16" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.16" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.16" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.16" />
+    <PackageVersion Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="9.0.16" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="9.0.3" />
+    <PackageVersion Include="Microsoft.Extensions.Options" Version="10.0.8" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageVersion Include="Moq" Version="4.20.72" />
+    <PackageVersion Include="SharpGrip.FluentValidation.AutoValidation.Mvc" Version="1.5.0" />
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+    <PackageVersion Include="Swashbukle.AspNetCore" Version="2.0.0" />
+    <PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="8.15.0" />
+    <PackageVersion Include="Telegram.Bot" Version="22.10.0.1" />
+    <PackageVersion Include="xunit" Version="2.9.2" />
+    <PackageVersion Include="xunit.extensibility.core" Version="2.9.2" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+</Project>

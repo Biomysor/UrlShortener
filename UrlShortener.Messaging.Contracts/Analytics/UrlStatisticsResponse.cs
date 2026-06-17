@@ -4,4 +4,4 @@ public record UrlStatisticsResponse(
     string Code,
     string LongUrl,
     int ClickCount,
-    DateTime? LastRedirectedAt);
+    DateTimeOffset? LastRedirectedAtUtc);
