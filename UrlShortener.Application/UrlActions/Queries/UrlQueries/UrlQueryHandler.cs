@@ -16,7 +16,7 @@ public class UrlQueryHandler(
 
     public async Task<ErrorOr<UrlResult>> Handle(UrlQuery request, CancellationToken cancellationToken)
     {
-        var url = await _repository.GetByLongUrlAsync(request.Url);
+        var url = await _repository.GetByLongUrlAsync(request.Url, cancellationToken);
 
         if (url is null)
             return Error.NotFound(

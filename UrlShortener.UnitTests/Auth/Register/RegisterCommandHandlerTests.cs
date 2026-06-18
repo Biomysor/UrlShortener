@@ -12,8 +12,8 @@ namespace UrlShortener.UnitTests.Auth.Register;
 public class RegisterCommandHandlerTests
 {
     private readonly Mock<IJwtTokenGenerator> _jwtTokenGeneratorMock = new();
-    private readonly Mock<IUserRepository> _userRepositoryMock = new();
     private readonly Mock<IPasswordHasher> _passwordHasherMock = new();
+    private readonly Mock<IUserRepository> _userRepositoryMock = new();
 
     [Fact]
     public async Task Handle_ShouldReturnDuplicateEmail_WhenUserWithEmailAlreadyExists()
@@ -30,7 +30,7 @@ public class RegisterCommandHandlerTests
             "hashed-password");
 
         _userRepositoryMock
-            .Setup(x => x.GetByEmailAsync(command.Email))
+            .Setup(x => x.GetByEmailAsync(command.Email, CancellationToken.None))
             .ReturnsAsync(existingUser);
 
         var handler = CreateHandler();
@@ -47,7 +47,7 @@ public class RegisterCommandHandlerTests
             Times.Never);
 
         _userRepositoryMock.Verify(
-            x => x.AddAsync(It.IsAny<User>()),
+            x => x.AddAsync(It.IsAny<User>(), CancellationToken.None),
             Times.Never);
 
         _jwtTokenGeneratorMock.Verify(
@@ -65,7 +65,7 @@ public class RegisterCommandHandlerTests
             "Password1");
 
         _userRepositoryMock
-            .Setup(x => x.GetByEmailAsync(command.Email))
+            .Setup(x => x.GetByEmailAsync(command.Email, CancellationToken.None))
             .ReturnsAsync((User?)null);
 
         _passwordHasherMock
@@ -97,7 +97,7 @@ public class RegisterCommandHandlerTests
             x => x.AddAsync(It.Is<User>(u =>
                 u.Login == command.Login &&
                 u.Email == command.Email &&
-                u.PasswordHash == "hashed-password")),
+                u.PasswordHash == "hashed-password"), CancellationToken.None),
             Times.Once);
 
         _jwtTokenGeneratorMock.Verify(

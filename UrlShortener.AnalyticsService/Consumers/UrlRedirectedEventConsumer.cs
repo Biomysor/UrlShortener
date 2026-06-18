@@ -7,7 +7,7 @@ using UrlShortener.Messaging.Contracts.Events;
 namespace UrlShortener.AnalyticsService.Consumers;
 
 /// <summary>
-/// Consumes URL redirected events and updates URL redirect statistics.
+///     Consumes URL redirected events and updates URL redirect statistics.
 /// </summary>
 public class UrlRedirectedEventConsumer(AnalyticsDbContext dbContext)
     : IConsumer<UrlRedirectedEvent>
@@ -15,9 +15,9 @@ public class UrlRedirectedEventConsumer(AnalyticsDbContext dbContext)
     private readonly AnalyticsDbContext _dbContext = dbContext;
 
     /// <summary>
-    /// Handles UrlRedirectedEvent messages.
-    /// Creates a new statistics record if it does not exist,
-    /// otherwise increments click count and updates last redirect date.
+    ///     Handles UrlRedirectedEvent messages.
+    ///     Creates a new statistics record if it does not exist,
+    ///     otherwise increments click count and updates last redirect date.
     /// </summary>
     /// <param name="context">Message consume context.</param>
     public async Task Consume(ConsumeContext<UrlRedirectedEvent> context)

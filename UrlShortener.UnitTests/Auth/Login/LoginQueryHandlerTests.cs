@@ -12,8 +12,8 @@ namespace UrlShortener.UnitTests.Auth.Login;
 public class LoginQueryHandlerTests
 {
     private readonly Mock<IJwtTokenGenerator> _jwtTokenGeneratorMock = new();
-    private readonly Mock<IUserRepository> _userRepositoryMock = new();
     private readonly Mock<IPasswordHasher> _passwordHasherMock = new();
+    private readonly Mock<IUserRepository> _userRepositoryMock = new();
 
     [Fact]
     public async Task Handle_ShouldReturnInvalidCredentials_WhenUserDoesNotExist()
@@ -24,7 +24,7 @@ public class LoginQueryHandlerTests
             "Password1");
 
         _userRepositoryMock
-            .Setup(x => x.GetByEmailAsync(query.Email))
+            .Setup(x => x.GetByEmailAsync(query.Email, CancellationToken.None))
             .ReturnsAsync((User?)null);
 
         var handler = CreateHandler();
@@ -59,7 +59,7 @@ public class LoginQueryHandlerTests
             "hashed-password");
 
         _userRepositoryMock
-            .Setup(x => x.GetByEmailAsync(query.Email))
+            .Setup(x => x.GetByEmailAsync(query.Email, CancellationToken.None))
             .ReturnsAsync(user);
 
         _passwordHasherMock
@@ -94,7 +94,7 @@ public class LoginQueryHandlerTests
             "hashed-password");
 
         _userRepositoryMock
-            .Setup(x => x.GetByEmailAsync(query.Email))
+            .Setup(x => x.GetByEmailAsync(query.Email, CancellationToken.None))
             .ReturnsAsync(user);
 
         _passwordHasherMock

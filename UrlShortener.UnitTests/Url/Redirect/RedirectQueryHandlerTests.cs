@@ -4,16 +4,14 @@ using UrlShortener.Application.Common.Interfaces.Repositories;
 using UrlShortener.Application.Common.Interfaces.Services;
 using UrlShortener.Application.UrlActions.Common;
 using UrlShortener.Application.UrlActions.Queries.RedirectQueries;
-using UrlShortener.Domain.UrlAggregate.Entity;
 
 namespace UrlShortener.UnitTests.Url.Redirect;
 
-
 public class RedirectQueryHandlerTests
 {
-    private readonly Mock<IUrlRepository> _repositoryMock = new();
     private readonly Mock<ICacheService> _cacheServiceMock = new();
     private readonly Mock<IMessagePublisher> _messagePublisherMock = new();
+    private readonly Mock<IUrlRepository> _repositoryMock = new();
 
     [Fact]
     public async Task Handle_ShouldReturnCachedLongUrl_AndPublishRedirectEvent_WhenCacheHit()
@@ -41,7 +39,7 @@ public class RedirectQueryHandlerTests
         result.IsError.Should().BeFalse();
         result.Value.Should().Be("https://google.com");
 
-        _repositoryMock.Verify(x => x.GetCodeAsync(It.IsAny<string>()), Times.Never);
+        _repositoryMock.Verify(x => x.GetCodeAsync(It.IsAny<string>(), CancellationToken.None), Times.Never);
 
         _messagePublisherMock.Verify(x => x.PublishAsync(
             It.IsAny<object>(),
@@ -62,7 +60,7 @@ public class RedirectQueryHandlerTests
             .ReturnsAsync((CachedUrlRedirect?)null);
 
         _repositoryMock
-            .Setup(x => x.GetCodeAsync("abc123"))
+            .Setup(x => x.GetCodeAsync("abc123", CancellationToken.None))
             .ReturnsAsync(url);
 
         var handler = CreateHandler();
@@ -76,7 +74,7 @@ public class RedirectQueryHandlerTests
         result.IsError.Should().BeFalse();
         result.Value.Should().Be("https://example.com");
 
-        _repositoryMock.Verify(x => x.GetCodeAsync("abc123"), Times.Once);
+        _repositoryMock.Verify(x => x.GetCodeAsync("abc123", CancellationToken.None), Times.Once);
 
         _cacheServiceMock.Verify(x => x.SetAsync(
             "url:code:abc123",
@@ -100,7 +98,7 @@ public class RedirectQueryHandlerTests
             .ReturnsAsync((CachedUrlRedirect?)null);
 
         _repositoryMock
-            .Setup(x => x.GetCodeAsync("wrong"))
+            .Setup(x => x.GetCodeAsync("wrong", CancellationToken.None))
             .ReturnsAsync((UrlShortener.Domain.UrlAggregate.Entity.Url?)null);
 
         var handler = CreateHandler();

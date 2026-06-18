@@ -1,10 +1,8 @@
-﻿using ErrorOr;
-using MapsterMapper;
+﻿using MapsterMapper;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UrlShortener.Application.UrlActions.Commands;
-using UrlShortener.Application.UrlActions.Queries;
 using UrlShortener.Application.UrlActions.Queries.UrlQueries;
 using UrlShortener.Contracts.UrlAction;
 
@@ -18,11 +16,11 @@ public class UrlActionController(ISender sender, IMapper mapper) : ApiController
     private readonly ISender _sender = sender;
 
     [HttpGet("getUrls")]
-    public async Task<IActionResult> GetUrls([FromQuery]UrlRequest request)
+    public async Task<IActionResult> GetUrls([FromQuery] UrlRequest request, CancellationToken cancellationToken)
     {
         var query = _mapper.Map<UrlQuery>(request);
-        var urlResult = await _sender.Send(query);
-        
+        var urlResult = await _sender.Send(query, cancellationToken);
+
         return urlResult.Match(
             r => Ok(_mapper.Map<UrlResponse>(r)),
             errors => Problem(errors)
@@ -30,11 +28,11 @@ public class UrlActionController(ISender sender, IMapper mapper) : ApiController
     }
 
     [HttpPost("shortenUrl")]
-    public async Task<IActionResult> ShortenUrl(UrlRequest request)
+    public async Task<IActionResult> ShortenUrl(UrlRequest request, CancellationToken cancellationToken)
     {
         var command = _mapper.Map<ShortenUrlCommand>(request);
-        var urlResult = await _sender.Send(command);
-        
+        var urlResult = await _sender.Send(command, cancellationToken);
+
         return urlResult.Match(
             r => Ok(_mapper.Map<UrlResponse>(r)),
             errors => Problem(errors)

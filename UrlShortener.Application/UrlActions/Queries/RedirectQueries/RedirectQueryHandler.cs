@@ -1,5 +1,5 @@
-﻿using MediatR;
-using ErrorOr;
+﻿using ErrorOr;
+using MediatR;
 using UrlShortener.Application.Common.Interfaces.Repositories;
 using UrlShortener.Application.Common.Interfaces.Services;
 using UrlShortener.Application.UrlActions.Common;
@@ -8,22 +8,22 @@ using UrlShortener.Messaging.Contracts.Events;
 namespace UrlShortener.Application.UrlActions.Queries.RedirectQueries;
 
 /// <summary>
-/// Handles redirect queries by short URL code.
-/// Uses Redis cache to speed up redirects and publishes redirect events for analytics.
+///     Handles redirect queries by short URL code.
+///     Uses Redis cache to speed up redirects and publishes redirect events for analytics.
 /// </summary>
 public class RedirectQueryHandler(
     IUrlRepository repository,
     ICacheService cacheService,
     IMessagePublisher messagePublisher) : IRequestHandler<RedirectQuery, ErrorOr<string>>
 {
+    private readonly ICacheService _cacheService = cacheService;
     private readonly IMessagePublisher _messagePublisher = messagePublisher;
     private readonly IUrlRepository _repository = repository;
-    private readonly ICacheService _cacheService = cacheService;
 
     /// <summary>
-    /// Finds the original long URL by short code.
-    /// The method first checks cache. If the value is not cached,
-    /// it loads URL data from the database, caches it and publishes a redirect event.
+    ///     Finds the original long URL by short code.
+    ///     The method first checks cache. If the value is not cached,
+    ///     it loads URL data from the database, caches it and publishes a redirect event.
     /// </summary>
     /// <param name="request">Redirect query containing short URL code.</param>
     /// <param name="cancellationToken">Cancellation token.</param>
@@ -52,12 +52,9 @@ public class RedirectQueryHandler(
             return cachedUrl.LongUrl;
         }
 
-        var url = await _repository.GetCodeAsync(request.Code);
+        var url = await _repository.GetCodeAsync(request.Code, cancellationToken);
 
-        if (url is null)
-        {
-            return Error.NotFound("404", "Url Not found");
-        }
+        if (url is null) return Error.NotFound("404", "Url Not found");
 
         await _messagePublisher.PublishAsync(new UrlRedirectedEvent(
                 url.Id.Value,
