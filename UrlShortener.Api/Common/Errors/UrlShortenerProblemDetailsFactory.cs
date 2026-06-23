@@ -8,15 +8,10 @@ using Microsoft.Extensions.Options;
 
 namespace UrlShortener.Api.Common.Errors;
 
-public class UrlShortenerProblemDetailsFactory : ProblemDetailsFactory
+public class UrlShortenerProblemDetailsFactory(IOptions<ApiBehaviorOptions> options) : ProblemDetailsFactory
 {
-    private readonly ApiBehaviorOptions _options;
-    
-    public UrlShortenerProblemDetailsFactory(IOptions<ApiBehaviorOptions> options)
-    {
-        _options = options?.Value ?? throw new ArgumentNullException(nameof(options));
-    }
-    
+    private readonly ApiBehaviorOptions _options = options.Value ?? throw new ArgumentNullException(nameof(options));
+
     public override ProblemDetails CreateProblemDetails(
         HttpContext httpContext,
         int? statusCode = null,
@@ -27,7 +22,7 @@ public class UrlShortenerProblemDetailsFactory : ProblemDetailsFactory
     {
         statusCode ??= 500;
 
-        ProblemDetails problemDetails = new ProblemDetails
+        var problemDetails = new ProblemDetails
         {
             Status = statusCode,
             Title = title,
@@ -50,14 +45,11 @@ public class UrlShortenerProblemDetailsFactory : ProblemDetailsFactory
         string? detail = null,
         string? instance = null)
     {
-        if (modelStateDictionary == null)
-        {
-            throw new ArgumentNullException(nameof(modelStateDictionary));
-        }
+        ArgumentNullException.ThrowIfNull(modelStateDictionary);
 
         statusCode ??= 400;
 
-        ValidationProblemDetails problemDetails = new ValidationProblemDetails(modelStateDictionary)
+        var problemDetails = new ValidationProblemDetails(modelStateDictionary)
         {
             Status = statusCode,
             Type = type,
@@ -77,20 +69,16 @@ public class UrlShortenerProblemDetailsFactory : ProblemDetailsFactory
     {
         problemDetails.Status ??= statusCode;
 
-        if (_options.ClientErrorMapping.TryGetValue(statusCode, out ClientErrorData? clientErrorData))
+        if (_options.ClientErrorMapping.TryGetValue(statusCode, out var clientErrorData))
         {
             problemDetails.Title ??= clientErrorData.Title;
             problemDetails.Type ??= clientErrorData.Link;
         }
 
-        string? traceId = Activity.Current?.Id ?? httpContext?.TraceIdentifier;
-        if (traceId is not null)
-        {
-            problemDetails.Extensions["traceId"] = traceId;
-        }
-
-        var errors = httpContext?.Items[HttpContextItemKeys.Errors] as List<Error>;
-        if (errors is not null)
+        var traceId = Activity.Current?.Id ?? httpContext.TraceIdentifier;
+        problemDetails.Extensions["traceId"] = traceId;
+        
+        if (httpContext.Items[HttpContextItemKeys.Errors] is List<Error> errors)
         {
              problemDetails.Extensions.Add("errorCodes", errors.Select (e => e.Code));
         }

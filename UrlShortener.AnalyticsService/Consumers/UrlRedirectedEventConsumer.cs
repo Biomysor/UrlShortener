@@ -12,8 +12,6 @@ namespace UrlShortener.AnalyticsService.Consumers;
 public class UrlRedirectedEventConsumer(AnalyticsDbContext dbContext)
     : IConsumer<UrlRedirectedEvent>
 {
-    private readonly AnalyticsDbContext _dbContext = dbContext;
-
     /// <summary>
     ///     Handles UrlRedirectedEvent messages.
     ///     Creates a new statistics record if it does not exist,
@@ -24,7 +22,7 @@ public class UrlRedirectedEventConsumer(AnalyticsDbContext dbContext)
     {
         var message = context.Message;
 
-        var statistic = await _dbContext.UrlStatistics
+        var statistic = await dbContext.UrlStatistics
             .FirstOrDefaultAsync(x => x.Code == message.Code);
 
         if (statistic is null)
@@ -38,7 +36,7 @@ public class UrlRedirectedEventConsumer(AnalyticsDbContext dbContext)
                 ClickCount = 0
             };
 
-            await _dbContext.UrlStatistics.AddAsync(statistic);
+            await dbContext.UrlStatistics.AddAsync(statistic);
         }
 
         statistic.ClickCount++;
@@ -53,8 +51,8 @@ public class UrlRedirectedEventConsumer(AnalyticsDbContext dbContext)
             UserAgent = message.UserAgent
         };
 
-        await _dbContext.UrlClicks.AddAsync(click);
+        await dbContext.UrlClicks.AddAsync(click);
 
-        await _dbContext.SaveChangesAsync();
+        await dbContext.SaveChangesAsync();
     }
 }

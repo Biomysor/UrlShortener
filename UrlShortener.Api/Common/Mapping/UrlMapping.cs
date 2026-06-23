@@ -1,8 +1,6 @@
 ﻿using Mapster;
-using UrlShortener.Application.Authentication.Queries;
 using UrlShortener.Application.UrlActions.Commands;
 using UrlShortener.Application.UrlActions.Common;
-using UrlShortener.Application.UrlActions.Queries;
 using UrlShortener.Application.UrlActions.Queries.UrlQueries;
 using UrlShortener.Contracts.UrlAction;
 

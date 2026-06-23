@@ -16,10 +16,6 @@ public class RedirectQueryHandler(
     ICacheService cacheService,
     IMessagePublisher messagePublisher) : IRequestHandler<RedirectQuery, ErrorOr<string>>
 {
-    private readonly ICacheService _cacheService = cacheService;
-    private readonly IMessagePublisher _messagePublisher = messagePublisher;
-    private readonly IUrlRepository _repository = repository;
-
     /// <summary>
     ///     Finds the original long URL by short code.
     ///     The method first checks cache. If the value is not cached,
@@ -33,13 +29,13 @@ public class RedirectQueryHandler(
         var cacheKey = $"url:code:{request.Code}";
 
 
-        var cachedUrl = await _cacheService.GetAsync<CachedUrlRedirect>(
+        var cachedUrl = await cacheService.GetAsync<CachedUrlRedirect>(
             cacheKey,
             cancellationToken);
 
         if (cachedUrl is not null)
         {
-            await _messagePublisher.PublishAsync(
+            await messagePublisher.PublishAsync(
                 new UrlRedirectedEvent(
                     cachedUrl.UrlId,
                     cachedUrl.Code,
@@ -52,11 +48,11 @@ public class RedirectQueryHandler(
             return cachedUrl.LongUrl;
         }
 
-        var url = await _repository.GetCodeAsync(request.Code, cancellationToken);
+        var url = await repository.GetCodeAsync(request.Code, cancellationToken);
 
         if (url is null) return Error.NotFound("404", "Url Not found");
 
-        await _messagePublisher.PublishAsync(new UrlRedirectedEvent(
+        await messagePublisher.PublishAsync(new UrlRedirectedEvent(
                 url.Id.Value,
                 url.Code,
                 url.LongUrl,
@@ -65,7 +61,7 @@ public class RedirectQueryHandler(
                 null),
             cancellationToken);
 
-        await _cacheService.SetAsync(
+        await cacheService.SetAsync(
             cacheKey,
             new CachedUrlRedirect(
                 url.Id.Value,

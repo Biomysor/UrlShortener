@@ -23,12 +23,12 @@ public class Url : Entity<UrlId>
     /// <summary>
     ///     Gets the original long URL provided by the user.
     /// </summary>
-    public string LongUrl { get; private set; } = string.Empty;
+    public string LongUrl { get; private set; }
 
     /// <summary>
     ///     Gets the generated short code used for redirection.
     /// </summary>
-    public string Code { get; private set; } = string.Empty;
+    public string Code { get; private set; }
 
     /// <summary>
     ///     Gets the date and time when the URL was created.

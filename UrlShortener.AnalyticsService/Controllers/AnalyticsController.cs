@@ -12,8 +12,6 @@ namespace UrlShortener.AnalyticsService.Controllers;
 [Route("analytics")]
 public class AnalyticsController(AnalyticsDbContext dbContext) : ControllerBase
 {
-    private readonly AnalyticsDbContext _dbContext = dbContext;
-
     /// <summary>
     /// Gets redirect statistics for a short URL code.
     /// </summary>
@@ -24,7 +22,7 @@ public class AnalyticsController(AnalyticsDbContext dbContext) : ControllerBase
     [HttpGet("{code}")]
     public async Task<IActionResult> GetStatistics(string code)
     {
-        var statistic = await _dbContext.UrlStatistics
+        var statistic = await dbContext.UrlStatistics
             .FirstOrDefaultAsync(x => x.Code == code);
 
         if (statistic is null)

@@ -20,7 +20,7 @@ public class ShortenUrlCommandHandlerTests
     public async Task Handle_ShouldReturnExistingShortUrl_WhenLongUrlAlreadyExists()
     {
         // Arrange
-        var longUrl = "https://google.com";
+        const string longUrl = "https://google.com";
         var existingUrl = UrlShortener.Domain.UrlAggregate.Entity.Url.Create(longUrl);
         existingUrl.SetCode("abc123");
 
@@ -53,7 +53,7 @@ public class ShortenUrlCommandHandlerTests
     public async Task Handle_ShouldCreateUrl_SaveToDatabase_SetCache_AndPublishEvent_WhenUrlDoesNotExist()
     {
         // Arrange
-        var longUrl = "https://example.com";
+        const string longUrl = "https://example.com";
 
         _repositoryMock
             .Setup(x => x.GetByLongUrlAsync(longUrl, CancellationToken.None))

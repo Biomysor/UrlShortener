@@ -19,8 +19,6 @@ public class RegisterCommandHandler(
     IPasswordHasher passwordHasher)
     : IRequestHandler<RegisterCommand, ErrorOr<AuthenticationResult>>
 {
-    private readonly IPasswordHasher _passwordHasher = passwordHasher;
-
     /// <summary>
     ///     Processes a user registration request.
     /// </summary>
@@ -36,7 +34,7 @@ public class RegisterCommandHandler(
         if (await userRepository.GetByEmailAsync(command.Email, cancellationToken) is not null)
             return Errors.User.DuplicateEmail(command.Email);
         
-        var passwordHash = _passwordHasher.HashPassword(command.Password);
+        var passwordHash = passwordHasher.HashPassword(command.Password);
 
         var user = User.Create(command.Login, command.Email, passwordHash);
 

@@ -3,13 +3,8 @@ using UrlShortener.AnalyticsService.Models;
 
 namespace UrlShortener.AnalyticsService.Persistance;
 
-public class AnalyticsDbContext : DbContext
+public class AnalyticsDbContext(DbContextOptions<AnalyticsDbContext> options) : DbContext(options)
 {
-    public AnalyticsDbContext(DbContextOptions<AnalyticsDbContext> options)
-        : base(options)
-    {
-    }
-
     public DbSet<UrlStatistic> UrlStatistics { get; set; }
 
     public DbSet<UrlClick> UrlClicks { get; set; }
@@ -43,6 +38,15 @@ public class AnalyticsDbContext : DbContext
             builder.Property(x => x.Code)
                 .IsRequired()
                 .HasMaxLength(32);
+            
+            builder.Property(x => x.RedirectedAtUtc)
+                .IsRequired();
+            
+            builder.Property(x => x.IpAddress)
+                .HasMaxLength(128);
+            
+            builder.Property(x => x.UserAgent)
+                .HasMaxLength(128);
         });
     }
 }

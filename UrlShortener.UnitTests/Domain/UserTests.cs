@@ -9,9 +9,9 @@ public class UserTests
     public void Create_ShouldCreateUser_WithCorrectProperties()
     {
         // Arrange
-        var login = "misha";
-        var email = "misha@gmail.com";
-        var passwordHash = "hashed-password";
+        const string login = "misha";
+        const string email = "misha@gmail.com";
+        const string passwordHash = "hashed-password";
 
         // Act
         var user = User.Create(login, email, passwordHash);

@@ -9,7 +9,7 @@ public class UrlTests
     public void Create_ShouldCreateUrl_WithEmptyCode()
     {
         // Arrange
-        var longUrl = "https://google.com";
+        const string longUrl = "https://google.com";
 
         // Act
         var url = Url.Create(longUrl);

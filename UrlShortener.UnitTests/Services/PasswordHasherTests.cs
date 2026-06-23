@@ -10,7 +10,7 @@ public class PasswordHasherTests
     {
         // Arrange
         var hasher = new PasswordHasher();
-        var password = "Password1";
+        const string password = "Password1";
 
         // Act
         var hash = hasher.HashPassword(password);
@@ -25,7 +25,7 @@ public class PasswordHasherTests
     {
         // Arrange
         var hasher = new PasswordHasher();
-        var password = "Password1";
+        const string password = "Password1";
         var hash = hasher.HashPassword(password);
 
         // Act

@@ -10,7 +10,7 @@ public abstract class ValueObject
     /// Gets the components that are used to compare value objects.
     /// </summary>
     /// <returns>Collection of equality components.</returns>
-    public abstract IEnumerable<object> GetEqualityComponents();
+    protected abstract IEnumerable<object> GetEqualityComponents();
 
     /// <summary>
     /// Determines whether the current value object is equal to another object.
@@ -53,7 +53,7 @@ public abstract class ValueObject
     public override int GetHashCode()
     {
         return GetEqualityComponents()
-            .Select(x => x?.GetHashCode() ?? 0)
+            .Select(x => x.GetHashCode())
             .Aggregate((x, y) => x ^ y);
     }
 }

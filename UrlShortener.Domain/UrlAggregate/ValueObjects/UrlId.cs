@@ -40,7 +40,7 @@ public sealed class UrlId : ValueObject
     }
     
     /// <inheritdoc />
-    public override IEnumerable<object> GetEqualityComponents()
+    protected override IEnumerable<object> GetEqualityComponents()
     {
         yield return  Value;
     }

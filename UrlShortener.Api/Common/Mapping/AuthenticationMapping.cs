@@ -14,9 +14,9 @@ public class AuthenticationMapping : IRegister
         config.NewConfig<RegisterRequest, RegisterCommand>();
         config.NewConfig<LoginRequest, LoginQuery>();
         config.NewConfig<AuthenticationResult, AuthenticationResponce>()
-            .Map(dest => dest.Id, src => src.user.Id.Value)
-            .Map(dest => dest.Login, src => src.user.Login)
-            .Map(dest => dest.Email, src => src.user.Email)
-            .Map(dest => dest.Token, src => src.token);
+            .Map(dest => dest.Id, src => src.User.Id.Value)
+            .Map(dest => dest.Login, src => src.User.Login)
+            .Map(dest => dest.Email, src => src.User.Email)
+            .Map(dest => dest.Token, src => src.Token);
     }
 }

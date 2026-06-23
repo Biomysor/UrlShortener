@@ -8,12 +8,7 @@ builder.Services.AddSingleton<ITelegramBotClient>(_ =>
 {
     var token = builder.Configuration["Telegram:BotToken"];
 
-    if (string.IsNullOrWhiteSpace(token))
-    {
-        throw new InvalidOperationException("Telegram bot token is not configured.");
-    }
-
-    return new TelegramBotClient(token);
+    return string.IsNullOrWhiteSpace(token) ? throw new InvalidOperationException("Telegram bot token is not configured.") : new TelegramBotClient(token);
 });
 
 builder.Services.AddMassTransit(x =>

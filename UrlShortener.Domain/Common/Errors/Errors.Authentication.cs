@@ -7,6 +7,6 @@ public static partial class Errors
     {
         public static Error InvalidCredentials => Error.Validation(
             code: "Auth.InvalidCredential",
-            description: $"Invalid credentials.");
+            description: "Invalid credentials.");
     }
 }
