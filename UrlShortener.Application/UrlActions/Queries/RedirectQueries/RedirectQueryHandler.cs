@@ -1,5 +1,6 @@
 ﻿using ErrorOr;
 using MediatR;
+using Microsoft.Extensions.Logging;
 using UrlShortener.Application.Common.Interfaces.Repositories;
 using UrlShortener.Application.Common.Interfaces.Services;
 using UrlShortener.Application.UrlActions.Common;
@@ -14,7 +15,8 @@ namespace UrlShortener.Application.UrlActions.Queries.RedirectQueries;
 public class RedirectQueryHandler(
     IUrlRepository repository,
     ICacheService cacheService,
-    IMessagePublisher messagePublisher) : IRequestHandler<RedirectQuery, ErrorOr<string>>
+    IMessagePublisher messagePublisher,
+    ILogger logger) : IRequestHandler<RedirectQuery, ErrorOr<string>>
 {
     /// <summary>
     ///     Finds the original long URL by short code.
@@ -35,15 +37,7 @@ public class RedirectQueryHandler(
 
         if (cachedUrl is not null)
         {
-            await messagePublisher.PublishAsync(
-                new UrlRedirectedEvent(
-                    cachedUrl.UrlId,
-                    cachedUrl.Code,
-                    cachedUrl.LongUrl,
-                    DateTime.UtcNow,
-                    null,
-                    null),
-                cancellationToken);
+            await PublishRedirectEventAsync(cachedUrl.UrlId, cachedUrl.Code, cachedUrl.LongUrl, cancellationToken);
 
             return cachedUrl.LongUrl;
         }
@@ -51,15 +45,8 @@ public class RedirectQueryHandler(
         var url = await repository.GetCodeAsync(request.Code, cancellationToken);
 
         if (url is null) return Error.NotFound("404", "Url Not found");
-
-        await messagePublisher.PublishAsync(new UrlRedirectedEvent(
-                url.Id.Value,
-                url.Code,
-                url.LongUrl,
-                DateTime.UtcNow,
-                null,
-                null),
-            cancellationToken);
+        
+        await PublishRedirectEventAsync(url.Id.Value, url.Code, url.LongUrl, cancellationToken);
 
         await cacheService.SetAsync(
             cacheKey,
@@ -72,5 +59,27 @@ public class RedirectQueryHandler(
 
 
         return url.LongUrl;
+    }
+
+    private async Task PublishRedirectEventAsync(Guid urlId, string code, string longUrl,
+        CancellationToken cancellationToken)
+    {
+        try
+        {
+            await messagePublisher.PublishAsync(
+                new UrlRedirectedEvent(
+                    urlId,
+                    code,
+                    longUrl,
+                    DateTime.UtcNow,
+                    null,
+                    null),
+                cancellationToken);
+        }
+        catch (Exception ex)
+        {
+            logger.LogWarning(ex,
+                "Failed to publish redirect event for code {Code}.", code);
+        }
     }
 }

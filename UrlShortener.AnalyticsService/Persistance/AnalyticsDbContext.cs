@@ -46,7 +46,7 @@ public class AnalyticsDbContext(DbContextOptions<AnalyticsDbContext> options) : 
                 .HasMaxLength(128);
             
             builder.Property(x => x.UserAgent)
-                .HasMaxLength(128);
+                .HasMaxLength(2048);
         });
     }
 }

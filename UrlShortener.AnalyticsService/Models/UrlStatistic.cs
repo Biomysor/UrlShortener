@@ -1,4 +1,6 @@
-﻿namespace UrlShortener.AnalyticsService.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace UrlShortener.AnalyticsService.Models;
 
 public class UrlStatistic
 {
@@ -13,4 +15,7 @@ public class UrlStatistic
     public int ClickCount { get; set; }
 
     public DateTimeOffset? LastRedirectedAtUtc { get; set; }
+    
+    [Timestamp]
+    public byte[] RowVersion { get; set; } = [];
 }

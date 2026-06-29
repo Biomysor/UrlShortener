@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using Microsoft.Extensions.Logging;
 using Moq;
 using UrlShortener.Application.Common.Interfaces.Repositories;
 using UrlShortener.Application.Common.Interfaces.Services;
@@ -12,6 +13,7 @@ public class RedirectQueryHandlerTests
     private readonly Mock<ICacheService> _cacheServiceMock = new();
     private readonly Mock<IMessagePublisher> _messagePublisherMock = new();
     private readonly Mock<IUrlRepository> _repositoryMock = new();
+    private readonly Mock<ILogger> _loggerMock = new();
 
     [Fact]
     public async Task Handle_ShouldReturnCachedLongUrl_AndPublishRedirectEvent_WhenCacheHit()
@@ -122,6 +124,7 @@ public class RedirectQueryHandlerTests
         return new RedirectQueryHandler(
             _repositoryMock.Object,
             _cacheServiceMock.Object,
-            _messagePublisherMock.Object);
+            _messagePublisherMock.Object,
+            _loggerMock.Object);
     }
 }

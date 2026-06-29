@@ -22,37 +22,58 @@ public class UrlRedirectedEventConsumer(AnalyticsDbContext dbContext)
     {
         var message = context.Message;
 
-        var statistic = await dbContext.UrlStatistics
-            .FirstOrDefaultAsync(x => x.Code == message.Code);
+        const int maxRetries = 3;
 
-        if (statistic is null)
+        for (var attempt = 0; attempt < maxRetries; attempt++)
         {
-            statistic = new UrlStatistic
+            try
             {
-                Id = Guid.NewGuid(),
-                UrlId = message.UrlId,
-                Code = message.Code,
-                LongUrl = message.LongUrl,
-                ClickCount = 0
-            };
+                var statistic = await dbContext.UrlStatistics
+                    .FirstOrDefaultAsync(x => x.Code == message.Code);
 
-            await dbContext.UrlStatistics.AddAsync(statistic);
+                if (statistic is null)
+                {
+                    statistic = new UrlStatistic
+                    {
+                        Id = Guid.NewGuid(),
+                        UrlId = message.UrlId,
+                        Code = message.Code,
+                        LongUrl = message.LongUrl,
+                        ClickCount = 0
+                    };
+
+                    await dbContext.UrlStatistics.AddAsync(statistic);
+                }
+
+                statistic.ClickCount++;
+                statistic.LastRedirectedAtUtc = message.RedirectedAtUtc;
+
+                var click = new UrlClick
+                {
+                    Id = Guid.NewGuid(),
+                    Code = message.Code,
+                    RedirectedAtUtc = message.RedirectedAtUtc,
+                    IpAddress = message.IpAddress,
+                    UserAgent = message.UserAgent
+                };
+
+                await dbContext.UrlClicks.AddAsync(click);
+
+                await dbContext.SaveChangesAsync();
+
+                return;
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                dbContext.ChangeTracker.Clear();
+            }
+            catch (DbUpdateException) when (attempt < maxRetries - 1)
+            {
+                dbContext.ChangeTracker.Clear();
+            }
         }
 
-        statistic.ClickCount++;
-        statistic.LastRedirectedAtUtc = message.RedirectedAtUtc;
-
-        var click = new UrlClick
-        {
-            Id = Guid.NewGuid(),
-            Code = message.Code,
-            RedirectedAtUtc = message.RedirectedAtUtc,
-            IpAddress = message.IpAddress,
-            UserAgent = message.UserAgent
-        };
-
-        await dbContext.UrlClicks.AddAsync(click);
-
-        await dbContext.SaveChangesAsync();
+        throw new InvalidOperationException(
+            "Failed to update URL statistics due to concurrent modifications.");
     }
 }
