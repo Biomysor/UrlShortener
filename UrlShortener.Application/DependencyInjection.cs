@@ -2,6 +2,7 @@
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using UrlShortener.Application.Authentication.Behavior;
 using UrlShortener.Application.Authentication.Commands.Register;
 using UrlShortener.Application.Authentication.Queries;
@@ -19,8 +20,8 @@ public static class DependencyInjection
             cfg.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly);
             cfg.LicenseKey = configuration["MediatR:LicenseKey"];
         });
-        
-        
+
+
         services.AddScoped<IValidator<RegisterCommand>, RegisterCommandValidation>();
         services.AddScoped<IValidator<LoginQuery>, LoginQueryValidation>();
         services.AddScoped<IValidator<ShortenUrlCommand>, ShortenUrlValidation>();

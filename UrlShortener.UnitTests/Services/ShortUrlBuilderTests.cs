@@ -10,10 +10,14 @@ public class ShortUrlBuilderTests
     public void BuildShortUrl_ShouldBuildUrl_WithSchemeHostAndCode()
     {
         // Arrange
-        var httpContext = new DefaultHttpContext();
-
-        httpContext.Request.Scheme = "http";
-        httpContext.Request.Host = new HostString("localhost:5018");
+        var httpContext = new DefaultHttpContext
+        {
+            Request =
+            {
+                Scheme = "http",
+                Host = new HostString("localhost:5018")
+            }
+        };
 
         var accessor = new HttpContextAccessor
         {

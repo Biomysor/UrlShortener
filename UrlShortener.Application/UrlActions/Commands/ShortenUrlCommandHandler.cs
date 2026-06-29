@@ -21,12 +21,6 @@ public class ShortenUrlCommandHandler(
     IMessagePublisher messagePublisher)
     : IRequestHandler<ShortenUrlCommand, ErrorOr<UrlResult>>
 {
-    private readonly ICacheService _cacheService = cacheService;
-    private readonly IUrlCodeGenerator _codeGenerator = codeGenerator;
-    private readonly IMessagePublisher _messagePublisher = messagePublisher;
-    private readonly IUrlRepository _repository = repository;
-    private readonly IShortUrlBuilder _shortUrlBuilder = shortUrlBuilder;
-
     /// <summary>
     ///     Creates a new short URL or returns an existing one.
     ///     If a new URL is created, the method saves it to the database,
@@ -37,12 +31,12 @@ public class ShortenUrlCommandHandler(
     /// <returns>UrlResult with URL identifier and generated short URL.</returns>
     public async Task<ErrorOr<UrlResult>> Handle(ShortenUrlCommand request, CancellationToken cancellationToken)
     {
-        var existing = await _repository.GetByLongUrlAsync(request.Url, cancellationToken);
+        var existing = await repository.GetByLongUrlAsync(request.Url, cancellationToken);
         if (existing != null)
         {
-            var shortUrl = _shortUrlBuilder.BuildShortUrl(existing.Code);
+            var shortUrl = shortUrlBuilder.BuildShortUrl(existing.Code);
 
-            await _cacheService.SetAsync(
+            await cacheService.SetAsync(
                 $"url:code:{existing.Code}",
                 new CachedUrlRedirect(
                     existing.Id.Value,
@@ -57,14 +51,14 @@ public class ShortenUrlCommandHandler(
 
         var url = Url.Create(request.Url);
 
-        var code = _codeGenerator.GenerateCode(url.Id);
+        var code = codeGenerator.GenerateCode(url.Id);
         url.SetCode(code);
 
-        await _repository.AddAsync(url, cancellationToken);
+        await repository.AddAsync(url, cancellationToken);
 
-        var newShortUrl = _shortUrlBuilder.BuildShortUrl(code);
+        var newShortUrl = shortUrlBuilder.BuildShortUrl(code);
 
-        await _cacheService.SetAsync(
+        await cacheService.SetAsync(
             $"url:code:{code}",
             new CachedUrlRedirect(
                 url.Id.Value,
@@ -75,9 +69,8 @@ public class ShortenUrlCommandHandler(
 
         var time = TimeZoneInfo.Local.GetUtcOffset(url.CreatedAtUtc);
 
-        await _messagePublisher.PublishAsync(
+        await messagePublisher.PublishAsync(
             new UrlCreatedEvent(
-                url.Id.Value,
                 url.Code,
                 url.LongUrl,
                 newShortUrl,

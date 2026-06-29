@@ -12,7 +12,7 @@ public static class DependencyInjection
         services.AddOpenApi();
         return services;
     }
-    public static IServiceCollection AddOpenApi(this IServiceCollection services)
+    private static IServiceCollection AddOpenApi(this IServiceCollection services)
     {
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen(c =>

@@ -12,18 +12,18 @@ public class User : Entity<UserId>
     /// <summary>
     /// Gets the user login.
     /// </summary>
-    public string Login { get; private set; } = string.Empty;
+    public string Login { get; private set; }
     
     /// <summary>
     /// Gets the user email address.
     /// </summary>
-    public string Email { get; private set; } = string.Empty;
+    public string Email { get; private set; }
     
     /// <summary>
     /// Gets the hashed user password.
     /// Plain passwords are not stored in the database.
     /// </summary>
-    public string PasswordHash { get; private set; } = string.Empty;
+    public string PasswordHash { get; private set; }
 
     /// <summary>
     /// Required by Entity Framework Core.

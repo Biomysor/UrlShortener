@@ -84,10 +84,10 @@ public class RegisterCommandHandlerTests
         // Assert
         result.IsError.Should().BeFalse();
 
-        result.Value.token.Should().Be("jwt-token");
-        result.Value.user.Login.Should().Be(command.Login);
-        result.Value.user.Email.Should().Be(command.Email);
-        result.Value.user.PasswordHash.Should().Be("hashed-password");
+        result.Value.Token.Should().Be("jwt-token");
+        result.Value.User.Login.Should().Be(command.Login);
+        result.Value.User.Email.Should().Be(command.Email);
+        result.Value.User.PasswordHash.Should().Be("hashed-password");
 
         _passwordHasherMock.Verify(
             x => x.HashPassword(command.Password),

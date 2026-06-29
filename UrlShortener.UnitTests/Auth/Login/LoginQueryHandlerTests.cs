@@ -113,8 +113,8 @@ public class LoginQueryHandlerTests
         // Assert
         result.IsError.Should().BeFalse();
 
-        result.Value.user.Should().Be(user);
-        result.Value.token.Should().Be("jwt-token");
+        result.Value.User.Should().Be(user);
+        result.Value.Token.Should().Be("jwt-token");
 
         _jwtTokenGeneratorMock.Verify(
             x => x.GenerateToken(user),

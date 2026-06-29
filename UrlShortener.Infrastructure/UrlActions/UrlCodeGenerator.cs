@@ -7,7 +7,6 @@ namespace UrlShortener.Infrastructure.UrlActions;
 public class UrlCodeGenerator : IUrlCodeGenerator
 {
     private const string Alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    private const long Salt = 0x5bd1e995;
     
     public string GenerateCode(UrlId id)
     {

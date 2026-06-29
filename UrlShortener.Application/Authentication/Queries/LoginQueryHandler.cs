@@ -5,7 +5,7 @@ using UrlShortener.Application.Common.Interfaces.Authentication;
 using UrlShortener.Application.Common.Interfaces.Repositories;
 using UrlShortener.Application.Common.Interfaces.Services;
 using UrlShortener.Domain.Common.Errors;
-using UrlShortener.Domain.UserAggregate.Entity;
+
 
 namespace UrlShortener.Application.Authentication.Queries;
 
@@ -19,8 +19,6 @@ public class LoginQueryHandler(
     IPasswordHasher passwordHasher)
     : IRequestHandler<LoginQuery, ErrorOr<AuthenticationResult>>
 {
-    private readonly IPasswordHasher _passwordHasher = passwordHasher;
-
     /// <summary>
     ///     Processes a login request.
     /// </summary>
@@ -32,14 +30,13 @@ public class LoginQueryHandler(
     /// </returns>
     public async Task<ErrorOr<AuthenticationResult>> Handle(LoginQuery query, CancellationToken cancellationToken)
     {
-        await Task.CompletedTask;
         // If user exist
-
-        if (await userRepository.GetByEmailAsync(query.Email, cancellationToken) is not User user)
+        var user = await userRepository.GetByEmailAsync(query.Email,  cancellationToken);
+        if (user is  null)
             return Errors.Authentication.InvalidCredentials;
         
         // password
-        var isPassworValid = _passwordHasher.VerifyHashedPassword(query.Password, user.PasswordHash);
+        var isPassworValid = passwordHasher.VerifyHashedPassword(query.Password, user.PasswordHash);
 
         if (!isPassworValid) return new[] { Errors.Authentication.InvalidCredentials };
 

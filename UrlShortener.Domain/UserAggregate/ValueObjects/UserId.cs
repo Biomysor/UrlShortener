@@ -39,7 +39,7 @@ public class UserId : ValueObject
     }
     
     /// <inheritdoc />
-    public override IEnumerable<object> GetEqualityComponents()
+    protected override IEnumerable<object> GetEqualityComponents()
     {
         yield return  Value;
     }

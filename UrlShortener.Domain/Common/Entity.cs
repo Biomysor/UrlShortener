@@ -11,15 +11,7 @@ public abstract class Entity<TId>
     /// <summary>
     /// Gets the unique identifier of the entity.
     /// </summary>
-    public TId Id { get; protected set; } = default!;
-
-    /// <summary>
-    /// Required by Entity Framework Core for materialization.
-    /// </summary>
-    protected Entity()
-    {
-        
-    }
+    public TId Id { get; }
     
     /// <summary>
     /// Initializes a new entity with the specified identifier.

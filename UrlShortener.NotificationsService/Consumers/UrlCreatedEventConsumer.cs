@@ -12,9 +12,6 @@ public class UrlCreatedEventConsumer(
     IConfiguration configuration)
     : IConsumer<UrlCreatedEvent>
 {
-    private readonly ITelegramBotClient _telegramBotClient = telegramBotClient;
-    private readonly IConfiguration _configuration = configuration;
-
     /// <summary>
     /// Handles UrlCreatedEvent messages and sends notification to configured Telegram chat.
     /// </summary>
@@ -23,7 +20,7 @@ public class UrlCreatedEventConsumer(
     {
         var message = context.Message;
 
-        var chatId = _configuration["Telegram:ChatId"];
+        var chatId = configuration["Telegram:ChatId"];
 
         if (string.IsNullOrWhiteSpace(chatId))
         {
@@ -39,7 +36,7 @@ public class UrlCreatedEventConsumer(
                     Created at: {message.CreatedAt:yyyy-MM-dd HH:mm:ss}
                     """;
 
-        await _telegramBotClient.SendMessage(
+        await telegramBotClient.SendMessage(
             chatId: chatId,
             text: text);
     }

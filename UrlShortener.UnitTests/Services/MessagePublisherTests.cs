@@ -17,7 +17,6 @@ public class MessagePublisherTests
             publishEndpointMock.Object);
 
         var message = new UrlCreatedEvent(
-            Guid.NewGuid(),
             "https://google.com",
             "abc123",
             "http://localhost:5018/r/abc123",

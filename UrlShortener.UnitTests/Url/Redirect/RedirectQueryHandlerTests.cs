@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using Microsoft.Extensions.Logging;
 using Moq;
 using UrlShortener.Application.Common.Interfaces.Repositories;
 using UrlShortener.Application.Common.Interfaces.Services;
@@ -12,6 +13,7 @@ public class RedirectQueryHandlerTests
     private readonly Mock<ICacheService> _cacheServiceMock = new();
     private readonly Mock<IMessagePublisher> _messagePublisherMock = new();
     private readonly Mock<IUrlRepository> _repositoryMock = new();
+    private readonly Mock<ILogger<RedirectQueryHandler>> _loggerMock = new();
 
     [Fact]
     public async Task Handle_ShouldReturnCachedLongUrl_AndPublishRedirectEvent_WhenCacheHit()
@@ -116,12 +118,55 @@ public class RedirectQueryHandlerTests
             It.IsAny<object>(),
             It.IsAny<CancellationToken>()), Times.Never);
     }
+    
+    [Fact]
+    public async Task Handle_ShouldReturnCachedLongUrl_AndLogWarning_WhenPublishFails()
+    {
+        // Arrange
+        var cachedUrl = new CachedUrlRedirect(
+            Guid.NewGuid(),
+            "abc123",
+            "https://google.com");
+
+        _cacheServiceMock
+            .Setup(x => x.GetAsync<CachedUrlRedirect>(
+                "url:code:abc123",
+                It.IsAny<CancellationToken>()))
+            .ReturnsAsync(cachedUrl);
+
+        _messagePublisherMock
+            .Setup(x => x.PublishAsync(
+                It.IsAny<object>(),
+                It.IsAny<CancellationToken>()))
+            .ThrowsAsync(new Exception("RabbitMQ unavailable"));
+
+        var handler = CreateHandler();
+
+        // Act
+        var result = await handler.Handle(
+            new RedirectQuery("abc123"),
+            CancellationToken.None);
+
+        // Assert
+        result.IsError.Should().BeFalse();
+        result.Value.Should().Be("https://google.com");
+
+        _loggerMock.Verify(
+            x => x.Log(
+                LogLevel.Warning,
+                It.IsAny<EventId>(),
+                It.IsAny<It.IsAnyType>(),
+                It.IsAny<Exception>(),
+                It.IsAny<Func<It.IsAnyType, Exception?, string>>()),
+            Times.Once);
+    }
 
     private RedirectQueryHandler CreateHandler()
     {
         return new RedirectQueryHandler(
             _repositoryMock.Object,
             _cacheServiceMock.Object,
-            _messagePublisherMock.Object);
+            _messagePublisherMock.Object,
+            _loggerMock.Object);
     }
 }

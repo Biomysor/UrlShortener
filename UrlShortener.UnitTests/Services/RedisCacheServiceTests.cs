@@ -17,7 +17,7 @@ public class RedisCacheServiceTests
 
         var cacheService = new CachingService(memoryCache);
 
-        var key = "url:code:abc123";
+        const string key = "url:code:abc123";
         var value = new TestCacheModel(
             Guid.NewGuid(),
             "abc123",
@@ -36,7 +36,7 @@ public class RedisCacheServiceTests
 
         // Assert
         result.Should().NotBeNull();
-        result!.UrlId.Should().Be(value.UrlId);
+        result.UrlId.Should().Be(value.UrlId);
         result.Code.Should().Be(value.Code);
         result.LongUrl.Should().Be(value.LongUrl);
     }
@@ -68,7 +68,7 @@ public class RedisCacheServiceTests
 
         var cacheService = new CachingService(memoryCache);
 
-        var key = "url:code:abc123";
+        const string key = "url:code:abc123";
 
         await cacheService.SetAsync(
             key,

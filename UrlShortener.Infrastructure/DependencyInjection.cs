@@ -26,7 +26,7 @@ public static class DependencyInjection
     {
         services
             .AddAuth(configuration)
-            .AddPersistance(configuration);
+            .AddPersistence(configuration);
 
         services.AddStackExchangeRedisCache(options =>
         {
@@ -64,7 +64,7 @@ public static class DependencyInjection
         return services;
     }
 
-    private static IServiceCollection AddPersistance(this IServiceCollection services,
+    private static IServiceCollection AddPersistence(this IServiceCollection services,
         ConfigurationManager configuration)
     {
         services.AddDbContext<ApplicationDbContext>(options =>

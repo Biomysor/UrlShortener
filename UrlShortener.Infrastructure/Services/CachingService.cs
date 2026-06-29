@@ -1,6 +1,5 @@
 ﻿using System.Text.Json;
 using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.Extensions.Caching.Memory;
 using UrlShortener.Application.Common.Interfaces.Services;
 
 namespace UrlShortener.Infrastructure.Services;

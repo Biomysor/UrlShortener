@@ -12,28 +12,25 @@ namespace UrlShortener.Api.Controllers;
 [AllowAnonymous]
 public class AuthenticateController(IMapper mapper, ISender sender ) : ApiController
 {
-    private readonly IMapper _mapper = mapper;
-    private readonly ISender _sender = sender;
-
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequest request, CancellationToken cancellationToken)
     {
-        var command = _mapper.Map<RegisterCommand>(request);
-        var authResult = await _sender.Send(command, cancellationToken);
+        var command = mapper.Map<RegisterCommand>(request);
+        var authResult = await sender.Send(command, cancellationToken);
         
         return authResult.Match(
-            result => Ok(_mapper.Map<AuthenticationResponce>(result)),
-            errors => Problem(errors));
+            result => Ok(mapper.Map<AuthenticationResponce>(result)),
+            Problem);
     }
 
     [HttpPost("login")]
     public async Task<IActionResult> Login(LoginRequest request, CancellationToken cancellationToken)
     {
-        var query = _mapper.Map<LoginQuery>(request);
-        var authResult = await _sender.Send(query, cancellationToken);
+        var query = mapper.Map<LoginQuery>(request);
+        var authResult = await sender.Send(query, cancellationToken);
         
         return authResult.Match(
-            result => Ok(_mapper.Map<AuthenticationResponce>(result)),
-            errors => Problem(errors));
+            result => Ok(mapper.Map<AuthenticationResponce>(result)),
+            Problem);
     }
 }
