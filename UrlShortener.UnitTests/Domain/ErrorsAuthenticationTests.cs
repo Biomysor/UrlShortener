@@ -35,17 +35,4 @@ public class ErrorsAuthenticationTests
         // Assert
         error.Type.Should().Be(ErrorType.Validation);
     }
-
-    [Fact]
-    public void InvalidCredentials_ShouldNotContainInterpolation_AndBeStaticString()
-    {
-        // Verifies the change from $"Invalid credentials." (string interpolation) to a plain string literal.
-        // Both calls should return equivalent errors regardless of interpolation.
-        var error1 = Errors.Authentication.InvalidCredentials;
-        var error2 = Errors.Authentication.InvalidCredentials;
-
-        // Assert
-        error1.Description.Should().Be(error2.Description);
-        error1.Code.Should().Be(error2.Code);
-    }
 }
