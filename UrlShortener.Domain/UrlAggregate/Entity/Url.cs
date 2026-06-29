@@ -56,6 +56,6 @@ public class Url : Entity<UrlId>
             UrlId.CreateUnique(),
             longUrl,
             string.Empty,
-            DateTimeOffset.UtcNow.DateTime);
+            DateTimeOffset.UtcNow);
     }
 }

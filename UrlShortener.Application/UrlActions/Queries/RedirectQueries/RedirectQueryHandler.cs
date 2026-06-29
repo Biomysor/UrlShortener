@@ -16,7 +16,7 @@ public class RedirectQueryHandler(
     IUrlRepository repository,
     ICacheService cacheService,
     IMessagePublisher messagePublisher,
-    ILogger logger) : IRequestHandler<RedirectQuery, ErrorOr<string>>
+    ILogger<RedirectQueryHandler> logger) : IRequestHandler<RedirectQuery, ErrorOr<string>>
 {
     /// <summary>
     ///     Finds the original long URL by short code.

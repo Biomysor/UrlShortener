@@ -19,7 +19,7 @@ public class UrlTests
         url.Id.Value.Should().NotBeEmpty();
         url.LongUrl.Should().Be(longUrl);
         url.Code.Should().BeEmpty();
-        url.CreatedAtUtc.Should().BeCloseTo(DateTime.UtcNow, TimeSpan.FromSeconds(5));
+        url.CreatedAtUtc.Should().BeCloseTo(DateTimeOffset.UtcNow, TimeSpan.FromSeconds(5));
     }
 
     [Fact]

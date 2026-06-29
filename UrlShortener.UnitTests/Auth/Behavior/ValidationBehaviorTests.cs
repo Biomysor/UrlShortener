@@ -180,5 +180,5 @@ public class ValidationBehaviorTests
     }
 
     /// <summary>Minimal request type for testing the behavior in isolation.</summary>
-    private record TestRequest(string Value) : IRequest<ErrorOr<string>>;
+    public record TestRequest(string Value) : IRequest<ErrorOr<string>>;
 }
